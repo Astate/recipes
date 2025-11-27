@@ -1,0 +1,36 @@
+#
+# SPDX-FileCopyrightText: © 2025- AerynOS Developers
+#
+# SPDX-License-Identifier: MPL-2.0
+#
+name        : fcft
+version     : 3.3.2
+release     : 1
+homepage    : https://codeberg.org/dnkl/fcft/releases/download/3.3.2
+upstreams   :
+    - https://codeberg.org/dnkl/fcft/releases/download/3.3.2/fcft-3.3.2.tar.gz : 8dffe750027618e01dd4e6bc9aa9c889033c7abe4a661e9294192b58b4556264
+summary     : UPDATE SUMMARY
+description : |
+    UPDATE DESCRIPTION
+license     : 
+    - JSON
+    - MIT
+    - Unicode-3.0
+    - X11-distribute-modifications-variant
+    - Xnet
+builddeps   :
+    - pkgconfig(cairo)
+    - pkgconfig(check)
+    - pkgconfig(fontconfig)
+    - pkgconfig(freetype2)
+    - pkgconfig(harfbuzz)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(pixman-1)
+    - pkgconfig(scdoc)
+    - pkgconfig(tllist)
+setup       : |
+    %meson
+build       : |
+    %meson_build
+install     : |
+    %meson_install

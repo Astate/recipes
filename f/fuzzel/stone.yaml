@@ -1,0 +1,38 @@
+#
+# SPDX-FileCopyrightText: © 2025- AerynOS Developers
+#
+# SPDX-License-Identifier: MPL-2.0
+#
+name        : fuzzel
+homepage    : https://codeberg.org/dnkl/fuzzel/
+version     : 1.13.0 
+release     : 1
+upstreams   :
+    - https://codeberg.org/dnkl/fuzzel/archive/1.13.1.tar.gz : 17e8f01753469573965a2a37b5745d03e6f6e7bda9d675cd2bc4644abb42d818
+summary     : fuzzel menu
+description : |
+    fuzzel menu
+license     : 
+    - JSON
+    - MIT
+    - X11-distribute-modifications-variant
+    - Xnet
+builddeps   :
+    - pkgconfig(cairo)
+    - pkgconfig(libpng)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(pixman-1)
+    - pkgconfig(wayland-client)
+    - pkgconfig(wayland-cursor)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(wayland-scanner)
+    - pkgconfig(xkbcommon)
+    - pkgconfig(tllist)
+    - pkgconfig(fcft)
+    - pkgconfig(scdoc)
+setup       : |
+    %meson
+build       : |
+    %meson_build
+install     : |
+    %meson_install

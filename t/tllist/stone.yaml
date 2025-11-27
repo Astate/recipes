@@ -1,0 +1,25 @@
+#
+# SPDX-FileCopyrightText: © 2025- AerynOS Developers
+#
+# SPDX-License-Identifier: MPL-2.0
+#
+name        : tllist
+version     : 1.1.0
+release     : 1
+homepage    : https://codeberg.org/dnkl/tllist/
+upstreams   :
+    - https://codeberg.org/dnkl/tllist/archive/1.1.0.zip : 9eb339e668d50e44ac1ffef825e8d17948e199d05840fd0e77775324ce3ffb4d
+summary     : tllist
+description : |
+    tllist
+license     : 
+    - JSON
+    - MIT
+    - X11-distribute-modifications-variant
+    - Xnet
+setup       : |
+    %meson
+build       : |
+    %meson_build
+install     : |
+    %meson_install
