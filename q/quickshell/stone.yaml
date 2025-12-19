@@ -1,0 +1,55 @@
+#
+# SPDX-FileCopyrightText: © 2025 AerynOS Developers
+#
+# SPDX-License-Identifier: MPL-2.0
+#
+name        : quickshell
+version     : git
+release     : 1
+homepage    : https://git.outfoxxed.me/quickshell/quickshell
+upstreams   :
+    - git|https://git.outfoxxed.me/quickshell/quickshell.git: e9bad67619ee9937a1bbecfc6ad3b4231d2ecdc3 # master
+summary     : Qt-based Wayland/X11 desktop shell toolkit
+description : |
+    Quickshell is a Qt-based desktop shell toolkit that allows you to build 
+    custom desktop environments, panels, system trays, and other UI components 
+    using QML. It supports Wayland (with wlroots layershell, session lock, 
+    and screencopy protocols) and X11, with optional integrations for Hyprland, 
+    i3/Sway, Pipewire, MPRIS, and more.
+license     :
+    - LGPL-3.0-or-later
+builddeps   :
+    - cmake(Qt6WaylandClientPrivate)
+    - pkgconfig(Qt6Core)
+    - pkgconfig(Qt6Gui)
+    - pkgconfig(Qt6Qml)
+    - pkgconfig(Qt6Quick)
+    - pkgconfig(Qt6ShaderTools)
+    - pkgconfig(Qt6WaylandClient)
+    - pkgconfig(SPIRV-Tools)
+    - pkgconfig(wayland-client)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(wayland-scanner)
+    - pkgconfig(xcb)
+    - pkgconfig(libdrm)
+    - pkgconfig(gbm)
+    - pkgconfig(libpipewire-0.3)
+    - pkgconfig(dbus-1)
+    - pkgconfig(pam)
+    - pkgconfig(polkit-agent-1)
+    - pkgconfig(jemalloc)
+    - cli11-devel    
+    
+setup       : |
+    %cmake -GNinja \
+        -DCMAKE_DISABLE_PRECOMPILE_HEADERS=ON \
+        -DDISTRIBUTOR="AerynOS" \
+        -DDISTRIBUTOR_DEBUGINFO_AVAILABLE=YES \
+        -DINSTALL_QML_PREFIX=%(libdir)/qt6/qml \
+        -DCRASH_REPORTER=OFF \
+        -DUSE_JEMALLOC=ON  
+build       : |
+    # Limit parallel jobs to avoid OOM during compilation
+    %cmake_build -j2
+install     : |
+    %cmake_install
