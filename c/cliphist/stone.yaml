@@ -1,0 +1,45 @@
+#
+# SPDX-FileCopyrightText: © 2025- AerynOS Developers
+#
+# SPDX-License-Identifier: MPL-2.0
+#
+name        : cliphist
+version     : 0.7.0
+release     : 1
+homepage    : https://github.com/sentriz/cliphist
+upstreams   :
+    - https://github.com/sentriz/cliphist/archive/refs/tags/v0.7.0.tar.gz : 8d7dc7b4495e5812b5613274c250ba5d3900933d78888ce7921c01247f191cc8
+    - file:////home/mastarch/repos/aerynos/recipes/c/cliphist/vendor/cliphist-deps.tar.gz : 02693e86dc2f551329d59e766980eb809660322b5618b8870de992abd7b7249e
+summary     : Wayland clipboard manager with support for multimedia 
+description : |
+    Wayland clipboard manager with support for multimedia 
+license     : 
+    - GPL-3.0-only
+builddeps   :
+    - binary(go)
+rundeps     :
+    - wl-clipboard-rs
+setup       : |
+    # CORRECTION : D'après les logs, les fichiers sont directement à la racine de l'archive extraite
+    VENDOR_SRC="../cliphist-deps.tar.gz"
+
+    echo "Source des dépendances : $VENDOR_SRC"
+
+    # On copie le contenu (go.mod, go.sum, vendor/) vers le dossier actuel (.)
+    # Le slash après le chemin est important pour copier le contenu et non le dossier lui-même
+    cp -rf "$VENDOR_SRC"/* .
+    
+    # Vérification visuelle pour le log de build
+    echo "Fichiers copiés. Vérification du dossier vendor :"
+    ls -d vendor
+    echo "Vérification du go.mod :"
+    head -n 5 go.mod
+build       : |
+    # Compilation
+    go build -v \
+        -mod=vendor \
+        -gcflags='all=-N -l' \
+        -ldflags="-s -w -X main.Version=%(version)" \
+        -o cliphist .
+install     : |
+    %install_bin cliphist

@@ -1,0 +1,24 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"cliphist": {
+			"build-depends": [
+				"binary(go)"
+			],
+			"depends": [
+				"wl-clipboard"
+			],
+			"files": [
+				"/usr/bin/cliphist"
+			],
+			"name": "cliphist",
+			"provides": [
+				"binary(cliphist)"
+			]
+		}
+	},
+	"source-name": "cliphist",
+	"source-release": "1",
+	"source-version": "0.7.0"
+}
