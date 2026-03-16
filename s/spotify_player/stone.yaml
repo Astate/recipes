@@ -1,0 +1,36 @@
+
+# SPDX-FileCopyrightText: © 2025- AerynOS Developers
+#
+# SPDX-License-Identifier: MPL-2.0
+#
+name        : spotify-player
+version     : "0.22.1"
+release     : 2
+homepage    : https://github.com/aome510/spotify-player
+upstreams   :
+    - https://github.com/aome510/spotify-player/archive/refs/tags/v0.22.1.tar.gz :
+        hash      : b09ae88647758003eb7c666d3c2f60e1ff7624a14f9e8244332afe2b46167c4f
+        unpackdir : spotify-player-0.22.1
+summary     : A command driven spotify player
+description : |
+    A command driven spotify player tui
+license     : 
+    - MIT
+networking  : true
+builddeps   :
+    - pkgconfig(openssl)
+    - pkgconfig(dbus-1)
+    - pkgconfig(alsa)
+    - pkgconfig(libpulse)
+setup       : |
+    %cargo_fetch
+build       : |
+    cargo build --release --target x86_64-unknown-linux-gnu \
+        --no-default-features \
+        --features pulseaudio-backend,notify,daemon,image,media-control
+install     : |
+    mkdir -p %(installroot)/usr/bin
+    cp %(workdir)/target/x86_64-unknown-linux-gnu/release/spotify_player %(installroot)/usr/bin/spotify-player
+    chmod 755 %(installroot)/usr/bin/spotify-player
+check       : |
+    %cargo_test
