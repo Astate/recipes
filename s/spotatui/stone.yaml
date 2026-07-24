@@ -1,0 +1,28 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : spotatui
+version     : "0.40.2"
+release     : 2
+homepage    : https://github.com/LargeModGames/spotatui
+# upstreams   :
+    # - https://github.com/LargeModGames/spotatui/archive/refs/tags/v0.40.2.tar.gz : 385742c6b1c192e2b2703d65fbfc84d16edc1426030f2d7a46374bff2c3586f1
+upstreams   :
+    - https://github.com/LargeModGames/spotatui/archive/a12172e32b618be12c1ce3594cf3004886f97441.tar.gz : c1542792c569a265fa3f9d4c1a586762758f719844e08ca35d82c9de652a9c94
+summary     : spotify tui player in Rust
+description : |
+     A fast, standalone terminal music player in Rust: native Spotify streaming plus local, Subsonic, radio, and YouTube sources. 
+license     : 
+    - MIT
+networking  : true
+builddeps   :
+    - pkgconfig(openssl)
+    - pkgconfig(alsa)
+setup       : |
+    %cargo_fetch
+build       : |
+    %cargo_build
+install     : |
+    %cargo_install
+check       : |
+    %cargo_test
