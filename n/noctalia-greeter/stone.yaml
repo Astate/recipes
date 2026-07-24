@@ -1,0 +1,55 @@
+#
+# Noctalia Greeter — greetd login greeter with bundled wlroots compositor
+# SPDX-License-Identifier: MPL-2.0
+#
+name: noctalia-greeter
+version: 1.0.0
+release: 1
+homepage: https://github.com/noctalia-dev/noctalia-greeter
+upstreams:
+  - https://github.com/noctalia-dev/noctalia-greeter/archive/refs/tags/v1.0.0.tar.gz: 974c0adc444dbe63be38d60f2ae0eedbd97cf1fc5844a9f022a7468b0a495ba3
+summary: A minimal login greeter for greetd matching Noctalia Shell
+description: |
+  Noctalia Greeter is the login screen shown before your desktop session
+  starts: it lets you pick a user, enter your password, choose a Wayland
+  session and a color scheme, with the same visual language as Noctalia
+  Shell. Built for greetd, it ships its own wlroots compositor
+  (noctalia-greeter-compositor) and runs the greeter UI inside it.
+license:
+  - Apache-2.0
+  - MIT
+builddeps:
+  - binary(meson)
+  - binary(ninja)
+  - binary(wayland-scanner)
+  - binary(git)
+  - pkgconfig(wlroots-0.20)
+  - pkgconfig(wayland-client)
+  - pkgconfig(wayland-server)
+  - pkgconfig(wayland-egl)
+  - pkgconfig(wayland-protocols)
+  - pkgconfig(egl)
+  - pkgconfig(glesv2)
+  - pkgconfig(epoxy)
+  - pkgconfig(libinput)
+  - pkgconfig(xkbcommon)
+  - pkgconfig(cairo)
+  - pkgconfig(pango)
+  - pkgconfig(pangocairo)
+  - pkgconfig(pangoft2)
+  - pkgconfig(freetype2)
+  - pkgconfig(fontconfig)
+  - pkgconfig(librsvg-2.0)
+  - pkgconfig(libwebp)
+  - pkgconfig(gio-2.0)
+  - pkgconfig(glib-2.0)
+  - pkgconfig(gobject-2.0)
+rundeps:
+  - greetd
+  - polkit
+setup: |
+  %meson
+build: |
+  %meson_build
+install: |
+  %meson_install
