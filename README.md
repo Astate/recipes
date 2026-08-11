@@ -1,17 +1,17 @@
 <!--
-# SPDX-FileCopyrightText: 2020 AerynOS Developers
+# SPDX-FileCopyrightText: 2020 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 -->
 
 # Recipes
 
-This repository contains all the recipes required to build AerynOS from source.
+This repository contains all the recipes required to build aerynOS from source.
 
 ## Quick Links
 
 | Resource | Description |
 |----------|-------------|
-| [Documentation](https://aerynos.dev/) | Learn about AerynOS concepts and packaging |
+| [Documentation](https://aerynos.dev/) | Learn about aerynOS concepts and packaging |
 | [Packaging Policy](https://github.com/aerynOS/recipes/blob/main/PACKAGING_POLICY.md) | aerynOS Package Addition Policy |
 | [Packaging Guide](https://aerynos.dev/packaging/) | Detailed packaging documentation |
 | [Zulip Chat](https://aeryn.zulipchat.com/) | Community discussion (requires join) |
@@ -20,13 +20,13 @@ This repository contains all the recipes required to build AerynOS from source.
 
 ## What Are Recipes?
 
-Recipes define how packages are built and packaged for AerynOS. Each recipe describes the build process, dependencies, and metadata needed to create installable packages using our tooling stack (primarily Boulder/moss).
+Recipes define how packages are built and packaged for aerynOS. Each recipe describes the build process, dependencies, and metadata needed to create installable packages using our tooling stack (primarily Boulder/moss).
 
 ## Contributing to Recipes
 
 ### Step 1: Understand the Scope
 
-AerynOS is currently in Alpha quality and serves as a tech preview focused on proving our tooling approach. Until our infrastructure matures, we must be selective about packages to avoid exploding manual rebuild requirements.
+aerynOS is currently in Alpha quality and serves as a tech preview focused on proving our tooling approach. Until our infrastructure matures, we must be selective about packages to avoid exploding manual rebuild requirements.
 
 **Where we are currently at:**
 
@@ -76,7 +76,7 @@ GitHub doesn't natively support selecting from multiple PR templates, so we've s
 
 #### Tips for Faster Review
 
-- Test builds on an AerynOS host system before submitting
+- Test builds on an aerynOS host system before submitting
 - Follow existing recipe patterns and coding style
 - Include clear commit messages following our git summary format
 - Link related GitHub issues if applicable
@@ -84,7 +84,7 @@ GitHub doesn't natively support selecting from multiple PR templates, so we've s
 
 Reviews may take some time depending on maintainer availability. Once your PR passes review, a maintainer will merge it. 🎉
 
-## Packaging on AerynOS
+## Packaging on aerynOS
 
 ### Just Commands
 
@@ -120,7 +120,7 @@ _Example `.env` file:_
 
 ### Overriding Default `boulder` Arguments
 
-If you are not building on AerynOS using the os-supplied boulder package, or if you want to specify custom arguments
+If you are not building on aerynOS using the os-supplied boulder package, or if you want to specify custom arguments
 to the boulder invocation when using the `just` targets, you might benefit from adding some or all of the following options
 to your `.env` file in recipes/ root next to the `justfile`:
 
