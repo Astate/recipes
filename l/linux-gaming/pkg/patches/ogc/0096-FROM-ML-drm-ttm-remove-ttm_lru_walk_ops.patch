@@ -1,0 +1,130 @@
+From 2716e2086533c966f2eac34616bbc47b8245c6ca Mon Sep 17 00:00:00 2001
+From: Natalie Vock <nat@pixelcluster.dev>
+Date: Mon, 6 Jul 2026 11:31:41 +0200
+Subject: [PATCH 096/114] [FROM-ML] drm/ttm: remove ttm_lru_walk_ops
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+It's just another layer of indirection.
+
+Signed-off-by: Christian König <christian.koenig@amd.com>
+Signed-off-by: Natalie Vock <nat@pixelcluster.dev>
+---
+ drivers/gpu/drm/ttm/ttm_bo.c      | 12 ++---------
+ drivers/gpu/drm/ttm/ttm_bo_util.c |  2 +-
+ include/drm/ttm/ttm_bo.h          | 34 +++++++++++++------------------
+ 3 files changed, 17 insertions(+), 31 deletions(-)
+
+diff --git a/drivers/gpu/drm/ttm/ttm_bo.c b/drivers/gpu/drm/ttm/ttm_bo.c
+index cfd1a4bd04b1..c59056378aaf 100644
+--- a/drivers/gpu/drm/ttm/ttm_bo.c
++++ b/drivers/gpu/drm/ttm/ttm_bo.c
+@@ -698,10 +698,6 @@ static s64 ttm_bo_evict_cb(struct ttm_lru_walk *walk, struct ttm_buffer_object *
+ 	return lret;
+ }
+ 
+-static const struct ttm_lru_walk_ops ttm_evict_walk_ops = {
+-	.process_bo = ttm_bo_evict_cb,
+-};
+-
+ static int ttm_bo_evict_alloc(struct ttm_device *bdev,
+ 			      struct ttm_resource_manager *man,
+ 			      const struct ttm_place *place,
+@@ -713,7 +709,7 @@ static int ttm_bo_evict_alloc(struct ttm_device *bdev,
+ {
+ 	struct ttm_bo_evict_walk evict_walk = {
+ 		.walk = {
+-			.ops = &ttm_evict_walk_ops,
++			.process_bo = ttm_bo_evict_cb,
+ 			.arg = {
+ 				.ctx = ctx,
+ 				.ticket = ticket,
+@@ -1352,10 +1348,6 @@ ttm_bo_swapout_cb(struct ttm_lru_walk *walk, struct ttm_buffer_object *bo)
+ 	return ret;
+ }
+ 
+-const struct ttm_lru_walk_ops ttm_swap_ops = {
+-	.process_bo = ttm_bo_swapout_cb,
+-};
+-
+ /**
+  * ttm_bo_swapout() - Swap out buffer objects on the LRU list to shmem.
+  * @bdev: The ttm device.
+@@ -1374,7 +1366,7 @@ s64 ttm_bo_swapout(struct ttm_device *bdev, struct ttm_operation_ctx *ctx,
+ {
+ 	struct ttm_bo_swapout_walk swapout_walk = {
+ 		.walk = {
+-			.ops = &ttm_swap_ops,
++			.process_bo = ttm_bo_swapout_cb,
+ 			.arg = {
+ 				.ctx = ctx,
+ 				.trylock_only = true,
+diff --git a/drivers/gpu/drm/ttm/ttm_bo_util.c b/drivers/gpu/drm/ttm/ttm_bo_util.c
+index 7ed085adf1c9..29f068944a97 100644
+--- a/drivers/gpu/drm/ttm/ttm_bo_util.c
++++ b/drivers/gpu/drm/ttm/ttm_bo_util.c
+@@ -919,7 +919,7 @@ s64 ttm_lru_walk_for_evict(struct ttm_lru_walk *walk, struct ttm_device *bdev,
+ 	s64 lret;
+ 
+ 	ttm_bo_lru_for_each_reserved_guarded(&cursor, man, &walk->arg, bo) {
+-		lret = walk->ops->process_bo(walk, bo);
++		lret = walk->process_bo(walk, bo);
+ 		if (lret == -EBUSY || lret == -EALREADY)
+ 			lret = 0;
+ 		progress = (lret < 0) ? lret : progress + lret;
+diff --git a/include/drm/ttm/ttm_bo.h b/include/drm/ttm/ttm_bo.h
+index 1eae9eea5ff3..0fcd5082a708 100644
+--- a/include/drm/ttm/ttm_bo.h
++++ b/include/drm/ttm/ttm_bo.h
+@@ -189,24 +189,6 @@ struct ttm_operation_ctx {
+ 	uint64_t bytes_moved;
+ };
+ 
+-struct ttm_lru_walk;
+-
+-/** struct ttm_lru_walk_ops - Operations for a LRU walk. */
+-struct ttm_lru_walk_ops {
+-	/**
+-	 * process_bo - Process this bo.
+-	 * @walk: struct ttm_lru_walk describing the walk.
+-	 * @bo: A locked and referenced buffer object.
+-	 *
+-	 * Return: Negative error code on error, User-defined positive value
+-	 * (typically, but not always, size of the processed bo) on success.
+-	 * On success, the returned values are summed by the walk and the
+-	 * walk exits when its target is met.
+-	 * 0 also indicates success, -EBUSY means this bo was skipped.
+-	 */
+-	s64 (*process_bo)(struct ttm_lru_walk *walk, struct ttm_buffer_object *bo);
+-};
+-
+ /**
+  * struct ttm_lru_walk_arg - Common part for the variants of BO LRU walk.
+  */
+@@ -223,8 +205,20 @@ struct ttm_lru_walk_arg {
+  * struct ttm_lru_walk - Structure describing a LRU walk.
+  */
+ struct ttm_lru_walk {
+-	/** @ops: Pointer to the ops structure. */
+-	const struct ttm_lru_walk_ops *ops;
++	/**
++	 * process_bo - Process this bo.
++	 * @walk: struct ttm_lru_walk describing the walk.
++	 * @bo: A locked and referenced buffer object.
++	 *
++	 * Return: Negative error code on error, User-defined positive value
++	 * (typically, but not always, size of the processed bo) on success.
++	 * On success, the returned values are summed by the walk and the
++	 * walk exits when its target is met.
++	 * 0 also indicates success, -EBUSY means this bo was skipped.
++	 */
++	s64 (*process_bo)(struct ttm_lru_walk *walk,
++			  struct ttm_buffer_object *bo);
++
+ 	/** @arg: Common bo LRU walk arguments. */
+ 	struct ttm_lru_walk_arg arg;
+ };
+-- 
+2.55.0
+
