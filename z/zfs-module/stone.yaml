@@ -3,7 +3,7 @@
 
 name        : zfs-module
 version     : "2.4.3"
-release     : 20
+release     : 21
 upstreams   :
     - https://github.com/openzfs/zfs/releases/download/zfs-2.4.3/zfs-2.4.3.tar.gz : 1f08f2d154f5189b5f1382848a32667b3d34066145b474c49cd3d41a5fba59a7
 homepage    : https://openzfs.github.io/openzfs-docs/
@@ -12,6 +12,7 @@ summary     : An advanced file system and volume manager
 description : |
     An advanced file system and volume manager
 builddeps   :
+    - binary(aclocal)
     - binary(eu-readelf)
     - binary(zstd)
     - linux-gaming-devel
@@ -24,9 +25,15 @@ environment : |
         dir=${dir%*/}
         kernels+=(${dir##*/})
     done
+    # To fix autogen.sh
+    export SED=sed
 setup       : |
     # This is where patches would go
-    sed -i -e 's/Linux-Maximum: 7.0/Linux-Maximum: 7.1/' META
+    sed -i -e 's/Linux-Maximum: 7.0/Linux-Maximum: 7.2/' META
+    # https://github.com/openzfs/zfs/pull/18677
+    %patch %(pkgdir)/18677.patch
+    # remove generated configure
+    ./autogen.sh
 
     for _kernel in ${kernels[@]}; do
         mkdir ${_kernel}
