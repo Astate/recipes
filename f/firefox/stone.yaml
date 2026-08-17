@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : firefox
-version     : "153.0"
-release     : 74
+version     : "153.0.4"
+release     : 77
 homepage    : https://www.mozilla.org/
 upstreams   :
-    - https://releases.mozilla.org/pub/firefox/releases/153.0/source/firefox-153.0.source.tar.xz:
-        hash: bc510f74c8c4c692d31e559aeb5850849d13bc98214ac81e004f66f819a55522
+    - https://releases.mozilla.org/pub/firefox/releases/153.0.4/source/firefox-153.0.4.source.tar.xz:
+        hash: f7aa83924c66bb3b04cf139b3b00612d388a9f024c92fe7834161553a6028a48
         unpackdir: firefox
 summary     : Firefox web browser
 description : |
@@ -44,8 +44,8 @@ builddeps   :
     - pkgconfig(vpx)
     - pkgconfig(xkbcommon)
 rundeps     :
-    - soname(libavcodec.so.62(x86_64)) # dlopened, check dom/media/platforms/ffmpeg/FFmpegRuntimeLinker.cpp for latest supported
     - firefox-langpacks
+    - soname(libavcodec.so.62(x86_64)) # dlopened, check dom/media/platforms/ffmpeg/FFmpegRuntimeLinker.cpp for latest supported
     - xdg-desktop-portal
 networking  : true # PGO
 environment : |

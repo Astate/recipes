@@ -2,13 +2,13 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : bottom
-version     : "0.14.6"
-release     : 13
+version     : "0.14.8"
+release     : 15
 homepage    : https://clementtsang.github.io/bottom
 upstreams   :
-    - https://github.com/ClementTsang/bottom/archive/refs/tags/0.14.6.tar.gz : ec899586164423377ceaf0d15975b8cb4430e47f3c84db0394411048755c1412
-    - https://github.com/ClementTsang/bottom/releases/download/0.14.6/completion.tar.gz : 1badcb95d13022a0d4210d06b5b90eb9b6a898dc2d86ff04af12a2ba12ca39fb
-    - https://github.com/ClementTsang/bottom/releases/download/0.14.6/manpage.tar.gz : 593c30115b4f781761981f29ff6718083e9732acf726dd6930fa0eaf77a9cd98
+    - https://github.com/ClementTsang/bottom/archive/refs/tags/0.14.8.tar.gz : be10adada9ec1e5dd741dcb5581c4e0ebd45cb5bdae213dd296b29511363a770
+    - https://github.com/ClementTsang/bottom/releases/download/0.14.8/completion.tar.gz : bf36ef7909703b15e035041f7f9b3c9e91809176f8aa7f72d0ad430a7f32fad3
+    - https://github.com/ClementTsang/bottom/releases/download/0.14.8/manpage.tar.gz : ad8c9eb29922c1a61a13816c2a5d5c99294d7d6b159d01ba3183853cd0e27144
 summary     : Yet another cross-platform graphical process/system monitor
 description : |
     A customizable cross-platform graphical process/system monitor for the terminal. Supports Linux, macOS, and Windows. Inspired by gtop, gotop, and htop.

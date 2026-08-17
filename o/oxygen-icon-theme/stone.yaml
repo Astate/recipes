@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : oxygen-icon-theme
+version     : "6.29.0"
+release     : 2
+homepage    : https://download.kde.org/stable/frameworks/6.28
+upstreams   :
+    - https://download.kde.org/stable/frameworks/6.29/oxygen-icons-6.29.0.tar.xz : 3d365f052087de1b5f870a4ecee083a6eb6e5f9174925152331110025113367a
+summary     :  Oxygen icon theme
+description : |
+    Oxygen Icons is a freedesktop.org compatible icon theme originally developed for the KDE Plasma desktop environment in combination with the Oxygen Style. It features smooth gradients, soft shadows, and a slightly glossy look.
+license     : LGPL-3.0-or-later
+builddeps   :
+    - cmake(ECM)
+setup       : |
+    %cmake_kf6
+build       : |
+    %cmake_build
+install     : |
+    %cmake_install

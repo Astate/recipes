@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : dua-cli
-version     : "2.38.1"
-release     : 3
+version     : "2.42.0"
+release     : 7
 homepage    : https://github.com/Byron/dua-cli
 upstreams   :
-    - https://github.com/Byron/dua-cli/archive/refs/tags/v2.38.1.tar.gz : b30d76e60be8f4928c3b7d5c3cd2d9034d60ad09c7e044bf2056f01e8596f46e
+    - https://github.com/Byron/dua-cli/archive/refs/tags/v2.42.0.tar.gz : 1be17656a08653ed75f9187a8909c2fbed0f03da0a5d1a11ab648ab2ee08e332
 summary     : A tool to conveniently learn about the disk usage of directories
 description : |
     dua (Disk Usage Analyzer) is a tool to conveniently learn about the disk usage of directories, fast! It offers a terminal user interface for interactive exploration and supports parallel directory traversal for improved performance.
