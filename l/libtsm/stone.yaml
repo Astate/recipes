@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libtsm
-version     : "4.6.0"
-release     : 6
+version     : "4.7.1"
+release     : 7
 upstreams   :
-    - https://github.com/kmscon/libtsm/archive/refs/tags/v4.6.0.tar.gz : 5c64411fd558aa004170af9a04c12c3095e593b9e38a2fec7da1dafa7793dbb7
+    - https://github.com/kmscon/libtsm/archive/refs/tags/v4.7.1.tar.gz : 40d7f11698f0ce87af8da67a3142ee9f02e2b5d914f8ad83aa080e052fe1ae2b
 homepage    : https://github.com/kmscon/libtsm
 license     : LGPL-2.1-or-later
 summary     : Terminal-emulator State Machine
