@@ -3,7 +3,7 @@
 
 name        : qbittorrent
 version     : "5.2.3"
-release     : 16
+release     : 17
 upstreams   :
     - https://github.com/qbittorrent/qBittorrent/archive/refs/tags/release-5.2.3.tar.gz : a5f540cdfb0053f0ce1a1c62ccd92d08214f16bcb2c512569ec54d81531e541f
 homepage    : https://www.qbittorrent.org/
