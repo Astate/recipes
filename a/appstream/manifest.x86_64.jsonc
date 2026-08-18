@@ -44,7 +44,7 @@
 			"files": [
 				"/usr/bin/appstreamcli",
 				"/usr/lib/girepository-1.0/AppStream-1.0.typelib",
-				"/usr/lib/libappstream.so.1.1.5",
+				"/usr/lib/libappstream.so.1.1.6",
 				"/usr/lib/libappstream.so.5",
 				"/usr/share/appstream/appstream.conf",
 				"/usr/share/bash-completion/completions/appstreamcli",
@@ -153,7 +153,7 @@
 				"/usr/lib/appstream/appstreamcli-compose",
 				"/usr/lib/girepository-1.0/AppStreamCompose-1.0.typelib",
 				"/usr/lib/libappstream-compose.so.0",
-				"/usr/lib/libappstream-compose.so.1.1.5",
+				"/usr/lib/libappstream-compose.so.1.1.6",
 				"/usr/share/man/man1/appstreamcli-compose.1",
 				"/usr/share/metainfo/org.freedesktop.appstream.compose.metainfo.xml"
 			],
@@ -333,7 +333,7 @@
 				"soname(libstdc++.so.6(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libAppStreamQt.so.1.1.5",
+				"/usr/lib/libAppStreamQt.so.1.1.6",
 				"/usr/lib/libAppStreamQt.so.3"
 			],
 			"name": "appstream-qt6",
@@ -413,6 +413,6 @@
 		}
 	},
 	"source-name": "appstream",
-	"source-release": "19",
-	"source-version": "1.1.5"
+	"source-release": "20",
+	"source-version": "1.1.6"
 }
