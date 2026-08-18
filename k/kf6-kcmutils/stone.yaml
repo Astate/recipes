@@ -3,7 +3,7 @@
 
 name        : kf6-kcmutils
 version     : "6.29.0"
-release     : 30
+release     : 31
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.29/kcmutils-6.29.0.tar.xz : 762943ea8eff8c27a5b89bc483aef0af5955b716270b0820e0addae2c38392a6
 homepage    : https://community.kde.org/Frameworks
