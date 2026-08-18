@@ -3,7 +3,7 @@
 
 name        : strawberry
 version     : "1.2.27"
-release     : 11
+release     : 12
 homepage    : https://www.strawberrymusicplayer.org
 upstreams   :
     - https://github.com/strawberrymusicplayer/strawberry/releases/download/1.2.27/strawberry-1.2.27.tar.xz : 85e9990b9bd4641e620ebd55d2c9383d3c19359b0a4c647baab65c7cb7c5772c
