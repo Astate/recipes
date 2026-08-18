@@ -3,7 +3,7 @@
 
 name        : kf6-kdbusaddons
 version     : "6.29.0"
-release     : 27
+release     : 28
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.29/kdbusaddons-6.29.0.tar.xz : a3d2de669bfad5de3f86cc8c6448a02f7567e4ad04aa6099ccfaa2df5f07e8f8
 homepage    : https://community.kde.org/Frameworks
