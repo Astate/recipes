@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : qt6-shadertools
-version     : "6.11.1"
-release     : 14
+version     : "6.11.2"
+release     : 15
 homepage    : https://www.qt.io
 upstreams   :
-    - https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtshadertools-everywhere-src-6.11.1.tar.xz : 2075052f9b23bcf9de045bbd180037084942f82cce870aab14a1454902c982fc
+    - https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtshadertools-everywhere-src-6.11.2.tar.xz : 805046b8b7757665586890b375940047e874ae3ab00adb6d3f2b38fc6b200b1c
 summary     : Qt Shader Tools module
 description : |
     APIs and tools in this module provide the producer functionality for the shader pipeline that allows Qt Quick to operate on Vulkan in addition to OpenGL.
