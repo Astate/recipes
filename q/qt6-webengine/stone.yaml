@@ -2,18 +2,18 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : qt6-webengine
-version     : "6.11.1"
-release     : 33
+version     : "6.11.2"
+release     : 34
 homepage    : https://www.qt.io
 upstreams   :
-    - https://download.qt.io/official_releases/qt/6.11/6.11.1/submodules/qtwebengine-everywhere-src-6.11.1.tar.xz: 679c66ccc6c158fc215e9c58ef160331ecd29974232e345c05161889f8667083
+    - https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtwebengine-everywhere-src-6.11.2.tar.xz: 6101c1aa00ff933d1b65ee5d167f76e8d71b9ac5b378b0111277723ebda7c163
 
 ### Manage the chromium source separately so it can be updated separately from the Qt version
 ### To update this run the ./update-chromium.py script
 # Don't edit anything between the BEGIN_UPSTREAMS and END_UPSTREAMS tags
 ##@@BEGIN_UPSTREAMS
     - git|https://invent.kde.org/qt/qt/qtwebengine-chromium.git:
-        ref: cbf4306fde4fab4d32fd97481b7fb7797bf27ed6
+        ref: 40f3c679ac1c1e4fbb757f8ee9b22565f144327e
 ##@@END_UPSTREAMS
 summary     : Qt6 Webengine Module
 description : |
@@ -92,14 +92,7 @@ setup       : |
     # 3rdparty patches
     %patch %(pkgdir)/qtwebengine-link-pipewire.patch -d src/3rdparty
 
-    # Fixes for building with newer chromium
-    %patch %(pkgdir)/ftbfs-newer-chromium-01.patch
-    %patch %(pkgdir)/ftbfs-newer-chromium-02.patch
-    %patch %(pkgdir)/ftbfs-newer-chromium-03.patch
-
-    # Backports
-    %patch %(pkgdir)/QTBUG-145344.patch
-    %patch %(pkgdir)/QTBUG-142687.patch
+    # backports
 
     # TODO: fix webengine_rust_build=ON which might be due to missing PTY support in boulder
     %cmake_qt6 \
