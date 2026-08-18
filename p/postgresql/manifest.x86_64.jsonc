@@ -3114,6 +3114,6 @@
 		}
 	},
 	"source-name": "postgresql",
-	"source-release": "2",
-	"source-version": "18.4"
+	"source-release": "3",
+	"source-version": "18.6"
 }
