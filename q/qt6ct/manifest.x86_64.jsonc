@@ -13,7 +13,6 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"qt6-svg",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libKF6ColorScheme.so.6(x86_64))",
 				"soname(libKF6ConfigCore.so.6(x86_64))",
 				"soname(libKF6IconThemes.so.6(x86_64))",
@@ -55,6 +54,6 @@
 		}
 	},
 	"source-name": "qt6ct",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "0.11"
 }
