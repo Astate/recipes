@@ -3,7 +3,7 @@
 
 name        : fcitx5-qt
 version     : "5.1.14"
-release     : 1
+release     : 2
 homepage    : https://github.com/fcitx/fcitx5-qt
 upstreams   :
     - https://github.com/fcitx/fcitx5-qt/archive/refs/tags/5.1.14.tar.gz : 80cbbc6b3ad08a6b7a40bb6cc4072e1c3bcf2099a821ce04b1bd510848c804d7

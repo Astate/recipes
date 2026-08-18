@@ -3,10 +3,10 @@
 
 name        : quickshell
 version     : "0.3.0"
-release     : 8
-homepage    : https://github.com/quickshell-mirror/quickshell
+release     : 9
+homepage    : https://quickshell.org/
 upstreams   :
-    - https://git.outfoxxed.me/quickshell/quickshell/archive/v0.3.0.tar.gz : f4821f9084cab04bd2b5384cc92b9726aecc4ce3eb27200dca24edc67da3b6e5
+    - https://github.com/quickshell-mirror/quickshell/archive/refs/tags/v0.3.0.tar.gz : 5229069b0f1d375f34b0a04a4e6a69156e2f010995d9ec5a943793424e589b5d
 summary     : Flexible QtQuick based desktop shell toolkit
 description : |
     Quickshell is a toolkit for building status bars, widgets, lockscreens, and other desktop components using QtQuick. It can be used alongside your wayland compositor or window manager to build a complete desktop environment.

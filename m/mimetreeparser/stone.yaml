@@ -3,7 +3,7 @@
 
 name        : mimetreeparser
 version     : "26.04.3"
-release     : 26
+release     : 27
 upstreams   :
     - https://download.kde.org/stable/release-service/26.04.3/src/mimetreeparser-26.04.3.tar.xz : 88750429310e9dc60e1f962dc9d7e58e1936e878db54aa41cb7f5c4b4fc524dc
 homepage    : https://kde.org
