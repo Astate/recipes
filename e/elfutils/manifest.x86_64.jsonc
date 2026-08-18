@@ -66,7 +66,6 @@
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libarchive.so.13(x86_64))",
 				"soname(libasm.so.1(x86_64))",
 				"soname(libc.so.6(x86_64))",
@@ -74,6 +73,8 @@
 				"soname(libdw.so.1(x86_64))",
 				"soname(libelf.so.1(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
+				"soname(libjson-c.so.5(x86_64))",
+				"soname(libm.so.6(x86_64))",
 				"soname(libstdc++.so.6(x86_64))"
 			],
 			"files": [
@@ -92,6 +93,7 @@
 				"/usr/bin/eu-size",
 				"/usr/bin/eu-srcfiles",
 				"/usr/bin/eu-stack",
+				"/usr/bin/eu-stackprof",
 				"/usr/bin/eu-strings",
 				"/usr/bin/eu-strip",
 				"/usr/bin/eu-unstrip",
@@ -100,11 +102,13 @@
 				"/usr/share/locale/en@quot/LC_MESSAGES/elfutils.mo",
 				"/usr/share/locale/es/LC_MESSAGES/elfutils.mo",
 				"/usr/share/locale/ja/LC_MESSAGES/elfutils.mo",
+				"/usr/share/locale/ka/LC_MESSAGES/elfutils.mo",
 				"/usr/share/locale/pl/LC_MESSAGES/elfutils.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/elfutils.mo",
 				"/usr/share/man/man1/eu-elfclassify.1",
 				"/usr/share/man/man1/eu-readelf.1",
-				"/usr/share/man/man1/eu-srcfiles.1"
+				"/usr/share/man/man1/eu-srcfiles.1",
+				"/usr/share/man/man1/eu-stackprof.1"
 			],
 			"name": "elfutils",
 			"provides": [
@@ -123,6 +127,7 @@
 				"binary(eu-size)",
 				"binary(eu-srcfiles)",
 				"binary(eu-stack)",
+				"binary(eu-stackprof)",
 				"binary(eu-strings)",
 				"binary(eu-strip)",
 				"binary(eu-unstrip)"
@@ -147,7 +152,6 @@
 			],
 			"depends": [
 				"elfutils",
-				"soname(ld-linux.so.2(386))",
 				"soname(libbz2.so.1.0(386))",
 				"soname(libc.so.6(386))",
 				"soname(libelf.so.1(386))",
@@ -157,9 +161,9 @@
 				"soname(libzstd.so.1(386))"
 			],
 			"files": [
-				"/usr/lib32/libasm-0.195.so",
+				"/usr/lib32/libasm-0.196.so",
 				"/usr/lib32/libasm.so.1",
-				"/usr/lib32/libdw-0.195.so",
+				"/usr/lib32/libdw-0.196.so",
 				"/usr/lib32/libdw.so.1"
 			],
 			"name": "elfutils-32bit",
@@ -264,7 +268,6 @@
 				"pkgconfig32(zlib)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libbz2.so.1.0(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libelf.so.1(x86_64))",
@@ -273,9 +276,9 @@
 				"soname(libzstd.so.1(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libasm-0.195.so",
+				"/usr/lib/libasm-0.196.so",
 				"/usr/lib/libasm.so.1",
-				"/usr/lib/libdw-0.195.so",
+				"/usr/lib/libdw-0.196.so",
 				"/usr/lib/libdw.so.1"
 			],
 			"name": "elfutils-libs",
@@ -308,7 +311,7 @@
 				"soname(libjson-c.so.5(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libdebuginfod-0.195.so",
+				"/usr/lib/libdebuginfod-0.196.so",
 				"/usr/lib/libdebuginfod.so.1",
 				"/usr/share/defaults/debuginfod/aerynos.urls",
 				"/usr/share/defaults/profile.d/debuginfod.csh",
@@ -382,13 +385,12 @@
 				"pkgconfig32(zlib)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libz.so.1(x86_64))",
 				"soname(libzstd.so.1(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libelf-0.195.so",
+				"/usr/lib/libelf-0.196.so",
 				"/usr/lib/libelf.so.1"
 			],
 			"name": "libelf",
@@ -414,14 +416,13 @@
 				"pkgconfig32(zlib)"
 			],
 			"depends": [
-				"soname(ld-linux.so.2(386))",
 				"soname(libc.so.6(386))",
 				"soname(libgcc_s.so.1(386))",
 				"soname(libz.so.1(386))",
 				"soname(libzstd.so.1(386))"
 			],
 			"files": [
-				"/usr/lib32/libelf-0.195.so",
+				"/usr/lib32/libelf-0.196.so",
 				"/usr/lib32/libelf.so.1"
 			],
 			"name": "libelf-32bit",
@@ -607,6 +608,6 @@
 		}
 	},
 	"source-name": "elfutils",
-	"source-release": "13",
-	"source-version": "0.195"
+	"source-release": "14",
+	"source-version": "0.196"
 }
