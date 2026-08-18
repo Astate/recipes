@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libp11
-version     : "0.4.19"
-release     : 5
+version     : "0.4.20"
+release     : 6
 homepage    : https://github.com/OpenSC/libp11
 upstreams   :
-    - https://github.com/OpenSC/libp11/releases/download/libp11-0.4.19/libp11-0.4.19.tar.gz : a344ca201ffa71822881e45e86457ab9a0115d07d03da0d69c7e5a7268255a35
+    - https://github.com/OpenSC/libp11/releases/download/libp11-0.4.20/libp11-0.4.20.tar.gz : a125e0310ff10c189fc1b32a9652101486ea94a6b07c677a30e90e3638d2db48
 summary     : A PKCS#11 engine for use with OpenSSL
 description : |
     libp11 enables hardware security module (HSM), and smart card support in
