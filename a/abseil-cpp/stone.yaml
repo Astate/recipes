@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : abseil-cpp
-version     : "20260526.0"
-release     : 15
+version     : "20260817.0"
+release     : 16
 homepage    : https://abseil.io/
 upstreams   :
-    - https://github.com/abseil/abseil-cpp/releases/download/20260526.0/abseil-cpp-20260526.0.tar.gz : 6e1aee535473414164bf83e4ebc40240dec71a4701f8a642d906e95bea1aea0c
+    - https://github.com/abseil/abseil-cpp/releases/download/20260817.0/abseil-cpp-20260817.0.tar.gz : f7e05179df39c45434cad433f5783840bb3788ef322976f9138bc6b72b3a107d
 summary     : Abseil Common Libraries
 description : |
     Abseil Common Libraries
