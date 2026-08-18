@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : doxygen
-version     : "1.17.0"
-release     : 14
+version     : "1.18.0"
+release     : 15
 homepage    :  https://www.doxygen.org/
 upstreams   :
-    - https://github.com/doxygen/doxygen/releases/download/Release_1_17_0/doxygen-1.17.0.src.tar.gz : fa4c3dd78785abc11ccc992bc9c01e7a8c3120fe14b8a8dfd7cefa7014530814
+    - https://github.com/doxygen/doxygen/releases/download/Release_1_18_0/doxygen-1.18.0.src.tar.gz : a1deed70a6785bbec95a2b2a9e419dc7f7b223a9d74a8644ae611c8e2dcdd354
 summary     : The de-facto standard tool for generating documentation from annotated C++ sources
 description : |
     The de-facto standard tool for generating documentation from annotated C++ sources
@@ -16,6 +16,7 @@ builddeps  :
     - binary(flex)
     - binary(llvm-config-22)
     - binary(python3)
+    - cmake(Qt6LinguistTools)
     - pkgconfig(Qt6Core)
     - pkgconfig(Qt6Svg)
     - pkgconfig(spdlog)
