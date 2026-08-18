@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : firefox
-version     : "153.0.4"
-release     : 77
+version     : "154.0"
+release     : 78
 homepage    : https://www.mozilla.org/
 upstreams   :
-    - https://releases.mozilla.org/pub/firefox/releases/153.0.4/source/firefox-153.0.4.source.tar.xz:
-        hash: f7aa83924c66bb3b04cf139b3b00612d388a9f024c92fe7834161553a6028a48
+    - https://releases.mozilla.org/pub/firefox/releases/154.0/source/firefox-154.0.source.tar.xz:
+        hash: 36cec5b3688a60f78a6d20dcaee15b598f84e03c66f6587056aead6cb498b99a
         unpackdir: firefox
 summary     : Firefox web browser
 description : |
@@ -64,6 +64,25 @@ setup       : |
     # %%patch %(pkgdir)/patches/pgo.patch
     %patch %(pkgdir)/patches/0001-Fix-Firefox-Thunderbird-envvar-conflicts.patch
     %patch %(pkgdir)/patches/0001-Allow-installing-addons-from-user-scope.patch
+
+    # Unknown FF 154.0 build issue. See if fixed in future release
+    # │B│ 27:26.05 W Traceback (most recent call last):
+    # │B│ 27:26.05 W   File "<frozen runpy>", line 203, in _run_module_as_main
+    # │B│ 27:26.05 W   File "<frozen runpy>", line 88, in _run_code
+    # │B│ 27:26.05 W   File "/mason/build/x86_64/firefox/python/mozbuild/mozbuild/action/install_objdir_file.py", line 23, in <module>
+    # │B│ 27:26.05 W     sys.exit(main(sys.argv[1:]))
+    # │B│ 27:26.05 W              ~~~~^^^^^^^^^^^^^^
+    # │B│ 27:26.05 W   File "/mason/build/x86_64/firefox/python/mozbuild/mozbuild/action/install_objdir_file.py", line 18, in main
+    # │B│ 27:26.05 W     shutil.copy(source, dest)
+    # │B│ 27:26.05 W     ~~~~~~~~~~~^^^^^^^^^^^^^^
+    # │B│ 27:26.05 W   File "/usr/lib/python3.14/shutil.py", line 489, in copy
+    # │B│ 27:26.05 W     copyfile(src, dst, follow_symlinks=follow_symlinks)
+    # │B│ 27:26.05 W     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    # │B│ 27:26.05 W   File "/usr/lib/python3.14/shutil.py", line 313, in copyfile
+    # │B│ 27:26.05 W     with open(src, 'rb') as fsrc:
+    # │B│ 27:26.05 W          ~~~~^^^^^^^^^^^
+    # │B│ 27:26.05 W FileNotFoundError: [Errno 2] No such file or directory: 'WriteArgument'
+    %patch %(pkgdir)/patches/0001-Revert-Bug-2038789-Support-renaming-and-mode-preserv.patch
 
     # TODO: Figure out if we still need to enable unsigned addon loading considering we switched back to unmodified langpacks
 

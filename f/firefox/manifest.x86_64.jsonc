@@ -48,7 +48,6 @@
 				"soname(libevent-2.1.so.7(x86_64))",
 				"soname(libffi.so.8(x86_64))",
 				"soname(libfontconfig.so.1(x86_64))",
-				"soname(libfreeblpriv3.so(x86_64))",
 				"soname(libfreetype.so.6(x86_64))",
 				"soname(libgbm.so.1(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
@@ -144,6 +143,6 @@
 		}
 	},
 	"source-name": "firefox",
-	"source-release": "77",
-	"source-version": "153.0.4"
+	"source-release": "78",
+	"source-version": "154.0"
 }
