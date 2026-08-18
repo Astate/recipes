@@ -3,7 +3,7 @@
 
 name        : easyeffects
 version     : "8.2.8"
-release     : 30
+release     : 31
 homepage    : https://wwmm.github.io/easyeffects/
 upstreams   :
     - https://github.com/wwmm/easyeffects/archive/refs/tags/v8.2.8.tar.gz : 0e241ad32a0147d180f9dd35181c8eea11e7d32309dda9b4b70b6b472189e45e
