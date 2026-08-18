@@ -3,7 +3,7 @@
 
 name        : kf6-kdeclarative
 version     : "6.29.0"
-release     : 29
+release     : 30
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.29/kdeclarative-6.29.0.tar.xz : 2051e7a9c357106617ae0c666d2c4331c59f3b07b54a55a1063e7af705d82100
 homepage    : https://community.kde.org/Frameworks
