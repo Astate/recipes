@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : webkitgtk
-version     : "2.52.5"
-release     : 16
+version     : "2.52.6"
+release     : 17
 upstreams   :
-    - https://webkitgtk.org/releases/webkitgtk-2.52.5.tar.xz : 8a531a9abd2215936e8a8a914c077b586c0228b31d652f205286a8ec90f3364b
+    - https://webkitgtk.org/releases/webkitgtk-2.52.6.tar.xz : 179a2ea3f8f6edd4be7f31fdc55afc57bd0729f1fba648c61d4181539ac116fc
 homepage    : https://webkitgtk.org
 license     : LGPL-2.1-only
 summary     : GTK web content engine library
