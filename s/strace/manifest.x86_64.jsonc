@@ -28,6 +28,6 @@
 		}
 	},
 	"source-name": "strace",
-	"source-release": "19",
-	"source-version": "7.1"
+	"source-release": "20",
+	"source-version": "7.2"
 }
