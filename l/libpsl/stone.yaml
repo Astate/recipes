@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libpsl
-version     : "0.23.1"
-release     : 7
+version     : "0.23.3"
+release     : 8
 homepage    : https://rockdaboot.github.io/libpsl/
 upstreams   :
-    - https://github.com/rockdaboot/libpsl/releases/download/0.23.1/libpsl-0.23.1.tar.gz : 8fbb03054556498ba9c4cc48fcaa36a4483748c6504a65bdb9ba348f555b0e56
+    - https://github.com/rockdaboot/libpsl/releases/download/0.23.3/libpsl-0.23.3.tar.gz : 93941f85a1e7bd593fa94f299233cb5dfc91cd144fd9a78a6ceb75001c5b03be
 summary     : C library for the Public Suffix List
 description : |
     libpsl - C library to handle the Public Suffix List
