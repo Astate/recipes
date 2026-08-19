@@ -31,9 +31,11 @@
 				"/usr/include/CLI/impl/Option_inl.hpp",
 				"/usr/include/CLI/impl/Split_inl.hpp",
 				"/usr/include/CLI/impl/StringTools_inl.hpp",
+				"/usr/include/CLI/impl/TypeTools_inl.hpp",
 				"/usr/include/CLI/impl/Validators_inl.hpp",
 				"/usr/share/cmake/CLI11/CLI11Config.cmake",
 				"/usr/share/cmake/CLI11/CLI11ConfigVersion.cmake",
+				"/usr/share/cmake/CLI11/CLI11Targets.cmake",
 				"/usr/share/pkgconfig/CLI11.pc"
 			],
 			"name": "cli11",
@@ -53,6 +55,6 @@
 		}
 	},
 	"source-name": "cli11",
-	"source-release": "3",
-	"source-version": "2.7.1"
+	"source-release": "4",
+	"source-version": "2.7.2"
 }
