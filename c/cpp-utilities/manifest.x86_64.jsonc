@@ -15,7 +15,7 @@
 			],
 			"files": [
 				"/usr/lib/libc++utilities.so.5",
-				"/usr/lib/libc++utilities.so.5.34.2"
+				"/usr/lib/libc++utilities.so.5.35.0"
 			],
 			"name": "cpp-utilities",
 			"provides": [
@@ -97,6 +97,7 @@
 				"/usr/share/c++utilities/cmake/templates/config.h.in",
 				"/usr/share/c++utilities/cmake/templates/desktop.in",
 				"/usr/share/c++utilities/cmake/templates/doxygen.in",
+				"/usr/share/c++utilities/cmake/templates/env_init.cpp.in",
 				"/usr/share/c++utilities/cmake/templates/global.h.in",
 				"/usr/share/c++utilities/cmake/templates/sphinx-conf.py.in",
 				"/usr/share/c++utilities/cmake/templates/template.pc.in",
@@ -113,6 +114,6 @@
 		}
 	},
 	"source-name": "cpp-utilities",
-	"source-release": "12",
-	"source-version": "5.34.2"
+	"source-release": "13",
+	"source-version": "5.35.0"
 }
