@@ -626,7 +626,7 @@
 			],
 			"files": [
 				"/usr/lib/libxapian.so.45",
-				"/usr/lib/libxapian.so.45.0.0"
+				"/usr/lib/libxapian.so.45.1.0"
 			],
 			"name": "xapian-core-libs",
 			"provides": [
@@ -635,6 +635,6 @@
 		}
 	},
 	"source-name": "xapian-core",
-	"source-release": "5",
-	"source-version": "2.0.0"
+	"source-release": "6",
+	"source-version": "2.1.0"
 }
