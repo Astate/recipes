@@ -3529,6 +3529,8 @@
 				"/usr/share/kstyle/themes/klassy.themerc",
 				"/usr/share/locale/fr/LC_MESSAGES/klassy_kwin_deco.mo",
 				"/usr/share/locale/fr/LC_MESSAGES/klassy_style_config.mo",
+				"/usr/share/locale/ja/LC_MESSAGES/klassy_kwin_deco.mo",
+				"/usr/share/locale/ja/LC_MESSAGES/klassy_style_config.mo",
 				"/usr/share/locale/zh/LC_MESSAGES/klassy_kwin_deco.mo",
 				"/usr/share/locale/zh/LC_MESSAGES/klassy_style_config.mo",
 				"/usr/share/plasma/desktoptheme/klassy-dark/colors",
@@ -3615,6 +3617,6 @@
 		}
 	},
 	"source-name": "klassy",
-	"source-release": "5",
-	"source-version": "6.7"
+	"source-release": "6",
+	"source-version": "6.7.1"
 }
