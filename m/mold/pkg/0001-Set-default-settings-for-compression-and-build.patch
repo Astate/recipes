@@ -7,16 +7,16 @@ Set the default to compress debug sections with zstd, and also set the default t
 
 Origin: vendor
 Forwarded: not-needed
-Last-Update: 2026-04-13
+Last-Update: 2026-08-19
 ---
  src/mold.h | 6 +++---
  1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/src/mold.h b/src/mold.h
-index 3e4d36e6..205fb28e 100644
+index 53418ed1..87aaca52 100644
 --- a/src/mold.h
 +++ b/src/mold.h
-@@ -2212,9 +2212,9 @@ struct BuildId {
+@@ -2496,9 +2496,9 @@ struct BuildId {
      }
    }
  
@@ -28,12 +28,12 @@ index 3e4d36e6..205fb28e 100644
  };
  
  typedef enum {
-@@ -2419,7 +2419,7 @@ struct Context {
+@@ -2707,7 +2707,7 @@ struct Context {
      bool z_start_stop_visibility_protected = false;
      bool z_text = false;
      bool zero_to_bss = false;
 -    i64 compress_debug_sections = ELFCOMPRESS_NONE;
 +    i64 compress_debug_sections = ELFCOMPRESS_ZSTD;
+     i64 compress_debug_sections_level = 0;
      i64 filler = -1;
      i64 spare_dynamic_tags = 5;
-     i64 spare_program_headers = 0;
