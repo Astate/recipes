@@ -17,8 +17,7 @@
 				"pkgconfig(libjxl)",
 				"pkgconfig(libpng)",
 				"pkgconfig(libtiff-4)",
-				"pkgconfig(pdfio)",
-				"pkgconfig(poppler-cpp)"
+				"pkgconfig(pdfio)"
 			],
 			"depends": [
 				"binary(gs)",
@@ -38,7 +37,6 @@
 				"soname(libm.so.6(x86_64))",
 				"soname(libpdfio.so.1(x86_64))",
 				"soname(libpng16.so.16(x86_64))",
-				"soname(libpoppler-cpp.so.3(x86_64))",
 				"soname(libtiff.so.6(x86_64))"
 			],
 			"files": [
@@ -99,8 +97,7 @@
 				"pkgconfig(libjxl)",
 				"pkgconfig(libpng)",
 				"pkgconfig(libtiff-4)",
-				"pkgconfig(pdfio)",
-				"pkgconfig(poppler-cpp)"
+				"pkgconfig(pdfio)"
 			],
 			"depends": [
 				"libcupsfilters"
@@ -128,6 +125,6 @@
 		}
 	},
 	"source-name": "libcupsfilters",
-	"source-release": "10",
-	"source-version": "2.2.0"
+	"source-release": "11",
+	"source-version": "2.2.1"
 }
