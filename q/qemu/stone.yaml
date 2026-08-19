@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : qemu
-version     : "11.0.3"
-release     : 36
+version     : "11.1.0"
+release     : 37
 homepage    : http://www.qemu.org/
 upstreams   :
-    - https://download.qemu.org/qemu-11.0.3.tar.xz : da5fcffc32762820568b828ed430a728864d34d50b6d2f30358597760cbb0523
+    - https://download.qemu.org/qemu-11.1.0.tar.xz : 6ee1d1a61f68212476b27108c26da5f449dc09b626d42f8279ba0dc2e08fa858
 summary     :  A generic and open source machine emulator and virtualizer
 description : |
      A generic and open source machine emulator and virtualizer
@@ -71,6 +71,7 @@ builddeps   :
     - python(setuptools)
     - python(sphinx-rtd-theme)
     - libaio-devel
+    - multipath-tools-devel
     # TODO:
     # - libiscsi
     # - libcacard
@@ -149,6 +150,7 @@ packages    :
             - /usr/share/icons/hicolor/*/apps/qemu.*
             - /usr/share/locale/
             - /usr/share/man/man1/qemu.1*
+            - /usr/share/man/man1/qemu-vnc.1* # TODO put this in a VNC package
             - /usr/share/man/man7/qemu*.7*
             - /usr/share/qemu/*.bin
             - /usr/share/qemu/*.bmp
