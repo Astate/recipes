@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : akonadi-calendar
-version     : "26.04.3"
-release     : 18
+version     : "26.08.0"
+release     : 19
 upstreams   :
-    - https://download.kde.org/stable/release-service/26.04.3/src/akonadi-calendar-26.04.3.tar.xz : 9769bb77600f4228cd3d2a74b4ed486bbc820e36d8edb3b203df9afd4805c779
+    - https://download.kde.org/stable/release-service/26.08.0/src/akonadi-calendar-26.08.0.tar.xz : 6c2c21d3932c4c4905ecd6fb0b21b265ba9dc45fd35e538e2795f3b09aae2c5f
 homepage    : https://kde.org
 license     : LGPL-2.1-or-later
 summary     : Library that effectively bridges the type-agnostic API of the Akonadi client libraries and the domain-specific KCalCore library
@@ -28,8 +28,8 @@ builddeps   :
     - cmake(KPim6MailTransport)
     - cmake(KPim6MessageCore)
 setup       : |
-    %patch %(pkgdir)/kf6kmime.patch
-    %cmake_kf6
+    %cmake_kf6 \
+        -DBUILD_PYTHON_BINDINGS=OFF
 build       : |
     %cmake_build
 install     : |

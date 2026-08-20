@@ -89,6 +89,7 @@
 				"/usr/share/locale/sl/LC_MESSAGES/qrca.mo",
 				"/usr/share/locale/sv/LC_MESSAGES/qrca.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/qrca.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/qrca.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/qrca.mo",
 				"/usr/share/locale/zh_CN/LC_MESSAGES/qrca.mo",
 				"/usr/share/locale/zh_TW/LC_MESSAGES/qrca.mo",
@@ -101,6 +102,6 @@
 		}
 	},
 	"source-name": "qrca",
-	"source-release": "6",
-	"source-version": "26.04.3"
+	"source-release": "7",
+	"source-version": "26.08.0"
 }

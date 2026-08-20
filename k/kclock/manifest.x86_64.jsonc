@@ -154,6 +154,8 @@
 				"/usr/share/locale/th/LC_MESSAGES/kclockd.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/kclock.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/kclockd.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kclock.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kclockd.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kclock.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kclockd.mo",
 				"/usr/share/locale/zh_CN/LC_MESSAGES/kclock.mo",
@@ -178,6 +180,6 @@
 		}
 	},
 	"source-name": "kclock",
-	"source-release": "25",
-	"source-version": "26.04.3"
+	"source-release": "26",
+	"source-version": "26.08.0"
 }

@@ -792,6 +792,19 @@
 				"/usr/share/locale/tr/LC_MESSAGES/kdeconnect-sms.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/kdeconnect-urlhandler.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/plasma_applet_org.kde.kdeconnect.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-app.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-cli.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-core.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-fileitemaction.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-indicator.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-interfaces.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-kded.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-kio.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-nautilus-extension.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-plugins.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-sms.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kdeconnect-urlhandler.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/plasma_applet_org.kde.kdeconnect.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kdeconnect-app.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kdeconnect-cli.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kdeconnect-core.mo",
@@ -847,6 +860,8 @@
 				"/usr/share/plasma/plasmoids/org.kde.kdeconnect/contents/ui/main.qml",
 				"/usr/share/plasma/plasmoids/org.kde.kdeconnect/metadata.json",
 				"/usr/share/qlogging-categories6/kdeconnect-kde.categories",
+				"/usr/share/remoteview/kdeconnect-network.desktop",
+				"/usr/share/solid/actions/solid_kdeconnect.desktop",
 				"/usr/share/zsh/site-functions/_kdeconnect"
 			],
 			"name": "kdeconnect",
@@ -931,7 +946,7 @@
 			],
 			"files": [
 				"/usr/lib/libkdeconnectcore.so.26",
-				"/usr/lib/libkdeconnectcore.so.26.04.3",
+				"/usr/lib/libkdeconnectcore.so.26.08.0",
 				"/usr/lib/qt6/plugins/kdeconnect/kdeconnect_battery.so",
 				"/usr/lib/qt6/plugins/kdeconnect/kdeconnect_clipboard.so",
 				"/usr/lib/qt6/plugins/kdeconnect/kdeconnect_connectivity_report.so",
@@ -1108,6 +1123,6 @@
 		}
 	},
 	"source-name": "kdeconnect",
-	"source-release": "21",
-	"source-version": "26.04.3"
+	"source-release": "22",
+	"source-version": "26.08.0"
 }

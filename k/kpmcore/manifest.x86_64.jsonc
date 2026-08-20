@@ -29,7 +29,7 @@
 			"files": [
 				"/usr/lib/kf6/kpmcore_externalcommand",
 				"/usr/lib/libkpmcore.so.13",
-				"/usr/lib/libkpmcore.so.26.04.3",
+				"/usr/lib/libkpmcore.so.26.08.0",
 				"/usr/lib/qt6/plugins/kpmcore/pmdummybackendplugin.so",
 				"/usr/lib/qt6/plugins/kpmcore/pmsfdiskbackendplugin.so",
 				"/usr/share/dbus-1/system-services/org.kde.kpmcore.helperinterface.service",
@@ -125,6 +125,7 @@
 				"/usr/share/locale/th/LC_MESSAGES/kpmcore.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/kpmcore._policy_.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/kpmcore.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kpmcore._policy_.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kpmcore.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kpmcore._policy_.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kpmcore.mo",
@@ -230,6 +231,7 @@
 				"/usr/include/kpmcore/ops/setfilesystemlabeloperation.h",
 				"/usr/include/kpmcore/ops/setpartflagsoperation.h",
 				"/usr/include/kpmcore/ops/setpartlabeloperation.h",
+				"/usr/include/kpmcore/ops/takeownershipoperation.h",
 				"/usr/include/kpmcore/util/capacity.h",
 				"/usr/include/kpmcore/util/externalcommand.h",
 				"/usr/include/kpmcore/util/globallog.h",
@@ -250,6 +252,6 @@
 		}
 	},
 	"source-name": "kpmcore",
-	"source-release": "15",
-	"source-version": "26.04.3"
+	"source-release": "16",
+	"source-version": "26.08.0"
 }

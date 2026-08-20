@@ -51,6 +51,8 @@
 				"/usr/share/icons/hicolor/48x48/apps/ark.png",
 				"/usr/share/icons/hicolor/64x64/apps/ark.png",
 				"/usr/share/icons/hicolor/scalable/apps/ark.svgz",
+				"/usr/share/kconf_update/ark_move_dirhistory_to_state_config.py",
+				"/usr/share/kconf_update/ark_move_dirhistory_to_state_config.upd",
 				"/usr/share/locale/af/LC_MESSAGES/ark.mo",
 				"/usr/share/locale/ar/LC_MESSAGES/ark.mo",
 				"/usr/share/locale/ast/LC_MESSAGES/ark.mo",
@@ -132,6 +134,7 @@
 				"/usr/share/locale/zh_HK/LC_MESSAGES/ark.mo",
 				"/usr/share/locale/zh_TW/LC_MESSAGES/ark.mo",
 				"/usr/share/man/ca/man1/ark.1",
+				"/usr/share/man/de/man1/ark.1",
 				"/usr/share/man/es/man1/ark.1",
 				"/usr/share/man/fr/man1/ark.1",
 				"/usr/share/man/gl/man1/ark.1",
@@ -176,6 +179,9 @@
 			"files": [
 				"/usr/share/doc/HTML/ca/ark/index.cache.bz2",
 				"/usr/share/doc/HTML/ca/ark/index.docbook",
+				"/usr/share/doc/HTML/de/ark/ark-mainwindow.png",
+				"/usr/share/doc/HTML/de/ark/index.cache.bz2",
+				"/usr/share/doc/HTML/de/ark/index.docbook",
 				"/usr/share/doc/HTML/en/ark/ark-comment.png",
 				"/usr/share/doc/HTML/en/ark/ark-mainwindow.png",
 				"/usr/share/doc/HTML/en/ark/create-archive.png",
@@ -279,7 +285,7 @@
 			],
 			"files": [
 				"/usr/lib/libkerfuffle.so.26",
-				"/usr/lib/libkerfuffle.so.26.04.3",
+				"/usr/lib/libkerfuffle.so.26.08.0",
 				"/usr/lib/qt6/plugins/kerfuffle/kerfuffle_cli7z.so",
 				"/usr/lib/qt6/plugins/kerfuffle/kerfuffle_cliarj.so",
 				"/usr/lib/qt6/plugins/kerfuffle/kerfuffle_clirar.so",
@@ -312,6 +318,6 @@
 		}
 	},
 	"source-name": "ark",
-	"source-release": "23",
-	"source-version": "26.04.3"
+	"source-release": "24",
+	"source-version": "26.08.0"
 }
