@@ -37,7 +37,7 @@
 			],
 			"files": [
 				"/usr/lib/libKPim6Libkleo.so.6",
-				"/usr/lib/libKPim6Libkleo.so.6.7.3",
+				"/usr/lib/libKPim6Libkleo.so.6.8.0",
 				"/usr/share/libkleopatra/pics/smartcard.xpm",
 				"/usr/share/locale/ar/LC_MESSAGES/libkleopatra6.mo",
 				"/usr/share/locale/ast/LC_MESSAGES/libkleopatra6.mo",
@@ -313,6 +313,8 @@
 				"/usr/lib/libKPim6Libkleo.so",
 				"/usr/share/KPim6Libkleo/find-modules/FindLibAssuan.cmake",
 				"/usr/share/KPim6Libkleo/find-modules/FindLibGpgError.cmake",
+				"/usr/share/KPim6Libkleo/modules/KleoAddGpgCryptoTest.cmake",
+				"/usr/share/KPim6Libkleo/modules/KleoGenerateCryptoTestWrapper.cmake",
 				"/usr/share/doc/qt6/KPim6Libkleo.qch",
 				"/usr/share/doc/qt6/KPim6Libkleo.tags"
 			],
@@ -323,6 +325,6 @@
 		}
 	},
 	"source-name": "libkleo",
-	"source-release": "19",
-	"source-version": "26.04.3"
+	"source-release": "20",
+	"source-version": "26.08.0"
 }
