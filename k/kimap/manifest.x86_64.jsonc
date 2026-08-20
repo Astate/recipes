@@ -25,7 +25,7 @@
 			],
 			"files": [
 				"/usr/lib/libKPim6IMAP.so.6",
-				"/usr/lib/libKPim6IMAP.so.6.7.3",
+				"/usr/lib/libKPim6IMAP.so.6.8.0",
 				"/usr/share/locale/ar/LC_MESSAGES/libkimap6.mo",
 				"/usr/share/locale/ast/LC_MESSAGES/libkimap6.mo",
 				"/usr/share/locale/bs/LC_MESSAGES/libkimap6.mo",
@@ -133,7 +133,6 @@
 				"/usr/include/KPim6/KIMAP/KIMAP/MyRightsJob",
 				"/usr/include/KPim6/KIMAP/KIMAP/NamespaceJob",
 				"/usr/include/KPim6/KIMAP/KIMAP/QuotaJobBase",
-				"/usr/include/KPim6/KIMAP/KIMAP/RFCCodecs",
 				"/usr/include/KPim6/KIMAP/KIMAP/RenameJob",
 				"/usr/include/KPim6/KIMAP/KIMAP/SearchJob",
 				"/usr/include/KPim6/KIMAP/KIMAP/SelectJob",
@@ -175,7 +174,6 @@
 				"/usr/include/KPim6/KIMAP/kimap/MyRightsJob",
 				"/usr/include/KPim6/KIMAP/kimap/NamespaceJob",
 				"/usr/include/KPim6/KIMAP/kimap/QuotaJobBase",
-				"/usr/include/KPim6/KIMAP/kimap/RFCCodecs",
 				"/usr/include/KPim6/KIMAP/kimap/RenameJob",
 				"/usr/include/KPim6/KIMAP/kimap/SearchJob",
 				"/usr/include/KPim6/KIMAP/kimap/SelectJob",
@@ -219,7 +217,6 @@
 				"/usr/include/KPim6/KIMAP/kimap/namespacejob.h",
 				"/usr/include/KPim6/KIMAP/kimap/quotajobbase.h",
 				"/usr/include/KPim6/KIMAP/kimap/renamejob.h",
-				"/usr/include/KPim6/KIMAP/kimap/rfccodecs.h",
 				"/usr/include/KPim6/KIMAP/kimap/searchjob.h",
 				"/usr/include/KPim6/KIMAP/kimap/selectjob.h",
 				"/usr/include/KPim6/KIMAP/kimap/session.h",
@@ -245,6 +242,6 @@
 		}
 	},
 	"source-name": "kimap",
-	"source-release": "17",
-	"source-version": "26.04.3"
+	"source-release": "18",
+	"source-version": "26.08.0"
 }
