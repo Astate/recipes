@@ -102,6 +102,7 @@
 				"/usr/share/locale/sv/LC_MESSAGES/kaccounts-providers.mo",
 				"/usr/share/locale/ta/LC_MESSAGES/kaccounts-providers.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/kaccounts-providers.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kaccounts-providers.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kaccounts-providers.mo",
 				"/usr/share/locale/zh_CN/LC_MESSAGES/kaccounts-providers.mo",
 				"/usr/share/locale/zh_TW/LC_MESSAGES/kaccounts-providers.mo"
@@ -114,6 +115,6 @@
 		}
 	},
 	"source-name": "kaccounts-providers",
-	"source-release": "18",
-	"source-version": "26.04.3"
+	"source-release": "19",
+	"source-version": "26.08.0"
 }
