@@ -26,7 +26,7 @@
 			],
 			"files": [
 				"/usr/lib/libKPim6Gravatar.so.6",
-				"/usr/lib/libKPim6Gravatar.so.6.7.3",
+				"/usr/lib/libKPim6Gravatar.so.6.8.0",
 				"/usr/share/locale/ar/LC_MESSAGES/libgravatar6.mo",
 				"/usr/share/locale/ast/LC_MESSAGES/libgravatar6.mo",
 				"/usr/share/locale/bg/LC_MESSAGES/libgravatar6.mo",
@@ -74,6 +74,7 @@
 				"/usr/share/locale/sv/LC_MESSAGES/libgravatar6.mo",
 				"/usr/share/locale/ta/LC_MESSAGES/libgravatar6.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/libgravatar6.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/libgravatar6.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/libgravatar6.mo",
 				"/usr/share/locale/zh_CN/LC_MESSAGES/libgravatar6.mo",
 				"/usr/share/locale/zh_TW/LC_MESSAGES/libgravatar6.mo",
@@ -124,6 +125,6 @@
 		}
 	},
 	"source-name": "libgravatar",
-	"source-release": "15",
-	"source-version": "26.04.3"
+	"source-release": "16",
+	"source-version": "26.08.0"
 }
