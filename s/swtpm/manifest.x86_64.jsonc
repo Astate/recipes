@@ -181,6 +181,6 @@
 		}
 	},
 	"source-name": "swtpm",
-	"source-release": "2",
-	"source-version": "0.10.1"
+	"source-release": "3",
+	"source-version": "0.10.2"
 }

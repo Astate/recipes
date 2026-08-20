@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : swtpm
-version     : "0.10.1"
-release     : 2
+version     : "0.10.2"
+release     : 3
 upstreams   :
-    - https://github.com/stefanberger/swtpm/archive/refs/tags/v0.10.1.tar.gz : f8da11cadfed27e26d26c5f58a7b8f2d14d684e691927348906b5891f525c684
+    - https://github.com/stefanberger/swtpm/archive/refs/tags/v0.10.2.tar.gz : f61cf6f1e9bbcb4cefb30b70cafaf1c4df54c6961e65cfa63830e8ad0e220134
 homepage    : https://github.com/stefanberger/swtpm
 license     :
     - BSD-3-Clause
@@ -32,7 +32,6 @@ setup       : |
     %patch %(pkgdir)/0001-Stateless.patch
     %patch %(pkgdir)/ftbfs-slibtool.patch
     %patch %(pkgdir)/0001-Disable-tests-that-fail-in-buildenv.patch
-    %patch %(pkgdir)/upstream-01.patch
 
     unset CFLAGS CXXFLAGS LDFLAGS
 
