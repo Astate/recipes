@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : mimetreeparser
-version     : "26.04.3"
-release     : 27
+version     : "26.08.0"
+release     : 28
 upstreams   :
-    - https://download.kde.org/stable/release-service/26.04.3/src/mimetreeparser-26.04.3.tar.xz : 88750429310e9dc60e1f962dc9d7e58e1936e878db54aa41cb7f5c4b4fc524dc
+    - https://download.kde.org/stable/release-service/26.08.0/src/mimetreeparser-26.08.0.tar.xz : 3c3da58d03d789c1f67a83c2f618cfb0d2153a16c67f23a59409f24aadf55e1e
 homepage    : https://kde.org
 license     :
     - BSD-2-Clause
@@ -30,14 +30,18 @@ builddeps   :
     - cmake(KF6ColorScheme)
     - cmake(KF6I18n)
     - cmake(KF6KIO)
+    - cmake(KF6Kirigami)
+    - cmake(KF6KirigamiAddons)
     - cmake(KF6Mime)
     - cmake(KF6WidgetsAddons)
     - cmake(KPim6Mbox)
     - cmake(KPim6Libkleo)
     - cmake(Qt6CorePrivate)
     - cmake(Qt6Qml)
+rundeps     :
+    - kf6-kirigami
+    - kf6-kirigami-addons
 setup       : |
-    %patch %(pkgdir)/kf6kmime.patch
     %cmake_kf6
 build       : |
     %cmake_build
