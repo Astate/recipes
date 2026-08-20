@@ -267,3 +267,8 @@ NB: Each entry *must* contain all sub-packages created by the package!
 ### Replaced by gnist
 - oxidize
 - oxidize-dbginfo
+
+### Replaced by kf6-kmime
+- kmime
+- kmime-devel
+- kmime-dbginfo
