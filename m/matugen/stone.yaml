@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : matugen
-version     : "4.1.0"
-release     : 2
+version     : "4.2.0"
+release     : 3
 homepage    : https://github.com/InioX/matugen
 upstreams   :
-    - https://github.com/InioX/matugen/archive/refs/tags/v4.1.0.tar.gz : b46507be24d01a6233597077512501f21075fe4ce19b60b410354f439f569ddf
+    - https://github.com/InioX/matugen/archive/refs/tags/v4.2.0.tar.gz : 82044ab8ac3e793b2b94f8f75917b348b4038585133a77c07f5de59c88d65244
 summary     : Material You color palette generator
 description : |
     Matugen generates Material You color palettes from images or colors and
