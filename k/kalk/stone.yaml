@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : kalk
-version     : "26.04.3"
-release     : 22
+version     : "26.08.0"
+release     : 23
 upstreams   :
-    - https://download.kde.org/stable/release-service/26.04.3/src/kalk-26.04.3.tar.xz : f56343fbf9c198483da46375e7f17f40b8f9282a02f98131c52ad466adcf5a92
+    - https://download.kde.org/stable/release-service/26.08.0/src/kalk-26.08.0.tar.xz : 0952c0d918fa962015fb8c0f9777beb9b85d8eb0a2a0351797a19c1a7815a88b
 homepage    : https://apps.kde.org/kalk/
 license     :
     - BSD-2-Clause
