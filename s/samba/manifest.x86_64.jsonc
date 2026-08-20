@@ -44,7 +44,6 @@
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libacl.so.1(x86_64))",
 				"soname(libarchive.so.13(x86_64))",
 				"soname(libavahi-client.so.3(x86_64))",
@@ -860,6 +859,6 @@
 		}
 	},
 	"source-name": "samba",
-	"source-release": "19",
-	"source-version": "4.22.6"
+	"source-release": "20",
+	"source-version": "4.22.11"
 }
