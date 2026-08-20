@@ -88,7 +88,7 @@
 				"/usr/lib/qt6/plugins/kcm_trash.so",
 				"/usr/lib/qt6/plugins/kf6/kded/filenamesearchmodule.so",
 				"/usr/lib/qt6/plugins/kf6/kded/smbwatcher.so",
-				"/usr/lib/qt6/plugins/kf6/kded/wpad-detector.so",
+				"/usr/lib/qt6/plugins/kf6/kded/wpad_detector.so",
 				"/usr/lib/qt6/plugins/kf6/kfileitemaction/forgetfileitemaction.so",
 				"/usr/lib/qt6/plugins/kf6/kfileitemaction/kactivitymanagerd_fileitem_linking_plugin.so",
 				"/usr/lib/qt6/plugins/kf6/kio/activities.so",
@@ -1089,11 +1089,15 @@
 				"/usr/share/locale/tr/LC_MESSAGES/kio6_thumbnail.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio-extras_kcms.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio6_activities.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kio6_afc.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio6_archive.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kio6_filenamesearch.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio6_fish.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio6_info.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio6_man.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kio6_mtp.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio6_nfs.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kio6_recentlyused.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio6_sftp.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio6_smb.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/kio6_thumbnail.mo",
@@ -1197,7 +1201,7 @@
 				"soname(qt6/plugins/kcm_trash.so(x86_64))",
 				"soname(qt6/plugins/kf6/kded/filenamesearchmodule.so(x86_64))",
 				"soname(qt6/plugins/kf6/kded/smbwatcher.so(x86_64))",
-				"soname(qt6/plugins/kf6/kded/wpad-detector.so(x86_64))",
+				"soname(qt6/plugins/kf6/kded/wpad_detector.so(x86_64))",
 				"soname(qt6/plugins/kf6/kfileitemaction/forgetfileitemaction.so(x86_64))",
 				"soname(qt6/plugins/kf6/kfileitemaction/kactivitymanagerd_fileitem_linking_plugin.so(x86_64))",
 				"soname(qt6/plugins/kf6/kio/activities.so(x86_64))",
@@ -1901,6 +1905,6 @@
 		}
 	},
 	"source-name": "kio-extras",
-	"source-release": "18",
-	"source-version": "26.04.3"
+	"source-release": "19",
+	"source-version": "26.08.0"
 }
