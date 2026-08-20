@@ -68,6 +68,7 @@
 				"soname(libKF6SyntaxHighlighting.so.6(x86_64))",
 				"soname(libKF6WindowSystem.so.6(x86_64))",
 				"soname(libKUnifiedPush.so.1(x86_64))",
+				"soname(libKirigamiAddonsComponents.so.6(x86_64))",
 				"soname(libKirigamiApp.so.6(x86_64))",
 				"soname(libKirigamiPlatform.so.6(x86_64))",
 				"soname(libQCoro6Network.so.0(x86_64))",
@@ -94,6 +95,7 @@
 				"/usr/bin/neochat",
 				"/usr/lib/qt6/plugins/kf6/purpose/neochatshareplugin.so",
 				"/usr/share/applications/org.kde.neochat.desktop",
+				"/usr/share/config.kcfg/neochatconfig.kcfg",
 				"/usr/share/dbus-1/services/org.kde.neochat.service",
 				"/usr/share/icons/hicolor/scalable/apps/org.kde.neochat.svg",
 				"/usr/share/icons/hicolor/scalable/apps/org.kde.neochat.tray.svg",
@@ -143,6 +145,7 @@
 				"/usr/share/locale/ta/LC_MESSAGES/neochat.mo",
 				"/usr/share/locale/tok/LC_MESSAGES/neochat.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/neochat.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/neochat.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/neochat.mo",
 				"/usr/share/locale/zh_CN/LC_MESSAGES/neochat.mo",
 				"/usr/share/locale/zh_TW/LC_MESSAGES/neochat.mo",
@@ -168,6 +171,6 @@
 		}
 	},
 	"source-name": "neochat",
-	"source-release": "24",
-	"source-version": "26.04.3"
+	"source-release": "25",
+	"source-version": "26.08.0"
 }
