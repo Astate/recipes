@@ -3,7 +3,7 @@
 
 name        : ffmpeg
 version     : "9.0.1"
-release     : 38
+release     : 39
 homepage    : https://ffmpeg.org/releases
 upstreams   :
     - https://ffmpeg.org/releases/ffmpeg-9.0.1.tar.xz:
@@ -11,9 +11,9 @@ upstreams   :
         unpackdir: current
 
     # Don't delete this section, just comment it out if it's not needed. The build recipe accounts for it possibly not existing
-    - https://ffmpeg.org/releases/ffmpeg-8.1.2.tar.xz:
-        hash: 464beb5e7bf0c311e68b45ae2f04e9cc2af88851abb4082231742a74d97b524c
-        unpackdir: compat
+    # - https://ffmpeg.org/releases/ffmpeg-8.1.2.tar.xz:
+    #     hash: 464beb5e7bf0c311e68b45ae2f04e9cc2af88851abb4082231742a74d97b524c
+    #     unpackdir: compat
 summary     : FFmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
 description : |
     FFmpeg is a complete, cross-platform solution to record, convert and stream audio and video.
@@ -69,7 +69,6 @@ builddeps   :
     - pkgconfig(openh264)
     - pkgconfig(opus)
     - pkgconfig(rav1e)
-    - pkgconfig(shaderc)
     - pkgconfig(snappy)
     - pkgconfig(sndio)
     - pkgconfig(soxr)
