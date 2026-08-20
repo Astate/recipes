@@ -8,7 +8,7 @@ name        : mesa
 version     : "26.2.0"
 ##@@END_VERSION
 # Note: keep mesa-clc in-sync with this package version-wise
-release     : 84
+release     : 85
 homepage    : https://mesa3d.org/
 upstreams   :
 ##@@BEGIN_SOURCE
@@ -221,6 +221,12 @@ setup       : |
 
     # Fix build with Sphinx 8.2
     %patch %(pkgdir)/0001-docs-Fix-build-with-Sphinx-8.2.patch
+
+    # Add OGC patches
+    # https://github.com/OpenGamingCollective/mesa
+    %patch %(pkgdir)/vram-overcommit.patch
+    %patch %(pkgdir)/radv-defaults.patch
+    %patch %(pkgdir)/limiter.patch
 
     export MESON_PACKAGE_CACHE_DIR=%(sourcedir)
 
