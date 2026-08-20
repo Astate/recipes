@@ -25,9 +25,10 @@
 			],
 			"files": [
 				"/usr/lib/libKPim6SMTP.so.6",
-				"/usr/lib/libKPim6SMTP.so.6.7.3",
+				"/usr/lib/libKPim6SMTP.so.6.8.0",
 				"/usr/share/locale/ar/LC_MESSAGES/libksmtp6.mo",
 				"/usr/share/locale/ast/LC_MESSAGES/libksmtp6.mo",
+				"/usr/share/locale/bg/LC_MESSAGES/libksmtp6.mo",
 				"/usr/share/locale/bs/LC_MESSAGES/libksmtp6.mo",
 				"/usr/share/locale/ca/LC_MESSAGES/libksmtp6.mo",
 				"/usr/share/locale/ca@valencia/LC_MESSAGES/libksmtp6.mo",
@@ -46,6 +47,7 @@
 				"/usr/share/locale/hi/LC_MESSAGES/libksmtp6.mo",
 				"/usr/share/locale/hu/LC_MESSAGES/libksmtp6.mo",
 				"/usr/share/locale/ia/LC_MESSAGES/libksmtp6.mo",
+				"/usr/share/locale/is/LC_MESSAGES/libksmtp6.mo",
 				"/usr/share/locale/it/LC_MESSAGES/libksmtp6.mo",
 				"/usr/share/locale/ja/LC_MESSAGES/libksmtp6.mo",
 				"/usr/share/locale/ka/LC_MESSAGES/libksmtp6.mo",
@@ -120,6 +122,6 @@
 		}
 	},
 	"source-name": "ksmtp",
-	"source-release": "15",
-	"source-version": "26.04.3"
+	"source-release": "16",
+	"source-version": "26.08.0"
 }
