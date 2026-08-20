@@ -106,6 +106,8 @@
 				"/usr/share/kconf_update/dolphin_replace_view_mode_with_view_settings_in_toolbar.py",
 				"/usr/share/kconf_update/dolphin_replace_view_mode_with_view_settings_in_toolbar.upd",
 				"/usr/share/kconf_update/dolphin_statusandlocationbarssettings.upd",
+				"/usr/share/kconf_update/dolphin_tab_key_shortcut_for_focus_other_view.py",
+				"/usr/share/kconf_update/dolphin_tab_key_shortcut_for_focus_other_view.upd",
 				"/usr/share/kglobalaccel/org.kde.dolphin.desktop",
 				"/usr/share/knsrcfiles/servicemenu.knsrc",
 				"/usr/share/locale/ar/LC_MESSAGES/dolphin.mo",
@@ -242,6 +244,7 @@
 				"/usr/share/locale/tr/LC_MESSAGES/dolphin.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/dolphin_servicemenuinstaller.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/dolphin.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/dolphin_servicemenuinstaller.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/dolphin.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/dolphin_servicemenuinstaller.mo",
 				"/usr/share/locale/uz/LC_MESSAGES/dolphin.mo",
@@ -588,9 +591,9 @@
 				"soname(libstdc++.so.6(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libdolphinprivate.so.26.04.3",
+				"/usr/lib/libdolphinprivate.so.26.08.0",
 				"/usr/lib/libdolphinprivate.so.6",
-				"/usr/lib/libdolphinvcs.so.26.04.3",
+				"/usr/lib/libdolphinvcs.so.26.08.0",
 				"/usr/lib/libdolphinvcs.so.6",
 				"/usr/lib/qt6/plugins/dolphin/kcms/kcm_dolphingeneral.so",
 				"/usr/lib/qt6/plugins/dolphin/kcms/kcm_dolphinviewmodes.so",
@@ -613,6 +616,6 @@
 		}
 	},
 	"source-name": "dolphin",
-	"source-release": "29",
-	"source-version": "26.04.3"
+	"source-release": "30",
+	"source-version": "26.08.0"
 }
