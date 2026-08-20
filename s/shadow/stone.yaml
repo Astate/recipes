@@ -2,15 +2,15 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : shadow
-version     : "4.20.0"
-release     : 10
+version     : "4.20.2"
+release     : 11
 summary     : PAM-using login and passwd utilities
 license     : BSD-3-Clause
 homepage    : https://github.com/shadow-maint/shadow
 description : |
     PAM-using login and passwd utilities
 upstreams   :
-    - https://github.com/shadow-maint/shadow/releases/download/4.20.0/shadow-4.20.0.tar.xz: 239781632846db3b01901028147fb4b57e6f2d5330ca63ce104b21d9b3e6031f
+    - https://github.com/shadow-maint/shadow/releases/download/4.20.2/shadow-4.20.2.tar.xz: b89f432b75ae55a2d852b446d0365484795fdf533ab97d550e325fa15594a224
 builddeps   :
     - binary(msgfmt)
     - binary(xsltproc)
@@ -23,7 +23,6 @@ builddeps   :
 setup       : |
     %patch %(pkgdir)/0001-aeryn-login.defs-changes.patch
     %patch %(pkgdir)/stateless/0001-Stateless-useradd-support.patch
-    %patch %(pkgdir)/ftbfs-upstream-01.patch
 
     %configure \
         --enable-man \
