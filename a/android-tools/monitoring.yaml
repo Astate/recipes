@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
-  id: 397419
-  rss: https://github.com/meator/android-tools-static/releases.atom
+  id: 226905
+  rss: https://github.com/nmeum/android-tools/tags.atom
 security:
   cpe: ~ # No CPE found, last checked (2025-11-29)
