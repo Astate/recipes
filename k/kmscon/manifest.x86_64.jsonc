@@ -41,6 +41,7 @@
 				"/usr/bin/kmscon-launch-gui",
 				"/usr/lib/kmscon/mod-freetype.so",
 				"/usr/lib/kmscon/mod-pango.so",
+				"/usr/lib/kmscon/mod-psf.so",
 				"/usr/lib/kmscon/mod-unifont.so",
 				"/usr/lib/systemd/system/kmscon.service",
 				"/usr/lib/systemd/system/kmsconvt@.service"
@@ -51,6 +52,7 @@
 				"binary(kmscon-launch-gui)",
 				"soname(kmscon/mod-freetype.so(x86_64))",
 				"soname(kmscon/mod-pango.so(x86_64))",
+				"soname(kmscon/mod-psf.so(x86_64))",
 				"soname(kmscon/mod-unifont.so(x86_64))"
 			]
 		},
@@ -115,6 +117,6 @@
 		}
 	},
 	"source-name": "kmscon",
-	"source-release": "12",
-	"source-version": "10.0.1"
+	"source-release": "13",
+	"source-version": "10.0.2"
 }
