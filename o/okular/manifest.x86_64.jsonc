@@ -1070,8 +1070,10 @@
 				"/usr/share/locale/ug/LC_MESSAGES/okular_fictionbook.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/okular_ghostview.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/okular_kimgio.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/okular_markdown.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/okular_mobi.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/okular_poppler.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/okular_tiff.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/okular_txt.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/okular_xps.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/org.kde.active.documentviewer.mo",
@@ -1372,7 +1374,6 @@
 				"/usr/share/doc/HTML/en/okular/bookmarks.png",
 				"/usr/share/doc/HTML/en/okular/config-pdf-digital-signatures.png",
 				"/usr/share/doc/HTML/en/okular/configure-annotations.png",
-				"/usr/share/doc/HTML/en/okular/configure-backends.png",
 				"/usr/share/doc/HTML/en/okular/configure-editor.png",
 				"/usr/share/doc/HTML/en/okular/configure.png",
 				"/usr/share/doc/HTML/en/okular/embedded-files-bar.png",
@@ -1732,6 +1733,6 @@
 		}
 	},
 	"source-name": "okular",
-	"source-release": "26",
-	"source-version": "26.04.3"
+	"source-release": "27",
+	"source-version": "26.08.0"
 }
