@@ -76,7 +76,7 @@ for wrap_file in sorted(wrap_files):
     parser = configparser.ConfigParser()
     parser.read(wrap_file)
     if 'wrap-file' in parser.sections():
-        if "https://crates.io" in parser["wrap-file"]["source_url"]:
+        if "https://static.crates.io" in parser["wrap-file"]["source_url"]:
             output = crate_template.substitute(
                 source_url = parser["wrap-file"]["source_url"],
                 source_hash = parser["wrap-file"]["source_hash"],
