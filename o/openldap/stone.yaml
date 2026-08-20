@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : openldap
-version     : "2.6.13"
-release     : 7
+version     : "2.6.14"
+release     : 8
 homepage    : https://www.openldap.org/
 upstreams   :
-    - https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.13.tgz : d693b49517a42efb85a1a364a310aed16a53d428d1b46c0d31ef3fba78fcb656
+    - https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.14.tgz : 806dcd21d366428187fba3278da773d5930f774852c9e92517f950d585f19107
 summary     : OpenLDAP Software is an open source implementation of the Lightweight Directory Access Protocol.
 description : |
     OpenLDAP Software is an open source implementation of the Lightweight Directory Access Protocol.
