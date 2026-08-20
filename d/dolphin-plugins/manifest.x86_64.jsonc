@@ -50,6 +50,7 @@
 				"/usr/lib/qt6/plugins/dolphin/vcs/fileviewsvnplugin.so",
 				"/usr/lib/qt6/plugins/kf6/kfileitemaction/makefileactions.so",
 				"/usr/lib/qt6/plugins/kf6/kfileitemaction/mountisoaction.so",
+				"/usr/lib/qt6/plugins/kf6/overlayicon/mountedisooverlay.so",
 				"/usr/share/config.kcfg/fileviewgitpluginsettings.kcfg",
 				"/usr/share/config.kcfg/fileviewhgpluginsettings.kcfg",
 				"/usr/share/config.kcfg/fileviewsvnpluginsettings.kcfg",
@@ -262,7 +263,9 @@
 				"/usr/share/locale/nl/LC_MESSAGES/mountisoaction.mo",
 				"/usr/share/locale/nn/LC_MESSAGES/fileviewbazaarplugin.mo",
 				"/usr/share/locale/nn/LC_MESSAGES/fileviewgitplugin.mo",
+				"/usr/share/locale/nn/LC_MESSAGES/fileviewhgplugin.mo",
 				"/usr/share/locale/nn/LC_MESSAGES/fileviewsvnplugin.mo",
+				"/usr/share/locale/nn/LC_MESSAGES/makefileactions.mo",
 				"/usr/share/locale/nn/LC_MESSAGES/mountisoaction.mo",
 				"/usr/share/locale/pa/LC_MESSAGES/fileviewgitplugin.mo",
 				"/usr/share/locale/pa/LC_MESSAGES/fileviewhgplugin.mo",
@@ -333,6 +336,8 @@
 				"/usr/share/locale/ug/LC_MESSAGES/fileviewgitplugin.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/fileviewhgplugin.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/fileviewsvnplugin.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/makefileactions.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/mountisoaction.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/fileviewbazaarplugin.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/fileviewgitplugin.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/fileviewhgplugin.mo",
@@ -364,11 +369,12 @@
 				"soname(qt6/plugins/dolphin/vcs/fileviewhgplugin.so(x86_64))",
 				"soname(qt6/plugins/dolphin/vcs/fileviewsvnplugin.so(x86_64))",
 				"soname(qt6/plugins/kf6/kfileitemaction/makefileactions.so(x86_64))",
-				"soname(qt6/plugins/kf6/kfileitemaction/mountisoaction.so(x86_64))"
+				"soname(qt6/plugins/kf6/kfileitemaction/mountisoaction.so(x86_64))",
+				"soname(qt6/plugins/kf6/overlayicon/mountedisooverlay.so(x86_64))"
 			]
 		}
 	},
 	"source-name": "dolphin-plugins",
-	"source-release": "3",
-	"source-version": "26.04.3"
+	"source-release": "4",
+	"source-version": "26.08.0"
 }
