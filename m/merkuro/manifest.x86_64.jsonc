@@ -106,10 +106,10 @@
 				"/usr/bin/merkuro-contact",
 				"/usr/bin/merkuro-mail",
 				"/usr/lib/libMerkuroComponents.so",
-				"/usr/lib/libMerkuroComponents.so.26.04.3",
+				"/usr/lib/libMerkuroComponents.so.26.08.0",
 				"/usr/lib/libMerkuroComponents.so.6",
 				"/usr/lib/libmerkuro_contact.so",
-				"/usr/lib/libmerkuro_contact.so.26.04.3",
+				"/usr/lib/libmerkuro_contact.so.26.08.0",
 				"/usr/lib/libmerkuro_contact.so.6",
 				"/usr/lib/qt6/plugins/plasma/applets/org.kde.merkuro.contact.applet.so",
 				"/usr/lib/qt6/qml/org/kde/merkuro/components/BaseApplication.qml",
@@ -122,8 +122,10 @@
 				"/usr/lib/qt6/qml/org/kde/merkuro/components/NativeEditMenu.qml",
 				"/usr/lib/qt6/qml/org/kde/merkuro/components/NativeFileMenu.qml",
 				"/usr/lib/qt6/qml/org/kde/merkuro/components/NativeHelpMenu.qml",
+				"/usr/lib/qt6/qml/org/kde/merkuro/components/NativeSettingsMenu.qml",
 				"/usr/lib/qt6/qml/org/kde/merkuro/components/NativeWindowMenu.qml",
 				"/usr/lib/qt6/qml/org/kde/merkuro/components/SettingsMenu.qml",
+				"/usr/lib/qt6/qml/org/kde/merkuro/components/SystemAccountsForm.qml",
 				"/usr/lib/qt6/qml/org/kde/merkuro/components/WindowMenu.qml",
 				"/usr/lib/qt6/qml/org/kde/merkuro/components/kde-qmlmodule.version",
 				"/usr/lib/qt6/qml/org/kde/merkuro/components/libMerkuroComponentsplugin.so",
@@ -289,6 +291,9 @@
 				"/usr/share/locale/tr/LC_MESSAGES/merkuro.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/merkurolauncher.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/plasma_applet_org.kde.merkuro.contact.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/merkuro.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/merkurolauncher.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/plasma_applet_org.kde.merkuro.contact.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/merkuro.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/merkurolauncher.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/plasma_applet_org.kde.merkuro.contact.mo",
@@ -319,6 +324,6 @@
 		}
 	},
 	"source-name": "merkuro",
-	"source-release": "29",
-	"source-version": "26.04.3"
+	"source-release": "30",
+	"source-version": "26.08.0"
 }
