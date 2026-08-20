@@ -2,16 +2,16 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libarchive
-version     : "3.8.8"
-release     : 25
+version     : "3.8.9"
+release     : 27
 summary     : Multi-format archive and compression library
 license     : BSD-2-Clause
 homepage    : https://www.libarchive.org
 description : |
     Multi-format archive and compression library
 upstreams   :
-    - https://www.libarchive.org/downloads/libarchive-3.8.8.tar.gz:
-        hash: 038918ea315cdd446cc63acfe880d6011832bbe1711c887de5de5441b306c190
+    - https://www.libarchive.org/downloads/libarchive-3.8.9.tar.gz:
+        hash: f5a6539059cf5e597dbeda37bfa4874b1e8dea063c8d93bf85a2b44af90a5bd4
         unpack: false
         rename: libarchive.tar.gz
 builddeps   :
@@ -28,16 +28,17 @@ builddeps   :
     - pkgconfig(lzo2)
     - pkgconfig(zlib)
     - libxml2-static
-    - tar
 tuning      :
     - lto: full
 setup       : |
     mkdir libarchive libarchive-static
-    tar -xf %(sourcedir)/libarchive.tar.gz --strip-components=1 -C libarchive
-    tar -xf %(sourcedir)/libarchive.tar.gz --strip-components=1 -C libarchive-static
+    # This could use tar if we needed to rebootstrap
+    bsdtar-static -xf %(sourcedir)/libarchive.tar.gz --strip-components=1 -C libarchive
+    bsdtar-static -xf %(sourcedir)/libarchive.tar.gz --strip-components=1 -C libarchive-static
 
     function libarchive_configure() {
         %patch %(pkgdir)/0001-Add-stone-read-support.patch
+        %patch %(pkgdir)/0001-Exclude-boulder-broken-test.patch
 
         %reconfigure \
             --disable-rpath \
@@ -91,7 +92,7 @@ check       : |
     # This skips a file descriptor test that fails in boulder. We may need to change how /tmp is mounted
     export SKIP_OPEN_FD_ERR_TEST=1
 
-    %make -C libarchive check || (cat /tmp/libarchive_test*/*.log && exit 1)
+    %make -C libarchive check || (cat /tmp/*_test*/*.log && exit 1)
 packages    :
     - "bsdtar":
         summary: Manipulate tape archives
