@@ -19,7 +19,7 @@
 			],
 			"files": [
 				"/usr/lib/libKPim6PkPass.so.6",
-				"/usr/lib/libKPim6PkPass.so.6.7.3",
+				"/usr/lib/libKPim6PkPass.so.6.8.0",
 				"/usr/lib/qt6/qml/org/kde/pkpass/kde-qmlmodule.version",
 				"/usr/lib/qt6/qml/org/kde/pkpass/kpkpassqmlplugin.qmltypes",
 				"/usr/lib/qt6/qml/org/kde/pkpass/libkpkpassqmlplugin.so",
@@ -49,6 +49,7 @@
 				"/usr/include/KPim6/KPkPass/Location",
 				"/usr/include/KPim6/KPkPass/Pass",
 				"/usr/include/KPim6/KPkPass/Passes",
+				"/usr/include/KPim6/KPkPass/Seat",
 				"/usr/include/KPim6/KPkPass/barcode.h",
 				"/usr/include/KPim6/KPkPass/boardingpass.h",
 				"/usr/include/KPim6/KPkPass/field.h",
@@ -57,11 +58,13 @@
 				"/usr/include/KPim6/KPkPass/location.h",
 				"/usr/include/KPim6/KPkPass/pass.h",
 				"/usr/include/KPim6/KPkPass/passes.h",
+				"/usr/include/KPim6/KPkPass/seat.h",
 				"/usr/lib/cmake/KPim6PkPass/KPim6PkPassConfig.cmake",
 				"/usr/lib/cmake/KPim6PkPass/KPim6PkPassConfigVersion.cmake",
 				"/usr/lib/cmake/KPim6PkPass/KPim6PkPassTargets-release.cmake",
 				"/usr/lib/cmake/KPim6PkPass/KPim6PkPassTargets.cmake",
-				"/usr/lib/libKPim6PkPass.so"
+				"/usr/lib/libKPim6PkPass.so",
+				"/usr/lib/qt6/metatypes/qt6kpim6pkpass_metatypes.json"
 			],
 			"name": "kpkpass-devel",
 			"provides": [
@@ -70,6 +73,6 @@
 		}
 	},
 	"source-name": "kpkpass",
-	"source-release": "18",
-	"source-version": "26.04.3"
+	"source-release": "19",
+	"source-version": "26.08.0"
 }
