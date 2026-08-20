@@ -66,6 +66,7 @@
 				"/usr/share/locale/sl/LC_MESSAGES/kio6_admin.mo",
 				"/usr/share/locale/sv/LC_MESSAGES/kio6_admin.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/kio6_admin.mo",
+				"/usr/share/locale/ug/LC_MESSAGES/kio6_admin.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/kio6_admin.mo",
 				"/usr/share/locale/zh_CN/LC_MESSAGES/kio6_admin.mo",
 				"/usr/share/locale/zh_TW/LC_MESSAGES/kio6_admin.mo",
@@ -80,6 +81,6 @@
 		}
 	},
 	"source-name": "kio-admin",
-	"source-release": "12",
-	"source-version": "26.04.3"
+	"source-release": "13",
+	"source-version": "26.08.0"
 }
