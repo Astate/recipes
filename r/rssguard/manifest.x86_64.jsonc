@@ -125,6 +125,7 @@
 				"/usr/include/librssguard/miscellaneous/localization.h",
 				"/usr/include/librssguard/miscellaneous/mutex.h",
 				"/usr/include/librssguard/miscellaneous/settings.h",
+				"/usr/include/librssguard/miscellaneous/settingskeys.h",
 				"/usr/include/librssguard/miscellaneous/skinfactory.h",
 				"/usr/include/librssguard/miscellaneous/systemfactory.h",
 				"/usr/include/librssguard/miscellaneous/textfactory.h",
@@ -163,6 +164,6 @@
 		}
 	},
 	"source-name": "rssguard",
-	"source-release": "11",
-	"source-version": "5.2.3"
+	"source-release": "12",
+	"source-version": "5.2.5"
 }
