@@ -95,6 +95,6 @@
 		}
 	},
 	"source-name": "dbus-glib",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "0.114"
 }
