@@ -9,6 +9,7 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libudev.so.1(x86_64))",
 				"soname(libusb-1.0.so.0(x86_64))"
 			],
@@ -53,6 +54,6 @@
 		}
 	},
 	"source-name": "hidapi",
-	"source-release": "5",
+	"source-release": "6",
 	"source-version": "0.15.0"
 }

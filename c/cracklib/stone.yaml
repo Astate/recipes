@@ -3,7 +3,7 @@
 
 name        : cracklib
 version     : "2.10.3"
-release     : 3
+release     : 4
 homepage    : https://github.com/cracklib/cracklib
 upstreams   :
     - https://github.com/cracklib/cracklib/releases/download/v2.10.3/cracklib-2.10.3.tar.xz: 1d1b83676b5673051b9373e1ca0db81c1fa88faf9a195a3c1af984fd9c250d66

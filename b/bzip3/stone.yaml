@@ -3,7 +3,7 @@
 
 name        : bzip3
 version     : "1.5.3"
-release     : 4
+release     : 5
 homepage    : https://github.com/kspalaiologos/bzip3
 upstreams   :
     - https://github.com/kspalaiologos/bzip3/releases/download/1.5.3/bzip3-1.5.3.tar.xz : 58a53d002eb80c6f74c292ddf37d4f53604f6e2126cb3ae2bff738971302aa85

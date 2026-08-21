@@ -30,6 +30,7 @@
 				"soname(libcairo.so.2(x86_64))",
 				"soname(libcanberra-gtk3.so.0(x86_64))",
 				"soname(libdvdread.so.8(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgdk-3.so.0(x86_64))",
 				"soname(libgdk_pixbuf-2.0.so.0(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
@@ -144,7 +145,8 @@
 				"/usr/share/locale/zh_TW/LC_MESSAGES/gnome-disk-utility.mo",
 				"/usr/share/man/man1/gnome-disk-image-mounter.1",
 				"/usr/share/man/man1/gnome-disks.1",
-				"/usr/share/metainfo/org.gnome.DiskUtility.appdata.xml"
+				"/usr/share/metainfo/org.gnome.DiskUtility.appdata.xml",
+				"/usr/share/xdg/autostart/org.gnome.SettingsDaemon.DiskUtilityNotify.desktop"
 			],
 			"name": "gnome-disk-utility",
 			"provides": [
@@ -154,6 +156,6 @@
 		}
 	},
 	"source-name": "gnome-disk-utility",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "46.1"
 }

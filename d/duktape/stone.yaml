@@ -3,7 +3,7 @@
 
 name        : duktape
 version     : "2.7.0"
-release     : 3
+release     : 4
 summary     : Embeddable JavaScript engine with a focus on portability and compact footprint
 license     : MIT
 homepage    : https://duktape.org

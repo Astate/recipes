@@ -3,7 +3,7 @@
 
 name        : grep
 version     : "3.12"
-release     : 7
+release     : 8
 summary     : Pattern matching utilities
 license     : GPL-3.0-or-later
 homepage    : https://www.gnu.org/software/grep/grep.html

@@ -3,7 +3,7 @@
 
 name        : font-noto-sans-cjk
 version     : "2.004"
-release     : 1
+release     : 2
 homepage    : https://notofonts.github.io/
 upstreams   :
     - https://github.com/notofonts/noto-cjk/releases/download/Sans2.004/01_NotoSansCJK-OTF-VF.zip : d5e33aebad9f8a0c0896a4a29199ef85ca966134db164426c74e83e6f13c43cd

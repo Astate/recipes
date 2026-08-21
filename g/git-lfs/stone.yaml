@@ -3,7 +3,7 @@
 
 name        : git-lfs
 version     : "3.7.1"
-release     : 2
+release     : 3
 homepage    : https://git-lfs.github.com
 upstreams   :
     - https://github.com/git-lfs/git-lfs/releases/download/v3.7.1/git-lfs-v3.7.1.tar.gz : 8f56058622edfea1d111e50e9844ef2f5ce670b2dbe4d55d48e765c943af4351
@@ -21,7 +21,6 @@ networking     : true
 setup       : |
     go mod vendor
 build       : |
-    export CGO_CPPFLAGS="${CPPFLAGS}"
     export CGO_CFLAGS="${CFLAGS}"
     export CGO_CXXFLAGS="${CXXFLAGS}"
     export CGO_LDFLAGS="${LDFLAGS}"
