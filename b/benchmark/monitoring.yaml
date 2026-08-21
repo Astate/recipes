@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
-  id: 229361
+  id: 18299
   rss: https://github.com/google/benchmark/releases.atom
 security:
   # No known CPE. Last checked 2025-06-10

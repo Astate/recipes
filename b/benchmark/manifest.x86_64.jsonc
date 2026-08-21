@@ -14,9 +14,9 @@
 			],
 			"files": [
 				"/usr/lib/libbenchmark.so.1",
-				"/usr/lib/libbenchmark.so.1.9.4",
+				"/usr/lib/libbenchmark.so.1.9.5",
 				"/usr/lib/libbenchmark_main.so.1",
-				"/usr/lib/libbenchmark_main.so.1.9.4"
+				"/usr/lib/libbenchmark_main.so.1.9.5"
 			],
 			"name": "benchmark",
 			"provides": [
@@ -52,6 +52,6 @@
 		}
 	},
 	"source-name": "benchmark",
-	"source-release": "2",
-	"source-version": "1.9.4"
+	"source-release": "3",
+	"source-version": "1.9.5"
 }
