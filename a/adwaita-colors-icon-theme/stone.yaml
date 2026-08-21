@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : adwaita-colors-icon-theme
-version     : "2.5"
-release     : 5
+version     : "2.6"
+release     : 6
 homepage    : https://github.com/dpejoh/Adwaita-colors/
 upstreams   :
-    - https://github.com/dpejoh/Adwaita-colors/archive/refs/tags/v2.5.tar.gz : 2272d472275b32a54b0fac6dd308276ba48c0bb31452073a73c1c27edeec9790
+    - https://github.com/dpejoh/Adwaita-colors/archive/refs/tags/v2.6.tar.gz : 8a25304dd641cdf3f096ec94d6b47dd7184aac8efb64a9995629cf3165dc8790
 summary     : Customizes Adwaita icons to match your GNOME theme's accent color
 description : |
     Adwaita Colors customizes Adwaita icons to match your GNOME theme's accent color, providing a cohesive, personalized look.
@@ -20,10 +20,17 @@ rundeps      :
     - adwaita-icon-theme-legacy
     - hicolor-icon-theme
     - morewaita-icon-theme
+build        : |
+    ./setup -i -f -p "%(workdir)/generated-icons"
 install      : |
-    %patch %(pkgdir)/inherit-morewaita.patch
     %install_dir %(installroot)%(datadir)/icons
-    cp -r %(workdir)/Adwaita-* %(installroot)%(datadir)/icons/
+    cp -r %(workdir)/generated-icons/Adwaita-* %(installroot)%(datadir)/icons/
+
+    find "%(installroot)%(datadir)/icons" \
+    -name index.theme \
+    -exec sed -i \
+        's/Inherits=Adwaita,/Inherits=MoreWaita,Adwaita,/g' \
+        {} +
 
     for i in %(installroot)%(datadir)/icons/*/; do
         gtk-update-icon-cache -f $i
