@@ -2,15 +2,15 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : python-pytz
-version     : "2026.2"
-release     : 10
+version     : "2026.3.post1"
+release     : 11
 summary     : World timezone definitions, modern and historical
 license     : MIT
 homepage    : https://pythonhosted.org/pytz/
 description : |
     World timezone definitions, modern and historical
 upstreams   :
-    - https://pypi.debian.net/pytz/pytz-2026.2.tar.gz: 0e60b47b29f21574376f218fe21abc009894a2321ea16c6754f3cad6eb7cdd6a
+    - https://pypi.debian.net/pytz/pytz-2026.3.post1.tar.gz: 2211d3fcf9a797d3405cac96ac7f61d80e6a644f72a3309607282fe8a2010c5d
 # checkdeps   :
 #     - python-pytest
 build       : |
