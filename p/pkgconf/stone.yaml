@@ -2,21 +2,21 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : pkgconf
-version     : "2.5.1"
-release     : 12
+version     : "3.0.5"
+release     : 13
 summary     : Package compiler and linker metadata toolkit
 license     : ISC
 homepage    : https://gitea.treehouse.systems/ariadne/pkgconf
 description : |
     Package compiler and linker metadata toolkit
 upstreams   :
-    - https://distfiles.ariadne.space/pkgconf/pkgconf-2.5.1.tar.xz: cd05c9589b9f86ecf044c10a2269822bc9eb001eced2582cfffd658b0a50c243
+    - https://distfiles.ariadne.space/pkgconf/pkgconf-3.0.5.tar.gz: d0d2ebdb3c7bfa3ae6e879d80b60dfe1dd482cce9f8be8fd8651149d396a4c49
 setup       : |
-    %configure --disable-static
+    %meson
 build       : |
-    %make
+    %meson_build
 install     : |
-    %make_install
+    %meson_install
     ln -sf pkgconf %(installroot)/usr/bin/pkg-config
 packages    :
     - "%(name)":
