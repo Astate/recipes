@@ -3,7 +3,7 @@
 
 name        : font-noto-serif-cjk
 version     : "2.003"
-release     : 1
+release     : 2
 homepage    : https://notofonts.github.io/
 upstreams   :
     - https://github.com/notofonts/noto-cjk/releases/download/Serif2.003/02_NotoSerifCJK-OTF-VF.zip : 7898cfb54156cc0d8a2f2c00d5645c573ff367d03d29085bb495966d99d2529e
