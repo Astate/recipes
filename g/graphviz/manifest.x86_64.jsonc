@@ -32,7 +32,7 @@
 				"soname(libc.so.6(x86_64))",
 				"soname(libcairo.so.2(x86_64))",
 				"soname(libcdt.so.6(x86_64))",
-				"soname(libcgraph.so.8(x86_64))",
+				"soname(libcgraph.so.10(x86_64))",
 				"soname(libexpat.so.1(x86_64))",
 				"soname(libfontconfig.so.1(x86_64))",
 				"soname(libfreetype.so.6(x86_64))",
@@ -57,7 +57,7 @@
 				"soname(librsvg-2.so.2(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libwebp.so.7(x86_64))",
-				"soname(libxdot.so.4(x86_64))",
+				"soname(libxdot.so.5(x86_64))",
 				"soname(libz.so.1(x86_64))"
 			],
 			"files": [
@@ -99,27 +99,27 @@
 				"/usr/bin/unflatten",
 				"/usr/bin/vimdot",
 				"/usr/lib/graphviz/libgvplugin_core.so.8",
-				"/usr/lib/graphviz/libgvplugin_core.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_core.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_dot_layout.so.8",
-				"/usr/lib/graphviz/libgvplugin_dot_layout.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_dot_layout.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_gs.so.8",
-				"/usr/lib/graphviz/libgvplugin_gs.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_gs.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_kitty.so.8",
-				"/usr/lib/graphviz/libgvplugin_kitty.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_kitty.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_neato_layout.so.8",
-				"/usr/lib/graphviz/libgvplugin_neato_layout.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_neato_layout.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_pango.so.8",
-				"/usr/lib/graphviz/libgvplugin_pango.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_pango.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_poppler.so.8",
-				"/usr/lib/graphviz/libgvplugin_poppler.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_poppler.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_rsvg.so.8",
-				"/usr/lib/graphviz/libgvplugin_rsvg.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_rsvg.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_vt.so.8",
-				"/usr/lib/graphviz/libgvplugin_vt.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_vt.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_webp.so.8",
-				"/usr/lib/graphviz/libgvplugin_webp.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_webp.so.8.0.14",
 				"/usr/lib/graphviz/libgvplugin_xlib.so.8",
-				"/usr/lib/graphviz/libgvplugin_xlib.so.8.0.13",
+				"/usr/lib/graphviz/libgvplugin_xlib.so.8.0.14",
 				"/usr/share/graphviz/gvedit/attrs.txt",
 				"/usr/share/graphviz/gvpr/addedges",
 				"/usr/share/graphviz/gvpr/addranks",
@@ -573,7 +573,7 @@
 			],
 			"files": [
 				"/usr/lib/graphviz/libgvplugin_gdk.so.8",
-				"/usr/lib/graphviz/libgvplugin_gdk.so.8.0.13"
+				"/usr/lib/graphviz/libgvplugin_gdk.so.8.0.14"
 			],
 			"name": "graphviz-gtk3",
 			"provides": [
@@ -611,7 +611,7 @@
 				"soname(libQt6Gui.so.6(x86_64))",
 				"soname(libQt6Widgets.so.6(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcgraph.so.8(x86_64))",
+				"soname(libcgraph.so.10(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgvc.so.7(x86_64))",
 				"soname(libstdc++.so.6(x86_64))"
@@ -658,25 +658,25 @@
 			"files": [
 				"/usr/lib/libcdt.so.6",
 				"/usr/lib/libcdt.so.6.0.3",
-				"/usr/lib/libcgraph.so.8",
-				"/usr/lib/libcgraph.so.8.1.2",
+				"/usr/lib/libcgraph.so.10",
+				"/usr/lib/libcgraph.so.10.0.0",
 				"/usr/lib/libgvc.so.7",
-				"/usr/lib/libgvc.so.7.0.12",
+				"/usr/lib/libgvc.so.7.0.13",
 				"/usr/lib/libgvpr.so.2",
-				"/usr/lib/libgvpr.so.2.0.12",
+				"/usr/lib/libgvpr.so.2.0.13",
 				"/usr/lib/libpathplan.so.4",
-				"/usr/lib/libpathplan.so.4.0.8",
-				"/usr/lib/libxdot.so.4",
-				"/usr/lib/libxdot.so.4.0.2"
+				"/usr/lib/libpathplan.so.4.0.9",
+				"/usr/lib/libxdot.so.5",
+				"/usr/lib/libxdot.so.5.0.0"
 			],
 			"name": "graphviz-libs",
 			"provides": [
 				"soname(libcdt.so.6(x86_64))",
-				"soname(libcgraph.so.8(x86_64))",
+				"soname(libcgraph.so.10(x86_64))",
 				"soname(libgvc.so.7(x86_64))",
 				"soname(libgvpr.so.2(x86_64))",
 				"soname(libpathplan.so.4(x86_64))",
-				"soname(libxdot.so.4(x86_64))"
+				"soname(libxdot.so.5(x86_64))"
 			]
 		},
 		"graphviz-python": {
@@ -706,7 +706,7 @@
 				"graphviz",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcdt.so.6(x86_64))",
-				"soname(libcgraph.so.8(x86_64))",
+				"soname(libcgraph.so.10(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgvc.so.7(x86_64))",
 				"soname(libm.so.6(x86_64))",
@@ -729,6 +729,6 @@
 		}
 	},
 	"source-name": "graphviz",
-	"source-release": "22",
-	"source-version": "15.1.1"
+	"source-release": "23",
+	"source-version": "16.0.0"
 }
