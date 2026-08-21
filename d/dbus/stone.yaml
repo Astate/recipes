@@ -3,7 +3,7 @@
 
 name        : dbus
 version     : "1.16.2"
-release     : 13
+release     : 14
 summary     : D-Bus Message Bus System
 license     :
     - AFL-2.1
