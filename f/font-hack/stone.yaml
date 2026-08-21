@@ -3,7 +3,7 @@
 
 name        : font-hack
 version     : "3.003"
-release     : 3
+release     : 4
 homepage    : https://sourcefoundry.org/hack/
 upstreams   :
     - https://github.com/source-foundry/Hack/archive/refs/tags/v3.003.tar.gz : 3c6f1a20e86744077e83c9bacf879a5b13f659f1c07e9c5c57d6efc3cbe66c07
