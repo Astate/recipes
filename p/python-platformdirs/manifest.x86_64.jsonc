@@ -4,17 +4,20 @@
 	"packages": {
 		"python-platformdirs": {
 			"build-depends": [
+				"python(appdirs)",
 				"python(hatch-vcs)",
-				"python(hatchling)"
+				"python(hatchling)",
+				"python(pytest)",
+				"python(pytest-mock)"
 			],
 			"depends": [
 				"binary(python3)"
 			],
 			"files": [
-				"/usr/lib/python3.14/site-packages/platformdirs-4.10.0.dist-info/METADATA",
-				"/usr/lib/python3.14/site-packages/platformdirs-4.10.0.dist-info/RECORD",
-				"/usr/lib/python3.14/site-packages/platformdirs-4.10.0.dist-info/WHEEL",
-				"/usr/lib/python3.14/site-packages/platformdirs-4.10.0.dist-info/licenses/LICENSE",
+				"/usr/lib/python3.14/site-packages/platformdirs-4.11.3.dist-info/METADATA",
+				"/usr/lib/python3.14/site-packages/platformdirs-4.11.3.dist-info/RECORD",
+				"/usr/lib/python3.14/site-packages/platformdirs-4.11.3.dist-info/WHEEL",
+				"/usr/lib/python3.14/site-packages/platformdirs-4.11.3.dist-info/licenses/LICENSE",
 				"/usr/lib/python3.14/site-packages/platformdirs/__init__.py",
 				"/usr/lib/python3.14/site-packages/platformdirs/__main__.py",
 				"/usr/lib/python3.14/site-packages/platformdirs/__pycache__/__init__.cpython-314.opt-1.pyc",
@@ -51,6 +54,6 @@
 		}
 	},
 	"source-name": "python-platformdirs",
-	"source-release": "8",
-	"source-version": "4.10.0"
+	"source-release": "9",
+	"source-version": "4.11.3"
 }
