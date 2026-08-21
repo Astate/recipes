@@ -3,7 +3,7 @@
 
 name        : gdbm
 version     : "1.26"
-release     : 7
+release     : 8
 summary     : GNU database library
 license     : GPL-3.0-or-later
 homepage    : https://www.gnu.org.ua/software/gdbm/

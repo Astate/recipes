@@ -50,7 +50,6 @@
 			],
 			"depends": [
 				"gdbm",
-				"soname(ld-linux.so.2(386))",
 				"soname(libc.so.6(386))"
 			],
 			"files": [
@@ -101,7 +100,6 @@
 				"pkgconfig32(readline)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))"
 			],
 			"files": [
@@ -118,6 +116,6 @@
 		}
 	},
 	"source-name": "gdbm",
-	"source-release": "7",
+	"source-release": "8",
 	"source-version": "1.26"
 }
