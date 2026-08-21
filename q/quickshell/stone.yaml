@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : quickshell
-version     : "0.3.0"
-release     : 9
+version     : "0.3.1"
+release     : 10
 homepage    : https://quickshell.org/
 upstreams   :
-    - https://github.com/quickshell-mirror/quickshell/archive/refs/tags/v0.3.0.tar.gz : 5229069b0f1d375f34b0a04a4e6a69156e2f010995d9ec5a943793424e589b5d
+    - https://github.com/quickshell-mirror/quickshell/archive/refs/tags/v0.3.1.tar.gz : 218f6327293928bcb1f9b25728b336c4ab125f67fe1babd7d47313f890a16c99
 summary     : Flexible QtQuick based desktop shell toolkit
 description : |
     Quickshell is a toolkit for building status bars, widgets, lockscreens, and other desktop components using QtQuick. It can be used alongside your wayland compositor or window manager to build a complete desktop environment.
