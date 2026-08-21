@@ -3,7 +3,7 @@
 
 name        : gnu-efi
 version     : "4.0.4"
-release     : 6
+release     : 7
 summary     : EFI development library
 license     : BSD
 homepage    : https://sourceforge.net/projects/gnu-efi/
