@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+releases:
+  id: 6278
+  rss: https://pypi.org/rss/project/appdirs/releases.xml
+security:
+  # No known CPE. Checked 20260821
+  cpe: ~
