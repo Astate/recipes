@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : zfs
-version     : "2.4.3"
-release     : 2
+version     : "2.4.4"
+release     : 3
 upstreams   :
-    - https://github.com/openzfs/zfs/releases/download/zfs-2.4.3/zfs-2.4.3.tar.gz : 1f08f2d154f5189b5f1382848a32667b3d34066145b474c49cd3d41a5fba59a7
+    - https://github.com/openzfs/zfs/releases/download/zfs-2.4.4/zfs-2.4.4.tar.gz : 2a3c70d55a37cc71618a95a60e81ad66530201eb118d37741dc92efcf848c8b1
 homepage    : https://openzfs.github.io/openzfs-docs/
 license     : CDDL-1.0
 summary     : An advanced file system and volume manager
@@ -36,6 +36,7 @@ setup       : |
     %configure \
         --disable-static \
         --disable-sysvinit \
+        --enable-systemd \
         --with-config=user \
         --with-mounthelperdir=%(sbindir) \
         --with-pamconfigsdir=%(vendordir)/pam.d \
