@@ -10,11 +10,11 @@ contained rust-lld, which can only be built when also building LLVM.
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/compiler/rustc_target/src/spec/mod.rs b/compiler/rustc_target/src/spec/mod.rs
-index 033590e01a67..dc77dbac97d4 100644
+index 5c19b35e1605..2becd5667a88 100644
 --- a/compiler/rustc_target/src/spec/mod.rs
 +++ b/compiler/rustc_target/src/spec/mod.rs
-@@ -2919,7 +2919,7 @@ fn default() -> TargetOptions {
-             abi: "".into(),
+@@ -2831,7 +2831,7 @@ fn default() -> TargetOptions {
+             cfg_abi: CfgAbi::Unspecified,
              vendor: "unknown".into(),
              linker: option_env!("CFG_DEFAULT_LINKER").map(|s| s.into()),
 -            linker_flavor: LinkerFlavor::Gnu(Cc::Yes, Lld::No),
