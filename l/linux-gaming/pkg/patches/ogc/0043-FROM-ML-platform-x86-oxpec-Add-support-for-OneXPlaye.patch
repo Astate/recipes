@@ -1,7 +1,7 @@
 From 1e91de9f5b45cdda3bcb19e026cb0fa4afd8c0e0 Mon Sep 17 00:00:00 2001
 From: Jeff Hagadorn <jeff@aletheia.io>
 Date: Wed, 5 Aug 2026 11:31:02 -0700
-Subject: [PATCH 043/114] [FROM-ML] platform/x86: oxpec: Add support for
+Subject: [PATCH 043/161] [FROM-ML] platform/x86: oxpec: Add support for
  OneXPlayer X2 Mini Pro
 
 OneXPlayer X2 Mini Pro is a new Strix Halo handheld. It ships the same

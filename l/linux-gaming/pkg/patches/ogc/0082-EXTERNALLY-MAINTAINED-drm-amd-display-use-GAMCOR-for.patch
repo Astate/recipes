@@ -1,7 +1,7 @@
 From a6904de70c0a12419db08db7dd89afb89714d305 Mon Sep 17 00:00:00 2001
 From: Melissa Wen <mwen@igalia.com>
 Date: Wed, 6 May 2026 16:11:48 -0300
-Subject: [PATCH 082/114] [EXTERNALLY-MAINTAINED] drm/amd/display: use GAMCOR
+Subject: [PATCH 082/161] [EXTERNALLY-MAINTAINED] drm/amd/display: use GAMCOR
  for degamma private props in subsampled format
 
 When setting plane degamma TF via AMD driver-specific color properties,

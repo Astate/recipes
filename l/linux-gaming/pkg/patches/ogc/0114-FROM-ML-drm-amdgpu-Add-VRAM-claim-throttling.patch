@@ -1,7 +1,7 @@
 From 449182c49be8623e370f3ad70ac96bbe9162d194 Mon Sep 17 00:00:00 2001
 From: Natalie Vock <natalie.vock@gmx.de>
 Date: Sat, 20 Jun 2026 11:05:11 +0200
-Subject: [PATCH 114/114] [FROM-ML] drm/amdgpu: Add VRAM claim throttling
+Subject: [PATCH 114/161] [FROM-ML] drm/amdgpu: Add VRAM claim throttling
 
 If someone else is trying to evict from a submitting process, things
 can end up in rather nasty cycles of eviction, where A continuously

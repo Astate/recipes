@@ -11,10 +11,10 @@ diff --git a/drivers/gpu/drm/drm_panel_orientation_quirks.c b/drivers/gpu/drm/dr
 index c554ad8f246b..858f114cd3b5 100644
 --- a/drivers/gpu/drm/drm_panel_orientation_quirks.c
 +++ b/drivers/gpu/drm/drm_panel_orientation_quirks.c
-@@ -485,6 +485,12 @@ static const struct dmi_system_id orientation_data[] = {
- 		  DMI_EXACT_MATCH(DMI_PRODUCT_NAME, "ONE XPLAYER"),
+@@ -606,6 +606,12 @@ static const struct dmi_system_id orient
+ 		  DMI_EXACT_MATCH(DMI_PRODUCT_NAME, "ONEXPLAYER G1 i"),
  		},
- 		.driver_data = (void *)&lcd1200x1920_leftside_up,
+ 		.driver_data = (void *)&lcd1600x2560_leftside_up,
 +	}, {	/* Zotac Gaming Zone (OLED) */
 +		.matches = {
 +		  DMI_EXACT_MATCH(DMI_SYS_VENDOR, "ZOTAC"),

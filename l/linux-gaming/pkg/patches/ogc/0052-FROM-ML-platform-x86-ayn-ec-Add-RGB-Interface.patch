@@ -1,7 +1,7 @@
 From f52619413fa9c7f5fbc6e671c7bf791571221e45 Mon Sep 17 00:00:00 2001
 From: "Derek J. Clark" <derekjohn.clark@gmail.com>
 Date: Sat, 26 Jul 2025 13:40:40 -0700
-Subject: [PATCH 052/114] [FROM-ML] platform/x86: (ayn-ec) Add RGB Interface
+Subject: [PATCH 052/161] [FROM-ML] platform/x86: (ayn-ec) Add RGB Interface
 
 Adds an EC controlled LED Multicolor Class Device for controlling the
 RGB rings around the joysticks.

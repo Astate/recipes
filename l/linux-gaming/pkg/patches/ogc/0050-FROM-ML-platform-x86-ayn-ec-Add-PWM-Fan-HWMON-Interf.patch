@@ -1,7 +1,7 @@
 From c2f0c4dd3bba7c9cb515beca15ef5a0c95c858d6 Mon Sep 17 00:00:00 2001
 From: "Derek J. Clark" <derekjohn.clark@gmail.com>
 Date: Sat, 26 Jul 2025 13:40:38 -0700
-Subject: [PATCH 050/114] [FROM-ML] platform/x86: (ayn-ec) Add PWM Fan HWMON
+Subject: [PATCH 050/161] [FROM-ML] platform/x86: (ayn-ec) Add PWM Fan HWMON
  Interface
 
 Adds platform driver for AYN Loki and Tectoy Zeenix lines of handheld

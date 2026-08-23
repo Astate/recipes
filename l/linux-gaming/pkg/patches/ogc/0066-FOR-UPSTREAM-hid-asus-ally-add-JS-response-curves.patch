@@ -1,7 +1,7 @@
 From ff5acf2c47e9de9af3af843058ae8cf349a04e3a Mon Sep 17 00:00:00 2001
 From: "Luke D. Jones" <luke@ljones.dev>
 Date: Sun, 6 Oct 2024 21:22:40 +1300
-Subject: [PATCH 066/114] [FOR-UPSTREAM] hid-asus-ally: add JS response curves
+Subject: [PATCH 066/161] [FOR-UPSTREAM] hid-asus-ally: add JS response curves
 
 Signed-off-by: Luke D. Jones <luke@ljones.dev>
 ---

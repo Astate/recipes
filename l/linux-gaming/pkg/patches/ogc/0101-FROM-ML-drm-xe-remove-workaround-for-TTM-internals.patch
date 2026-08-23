@@ -1,7 +1,7 @@
 From e15bdfd2216d303b4f0e02e5d6751e02a5fbd7f1 Mon Sep 17 00:00:00 2001
 From: Natalie Vock <nat@pixelcluster.dev>
 Date: Mon, 6 Jul 2026 11:31:42 +0200
-Subject: [PATCH 101/114] [FROM-ML] drm/xe: remove workaround for TTM internals
+Subject: [PATCH 101/161] [FROM-ML] drm/xe: remove workaround for TTM internals
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit

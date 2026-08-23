@@ -1,7 +1,7 @@
 From 6c5778c5539739540b2db96f5aaab9318bcaa67f Mon Sep 17 00:00:00 2001
 From: "Luke D. Jones" <luke@ljones.dev>
 Date: Sat, 5 Oct 2024 14:58:33 +1300
-Subject: [PATCH 059/114] [FOR-UPSTREAM] hid-asus-ally: add button remap
+Subject: [PATCH 059/161] [FOR-UPSTREAM] hid-asus-ally: add button remap
  attributes
 
 Add the full set of button remapping abilities for plain remap and macro

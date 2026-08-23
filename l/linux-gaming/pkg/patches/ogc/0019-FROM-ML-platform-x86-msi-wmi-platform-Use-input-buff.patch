@@ -1,7 +1,7 @@
 From c9b7e66c7e4ff81f2ccff45a93cb33052839c14c Mon Sep 17 00:00:00 2001
 From: Armin Wolf <W_Armin@gmx.de>
 Date: Sun, 11 May 2025 22:44:18 +0200
-Subject: [PATCH 019/114] [FROM-ML] platform/x86: msi-wmi-platform: Use input
+Subject: [PATCH 019/161] [FROM-ML] platform/x86: msi-wmi-platform: Use input
  buffer for returning result
 
 Modify msi_wmi_platform_query() to reuse the input buffer for

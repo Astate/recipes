@@ -1,7 +1,7 @@
 From 28140798e044bb6fee56611abe3df2a6c6059b38 Mon Sep 17 00:00:00 2001
 From: "Luke D. Jones" <luke@ljones.dev>
 Date: Sat, 5 Oct 2024 15:40:09 +1300
-Subject: [PATCH 061/114] [FOR-UPSTREAM] hid-asus-ally: Turbo settings for
+Subject: [PATCH 061/161] [FOR-UPSTREAM] hid-asus-ally: Turbo settings for
  buttons
 
 Signed-off-by: Luke D. Jones <luke@ljones.dev>
