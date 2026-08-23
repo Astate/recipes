@@ -3,7 +3,7 @@
 
 name        : systemd
 version     : "261.2"
-release     : 95
+release     : 96
 summary     : A System and Service Manager
 license     :
     - GPL-2.0-or-later
@@ -89,7 +89,7 @@ setup       : |
     %patch %(pkgdir)/patches/downstream/0001-Don-t-build-32bit-EFI-stub.patch
 
     # Upstream patches
-    # None for now
+    %patch %(pkgdir)/patches/upstream/43133.patch
 
     _IS_64BIT_BOOL="true"
     _IS_64BIT_FEAT="enabled"
