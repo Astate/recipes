@@ -3,7 +3,7 @@
 
 name        : libxft
 version     : "2.3.9"
-release     : 5
+release     : 6
 homepage    : https://gitlab.freedesktop.org/xorg/lib/libxft
 upstreams   :
     - https://xorg.freedesktop.org/releases/individual/lib/libXft-2.3.9.tar.xz : 60a25b78945ed6932635b3bb1899a517d31df7456e69867ffba27f89ff3976f5

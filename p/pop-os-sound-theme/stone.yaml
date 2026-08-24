@@ -3,7 +3,7 @@
 
 name        : pop-os-sound-theme
 version     : "5.5.1+git.25ea85d"
-release     : 1
+release     : 2
 homepage    : https://github.com/pop-os/gtk-theme
 upstreams   :
     - git|https://github.com/pop-os/gtk-theme.git : 25ea85d97126992024b03bfb4e4c3b0711c749ed
@@ -13,7 +13,9 @@ description : |
 license     :
     - CC-BY-SA-4.0
 builddeps   :
+    - binary(glib-compile-resources)
     - binary(sassc)
+    - pkgconfig(gio-2.0)
 setup       : |
     %meson
 build       : |

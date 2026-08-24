@@ -46,6 +46,6 @@
 		}
 	},
 	"source-name": "xcb-util-wm",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "0.4.2"
 }

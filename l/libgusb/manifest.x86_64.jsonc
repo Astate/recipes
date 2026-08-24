@@ -16,6 +16,7 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))",
@@ -26,9 +27,7 @@
 				"/usr/bin/gusbcmd",
 				"/usr/lib/girepository-1.0/GUsb-1.0.typelib",
 				"/usr/lib/libgusb.so.2",
-				"/usr/lib/libgusb.so.2.0.10",
-				"/usr/share/vala/vapi/gusb.deps",
-				"/usr/share/vala/vapi/gusb.vapi"
+				"/usr/lib/libgusb.so.2.0.10"
 			],
 			"name": "libgusb",
 			"provides": [
@@ -73,7 +72,9 @@
 				"/usr/include/gusb-1/gusb/gusb-version.h",
 				"/usr/lib/libgusb.so",
 				"/usr/lib/pkgconfig/gusb.pc",
-				"/usr/share/gir-1.0/GUsb-1.0.gir"
+				"/usr/share/gir-1.0/GUsb-1.0.gir",
+				"/usr/share/vala/vapi/gusb.deps",
+				"/usr/share/vala/vapi/gusb.vapi"
 			],
 			"name": "libgusb-devel",
 			"provides": [
@@ -82,6 +83,6 @@
 		}
 	},
 	"source-name": "libgusb",
-	"source-release": "5",
+	"source-release": "6",
 	"source-version": "0.4.9"
 }

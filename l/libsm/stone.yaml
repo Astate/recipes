@@ -3,7 +3,7 @@
 
 name        : libsm
 version     : "1.2.6"
-release     : 4
+release     : 5
 homepage    : https://gitlab.freedesktop.org/xorg/lib/libsm
 upstreams   :
     - https://xorg.freedesktop.org/releases/individual/lib/libSM-1.2.6.tar.xz : be7c0abdb15cbfd29ac62573c1c82e877f9d4047ad15321e7ea97d1e43d835be
