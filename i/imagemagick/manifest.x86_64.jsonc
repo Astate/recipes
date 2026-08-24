@@ -747,6 +747,8 @@
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/aai.so",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/art.la",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/art.so",
+				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/ase.la",
+				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/ase.so",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/ashlar.la",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/ashlar.so",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/avs.la",
@@ -985,6 +987,8 @@
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/viff.so",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/vips.la",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/vips.so",
+				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/wbinfo.la",
+				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/wbinfo.so",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/wbmp.la",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/wbmp.so",
 				"/usr/lib/ImageMagick-7.1.2/modules-Q16HDRI/coders/webp.la",
@@ -1040,6 +1044,7 @@
 			"provides": [
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/aai.so(x86_64))",
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/art.so(x86_64))",
+				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/ase.so(x86_64))",
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/ashlar.so(x86_64))",
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/avs.so(x86_64))",
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/bayer.so(x86_64))",
@@ -1159,6 +1164,7 @@
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/video.so(x86_64))",
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/viff.so(x86_64))",
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/vips.so(x86_64))",
+				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/wbinfo.so(x86_64))",
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/wbmp.so(x86_64))",
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/webp.so(x86_64))",
 				"soname(ImageMagick-7.1.2/modules-Q16HDRI/coders/wpg.so(x86_64))",
@@ -1237,6 +1243,6 @@
 		}
 	},
 	"source-name": "imagemagick",
-	"source-release": "22",
-	"source-version": "7.1.2-29"
+	"source-release": "23",
+	"source-version": "7.1.2-30"
 }
