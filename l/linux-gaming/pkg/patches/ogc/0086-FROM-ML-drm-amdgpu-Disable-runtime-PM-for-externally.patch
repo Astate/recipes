@@ -1,7 +1,7 @@
 From 950115b754829ec32428efb52ee0b5f3fcd876f0 Mon Sep 17 00:00:00 2001
 From: Yang Wang <kevinyang.wang@amd.com>
 Date: Wed, 12 Aug 2026 16:08:41 +0800
-Subject: [PATCH 086/114] [FROM-ML] drm/amdgpu: Disable runtime PM for
+Subject: [PATCH 086/161] [FROM-ML] drm/amdgpu: Disable runtime PM for
  externally attached dGPUs
 
 pci_is_thunderbolt_attached() requires an upstream PCI bridge with

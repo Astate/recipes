@@ -1,7 +1,7 @@
 From a676782387512bc1a4deaac594244589b2d309a1 Mon Sep 17 00:00:00 2001
 From: Matthew Schwartz <matthew.schwartz@linux.dev>
 Date: Mon, 3 Aug 2026 15:16:11 -0700
-Subject: [PATCH 036/114] [FROM-ML] platform/x86: msi-wmi-platform: terminate
+Subject: [PATCH 036/161] [FROM-ML] platform/x86: msi-wmi-platform: terminate
  msi_quirks DMI table
 
 The msi_quirks table lacks a terminating empty entry so it crashes the

@@ -1,7 +1,7 @@
 From 7cafa47e65ace3daf0758553da2d6131c4290b5f Mon Sep 17 00:00:00 2001
 From: Fangzhi Zuo <jerry.zuo@amd.com>
 Date: Fri, 14 Aug 2026 12:43:44 -0400
-Subject: [PATCH 076/114] [FROM-ML] drm/amd/display: Enable HDMI ALLM for
+Subject: [PATCH 076/161] [FROM-ML] drm/amd/display: Enable HDMI ALLM for
  Gaming-VRR
 
 why:

@@ -21,9 +21,9 @@
 				"sysbinary(depmod)"
 			],
 			"files": [
-				"/usr/lib/kernel/7.2-28.gaming/65-bcachefs-module-shared-1.39.2-40.initrd",
-				"/usr/lib/kernel/7.2-28.gaming/70-bcachefs-module-1.39.2-40.initrd",
-				"/usr/lib/modules/7.2-28.gaming/extra/fs/bcachefs/bcachefs.ko.zst"
+				"/usr/lib/kernel/7.2-29.gaming/65-bcachefs-module-shared-1.39.2-41.initrd",
+				"/usr/lib/kernel/7.2-29.gaming/70-bcachefs-module-1.39.2-41.initrd",
+				"/usr/lib/modules/7.2-29.gaming/extra/fs/bcachefs/bcachefs.ko.zst"
 			],
 			"name": "bcachefs-module-gaming"
 		},
@@ -46,9 +46,9 @@
 				"sysbinary(depmod)"
 			],
 			"files": [
-				"/usr/lib/kernel/6.18.45-27.lts/65-bcachefs-module-shared-1.39.2-40.initrd",
-				"/usr/lib/kernel/6.18.45-27.lts/70-bcachefs-module-1.39.2-40.initrd",
-				"/usr/lib/modules/6.18.45-27.lts/extra/fs/bcachefs/bcachefs.ko.zst"
+				"/usr/lib/kernel/6.18.46-28.lts/65-bcachefs-module-shared-1.39.2-41.initrd",
+				"/usr/lib/kernel/6.18.46-28.lts/70-bcachefs-module-1.39.2-41.initrd",
+				"/usr/lib/modules/6.18.46-28.lts/extra/fs/bcachefs/bcachefs.ko.zst"
 			],
 			"name": "bcachefs-module-lts"
 		},
@@ -66,7 +66,7 @@
 				"sysbinary(bcachefs)"
 			],
 			"files": [
-				"/usr/lib/kernel/initrd.d/65-bcachefs-module-shared-1.39.2-40.initrd"
+				"/usr/lib/kernel/initrd.d/65-bcachefs-module-shared-1.39.2-41.initrd"
 			],
 			"name": "bcachefs-module-shared"
 		},
@@ -89,14 +89,14 @@
 				"sysbinary(depmod)"
 			],
 			"files": [
-				"/usr/lib/kernel/7.1.9-51.stable/65-bcachefs-module-shared-1.39.2-40.initrd",
-				"/usr/lib/kernel/7.1.9-51.stable/70-bcachefs-module-1.39.2-40.initrd",
-				"/usr/lib/modules/7.1.9-51.stable/extra/fs/bcachefs/bcachefs.ko.zst"
+				"/usr/lib/kernel/7.1.10-52.stable/65-bcachefs-module-shared-1.39.2-41.initrd",
+				"/usr/lib/kernel/7.1.10-52.stable/70-bcachefs-module-1.39.2-41.initrd",
+				"/usr/lib/modules/7.1.10-52.stable/extra/fs/bcachefs/bcachefs.ko.zst"
 			],
 			"name": "bcachefs-module-stable"
 		}
 	},
 	"source-name": "bcachefs-module",
-	"source-release": "40",
+	"source-release": "41",
 	"source-version": "1.39.2"
 }

@@ -1,7 +1,7 @@
 From 1d2999c334bb7d02153a990376b14bf8a53af330 Mon Sep 17 00:00:00 2001
 From: Natalie Vock <natalie.vock@gmx.de>
 Date: Thu, 25 Jun 2026 15:44:34 +0200
-Subject: [PATCH 112/114] [FROM-ML] drm/amdgpu: Only set evicted if the evict
+Subject: [PATCH 112/161] [FROM-ML] drm/amdgpu: Only set evicted if the evict
  isn't soft
 
 Makes us able to soft-evict already-reserved buffers without

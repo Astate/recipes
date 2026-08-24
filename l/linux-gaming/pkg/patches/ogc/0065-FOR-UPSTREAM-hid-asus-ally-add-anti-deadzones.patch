@@ -1,7 +1,7 @@
 From ea602d02b2f784d4675d1fc58c1de5cf5cf82a94 Mon Sep 17 00:00:00 2001
 From: "Luke D. Jones" <luke@ljones.dev>
 Date: Sun, 6 Oct 2024 19:49:24 +1300
-Subject: [PATCH 065/114] [FOR-UPSTREAM] hid-asus-ally: add anti-deadzones
+Subject: [PATCH 065/161] [FOR-UPSTREAM] hid-asus-ally: add anti-deadzones
 
 Signed-off-by: Luke D. Jones <luke@ljones.dev>
 ---

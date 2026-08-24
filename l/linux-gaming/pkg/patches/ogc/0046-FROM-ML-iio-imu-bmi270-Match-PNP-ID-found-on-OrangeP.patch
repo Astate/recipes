@@ -1,7 +1,7 @@
 From 13cc19a4f291096ed6fc694c0e4914bd345ee95e Mon Sep 17 00:00:00 2001
 From: Philip Mueller <philm@manjaro.org>
 Date: Fri, 31 Jul 2026 21:53:22 +0200
-Subject: [PATCH 046/114] [FROM-ML] iio: imu: bmi270: Match PNP ID found on
+Subject: [PATCH 046/161] [FROM-ML] iio: imu: bmi270: Match PNP ID found on
  OrangePi Neo 2026
 
 OrangePi Neo devices use BMI260 sensors in their hardware.

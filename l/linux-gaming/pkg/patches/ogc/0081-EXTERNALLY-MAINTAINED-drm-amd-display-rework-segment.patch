@@ -1,7 +1,7 @@
 From d848583679ec55c0130d99201890c8f9366470ae Mon Sep 17 00:00:00 2001
 From: Melissa Wen <mwen@igalia.com>
 Date: Mon, 2 Feb 2026 22:26:33 -0100
-Subject: [PATCH 081/114] [EXTERNALLY-MAINTAINED] drm/amd/display: rework
+Subject: [PATCH 081/161] [EXTERNALLY-MAINTAINED] drm/amd/display: rework
  segmentation for linearizing LUT
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8

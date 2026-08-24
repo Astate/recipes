@@ -1,7 +1,7 @@
 From 3237c646bf8cf501b08fcc1500a902ff17d31670 Mon Sep 17 00:00:00 2001
 From: Antheas Kapenekakis <lkml@antheas.dev>
 Date: Sun, 11 May 2025 22:44:19 +0200
-Subject: [PATCH 020/114] [FROM-ML] platform/x86: msi-wmi-platform: Add
+Subject: [PATCH 020/161] [FROM-ML] platform/x86: msi-wmi-platform: Add
  unlocked msi_wmi_platform_query
 
 This driver requires to be able to handle transactions that perform

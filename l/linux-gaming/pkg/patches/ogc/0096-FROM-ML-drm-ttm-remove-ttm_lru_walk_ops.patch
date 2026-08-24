@@ -1,7 +1,7 @@
 From 2716e2086533c966f2eac34616bbc47b8245c6ca Mon Sep 17 00:00:00 2001
 From: Natalie Vock <nat@pixelcluster.dev>
 Date: Mon, 6 Jul 2026 11:31:41 +0200
-Subject: [PATCH 096/114] [FROM-ML] drm/ttm: remove ttm_lru_walk_ops
+Subject: [PATCH 096/161] [FROM-ML] drm/ttm: remove ttm_lru_walk_ops
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8
 Content-Transfer-Encoding: 8bit

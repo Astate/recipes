@@ -1,7 +1,7 @@
 From 1b948634e73e87c2bd41b8736acfd2b2ea7c5196 Mon Sep 17 00:00:00 2001
 From: Natalie Vock <natalie.vock@gmx.de>
 Date: Tue, 14 Apr 2026 21:31:08 +0200
-Subject: [PATCH 093/114] [FROM-ML] drm/amdgpu: Track suboptimal always-valid
+Subject: [PATCH 093/161] [FROM-ML] drm/amdgpu: Track suboptimal always-valid
  BOs in soft-evicted state
 
 The VM state machine would currently not bother checking if VRAM|GTT BOs

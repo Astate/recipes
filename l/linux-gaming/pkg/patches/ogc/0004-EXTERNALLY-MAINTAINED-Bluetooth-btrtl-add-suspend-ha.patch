@@ -1,7 +1,7 @@
 From 32c0489cd25ac9ac59dd04d87a7a70b988f759d8 Mon Sep 17 00:00:00 2001
 From: Robert Beckett <bob.beckett@collabora.com>
 Date: Thu, 21 Nov 2024 21:12:03 +0000
-Subject: [PATCH 004/114] [EXTERNALLY-MAINTAINED] Bluetooth: btrtl: add suspend
+Subject: [PATCH 004/161] [EXTERNALLY-MAINTAINED] Bluetooth: btrtl: add suspend
  handling to ignore BT_DIS
 
 With new fw, btrtl can be set to ignore the BT_DIS

@@ -1,7 +1,7 @@
 From 50065317fcd4be8024c0341c79f2828963cf9316 Mon Sep 17 00:00:00 2001
 From: Natalie Vock <natalie.vock@gmx.de>
 Date: Sun, 31 Aug 2025 17:17:20 +0200
-Subject: [PATCH 087/114] [FROM-ML] cgroup/dmem: Add queries for protection
+Subject: [PATCH 087/161] [FROM-ML] cgroup/dmem: Add queries for protection
  values
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8

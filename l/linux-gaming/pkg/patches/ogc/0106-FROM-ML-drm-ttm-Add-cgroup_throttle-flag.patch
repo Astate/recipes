@@ -1,7 +1,7 @@
 From bd12aece1f743d48ceddd602feef3a576724da1e Mon Sep 17 00:00:00 2001
 From: Natalie Vock <natalie.vock@gmx.de>
 Date: Sat, 20 Jun 2026 11:02:31 +0200
-Subject: [PATCH 106/114] [FROM-ML] drm/ttm: Add cgroup_throttle flag
+Subject: [PATCH 106/161] [FROM-ML] drm/ttm: Add cgroup_throttle flag
 
 Throttles claiming of cgroup-protected memory by avoiding
 eviction

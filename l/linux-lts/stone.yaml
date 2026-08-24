@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : linux-lts
-version     : "6.18.45"
-release     : 27
+version     : "6.18.46"
+release     : 28
 homepage    : https://kernel.org/
 upstreams   :
-    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.45.tar.xz : 30fa4a56579ca614ac125a12614f7f6466f87ab1278aef7b951dd74156deab33
+    - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.46.tar.xz : f5d44b93808b02cc2969c5404ba081d97523719c9fd2ba2de6db318b4141cca0
 summary     : The Linux Kernel - LTS
 description : |
     The Linux Kernel - LTS

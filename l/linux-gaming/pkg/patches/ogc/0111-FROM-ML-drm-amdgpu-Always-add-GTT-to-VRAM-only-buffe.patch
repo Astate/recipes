@@ -1,7 +1,7 @@
 From bc6ddd84196116f43deaa90d3098488b12510664 Mon Sep 17 00:00:00 2001
 From: Natalie Vock <natalie.vock@gmx.de>
 Date: Sat, 20 Jun 2026 10:50:09 +0200
-Subject: [PATCH 111/114] [FROM-ML] drm/amdgpu: Always add GTT to VRAM-only
+Subject: [PATCH 111/161] [FROM-ML] drm/amdgpu: Always add GTT to VRAM-only
  buffers
 
 VRAM-only initial domains are a means of prioritization, which is

@@ -1,7 +1,7 @@
 From 4c11136daa7a0fc96098e34d4fbcfe558784bce9 Mon Sep 17 00:00:00 2001
 From: Andrey Smirnov <andrew.smirnov@gmail.com>
 Date: Mon, 20 Nov 2023 05:42:03 -0800
-Subject: [PATCH 014/114] [EXTERNALLY-MAINTAINED] leds-steamdeck: Add support
+Subject: [PATCH 014/161] [EXTERNALLY-MAINTAINED] leds-steamdeck: Add support
  for LED birghtness multiplier
 
 Add support for LED birghtness multiplier exposed via custom sysfs

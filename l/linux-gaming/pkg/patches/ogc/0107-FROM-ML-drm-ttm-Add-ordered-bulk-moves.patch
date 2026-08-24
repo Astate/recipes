@@ -1,7 +1,7 @@
 From 04fd0873660f683a09ab1a91bc884878a7d2d793 Mon Sep 17 00:00:00 2001
 From: Natalie Vock <natalie.vock@gmx.de>
 Date: Wed, 1 Jul 2026 11:55:03 +0200
-Subject: [PATCH 107/114] [FROM-ML] drm/ttm: Add ordered bulk moves
+Subject: [PATCH 107/161] [FROM-ML] drm/ttm: Add ordered bulk moves
 
 Ordered bulk moves maintain the list of resources in a user-defined
 order, useful for example to implement priorities. U32_MAX is sometimes

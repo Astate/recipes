@@ -1,7 +1,7 @@
 From 4fb942fb7b7e1f648c189c478cdc0d91fedc4c0c Mon Sep 17 00:00:00 2001
 From: Melissa Wen <mwen@igalia.com>
 Date: Mon, 2 Feb 2026 22:23:15 -0100
-Subject: [PATCH 080/114] [EXTERNALLY-MAINTAINED] drm/amd/display: support
+Subject: [PATCH 080/161] [EXTERNALLY-MAINTAINED] drm/amd/display: support
  regions up to 256 elements
 MIME-Version: 1.0
 Content-Type: text/plain; charset=UTF-8

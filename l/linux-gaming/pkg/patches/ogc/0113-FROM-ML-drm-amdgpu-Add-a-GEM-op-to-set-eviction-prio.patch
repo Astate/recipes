@@ -1,7 +1,7 @@
 From 7804602fa1aad19a8666d492b964c5dfff25cee3 Mon Sep 17 00:00:00 2001
 From: Natalie Vock <natalie.vock@gmx.de>
 Date: Sat, 20 Jun 2026 12:44:34 +0200
-Subject: [PATCH 113/114] [FROM-ML] drm/amdgpu: Add a GEM op to set eviction
+Subject: [PATCH 113/161] [FROM-ML] drm/amdgpu: Add a GEM op to set eviction
  priority
 
 For userspace to better communicate what's important and what isn't.
