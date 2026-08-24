@@ -3,9 +3,6 @@
 	"manifest-version": "0.2",
 	"packages": {
 		"zola": {
-			"build-depends": [
-				"binary(cargo)"
-			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(ld-linux-x86-64.so.2(x86_64))",
@@ -26,6 +23,6 @@
 		}
 	},
 	"source-name": "zola",
-	"source-release": "4",
-	"source-version": "0.23.3"
+	"source-release": "5",
+	"source-version": "0.23.4"
 }
