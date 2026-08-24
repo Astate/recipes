@@ -21,6 +21,7 @@
 				"mobile-broadband-provider-info",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcairo.so.2(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgck-2.so.2(x86_64))",
 				"soname(libgcr-4.so.4(x86_64))",
 				"soname(libgdk-3.so.0(x86_64))",
@@ -193,6 +194,7 @@
 				"mobile-broadband-provider-info",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcairo.so.2(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgck-2.so.2(x86_64))",
 				"soname(libgcr-4.so.4(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
@@ -245,6 +247,6 @@
 		}
 	},
 	"source-name": "libnma",
-	"source-release": "5",
+	"source-release": "6",
 	"source-version": "1.10.6"
 }
