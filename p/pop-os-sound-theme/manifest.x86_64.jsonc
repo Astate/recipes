@@ -4,7 +4,9 @@
 	"packages": {
 		"pop-os-sound-theme": {
 			"build-depends": [
-				"binary(sassc)"
+				"binary(glib-compile-resources)",
+				"binary(sassc)",
+				"pkgconfig(gio-2.0)"
 			],
 			"files": [
 				"/usr/share/gnome-shell/theme/Pop-dark/calendar-today-light.svg",
@@ -463,6 +465,6 @@
 		}
 	},
 	"source-name": "pop-os-sound-theme",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "5.5.1+git.25ea85d"
 }
