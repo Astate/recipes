@@ -3,6 +3,10 @@
 	"manifest-version": "0.2",
 	"packages": {
 		"scdoc": {
+			"depends": [
+				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
+				"soname(libc.so.6(x86_64))"
+			],
 			"files": [
 				"/usr/bin/scdoc",
 				"/usr/share/man/man1/scdoc.1",
@@ -17,6 +21,6 @@
 		}
 	},
 	"source-name": "scdoc",
-	"source-release": "5",
-	"source-version": "1.11.3"
+	"source-release": "6",
+	"source-version": "1.11.5"
 }
