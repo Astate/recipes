@@ -16,8 +16,7 @@
 			"files": [
 				"/usr/lib/girepository-1.0/Gee-0.8.typelib",
 				"/usr/lib/libgee-0.8.so.2",
-				"/usr/lib/libgee-0.8.so.2.6.1",
-				"/usr/share/vala/vapi/gee-0.8.vapi"
+				"/usr/lib/libgee-0.8.so.2.6.1"
 			],
 			"name": "libgee",
 			"provides": [
@@ -38,7 +37,8 @@
 				"/usr/include/gee-0.8/gee.h",
 				"/usr/lib/libgee-0.8.so",
 				"/usr/lib/pkgconfig/gee-0.8.pc",
-				"/usr/share/gir-1.0/Gee-0.8.gir"
+				"/usr/share/gir-1.0/Gee-0.8.gir",
+				"/usr/share/vala/vapi/gee-0.8.vapi"
 			],
 			"name": "libgee-devel",
 			"provides": [
@@ -47,6 +47,6 @@
 		}
 	},
 	"source-name": "libgee",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "0.20.8"
 }
