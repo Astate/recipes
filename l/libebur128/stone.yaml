@@ -3,7 +3,7 @@
 
 name        : libebur128
 version     : "1.2.6"
-release     : 2
+release     : 3
 homepage    : https://github.com/jiixyj/libebur128
 upstreams   :
     - https://github.com/jiixyj/libebur128/archive/refs/tags/v1.2.6.tar.gz : baa7fc293a3d4651e244d8022ad03ab797ca3c2ad8442c43199afe8059faa613
