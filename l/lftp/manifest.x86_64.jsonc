@@ -5,6 +5,7 @@
 		"lftp": {
 			"build-depends": [
 				"binary(bison)",
+				"binary(msgfmt)",
 				"pkgconfig(expat)",
 				"pkgconfig(libidn2)",
 				"pkgconfig(ncursesw)",
@@ -63,6 +64,6 @@
 		}
 	},
 	"source-name": "lftp",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "4.9.3"
 }
