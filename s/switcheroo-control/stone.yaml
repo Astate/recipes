@@ -3,7 +3,7 @@
 
 name        : switcheroo-control
 version     : "3.0"
-release     : 3
+release     : 4
 homepage    : https://gitlab.freedesktop.org/hadess/switcheroo-control
 upstreams   :
     - https://gitlab.freedesktop.org/hadess/switcheroo-control/-/releases/3.0/downloads/switcheroo-control-3.0.tar.xz : dddcb43c58acb334b529387da8f3abfee57346099dce8f438a167f5ebc34a9da
