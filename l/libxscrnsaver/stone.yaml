@@ -3,7 +3,7 @@
 
 name        : libxscrnsaver
 version     : "1.2.5"
-release     : 3
+release     : 4
 homepage    : https://xorg.freedesktop.org/releases/individual/lib
 upstreams   :
     - https://xorg.freedesktop.org/releases/individual/lib/libXScrnSaver-1.2.5.tar.xz : 5057365f847253e0e275871441e10ff7846c8322a5d88e1e187d326de1cd8d00
