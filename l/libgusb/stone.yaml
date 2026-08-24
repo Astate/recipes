@@ -3,7 +3,7 @@
 
 name        : libgusb
 version     : "0.4.9"
-release     : 5
+release     : 6
 homepage    : https://github.com/hughsie/libgusb
 upstreams   :
     - https://github.com/hughsie/libgusb/releases/download/0.4.9/libgusb-0.4.9.tar.xz : 9df5ef301d6a4b361002aa52cce1165a87a89744055879bdbab31e7e86f1e846
@@ -23,8 +23,10 @@ checkdeps   :
     - python(setuptools)
     - hwdata
 setup       : |
-    # When updating this package make sure the setup line `Compiler for C supports link arguments -Wl,--version-script,/mason/build/x86_64/libgusb-0.4.9.tar.xz/gusb/libgusb_meson.ver: YES` succeeds
-    %meson -Ddocs=false
+    %patch %(pkgdir)/python-packaging.patch
+
+    %meson \
+        -Ddocs=false
 build       : |
     %meson_build
 install     : |
