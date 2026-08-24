@@ -3,7 +3,7 @@
 
 name        : mtr
 version     : "0.96"
-release     : 1
+release     : 2
 homepage    : https://www.bitwizard.nl/mtr/
 upstreams   :
     - https://github.com/traviscross/mtr/archive/refs/tags/v0.96.tar.gz :
