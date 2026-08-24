@@ -4,7 +4,7 @@
 name        : rust
 ### IMPORTANT NOTE: Rust does not have a stable ABI. This is particularly important for the kernel where the version of Rust used to build the kernel must exactly match the version used to build extramodules. In other words you MUST do a round of kernel rebuilds whenever Rust is upgraded.
 version     : "1.98.0"
-release     : 41
+release     : 42
 homepage    : https://www.rust-lang.org/
 upstreams   :
     - https://static.rust-lang.org/dist/rustc-1.98.0-src.tar.xz : 271fa73d8174f53d713c46a8310da7bf7cfdcfb8b7cfd1c2b74b84a83ae9fb1e
@@ -79,6 +79,7 @@ setup       : |
 
     %patch %(pkgdir)/ldd-default.patch
     %patch %(pkgdir)/libdir.patch
+    %patch %(pkgdir)/161555.patch
 build       : |
     LLVM_VERSION=$(${LLVM_CONFIG} --version)
     LLVM_MAJOR="$( cut -d '.' -f 1 <<< "${LLVM_VERSION}" )"
