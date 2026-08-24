@@ -5,6 +5,7 @@
 		"terminus-font": {
 			"build-depends": [
 				"binary(bdftopcf)",
+				"binary(gzip)",
 				"binary(python3)"
 			],
 			"files": [
@@ -269,6 +270,6 @@
 		}
 	},
 	"source-name": "terminus-font",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "4.49.1"
 }
