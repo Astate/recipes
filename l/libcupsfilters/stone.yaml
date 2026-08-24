@@ -3,7 +3,7 @@
 
 name        : libcupsfilters
 version     : "2.2.1"
-release     : 11
+release     : 12
 homepage    : https://github.com/OpenPrinting/libcupsfilters
 upstreams   :
     - https://github.com/OpenPrinting/libcupsfilters/releases/download/2.2.1/libcupsfilters-2.2.1.tar.xz : 0a22b849d5068c4c86b20fbb4192d3faa3dabcc9ee844c8fd73710ed821d4860
@@ -26,11 +26,6 @@ builddeps   :
     - pkgconfig(libtiff-4)
     - pkgconfig(pdfio)
     - dejavu-fonts-ttf
-rundeps     :
-    - binary(gs) # Called in filter functions
-    - binary(pdftoppm)
-    - colord # Integration with color profiles
-    - dejavu-fonts-ttf
 setup       : |
     %configure \
         --disable-mutool \
@@ -39,3 +34,14 @@ build       : |
     %make
 install     : |
     %make_install
+packages    :
+    - "%(name)":
+        rundeps     :
+            - binary(gs) # Called in filter functions
+            - binary(pdftoppm)
+            - colord # Integration with color profiles
+            - dejavu-fonts-ttf
+
+    - "%(name)-devel":
+        rundeps     :
+            - pkgconfig(pdfio)

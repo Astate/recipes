@@ -100,7 +100,8 @@
 				"pkgconfig(pdfio)"
 			],
 			"depends": [
-				"libcupsfilters"
+				"libcupsfilters",
+				"pkgconfig(pdfio)"
 			],
 			"files": [
 				"/usr/include/cupsfilters/bitmap.h",
@@ -125,6 +126,6 @@
 		}
 	},
 	"source-name": "libcupsfilters",
-	"source-release": "11",
+	"source-release": "12",
 	"source-version": "2.2.1"
 }
