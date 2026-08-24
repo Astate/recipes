@@ -3,7 +3,7 @@
 
 name        : mpfr
 version     : "4.2.2"
-release     : 5
+release     : 6
 summary     : Multiple-precision floating-point library
 license     : LGPL-3.0-or-later
 homepage    : https://www.mpfr.org/
