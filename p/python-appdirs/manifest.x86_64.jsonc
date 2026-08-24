@@ -1,0 +1,31 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"python-appdirs": {
+			"build-depends": [
+				"python(setuptools)"
+			],
+			"depends": [
+				"binary(python3)"
+			],
+			"files": [
+				"/usr/lib/python3.14/site-packages/__pycache__/appdirs.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/__pycache__/appdirs.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/appdirs-1.4.4.dist-info/METADATA",
+				"/usr/lib/python3.14/site-packages/appdirs-1.4.4.dist-info/RECORD",
+				"/usr/lib/python3.14/site-packages/appdirs-1.4.4.dist-info/WHEEL",
+				"/usr/lib/python3.14/site-packages/appdirs-1.4.4.dist-info/licenses/LICENSE.txt",
+				"/usr/lib/python3.14/site-packages/appdirs-1.4.4.dist-info/top_level.txt",
+				"/usr/lib/python3.14/site-packages/appdirs.py"
+			],
+			"name": "python-appdirs",
+			"provides": [
+				"python(appdirs)"
+			]
+		}
+	},
+	"source-name": "python-appdirs",
+	"source-release": "1",
+	"source-version": "1.4.4"
+}
