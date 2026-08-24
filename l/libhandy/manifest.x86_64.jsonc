@@ -13,6 +13,7 @@
 				"soname(libc.so.6(x86_64))",
 				"soname(libcairo.so.2(x86_64))",
 				"soname(libfribidi.so.0(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgdk-3.so.0(x86_64))",
 				"soname(libgdk_pixbuf-2.0.so.0(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
@@ -42,6 +43,7 @@
 				"libhandy",
 				"pkgconfig(gtk+-3.0)",
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgdk-3.so.0(x86_64))",
 				"soname(libgdk_pixbuf-2.0.so.0(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
@@ -109,6 +111,6 @@
 		}
 	},
 	"source-name": "libhandy",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "1.8.3"
 }

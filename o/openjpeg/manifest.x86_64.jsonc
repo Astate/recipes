@@ -96,6 +96,7 @@
 				"/usr/share/doc/openjpeg/html/cio_8h_source.html",
 				"/usr/share/doc/openjpeg/html/classes.html",
 				"/usr/share/doc/openjpeg/html/clipboard.js",
+				"/usr/share/doc/openjpeg/html/codefolding.js",
 				"/usr/share/doc/openjpeg/html/codestream__manager_8c.html",
 				"/usr/share/doc/openjpeg/html/codestream__manager_8h.html",
 				"/usr/share/doc/openjpeg/html/codestream__manager_8h_source.html",
@@ -118,7 +119,6 @@
 				"/usr/share/doc/openjpeg/html/dwt_8c.html",
 				"/usr/share/doc/openjpeg/html/dwt_8h.html",
 				"/usr/share/doc/openjpeg/html/dwt_8h_source.html",
-				"/usr/share/doc/openjpeg/html/dynsections.js",
 				"/usr/share/doc/openjpeg/html/event_8c.html",
 				"/usr/share/doc/openjpeg/html/event_8h.html",
 				"/usr/share/doc/openjpeg/html/event_8h_source.html",
@@ -307,7 +307,6 @@
 				"/usr/share/doc/openjpeg/html/jpipstream__manager_8c.html",
 				"/usr/share/doc/openjpeg/html/jpipstream__manager_8h.html",
 				"/usr/share/doc/openjpeg/html/jpipstream__manager_8h_source.html",
-				"/usr/share/doc/openjpeg/html/jquery.js",
 				"/usr/share/doc/openjpeg/html/mainpage_8dox.html",
 				"/usr/share/doc/openjpeg/html/manfbox__manager_8c.html",
 				"/usr/share/doc/openjpeg/html/manfbox__manager_8h.html",
@@ -415,6 +414,8 @@
 				"/usr/share/doc/openjpeg/html/structmsgqueue__param.html",
 				"/usr/share/doc/openjpeg/html/structopj__bio.html",
 				"/usr/share/doc/openjpeg/html/structopj__codec__private.html",
+				"/usr/share/doc/openjpeg/html/structopj__codec__private_1_1_0fstruct_0eopj__compression_8m__codec__data_8m__compression.html",
+				"/usr/share/doc/openjpeg/html/structopj__codec__private_1_1_0fstruct_0eopj__decompression_8m__codec__data_8m__decompression.html",
 				"/usr/share/doc/openjpeg/html/structopj__codestream__index.html",
 				"/usr/share/doc/openjpeg/html/structopj__codestream__info.html",
 				"/usr/share/doc/openjpeg/html/structopj__codestream__info__v2.html",
@@ -545,6 +546,10 @@
 				"/usr/share/doc/openjpeg/html/tls__keys_8h_source.html",
 				"/usr/share/doc/openjpeg/html/topics.html",
 				"/usr/share/doc/openjpeg/html/tpix__manager_8c.html",
+				"/usr/share/doc/openjpeg/html/unionopj__codec__private_1_1_0funion_0e_8m__codec__data.html",
+				"/usr/share/doc/openjpeg/html/unionopj__cp_1_1_0funion_0e_8m__specific__param.html",
+				"/usr/share/doc/openjpeg/html/unionopj__j2k_1_1_0funion_0e_8m__specific__param.html",
+				"/usr/share/doc/openjpeg/html/unionopj__tcd__precinct_1_1_0funion_0e_8cblks.html",
 				"/usr/share/doc/openjpeg/html/unionopj__v8__t.html",
 				"/usr/share/doc/openjpeg/html/unionsubfaixbox__param.html"
 			],
@@ -584,6 +589,6 @@
 		}
 	},
 	"source-name": "openjpeg",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "2.5.4"
 }

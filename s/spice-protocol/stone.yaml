@@ -3,7 +3,7 @@
 
 name        : spice-protocol
 version     : "0.14.5"
-release     : 3
+release     : 4
 homepage    : https://spice-space.org/
 upstreams   :
     - https://gitlab.freedesktop.org/-/project/68/uploads/2d566d020a0c997035ca16389a64cd8d/spice-protocol-0.14.5.tar.xz : baf58449f6e89d19f475899ad5fb9196fdc46c03cc53233f4e39cf2978f9cff7

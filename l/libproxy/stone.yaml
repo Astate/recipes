@@ -3,7 +3,7 @@
 
 name        : libproxy
 version     : "0.5.12"
-release     : 9
+release     : 10
 homepage    : https://libproxy.github.io/libproxy/
 upstreams   :
     - https://github.com/libproxy/libproxy/archive/refs/tags/0.5.12.tar.gz : a1fa55991998b80a567450a9e84382421a7176a84446c95caaa8b72cf09fa86f

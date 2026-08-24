@@ -3,7 +3,7 @@
 
 name        : woff2
 version     : "1.0.2"
-release     : 2
+release     : 3
 upstreams   :
     - https://github.com/google/woff2/archive/v1.0.2.tar.gz : add272bb09e6384a4833ffca4896350fdb16e0ca22df68c0384773c67a175594
 homepage    : https://github.com/google/woff2

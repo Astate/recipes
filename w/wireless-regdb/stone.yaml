@@ -3,7 +3,7 @@
 
 name        : wireless-regdb
 version     : "2025.07.10"
-release     : 1
+release     : 2
 upstreams   :
     - git|https://git.kernel.org/pub/scm/linux/kernel/git/wens/wireless-regdb.git : e05260afb7203dd0a7ba6faf9a30c86faf19a24e
 homepage    : https://wireless.wiki.kernel.org/en/developers/regulatory/wireless-regdb
@@ -11,6 +11,8 @@ license     : ISC
 summary     : Central Regulatory Domain Database
 description : |
     Central Regulatory Domain Database
+builddeps   :
+    - binary(gzip)
 rundeps     :
     - sysbinary(iw)
 build       : |

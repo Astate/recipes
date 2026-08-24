@@ -3,7 +3,7 @@
 
 name        : usbredir
 version     : "0.15.0"
-release     : 3
+release     : 4
 homepage    : https://gitlab.freedesktop.org/spice/usbredir/
 upstreams   :
     - git|https://gitlab.freedesktop.org/spice/usbredir : 41c79583a4eecaf6cfe938278554210c718c85d2

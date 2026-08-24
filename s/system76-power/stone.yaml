@@ -3,7 +3,7 @@
 
 name        : system76-power
 version     : "1.2.8"
-release     : 4
+release     : 5
 homepage    : https://github.com/pop-os/system76-power
 upstreams   :
     - https://github.com/pop-os/system76-power/archive/refs/tags/1.2.8.tar.gz: 6c3f145b6c7abb7b4251dc29a77a0ce395ac0939a71d540032e2e153e2542b78

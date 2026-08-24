@@ -3,7 +3,7 @@
 
 name        : zstd
 version     : "1.5.7"
-release     : 12
+release     : 13
 summary     : Fast real-time compression algorithm
 license     :
     - BSD-3-Clause

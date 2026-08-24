@@ -3,7 +3,7 @@
 
 name        : rpmextract
 version     : "1.0"
-release     : 11
+release     : 12
 homepage    : https://gitlab.archlinux.org/archlinux/packaging/packages/rpmextract
 upstreams   :
     - https://gitlab.archlinux.org/archlinux/packaging/packages/rpmextract/-/raw/main/rpmextract.sh:

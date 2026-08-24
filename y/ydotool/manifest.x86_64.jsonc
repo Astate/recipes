@@ -4,8 +4,8 @@
 	"packages": {
 		"ydotool": {
 			"build-depends": [
-				"linux-headers",
-				"scdoc"
+				"binary(scdoc)",
+				"linux-headers"
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
@@ -26,6 +26,6 @@
 		}
 	},
 	"source-name": "ydotool",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "1.0.4"
 }

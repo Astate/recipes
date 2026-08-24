@@ -3,7 +3,7 @@
 
 name        : libvirt-glib
 version     : "5.0.0"
-release     : 1
+release     : 2
 homepage    : https://gitlab.com/libvirt/libvirt-glib
 upstreams   :
     - https://libvirt.org/sources/glib/libvirt-glib-5.0.0.tar.xz : 9bfec346382416a3575d87299bc641b2a464aa519fd9b1287e318aa43a2f3b8b

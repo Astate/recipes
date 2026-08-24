@@ -3,7 +3,7 @@
 
 name        : tslib
 version     : "1.24"
-release     : 2
+release     : 3
 upstreams   :
     - https://github.com/libts/tslib/releases/download/1.24/tslib-1.24.tar.xz : 58d9941ffaa269c399f00d0d308184c96087f7acf69aa8e3c6645e852f993ba2
 homepage    : https://github.com/kergoth/tslib

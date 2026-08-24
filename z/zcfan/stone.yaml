@@ -3,7 +3,7 @@
 
 name        : zcfan
 version     : "1.4.0"
-release     : 1
+release     : 2
 summary     : Zero-configuration fan control for ThinkPad
 license     : MIT
 homepage    : https://github.com/cdown/zcfan

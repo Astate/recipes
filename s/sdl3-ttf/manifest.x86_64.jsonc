@@ -5,6 +5,7 @@
 		"sdl3-ttf": {
 			"build-depends": [
 				"pkgconfig(freetype2)",
+				"pkgconfig(harfbuzz)",
 				"pkgconfig(sdl3)"
 			],
 			"depends": [
@@ -26,6 +27,7 @@
 		"sdl3-ttf-devel": {
 			"build-depends": [
 				"pkgconfig(freetype2)",
+				"pkgconfig(harfbuzz)",
 				"pkgconfig(sdl3)"
 			],
 			"depends": [
@@ -56,6 +58,6 @@
 		}
 	},
 	"source-name": "sdl3-ttf",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "3.2.2"
 }

@@ -3,7 +3,7 @@
 
 name        : lsd
 version     : "1.2.0"
-release     : 1
+release     : 2
 homepage    : https://github.com/lsd-rs/lsd
 upstreams   :
     - https://github.com/lsd-rs/lsd/archive/refs/tags/v1.2.0.tar.gz : dae8d43087686a4a1de0584922608e9cbab00727d0f72e4aa487860a9cbfeefa

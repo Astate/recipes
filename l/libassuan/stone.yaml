@@ -3,7 +3,7 @@
 
 name        : libassuan
 version     : "3.0.2"
-release     : 4
+release     : 5
 homepage    : https://gnupg.org/software/libassuan/index.html
 upstreams   :
     - https://gnupg.org/ftp/gcrypt/libassuan/libassuan-3.0.2.tar.bz2 : d2931cdad266e633510f9970e1a2f346055e351bb19f9b78912475b8074c36f6
