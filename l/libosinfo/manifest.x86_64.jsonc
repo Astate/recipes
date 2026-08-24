@@ -39,9 +39,7 @@
 				"/usr/lib/libosinfo-1.0.so.0.1012.0",
 				"/usr/share/man/man1/osinfo-detect.1",
 				"/usr/share/man/man1/osinfo-install-script.1",
-				"/usr/share/man/man1/osinfo-query.1",
-				"/usr/share/vala/vapi/libosinfo-1.0.deps",
-				"/usr/share/vala/vapi/libosinfo-1.0.vapi"
+				"/usr/share/man/man1/osinfo-query.1"
 			],
 			"name": "libosinfo",
 			"provides": [
@@ -118,7 +116,9 @@
 				"/usr/include/libosinfo-1.0/osinfo/osinfo_version.h",
 				"/usr/lib/libosinfo-1.0.so",
 				"/usr/lib/pkgconfig/libosinfo-1.0.pc",
-				"/usr/share/gir-1.0/Libosinfo-1.0.gir"
+				"/usr/share/gir-1.0/Libosinfo-1.0.gir",
+				"/usr/share/vala/vapi/libosinfo-1.0.deps",
+				"/usr/share/vala/vapi/libosinfo-1.0.vapi"
 			],
 			"name": "libosinfo-devel",
 			"provides": [
@@ -204,6 +204,6 @@
 		}
 	},
 	"source-name": "libosinfo",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "1.12.0"
 }
