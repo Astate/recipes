@@ -10,6 +10,7 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libimobiledevice-glue-1.0.so.0(x86_64))",
 				"soname(libplist-2.0.so.4(x86_64))"
 			],
@@ -51,6 +52,6 @@
 		}
 	},
 	"source-name": "libusbmuxd",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "2.1.1"
 }
