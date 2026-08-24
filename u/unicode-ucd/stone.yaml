@@ -3,7 +3,7 @@
 
 name        : unicode-ucd
 version     : "17.0.0" # Updating this package? ibus should be rebuilt to pick up the changes
-release     : 3
+release     : 4
 upstreams   :
     - https://www.unicode.org/Public/17.0.0/ucd/UCD.zip:
         hash: 2066d1909b2ea93916ce092da1c0ee4808ea3ef8407c94b4f14f5b7eb263d28e
