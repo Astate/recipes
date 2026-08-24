@@ -3,7 +3,7 @@
 
 name        : libepoxy
 version     : "1.5.10+git.bb7ddbc7"
-release     : 4
+release     : 5
 homepage    : https://github.com/anholt/libepoxy
 upstreams   :
     - git|https://github.com/anholt/libepoxy.git : bb7ddbc7bd1ee879ec50aa281dcb10cfaefb784c
