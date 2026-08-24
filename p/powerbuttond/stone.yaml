@@ -3,7 +3,7 @@
 
 name        : powerbuttond
 version     : "3.4"
-release     : 1
+release     : 2
 homepage    : https://gitlab.steamos.cloud/holo/powerbuttond
 upstreams   :
     - https://gitlab.steamos.cloud/holo/powerbuttond/-/archive/v3.4/powerbuttond-v3.4.tar.gz : 6d20e0c75b00a476171cae6395178ea6ed9b1f33662449d9c4c8ec84bf00165e
