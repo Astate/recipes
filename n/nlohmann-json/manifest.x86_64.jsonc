@@ -63,6 +63,6 @@
 		}
 	},
 	"source-name": "nlohmann-json",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "3.12.0"
 }
