@@ -3,7 +3,7 @@
 
 name        : xkbcomp
 version     : "1.5.0"
-release     : 3
+release     : 4
 homepage    : https://gitlab.freedesktop.org/xorg/app/xkbcomp
 upstreams   :
     - https://www.x.org/archive/individual/app/xkbcomp-1.5.0.tar.xz : 2ac31f26600776db6d9cd79b3fcd272263faebac7eb85fb2f33c7141b8486060
