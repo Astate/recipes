@@ -3,7 +3,7 @@
 
 name        : librest
 version     : "0.10.2"
-release     : 4
+release     : 5
 homepage    : https://gitlab.gnome.org/GNOME/librest
 upstreams   :
     - https://gitlab.gnome.org/GNOME/librest/-/archive/0.10.2/librest-0.10.2.tar.gz : adef677ecdbe16f94906f59f07519938a82a207b8c019e37f2d68463f94a464d
