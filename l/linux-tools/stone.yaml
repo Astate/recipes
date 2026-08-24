@@ -2,15 +2,15 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : linux-tools
-version     : "7.1.8"
-release     : 43
+version     : "7.1.10"
+release     : 44
 summary     : Tools included with the Linux source code
 license     : GPL-2.0-only
 homepage    : https://perf.wiki.kernel.org/
 description : |
     Tools included with the Linux source code
 upstreams   :
-    - https://www.kernel.org/pub/linux/kernel/v7.x/linux-7.1.8.tar.xz: ff01dcb449279d5b4cfccdb01fee639cf5ff1803f1749a77844dd33915422c49
+    - https://www.kernel.org/pub/linux/kernel/v7.x/linux-7.1.10.tar.xz: 67d2f4697a02f3bec98e744b1bdc307e920c24bb4e88b5ee97dc9a34e9aa9999
 builddeps   :
     - binary(a2x)
     - binary(bison)
