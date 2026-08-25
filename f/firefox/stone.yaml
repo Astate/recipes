@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : firefox
-version     : "154.0"
-release     : 79
+version     : "154.0.1"
+release     : 80
 homepage    : https://www.mozilla.org/
 upstreams   :
-    - https://releases.mozilla.org/pub/firefox/releases/154.0/source/firefox-154.0.source.tar.xz:
-        hash: 36cec5b3688a60f78a6d20dcaee15b598f84e03c66f6587056aead6cb498b99a
+    - https://releases.mozilla.org/pub/firefox/releases/154.0.1/source/firefox-154.0.1.source.tar.xz:
+        hash: 9cbe191fc74b46108376b1d9bf607c0a40288074e0f2333671253789d6ebbd15
         unpackdir: firefox
 summary     : Firefox web browser
 description : |
@@ -83,6 +83,8 @@ setup       : |
     # │B│ 27:26.05 W          ~~~~^^^^^^^^^^^
     # │B│ 27:26.05 W FileNotFoundError: [Errno 2] No such file or directory: 'WriteArgument'
     %patch %(pkgdir)/patches/0001-Revert-Bug-2038789-Support-renaming-and-mode-preserv.patch
+
+    %patch %(pkgdir)/patches/ftbfs-rust-1.98.patch
 
     # TODO: Figure out if we still need to enable unsigned addon loading considering we switched back to unmodified langpacks
 
