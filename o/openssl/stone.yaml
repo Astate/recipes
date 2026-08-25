@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : openssl
-version     : "3.6.3"
-release     : 36
+version     : "3.6.4"
+release     : 37
 summary     : OpenSSL cryptography library
 license     :
     - OpenSSL
@@ -12,7 +12,7 @@ homepage    : https://www.openssl.org
 description : |
     OpenSSL cryptography library.
 upstreams   :
-    - https://www.openssl.org/source/openssl-3.6.3.tar.gz: 243a86649cf6f23eeb6a2ff2456e09e5d77dd9018a54d3d96b0c6bdd6ba6c7f1
+    - https://www.openssl.org/source/openssl-3.6.4.tar.gz: 9bffaa1ad1e07b354c21bd3324ec02fa15579f45a7d0494b3e74bc449b7333ef
 builddeps   :
     - binary(perl)
     - pkgconfig32(libzstd)
