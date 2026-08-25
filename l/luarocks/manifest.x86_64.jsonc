@@ -8,7 +8,9 @@
 				"pkgconfig(lua)"
 			],
 			"depends": [
-				"binary(lua)"
+				"binary(gzip)",
+				"binary(lua)",
+				"binary(unzip)"
 			],
 			"files": [
 				"/usr/bin/luarocks",
@@ -123,6 +125,6 @@
 		}
 	},
 	"source-name": "luarocks",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "3.13.0"
 }
