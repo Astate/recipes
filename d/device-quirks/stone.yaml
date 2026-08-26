@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : device-quirks
-version     : "r265.d5f90e4"
-release     : 3
+version     : "0.r267.ee8e666"
+release     : 4
 homepage    : https://github.com/ChimeraOS/device-quirks
 upstreams   :
-    - git|https://github.com/ChimeraOS/device-quirks.git : d5f90e494b91c1ccbb3f42e5fd961fa1c9f9685d
+    - git|https://github.com/ChimeraOS/device-quirks.git : ee8e66690eb460ec8b13b56eabb7388298e0972f
 summary     : Device specific configurations and workarounds for AerynOS
 description : |
     A collection of device-specific configurations and workarounds for gaming in general, used extensively by ChimeraOS. They are meant to work in the general case with ArchLinux based distributions.
