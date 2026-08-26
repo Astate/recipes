@@ -3,7 +3,7 @@
 
 name        : luarocks
 version     : "3.13.0"
-release     : 2
+release     : 3
 homepage    : https://luarocks.org/
 upstreams   :
     - https://luarocks.github.io/luarocks/releases/luarocks-3.13.0.tar.gz : 245bf6ec560c042cb8948e3d661189292587c5949104677f1eecddc54dbe7e37
@@ -15,7 +15,9 @@ builddeps   :
     - binary(unzip)
     - pkgconfig(lua)
 rundeps     :
+    - binary(gzip)
     - binary(lua)
+    - binary(unzip)
 setup       : |
     ./configure \
         --prefix=/usr \
