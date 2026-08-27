@@ -89,7 +89,6 @@
 				"pkgconfig(opengl)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libheif.so.1(x86_64))",
 				"soname(libjpeg.so.8(x86_64))",
@@ -106,6 +105,6 @@
 		}
 	},
 	"source-name": "jasper",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "4.2.9"
 }
