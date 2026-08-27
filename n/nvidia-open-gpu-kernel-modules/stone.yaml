@@ -3,7 +3,7 @@
 
 name        : nvidia-open-gpu-kernel-modules
 version     : "610.57.04"
-release     : 117
+release     : 118
 homepage    : https://github.com/NVIDIA/open-gpu-kernel-modules
 upstreams   :
     - https://download.nvidia.com/XFree86/NVIDIA-kernel-module-source/NVIDIA-kernel-module-source-610.57.04.tar.xz:
@@ -73,9 +73,6 @@ build       : |
         popd
     done
 install     : |
-    %install_file %(pkgdir)/nvidia-blacklist.modprobe %(installroot)%(libdir)/modprobe.d/nvidia-blacklist.conf
-    %install_file %(pkgdir)/nvidia-uvm.conf %(installroot)%(libdir)/modules-load.d/nvidia-uvm.conf
-
     # Various Nvidia modprobe settings (taken from CachyOS)
     # https://github.com/CachyOS/CachyOS-Settings/blob/master/usr/lib/modprobe.d/nvidia.conf
     %install_file %(pkgdir)/nvidia.modprobe %(installroot)%(libdir)/modprobe.d/nvidia.conf
@@ -119,7 +116,6 @@ install     : |
         # Create an initrd for .ko files
         mkdir -p initrd/%(libdir)/modules/${_kernel}/extra/drivers/video
         %install_file %(pkgdir)/nvidia.modprobe initrd/%(libdir)/modprobe.d/nvidia.conf
-        %install_file %(pkgdir)/nvidia-blacklist.modprobe initrd/%(libdir)/modprobe.d/nvidia-blacklist.conf
         %install_file %(pkgdir)/nvidia-sleep.modprobe initrd/%(libdir)/modprobe.d/nvidia-sleep.conf
         find %(installroot)%(libdir)/modules -name '*.ko' -exec cp -v {} initrd/%(libdir)/modules/${_kernel}/extra/drivers/video \;
         touch initrd/.dracut-depmod-invalidate
