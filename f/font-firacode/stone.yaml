@@ -3,7 +3,7 @@
 
 name        : font-firacode
 version     : "6.2"
-release     : 4
+release     : 5
 homepage    : https://github.com/tonsky/FiraCode
 upstreams   :
     - https://github.com/tonsky/FiraCode/releases/download/6.2/Fira_Code_v6.2.zip :
