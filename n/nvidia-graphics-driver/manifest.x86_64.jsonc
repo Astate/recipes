@@ -138,7 +138,7 @@
 				"/usr/lib/systemd/system/systemd-suspend-then-hibernate.service.d/nvidia-suspend-nofreeze.conf",
 				"/usr/lib/systemd/system/systemd-suspend.service.d/nvidia-suspend-nofreeze.conf",
 				"/usr/lib/tmpfiles.d/nvidia-graphics-driver.conf",
-				"/usr/lib/udev/rules.d/80-nvidia.rules",
+				"/usr/lib/udev/rules.d/60-nvidia.rules",
 				"/usr/lib/userdb/143.group",
 				"/usr/lib/userdb/143.user",
 				"/usr/lib/userdb/nvidia-persistenced.group",
@@ -338,12 +338,12 @@
 				"/usr/lib/firmware/nvidia/610.57.04/gsp_tu10x.bin.zst",
 				"/usr/lib/firmware/nvidia/610.57.04/ucodes_ga10x.bin.zst",
 				"/usr/lib/firmware/nvidia/610.57.04/ucodes_tu10x.bin.zst",
-				"/usr/lib/kernel/initrd.d/55-nvidia-firmware-610.57.04-48.initrd"
+				"/usr/lib/kernel/initrd.d/55-nvidia-firmware-610.57.04-49.initrd"
 			],
 			"name": "nvidia-graphics-driver-firmware"
 		}
 	},
 	"source-name": "nvidia-graphics-driver",
-	"source-release": "48",
+	"source-release": "49",
 	"source-version": "610.57.04"
 }

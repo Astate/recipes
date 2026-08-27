@@ -3,7 +3,7 @@
 
 name        : nvidia-graphics-driver
 version     : "610.57.04"
-release     : 48
+release     : 49
 homepage    : https://www.nvidia.com/
 upstreams   :
     - https://us.download.nvidia.com/XFree86/Linux-x86_64/610.57.04/NVIDIA-Linux-x86_64-610.57.04.run:
@@ -95,7 +95,7 @@ install     : |
     %install_file extracted/nvidia-dbus.conf %(installroot)%(datadir)/dbus-1/system.d/nvidia-dbus.conf
 
     # udev rules
-    %install_file %(pkgdir)/80-nvidia-pm.rules %(installroot)%(libdir)/udev/rules.d/80-nvidia.rules
+    %install_file %(pkgdir)/*.rules -t %(installroot)%(libdir)/udev/rules.d/
     %install_file extracted/nvidia-drm-outputclass.conf %(installroot)%(datadir)/X11/xorg.conf.d/20-nvidia.conf
 
     %install_exe extracted/nvidia-modprobe %(installroot)%(bindir)/nvidia-modprobe
