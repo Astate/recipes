@@ -4,6 +4,7 @@
 	"packages": {
 		"foomatic-db": {
 			"build-depends": [
+				"binary(gzip)",
 				"binary(tar)"
 			],
 			"files": [
@@ -13470,6 +13471,6 @@
 		}
 	},
 	"source-name": "foomatic-db",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "20240504"
 }
