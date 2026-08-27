@@ -3,7 +3,7 @@
 
 name        : spdlog
 version     : "1.17.0"
-release     : 7
+release     : 8
 homepage    : https://github.com/gabime/spdlog
 upstreams   :
     - https://github.com/gabime/spdlog/archive/refs/tags/v1.17.0.tar.gz : d8862955c6d74e5846b3f580b1605d2428b11d97a410d86e2fb13e857cd3a744
