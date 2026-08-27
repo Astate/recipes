@@ -11,6 +11,7 @@
 				"pkgconfig(krb5)",
 				"pkgconfig(ldap)",
 				"pkgconfig(libcap)",
+				"pkgconfig(libcrypt)",
 				"pkgconfig(libevent)",
 				"pkgconfig(libsasl2)",
 				"pkgconfig(libtirpc)",
@@ -22,8 +23,7 @@
 			"depends": [
 				"soname(libc.so.6(x86_64))",
 				"soname(libgssapi_krb5.so.2(x86_64))",
-				"soname(libldap.so.2(x86_64))",
-				"soname(libresolv.so.2(x86_64))"
+				"soname(libldap.so.2(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libnfsidmap.so.1",
@@ -51,6 +51,7 @@
 				"pkgconfig(krb5)",
 				"pkgconfig(ldap)",
 				"pkgconfig(libcap)",
+				"pkgconfig(libcrypt)",
 				"pkgconfig(libevent)",
 				"pkgconfig(libsasl2)",
 				"pkgconfig(libtirpc)",
@@ -83,6 +84,7 @@
 				"pkgconfig(krb5)",
 				"pkgconfig(ldap)",
 				"pkgconfig(libcap)",
+				"pkgconfig(libcrypt)",
 				"pkgconfig(libevent)",
 				"pkgconfig(libsasl2)",
 				"pkgconfig(libtirpc)",
@@ -236,6 +238,7 @@
 				"pkgconfig(krb5)",
 				"pkgconfig(ldap)",
 				"pkgconfig(libcap)",
+				"pkgconfig(libcrypt)",
 				"pkgconfig(libevent)",
 				"pkgconfig(libsasl2)",
 				"pkgconfig(libtirpc)",
@@ -254,6 +257,6 @@
 		}
 	},
 	"source-name": "nfs-utils",
-	"source-release": "4",
-	"source-version": "2.8.7"
+	"source-release": "5",
+	"source-version": "2.9.2"
 }
