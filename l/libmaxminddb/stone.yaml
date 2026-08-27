@@ -3,7 +3,7 @@
 
 name        : libmaxminddb
 version     : "1.13.3"
-release     : 3
+release     : 4
 homepage    : https://maxmind.github.io/libmaxminddb/
 upstreams   :
     - https://github.com/maxmind/libmaxminddb/releases/download/1.13.3/libmaxminddb-1.13.3.tar.gz : a66502ea76eadbe17f2cd6fd708946777253972d2ae8157dee1b23a2fb528171
