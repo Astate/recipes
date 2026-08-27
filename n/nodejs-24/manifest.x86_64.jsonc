@@ -150,6 +150,7 @@
 				"/usr/lib/node_modules_24/npm/lib/commands/help.js",
 				"/usr/lib/node_modules_24/npm/lib/commands/init.js",
 				"/usr/lib/node_modules_24/npm/lib/commands/install-ci-test.js",
+				"/usr/lib/node_modules_24/npm/lib/commands/install-scripts.js",
 				"/usr/lib/node_modules_24/npm/lib/commands/install-test.js",
 				"/usr/lib/node_modules_24/npm/lib/commands/install.js",
 				"/usr/lib/node_modules_24/npm/lib/commands/link.js",
@@ -210,6 +211,7 @@
 				"/usr/lib/node_modules_24/npm/lib/package-url-cmd.js",
 				"/usr/lib/node_modules_24/npm/lib/trust-cmd.js",
 				"/usr/lib/node_modules_24/npm/lib/utils/allow-scripts-cmd.js",
+				"/usr/lib/node_modules_24/npm/lib/utils/allow-scripts-prune.js",
 				"/usr/lib/node_modules_24/npm/lib/utils/allow-scripts-remediation.js",
 				"/usr/lib/node_modules_24/npm/lib/utils/allow-scripts-writer.js",
 				"/usr/lib/node_modules_24/npm/lib/utils/audit-error.js",
@@ -280,6 +282,7 @@
 				"/usr/lib/node_modules_24/npm/man/man1/npm-help.1",
 				"/usr/lib/node_modules_24/npm/man/man1/npm-init.1",
 				"/usr/lib/node_modules_24/npm/man/man1/npm-install-ci-test.1",
+				"/usr/lib/node_modules_24/npm/man/man1/npm-install-scripts.1",
 				"/usr/lib/node_modules_24/npm/man/man1/npm-install-test.1",
 				"/usr/lib/node_modules_24/npm/man/man1/npm-install.1",
 				"/usr/lib/node_modules_24/npm/man/man1/npm-link.1",
@@ -1625,6 +1628,6 @@
 		}
 	},
 	"source-name": "nodejs-24",
-	"source-release": "11",
-	"source-version": "24.19.0"
+	"source-release": "12",
+	"source-version": "24.20.0"
 }
