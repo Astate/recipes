@@ -3,7 +3,7 @@
 
 name        : pam-u2f
 version     : 1.4.0
-release     : 1
+release     : 2
 summary     : Universal 2nd Factor (U2F) PAM authentication module from Yubico
 license     : BSD-2-Clause
 homepage    : https://developers.yubico.com/pam-u2f/
