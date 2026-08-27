@@ -3,7 +3,7 @@
 
 name        : gnome-shell-extension-dash-to-panel
 version     : "73"
-release     : 8
+release     : 9
 homepage    : https://github.com/home-sweet-gnome/dash-to-panel
 upstreams   :
     - https://github.com/home-sweet-gnome/dash-to-panel/archive/refs/tags/v73.tar.gz : f58617f9691779dfa34f4fdd4fcb1e009cc4e60c5b0b4eca203292c9c823a1cf
