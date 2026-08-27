@@ -2257,6 +2257,17 @@
 				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/agentsVoice/browser/media/pt-BR_gil_neutral.mp3",
 				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/agentsVoice/browser/media/victoria_neutral.mp3",
 				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/agentsVoice/browser/media/zh_wuzhi_neutral.mp3",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/artist-beret.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/baseball-cap.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/construction-hard-hat.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/cowboy-hat.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/crown.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/firefighter-helmet.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/full-size-spinner-hat.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/grand-top-hat-monocle.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/leaning-party-hat.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/sailor-hat.png",
+				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/accessories/viking-helmet.png",
 				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/buddy-clapping-insiders-tracking-96.png",
 				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/buddy-clapping-insiders-tracking-96.spritesheet.png",
 				"/usr/lib/vscode/resources/app/out/vs/workbench/contrib/chat/browser/widget/media/chatPet/buddy-clapping-stable-tracking-96.png",
@@ -2446,6 +2457,6 @@
 		}
 	},
 	"source-name": "vscode-bin",
-	"source-release": "36",
-	"source-version": "1.134.0"
+	"source-release": "37",
+	"source-version": "1.135.0"
 }
