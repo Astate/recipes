@@ -3,7 +3,7 @@
 
 name        : libxxf86vm
 version     : "1.1.7"
-release     : 6
+release     : 7
 homepage    : https://gitlab.freedesktop.org/xorg/lib/libxxf86vm
 upstreams   :
     - http://xorg.freedesktop.org/releases/individual/lib/libXxf86vm-1.1.7.tar.gz : 9a983e3cbb7a57905262291a17da962293c0645f99efd475e3c85264bfddc337
