@@ -3,7 +3,7 @@
 
 name        : libfprint
 version     : "1.94.10"
-release     : 2
+release     : 3
 homepage    : https://fprint.freedesktop.org/
 upstreams   :
     - https://gitlab.freedesktop.org/libfprint/libfprint/-/archive/v1.94.10/libfprint-v1.94.10.tar.gz : 8d5b202e836f69076c90ead0a654b0ee275788922359ebc9d7706bb5cde7ca54
