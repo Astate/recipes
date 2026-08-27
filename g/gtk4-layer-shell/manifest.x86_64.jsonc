@@ -69,6 +69,6 @@
 		}
 	},
 	"source-name": "gtk4-layer-shell",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "1.3.0"
 }
