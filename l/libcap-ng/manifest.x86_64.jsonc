@@ -139,7 +139,6 @@
 				"/usr/share/bash-completion/completions/libcap-ng.bash_completion",
 				"/usr/share/bash-completion/completions/netcap",
 				"/usr/share/bash-completion/completions/pscap",
-				"/usr/share/man/man8/cap-audit.8",
 				"/usr/share/man/man8/filecap.8",
 				"/usr/share/man/man8/netcap.8",
 				"/usr/share/man/man8/pscap.8"
@@ -178,6 +177,6 @@
 		}
 	},
 	"source-name": "libcap-ng",
-	"source-release": "8",
-	"source-version": "0.9.4"
+	"source-release": "9",
+	"source-version": "0.9.5"
 }
