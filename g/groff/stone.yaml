@@ -3,7 +3,7 @@
 
 name        : groff
 version     : "1.24.1"
-release     : 8
+release     : 9
 homepage    : https://www.gnu.org/software/groff/
 upstreams   :
     - https://mirrors.rit.edu/gnu/groff/groff-1.24.1.tar.gz : 74e2819795b6aff431aeac983d63a9c8968eeaba2a2eba7df8ba4c7b41e7cfd8
