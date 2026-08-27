@@ -3,7 +3,7 @@
 
 name        : osinfo-db
 version     : "20251212"
-release     : 2
+release     : 3
 homepage    : https://libosinfo.org
 upstreams   :
     - https://releases.pagure.org/libosinfo/osinfo-db-20251212.tar.xz:
