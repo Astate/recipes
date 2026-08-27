@@ -17,7 +17,6 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"linux-pam-base",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcrypt.so.2(x86_64))",
 				"soname(libeconf.so.0(x86_64))",
@@ -577,6 +576,6 @@
 		}
 	},
 	"source-name": "linux-pam",
-	"source-release": "19",
+	"source-release": "20",
 	"source-version": "1.7.2"
 }
