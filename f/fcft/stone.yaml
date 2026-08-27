@@ -3,7 +3,7 @@
 
 name        : fcft
 version     : "3.3.3"
-release     : 1
+release     : 2
 homepage    : https://codeberg.org/dnkl/fcft/releases/download/3.3.3
 upstreams   :
     - https://codeberg.org/dnkl/fcft/releases/download/3.3.3/fcft-3.3.3.tar.gz : bb298772d625e7d917373d541456f34f1957a9e22b16f17f64158b2c3816563c
