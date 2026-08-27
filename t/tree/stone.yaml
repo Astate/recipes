@@ -3,7 +3,7 @@
 
 name        : tree
 version     : "2.3.2"
-release     : 6
+release     : 7
 homepage    : https://oldmanprogrammer.net/source.php?dir=projects/tree
 upstreams   :
     - https://oldmanprogrammer.net/tar/tree/tree-2.3.2.tgz : 6b941dd6cbecfb4d3250700e4d08d8e0c251488981dd4868b90d744234300e21

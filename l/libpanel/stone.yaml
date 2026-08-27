@@ -3,7 +3,7 @@
 
 name        : libpanel
 version     : "1.10.4"
-release     : 5
+release     : 6
 upstreams   :
     - https://download.gnome.org/sources/libpanel/1.10/libpanel-1.10.4.tar.xz : 593888a7691f0af8aaa6e193c9e14afa86a810c0c2f27515c6d813f18733b1cd
 homepage    : https://gitlab.gnome.org/GNOME/libpanel

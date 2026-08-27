@@ -1259,6 +1259,6 @@
 		}
 	},
 	"source-name": "libx11",
-	"source-release": "9",
+	"source-release": "10",
 	"source-version": "1.8.13"
 }

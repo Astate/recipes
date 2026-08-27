@@ -3,7 +3,7 @@
 
 name        : gnome-shell-extension-tilingshell
 version     : "16.2.0"
-release     : 4
+release     : 5
 homepage    : https://github.com/domferr/tilingshell
 upstreams   :
     - https://github.com/domferr/tilingshell/releases/download/16.2.0/GNOME.42-44.tilingshell@ferrarodomenico.com.zip :

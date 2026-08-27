@@ -3,7 +3,7 @@
 
 name        : pandoc
 version     : "3.10.2"
-release     : 2
+release     : 3
 homepage    : https://pandoc.org/
 upstreams   :
     - https://github.com/jgm/pandoc/archive/refs/tags/3.10.2.tar.gz : ec4c5d36e355785802601986637369ada24079ac20af6c0ee85c79502d77b3f0

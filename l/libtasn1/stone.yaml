@@ -3,7 +3,7 @@
 
 name        : libtasn1
 version     : "4.21.0"
-release     : 4
+release     : 5
 summary     : The ASN.1 library used in GNUTLS
 license     :
     - GPL-3.0-or-later

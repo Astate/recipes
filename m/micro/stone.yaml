@@ -3,7 +3,7 @@
 
 name        : micro
 version     : "2.0.15"
-release     : 7
+release     : 8
 homepage    : https://micro-editor.github.io/
 upstreams   :
     - https://github.com/zyedidia/micro/archive/refs/tags/v2.0.15.tar.gz : 612c775321c268c8f9e1767505ff378bca9b9ab66f5c41b69ecb2464ecf15084
@@ -18,7 +18,6 @@ builddeps   :
 #[LATER] rundep: xclip
 networking  : true
 build       : |
-    export CGO_CPPFLAGS="${CPPFLAGS}"
     export CGO_CFLAGS="${CFLAGS}"
     export CGO_CXXFLAGS="${CXXFLAGS}"
     export CGO_LDFLAGS="${LDFLAGS}"

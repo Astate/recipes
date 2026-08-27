@@ -3,7 +3,7 @@
 
 name        : libqrtr-glib
 version     : "1.4.0"
-release     : 4
+release     : 5
 homepage    : https://gitlab.freedesktop.org/mobile-broadband/libqrtr-glib
 upstreams   :
     - https://gitlab.freedesktop.org/mobile-broadband/libqrtr-glib/-/archive/1.4.0/libqrtr-glib-1.4.0.tar.bz2 : f22469fab6ae4256449ab13929566a8ecd555e15d06728682a8acf47f79460f5

@@ -3,7 +3,7 @@
 
 name        : riftbar
 version     : "0.1.8"
-release     : 2
+release     : 3
 homepage    : https://github.com/BinaryHarbinger/riftbar
 upstreams   :
     - https://github.com/BinaryHarbinger/riftbar/archive/refs/tags/v0.1.8.tar.gz : 3db542d6e991f2371fe850820e3d924ff0dd7f579da981bd0bdc8825aeca9f26

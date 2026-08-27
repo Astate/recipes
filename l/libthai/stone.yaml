@@ -3,7 +3,7 @@
 
 name        : libthai
 version     : "0.1.30"
-release     : 3
+release     : 4
 homepage    : https://linux.thai.net/projects/libthai
 upstreams   :
     - https://github.com/tlwg/libthai/releases/download/v0.1.30/libthai-0.1.30.tar.xz : ddba8b53dfe584c3253766030218a88825488a51a7deef041d096e715af64bdd

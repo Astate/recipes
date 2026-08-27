@@ -3,7 +3,7 @@
 
 name        : sord
 version     : "0.16.22"
-release     : 4
+release     : 5
 homepage    : https://gitlab.com/drobilla/sord
 upstreams   :
     - https://gitlab.com/drobilla/sord/-/archive/v0.16.22/sord-v0.16.22.tar.gz : 040fb3f369dd49a7717eb28ca0a66766352e25e760729903fc8a01e117122901

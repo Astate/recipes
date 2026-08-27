@@ -3,7 +3,7 @@
 
 name        : libunistring
 version     : "1.4.2"
-release     : 7
+release     : 8
 homepage    : https://www.gnu.org/software/libunistring/
 upstreams   :
     # The upstream gnu source is terrible, use a mirror

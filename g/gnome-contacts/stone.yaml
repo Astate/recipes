@@ -3,7 +3,7 @@
 
 name        : gnome-contacts
 version     : "50.0"
-release     : 2
+release     : 3
 homepage    : https://apps.gnome.org/Contacts/
 upstreams   :
     - https://download.gnome.org/sources/gnome-contacts/50/gnome-contacts-50.0.tar.xz : 2a3bea343171be244f12b7c21a40ca38e9a92dea9890393af5e8ac139bc0dab3

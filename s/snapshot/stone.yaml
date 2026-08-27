@@ -3,7 +3,7 @@
 
 name        : snapshot
 version     : "50.0"
-release     : 10
+release     : 11
 homepage    : https://apps.gnome.org/Snapshot/
 upstreams   :
     - https://download.gnome.org/sources/snapshot/50/snapshot-50.0.tar.xz : ec9daf9883eb90330911bb51e6b69eed8c9dbdd5438e864adc90ee55a5fe9eed

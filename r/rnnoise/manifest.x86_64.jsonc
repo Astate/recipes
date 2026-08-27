@@ -4,6 +4,7 @@
 	"packages": {
 		"rnnoise": {
 			"build-depends": [
+				"binary(gzip)",
 				"binary(tar)"
 			],
 			"depends": [
@@ -24,6 +25,7 @@
 		},
 		"rnnoise-devel": {
 			"build-depends": [
+				"binary(gzip)",
 				"binary(tar)"
 			],
 			"depends": [
@@ -41,6 +43,6 @@
 		}
 	},
 	"source-name": "rnnoise",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "0.2"
 }

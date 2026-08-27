@@ -3,7 +3,7 @@
 
 name        : gnome-font-viewer
 version     : "50.0"
-release     : 5
+release     : 6
 homepage    : https://apps.gnome.org/FontViewer/
 upstreams   :
     - https://download.gnome.org/sources/gnome-font-viewer/50/gnome-font-viewer-50.0.tar.xz : 9564b088c5b150c54e2a3a7bc7014deec6ee551261e98488f891b1f1b8dc6b80

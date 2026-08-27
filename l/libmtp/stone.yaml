@@ -3,7 +3,7 @@
 
 name        : libmtp
 version     : "1.1.23"
-release     : 3
+release     : 4
 homepage    : https://github.com/libmtp/libmtp
 upstreams   :
     - https://github.com/libmtp/libmtp/releases/download/v1.1.23/libmtp-1.1.23.tar.gz : 74a2b6e8cb4a0304e95b995496ea3ac644c29371649b892b856e22f12a0bdeed

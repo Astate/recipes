@@ -3,7 +3,7 @@
 
 name        : gnome-desktop
 version     : "44.5"
-release     : 12
+release     : 13
 homepage    : https://gitlab.gnome.org/GNOME/gnome-desktop
 upstreams   :
     - https://download.gnome.org/sources/gnome-desktop/44/gnome-desktop-44.5.tar.xz : 20e0995a6e3a03e8c1026c5a27bc3f45e69ffcc392ad743dcab6107a541d232f

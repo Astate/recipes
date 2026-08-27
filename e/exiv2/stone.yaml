@@ -3,7 +3,7 @@
 
 name        : exiv2
 version     : "0.28.8"
-release     : 9
+release     : 10
 homepage    : https://exiv2.org/
 upstreams   :
     - https://github.com/Exiv2/exiv2/archive/refs/tags/v0.28.8.tar.gz : ea51b0609f58a9afa063b60daa1539948b62247721e154f4fff0ad3aec9f9756

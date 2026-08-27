@@ -3,7 +3,7 @@
 
 name        : zlib-ng
 version     : "2.3.3"
-release     : 23
+release     : 24
 summary     : zlib replacement with optimizations for "next generation" systems.
 license     : Zlib
 homepage    : https://github.com/zlib-ng/zlib-ng

@@ -3,7 +3,7 @@
 
 name        : kdsoap
 version     : "2.3.0"
-release     : 3
+release     : 4
 upstreams   :
     - https://github.com/KDAB/KDSoap/releases/download/kdsoap-2.3.0/kdsoap-2.3.0.tar.gz : d2184951145cb768cc30376a10701be13869a164c1272d09f831ba2d195f02de
 homepage    : https://www.kdab.com/development-resources/qt-tools/kd-soap

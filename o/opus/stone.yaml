@@ -3,7 +3,7 @@
 
 name       : opus
 version    : "1.6.1"
-release    : 4
+release    : 5
 homepage   : https://www.opus-codec.org/
 upstreams     :
     - https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz : 6ffcb593207be92584df15b32466ed64bbec99109f007c82205f0194572411a1

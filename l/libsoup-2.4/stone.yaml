@@ -3,7 +3,7 @@
 
 name        : libsoup-2.4
 version     : "2.7.4+git.5739a0905"
-release     : 1
+release     : 2
 homepage    : https://gitlab.gnome.org/GNOME/libsoup
 upstreams   :
     - git|https://gitlab.gnome.org/GNOME/libsoup.git : 5739a090529209c2afc13f482256573bcd9ce940

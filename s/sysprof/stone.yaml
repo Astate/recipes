@@ -3,7 +3,7 @@
 
 name        : sysprof
 version     : "50.0"
-release     : 6
+release     : 7
 upstreams   :
     - https://download.gnome.org/sources/sysprof/50/sysprof-50.0.tar.xz : aace44e90e90f6c34bb2fbec8ccb47b8f81103080978d65759287843c329d53a
 homepage    : https://apps.gnome.org/Sysprof/

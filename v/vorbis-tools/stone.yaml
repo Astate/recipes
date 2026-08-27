@@ -3,7 +3,7 @@
 
 name        : vorbis-tools
 version     : "1.4.3"
-release     : 1
+release     : 2
 upstreams   :
     - https://ftp.osuosl.org/pub/xiph/releases/vorbis/vorbis-tools-1.4.3.tar.gz : a1fe3ddc6777bdcebf6b797e7edfe0437954b24756ffcc8c6b816b63e0460dde
 homepage    : https://www.xiph.org/vorbis/

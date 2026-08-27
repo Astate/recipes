@@ -3,7 +3,7 @@
 
 name        : cpx
 version     : "0.1.4"
-release     : 2
+release     : 3
 homepage    : https://github.com/11happy/cpx
 upstreams   :
     - https://github.com/11happy/cpx/archive/refs/tags/v0.1.4.tar.gz : f7d8b7d1926c007d358780dbf82e4ef6b0a84cb44ea3f68732f29a83e78a0495

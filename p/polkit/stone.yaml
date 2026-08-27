@@ -3,7 +3,7 @@
 
 name        : polkit
 version     : "127"
-release     : 10
+release     : 11
 summary     : Application-level authorization toolkit
 license     : GPL-2.0-or-later
 homepage    : https://github.com/polkit-org/polkit

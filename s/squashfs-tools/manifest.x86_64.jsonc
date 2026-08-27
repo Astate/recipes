@@ -4,6 +4,7 @@
 	"packages": {
 		"squashfs-tools": {
 			"build-depends": [
+				"binary(gzip)",
 				"binary(help2man)",
 				"binary(which)",
 				"pkgconfig(liblz4)",
@@ -15,6 +16,7 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(liblz4.so.1(x86_64))",
 				"soname(liblzma.so.5(x86_64))",
 				"soname(liblzo2.so.2(x86_64))",
@@ -42,6 +44,6 @@
 		}
 	},
 	"source-name": "squashfs-tools",
-	"source-release": "6",
+	"source-release": "7",
 	"source-version": "4.7.5"
 }

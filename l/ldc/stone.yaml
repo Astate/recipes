@@ -3,7 +3,7 @@
 
 name        : ldc
 version     : "1.42.0"
-release     : 22
+release     : 23
 summary     : The LLVM-based D Compiler
 license     :
     - Apache-2.0

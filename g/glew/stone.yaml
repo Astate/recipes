@@ -3,7 +3,7 @@
 
 name        : glew
 version     : "2.3.1"
-release     : 5
+release     : 6
 homepage    : https://github.com/nigels-com/glew
 upstreams   :
     - https://github.com/nigels-com/glew/releases/download/glew-2.3.1/glew-2.3.1.tgz : b64790f94b926acd7e8f84c5d6000a86cb43967bd1e688b03089079799c9e889

@@ -3,7 +3,7 @@
 
 name        : bat
 version     : "0.26.1"
-release     : 3
+release     : 4
 homepage    : https://github.com/sharkdp/bat
 upstreams   :
     - https://github.com/sharkdp/bat/archive/refs/tags/v0.26.1.tar.gz : 4474de87e084953eefc1120cf905a79f72bbbf85091e30cf37c9214eafcaa9c9

@@ -3,7 +3,7 @@
 
 name        : gnome-console
 version     : "50.0"
-release     : 10
+release     : 11
 homepage    : https://gitlab.gnome.org/GNOME/console
 upstreams   :
     - https://download.gnome.org/sources/gnome-console/50/gnome-console-50.0.tar.xz : e4950207f0547e6a6c0f18eebfcf6e1a10461eab0f2fae0aae512b1044c7ac6e

@@ -3,7 +3,7 @@
 
 name        : conmon
 version     : "2.2.1"
-release     : 1
+release     : 2
 homepage    : https://github.com/containers/conmon
 upstreams   :
     - https://github.com/containers/conmon/archive/refs/tags/v2.2.1.tar.gz : 814fb5979a3a4b8576b1f901e606b482bebb41cb7e57926e6d5765ee786b96d3
