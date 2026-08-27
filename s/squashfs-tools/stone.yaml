@@ -3,7 +3,7 @@
 
 name        : squashfs-tools
 version     : "4.7.5"
-release     : 6
+release     : 7
 homepage    : https://github.com/plougher/squashfs-tools
 upstreams   :
     - https://github.com/plougher/squashfs-tools/releases/download/4.7.5/squashfs-tools-4.7.5.tar.gz : 547b7b7f4d2e44bf91b6fc554664850c69563701deab9fd9cd7e21f694c88ea6
@@ -13,6 +13,7 @@ description : |
 license     :
     - GPL-2.0-or-later
 builddeps   :
+    - binary(gzip)
     - binary(help2man)
     - binary(which)
     - pkgconfig(liblzma)
