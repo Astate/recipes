@@ -2,23 +2,28 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : bubblewrap
-version     : "0.11.2"
-release     : 7
+version     : "0.12.0"
+release     : 8
 homepage    : https://github.com/containers/bubblewrap
 upstreams   :
-    - https://github.com/containers/bubblewrap/releases/download/v0.11.2/bubblewrap-0.11.2.tar.xz : 69abc30005d2186baf7737feacd8da35633b93cf5af38838ecff17c5f8e924f6
+    - https://github.com/containers/bubblewrap/releases/download/v0.12.0/bubblewrap-0.12.0.tar.xz : 9760d007363e3abba7c747489910f9f82d9fca53ba3bd3282e396fa3c97a3314
 summary     : Low-level unprivileged sandboxing tool used by Flatpak and similar projects
 description : |
     Low-level unprivileged sandboxing tool used by Flatpak and similar projects
-license     :
-    - LGPL-2.0-or-later
+license     : LGPL-2.1-or-later
 builddeps   :
     - binary(bash)
     - binary(python3)
     - binary(xsltproc)
     - pkgconfig(libcap)
+    - docbook-xsl
+    # libselinux
+environment : |
+    %export_docbook_catalogs
 setup       : |
-    %meson
+    # assume_kernel should match the min kernel in glibc
+    %meson \
+        -Dassume_kernel=6.1.0
 build       : |
     %meson_build
 install     : |
