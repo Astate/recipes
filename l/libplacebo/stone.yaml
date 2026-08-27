@@ -3,7 +3,7 @@
 
 name        : libplacebo
 version     : "7.360.1"
-release     : 12
+release     : 13
 homepage    : https://libplacebo.org/
 upstreams   :
     - https://code.videolan.org/videolan/libplacebo/-/archive/v7.360.1/libplacebo-v7.360.1.tar.bz2:
