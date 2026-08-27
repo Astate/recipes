@@ -3,7 +3,7 @@
 
 name        : xdg-desktop-portal-gnome
 version     : "50.0"
-release     : 10
+release     : 11
 homepage    : https://gitlab.gnome.org/GNOME/xdg-desktop-portal-gnome
 upstreams   :
     - https://download.gnome.org/sources/xdg-desktop-portal-gnome/50/xdg-desktop-portal-gnome-50.0.tar.xz : ceeef2fb68b34b3f66a3def0a332a22a70af272641fb6c50065b7a2fde3d5759
