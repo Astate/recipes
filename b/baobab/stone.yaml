@@ -3,7 +3,7 @@
 
 name        : baobab
 version     : "50.0"
-release     : 7
+release     : 8
 homepage    : https://apps.gnome.org/Baobab/
 upstreams   :
     - https://download.gnome.org/sources/baobab/50/baobab-50.0.tar.xz : 573c84f15f5f963a440500f6f43412c928ac2335f6b69dcb58f1a1fe5201024b
