@@ -3,7 +3,7 @@
 
 name        : orc
 version     : "0.4.42"
-release     : 5
+release     : 6
 homepage    : https://gitlab.freedesktop.org/gstreamer/orc
 upstreams   :
     - https://gstreamer.freedesktop.org/src/orc/orc-0.4.42.tar.xz : 7ec912ab59af3cc97874c456a56a8ae1eec520c385ec447e8a102b2bd122c90c
