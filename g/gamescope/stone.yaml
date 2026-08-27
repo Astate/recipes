@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gamescope
-version     : "3.16.25"
-release     : 10
+version     : "3.16.26"
+release     : 11
 homepage    : https://github.com/ValveSoftware/gamescope
 upstreams   :
-    - git|https://github.com/ValveSoftware/gamescope.git : 17baf4abd1ab3353fb705e4d0d023f84e870f7e8
+    - git|https://github.com/ValveSoftware/gamescope.git : 565397f8cc0979104acd922e54783b451ddbb840
     - git|https://github.com/misyltoad/GamescopeShaders.git : 64d7a0570e15dc5c9aeef084278b9eb4cc1abb25
 summary     : SteamOS session compositing window manager
 description : |
@@ -24,6 +24,7 @@ builddeps   :
     - pkgconfig(hwdata)
     - pkgconfig(jsoncpp)
     - pkgconfig(lcms2)
+    - pkgconfig(libavif)
     - pkgconfig(libcap)
     - pkgconfig(libdecor-0)
     - pkgconfig(libdisplay-info)

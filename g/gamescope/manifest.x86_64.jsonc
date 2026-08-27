@@ -12,6 +12,7 @@
 				"pkgconfig(hwdata)",
 				"pkgconfig(jsoncpp)",
 				"pkgconfig(lcms2)",
+				"pkgconfig(libavif)",
 				"pkgconfig(libcap)",
 				"pkgconfig(libdecor-0)",
 				"pkgconfig(libdisplay-info)",
@@ -56,6 +57,7 @@
 				"soname(libXmu.so.6(x86_64))",
 				"soname(libXrender.so.1(x86_64))",
 				"soname(libXxf86vm.so.1(x86_64))",
+				"soname(libavif.so.16(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcap.so.2(x86_64))",
 				"soname(libdecor-0.so.0(x86_64))",
@@ -64,6 +66,7 @@
 				"soname(libeis.so.1(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libinput.so.10(x86_64))",
+				"soname(liblcms2.so.2(x86_64))",
 				"soname(libluajit-5.1.so.2(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libpipewire-0.3.so.0(x86_64))",
@@ -145,6 +148,6 @@
 		}
 	},
 	"source-name": "gamescope",
-	"source-release": "10",
-	"source-version": "3.16.25"
+	"source-release": "11",
+	"source-version": "3.16.26"
 }
