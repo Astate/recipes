@@ -3,7 +3,7 @@
 
 name        : egl-x11
 version     : "1.0.5"
-release     : 3
+release     : 4
 homepage    : https://github.com/NVIDIA/egl-x11
 upstreams   :
     - https://github.com/NVIDIA/egl-x11/archive/refs/tags/v1.0.5.tar.gz : 92e22178b3aba63be4cb2bf8953991bdf52ad3e5ec26212143b2df46d16e82d7
