@@ -49,14 +49,13 @@
 				"/usr/lib/libsord-0.so",
 				"/usr/lib/pkgconfig/sord-0.pc",
 				"/usr/share/doc/sord-0/html/clipboard.js",
+				"/usr/share/doc/sord-0/html/codefolding.js",
 				"/usr/share/doc/sord-0/html/dir_d44c64559bbebec7f509842c48db8b23.html",
 				"/usr/share/doc/sord-0/html/dir_dd1cc79072a984915465250a6dd95f79.html",
 				"/usr/share/doc/sord-0/html/doxygen.svg",
 				"/usr/share/doc/sord-0/html/doxygen_crawl.html",
-				"/usr/share/doc/sord-0/html/dynsections.js",
 				"/usr/share/doc/sord-0/html/group__sord.html",
 				"/usr/share/doc/sord-0/html/index.html",
-				"/usr/share/doc/sord-0/html/jquery.js",
 				"/usr/share/doc/sord-0/html/navtree.css",
 				"/usr/share/doc/sord-0/html/style.css",
 				"/usr/share/doc/sord-0/html/tabs.css"
@@ -68,6 +67,6 @@
 		}
 	},
 	"source-name": "sord",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "0.16.22"
 }
