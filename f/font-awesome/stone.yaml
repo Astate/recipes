@@ -1,0 +1,39 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : font-awesome
+version     : "7.3.1"
+release     : 3
+homepage    : https://github.com/FortAwesome/Font-Awesome
+upstreams   :
+    - https://github.com/FortAwesome/Font-Awesome/archive/refs/tags/7.3.1.tar.gz : d5a20554faa1ad30148b05f090a556e23495c446435c8dfc1624d3c0e3c2640b
+summary     : Font Awesome Free
+description : |
+    Font Awesome - The iconic font and CSS toolkit
+license     : OFL-1.1
+install     : |
+    %install_file otfs/*.otf -t %(installroot)%(datadir)/fonts/opentype/fontawesome/
+    %install_file webfonts/*.woff2 -t %(installroot)%(datadir)/fonts/WOFF2/fontawesome/
+    %install_file %(pkgdir)/fontawesome.metainfo.xml %(installroot)%(datadir)/metainfo/fontawesome.metainfo.xml
+
+    # v7 dropped TTF; keep font-awesome-ttf as a transitional package
+    %install_dir %(installroot)%(docdir)/replace/%(name)-ttf
+    echo "font-awesome-otf" > %(installroot)%(docdir)/replace/%(name)-ttf/TRANSITION
+packages    :
+    - "%(name)":
+        rundeps:
+            - "%(name)-otf"
+            - "%(name)-woff2"
+    - "%(name)-ttf":
+        summary: Transitional package for font-awesome-otf
+        paths:
+            - /usr/share/fonts/truetype
+            - /usr/share/doc/replace/font-awesome-ttf
+        rundeps:
+            - "%(name)-otf"
+    - "%(name)-otf":
+        paths:
+            - /usr/share/fonts/opentype
+    - "%(name)-woff2":
+        paths:
+            - /usr/share/fonts/WOFF2

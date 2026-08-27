@@ -1,0 +1,45 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"font-awesome": {
+			"depends": [
+				"font-awesome-otf",
+				"font-awesome-woff2"
+			],
+			"files": [
+				"/usr/share/metainfo/fontawesome.metainfo.xml"
+			],
+			"name": "font-awesome"
+		},
+		"font-awesome-otf": {
+			"files": [
+				"/usr/share/fonts/opentype/fontawesome/Font Awesome 7 Brands-Regular-400.otf",
+				"/usr/share/fonts/opentype/fontawesome/Font Awesome 7 Free-Regular-400.otf",
+				"/usr/share/fonts/opentype/fontawesome/Font Awesome 7 Free-Solid-900.otf"
+			],
+			"name": "font-awesome-otf"
+		},
+		"font-awesome-ttf": {
+			"depends": [
+				"font-awesome-otf"
+			],
+			"files": [
+				"/usr/share/doc/replace/font-awesome-ttf/TRANSITION"
+			],
+			"name": "font-awesome-ttf"
+		},
+		"font-awesome-woff2": {
+			"files": [
+				"/usr/share/fonts/WOFF2/fontawesome/fa-brands-400.woff2",
+				"/usr/share/fonts/WOFF2/fontawesome/fa-regular-400.woff2",
+				"/usr/share/fonts/WOFF2/fontawesome/fa-solid-900.woff2",
+				"/usr/share/fonts/WOFF2/fontawesome/fa-v4compatibility.woff2"
+			],
+			"name": "font-awesome-woff2"
+		}
+	},
+	"source-name": "font-awesome",
+	"source-release": "3",
+	"source-version": "7.3.1"
+}
