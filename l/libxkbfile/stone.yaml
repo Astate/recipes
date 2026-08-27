@@ -3,7 +3,7 @@
 
 name        : libxkbfile
 version     : "1.2.0"
-release     : 4
+release     : 5
 homepage    : https://www.x.org/
 upstreams   :
     - https://www.x.org/releases/individual/lib/libxkbfile-1.2.0.tar.xz : 7f71884e5faf56fb0e823f3848599cf9b5a9afce51c90982baeb64f635233ebf
