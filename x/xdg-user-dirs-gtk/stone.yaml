@@ -3,7 +3,7 @@
 
 name        : xdg-user-dirs-gtk
 version     : "0.16"
-release     : 4
+release     : 5
 homepage    : https://gitlab.gnome.org/GNOME/xdg-user-dirs-gtk
 upstreams   :
     - https://download.gnome.org/sources/xdg-user-dirs-gtk/0.16/xdg-user-dirs-gtk-0.16.tar.xz : be825de7f89175db5ead0cd3744d2761109c70943251a87092259163025520a9
