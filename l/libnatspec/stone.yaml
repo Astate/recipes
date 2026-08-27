@@ -3,7 +3,7 @@
 
 name        : libnatspec
 version     : "0.3.3-alt1"
-release     : 1
+release     : 2
 homepage    : https://github.com/Etersoft/libnatspec
 upstreams   :
     - https://github.com/Etersoft/libnatspec/archive/refs/tags/0.3.3-alt1.tar.gz : 89f8df4ce4244d11083e79d3692c415da0745761059aaf13f40841d766884b84
