@@ -2,18 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : roswell
-version     : "24.10.115"
-release     : 1
+version     : "26.02.116"
+release     : 2
 homepage    : https://github.com/roswell/roswell
 upstreams   :
-    - https://github.com/roswell/roswell/archive/refs/tags/v24.10.115.tar.gz :
-            hash: 9c23cb263d4645caaae21cda8f1f5793b0f08ee5c5338aab5974cb4f473d1c4b
+    - https://github.com/roswell/roswell/archive/refs/tags/v26.02.116.tar.gz :
+            hash: edece1aa4a807ee36f44061aa802354c722cb5bd80b5056b19aa982c14709a6c
             rename: roswell
 summary     : intended to be a launcher for a major lisp environment that just works.
 description : |
     Roswell is a Lisp implementation installer/manager, launcher, and much more!
-license     :
-    - MIT
+license     : MIT
 builddeps   :
     - pkgconfig(libcurl)
 setup       : |
