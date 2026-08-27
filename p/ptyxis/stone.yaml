@@ -3,7 +3,7 @@
 
 name        : ptyxis
 version     : "50.1"
-release     : 13
+release     : 14
 homepage    : https://gitlab.gnome.org/chergert/ptyxis
 upstreams   :
     - https://download.gnome.org/sources/ptyxis/50/ptyxis-50.1.tar.xz : 73f4b76480644b2840415859a51d20cd7487b0619714f8defcd38212c3ddcffe
