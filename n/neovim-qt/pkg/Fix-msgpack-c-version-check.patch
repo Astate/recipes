@@ -1,0 +1,32 @@
+From 80971ef7142ca09e9d42e9bd11bf61401e4921d6 Mon Sep 17 00:00:00 2001
+From: equalsraf <equalsraf@users.noreply.github.com>
+Date: Wed, 26 Aug 2026 22:41:51 +0000
+Subject: [PATCH] Fix msgpack-c version check
+
+We cannot use ranges in msgpack-c version check, check version 6 first
+and then version 7.
+
+msgpack 7 was released earlier this year - the release notes list no
+breaking changes. Allow building with version 7.
+
+Backported from upstream commits 9ea62b05 and 80971ef7.
+---
+ CMakeLists.txt | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 8ddc3959..80971ef7 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -151,7 +151,10 @@ endif()
+ # msgpack
+ option(USE_SYSTEM_MSGPACK "Use system msgpack libraries " OFF)
+ if(USE_SYSTEM_MSGPACK)
+-	find_package(msgpack-c 6.0.0 REQUIRED)
++	find_package(msgpack-c 6)
++	if(NOT msgpack-c_FOUND)
++		find_package(msgpack-c 7 REQUIRED)
++	endif()
+ else()
+ 	add_subdirectory(third-party)
+ endif()
