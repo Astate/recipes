@@ -3,7 +3,7 @@
 
 name        : loupe
 version     : "50.0"
-release     : 17
+release     : 18
 homepage    : https://apps.gnome.org/Loupe/
 upstreams   :
     - https://download.gnome.org/sources/loupe/50/loupe-50.0.tar.xz : 7ae4fbae5e19316aa640c56f80dc5a791448a62dd8f0ff06e29a58bad813a994
