@@ -3,7 +3,7 @@
 
 name        : lucien
 version     : "0.1.0+git.ee18358"
-release     : 1
+release     : 2
 homepage    : https://github.com/Wachamuli/lucien
 upstreams   :
     - git|https://github.com/Wachamuli/lucien.git : ee183580c3298f30a93d95110c9de981520dc075
