@@ -3,7 +3,7 @@
 
 name        : inotify-tools
 version     : "4.25.9.0"
-release     : 1
+release     : 2
 homepage    : https://github.com/inotify-tools/inotify-tools
 upstreams   :
     - https://github.com/inotify-tools/inotify-tools/archive/refs/tags/4.25.9.0.tar.gz : d33a4fd24c72c2d08893f129d724adf725b93dae96c359e4f4e9f32573cc853b
