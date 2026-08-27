@@ -3,7 +3,7 @@
 
 name        : libcloudproviders
 version     : "0.4.0"
-release     : 6
+release     : 7
 homepage    : https://gitlab.gnome.org/World/libcloudproviders
 upstreams   :
     - https://download.gnome.org/sources/libcloudproviders/0.4/libcloudproviders-0.4.0.tar.xz : 247b228d1027b2683868e7d7080d38693a457e908aadd0c119d52de59a398064
