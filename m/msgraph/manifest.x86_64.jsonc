@@ -16,6 +16,7 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgoa-1.0.so.0(x86_64))",
@@ -25,7 +26,7 @@
 			],
 			"files": [
 				"/usr/lib/girepository-1.0/Msg-1.typelib",
-				"/usr/lib/libmsgraph-1.so.0.3.4",
+				"/usr/lib/libmsgraph-1.so.0.3.5",
 				"/usr/lib/libmsgraph-1.so.1",
 				"/usr/share/doc/msgraph-1/RedHatDisplay-Black.woff",
 				"/usr/share/doc/msgraph-1/RedHatDisplay-Black.woff2",
@@ -306,6 +307,6 @@
 		}
 	},
 	"source-name": "msgraph",
-	"source-release": "7",
-	"source-version": "0.3.4"
+	"source-release": "8",
+	"source-version": "0.3.5"
 }
