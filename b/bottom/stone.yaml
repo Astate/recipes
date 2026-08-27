@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : bottom
-version     : "0.14.8"
-release     : 15
+version     : "0.14.9"
+release     : 16
 homepage    : https://clementtsang.github.io/bottom
 upstreams   :
-    - https://github.com/ClementTsang/bottom/archive/refs/tags/0.14.8.tar.gz : be10adada9ec1e5dd741dcb5581c4e0ebd45cb5bdae213dd296b29511363a770
+    - https://github.com/ClementTsang/bottom/archive/refs/tags/0.14.9.tar.gz : 1dbb940c763fb583b7e1c7dfa165b73ed9a0ba712e72cc97311c5b1c098d5b72
     - https://github.com/ClementTsang/bottom/releases/download/0.14.8/completion.tar.gz : bf36ef7909703b15e035041f7f9b3c9e91809176f8aa7f72d0ad430a7f32fad3
     - https://github.com/ClementTsang/bottom/releases/download/0.14.8/manpage.tar.gz : ad8c9eb29922c1a61a13816c2a5d5c99294d7d6b159d01ba3183853cd0e27144
 summary     : Yet another cross-platform graphical process/system monitor
