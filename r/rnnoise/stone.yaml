@@ -3,7 +3,7 @@
 
 name        : rnnoise
 version     : "0.2"
-release     : 3
+release     : 4
 homepage    : https://gitlab.xiph.org/xiph/rnnoise
 upstreams   :
     - https://gitlab.xiph.org/xiph/rnnoise/-/archive/v0.2/rnnoise-v0.2.tar.gz : fafc947fdd24109a6e72b5f25e4224b54bc74660a2620af5548def85be8c733a
@@ -15,6 +15,7 @@ description : |
     Recurrent neural network for audio noise reduction
 license     : BSD-3-Clause
 builddeps   :
+    - binary(gzip)
     - binary(tar)
 setup       : |
     cp %(sourcedir)/rnnoise_data* .
