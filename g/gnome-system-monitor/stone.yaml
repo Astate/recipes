@@ -3,7 +3,7 @@
 
 name        : gnome-system-monitor
 version     : "50.0"
-release     : 9
+release     : 10
 homepage    : https://apps.gnome.org/SystemMonitor/
 upstreams   :
     - https://download.gnome.org/sources/gnome-system-monitor/50/gnome-system-monitor-50.0.tar.xz : a4138aa754b4584c46de91fad1d685e27b12bc2457de761863b6be02d84c4862
