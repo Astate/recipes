@@ -252,6 +252,6 @@
 		}
 	},
 	"source-name": "gtksourceview",
-	"source-release": "12",
+	"source-release": "13",
 	"source-version": "5.20.0"
 }
