@@ -3,7 +3,7 @@
 
 name        : malcontent
 version     : "0.14.0"
-release     : 2
+release     : 3
 homepage    : https://gitlab.freedesktop.org/pwithnall/malcontent
 upstreams   :
     - https://tecnocode.co.uk/downloads/malcontent/malcontent-0.14.0.tar.xz : 951c2732106254b2f4d22c06061d1a813d8b6310a045afc638c1e1a0c97e4e69
