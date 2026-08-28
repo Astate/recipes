@@ -3,7 +3,7 @@
 
 name        : celluloid
 version     : "0.30"
-release     : 4
+release     : 5
 homepage    : https://github.com/celluloid-player/celluloid
 upstreams   :
     - https://github.com/celluloid-player/celluloid/archive/refs/tags/v0.30.tar.gz : 75ff83f650180cf9fa2458a7015fa84fd3be014e9478d670f9cf94367720313e
