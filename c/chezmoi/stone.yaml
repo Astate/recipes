@@ -3,7 +3,7 @@
 
 name        : chezmoi
 version     : "2.70.2"
-release     : 6
+release     : 7
 homepage    : https://github.com/twpayne/chezmoi
 upstreams   :
     - https://github.com/twpayne/chezmoi/archive/refs/tags/v2.70.2.tar.gz : 4dfacb37e1f6714305d7c8570bc25880342dfddbe81259c9253a5881de035321

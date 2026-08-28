@@ -3,7 +3,7 @@
 
 name        : gnome-settings-daemon
 version     : "50.1"
-release     : 17
+release     : 18
 homepage    : https://gitlab.gnome.org/GNOME/gnome-settings-daemon
 upstreams   :
     - https://download.gnome.org/sources/gnome-settings-daemon/50/gnome-settings-daemon-50.1.tar.xz : dd2c9730914f0ececa0229dd8a8c2940a57ddeb0802434558d4b164d79cfe05c

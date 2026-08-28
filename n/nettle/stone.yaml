@@ -3,7 +3,7 @@
 
 name        : nettle
 version     : "4.0"
-release     : 9
+release     : 10
 homepage    : https://www.lysator.liu.se/~nisse/nettle/
 upstreams   :
     - https://ftp.gnu.org/gnu/nettle/nettle-4.0.tar.gz:

@@ -3,7 +3,7 @@
 
 name        : bpftool
 version     : "7.7.0"
-release     : 6
+release     : 7
 upstreams   :
     - https://github.com/libbpf/bpftool/releases/download/v7.7.0/bpftool-libbpf-v7.7.0-sources.tar.gz: 7d46a381f607432bdb5201a08b889924b6a4883bf09e8efca82a86a7d122cc97
 homepage    : https://github.com/libbpf/bpftool

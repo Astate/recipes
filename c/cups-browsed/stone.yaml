@@ -3,7 +3,7 @@
 
 name        : cups-browsed
 version     : "2.1.1"
-release     : 5
+release     : 6
 homepage    : https://github.com/OpenPrinting/cups-browsed
 upstreams   :
     - https://github.com/OpenPrinting/cups-browsed/releases/download/2.1.1/cups-browsed-2.1.1.tar.gz : bc9ed54ef6940a6ee076f8627458fbc3cfed9b2f7bf4ef6e865be7644a51ce8f

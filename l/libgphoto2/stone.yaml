@@ -3,7 +3,7 @@
 
 name        : libgphoto2
 version     : "2.5.34"
-release     : 3
+release     : 4
 homepage    : http://www.gphoto.org/proj/libgphoto2/
 upstreams   :
     - https://sourceforge.net/projects/gphoto/files/libgphoto/2.5.34/libgphoto2-2.5.34.tar.bz2 : 5df9e774eb4ab6087a193afff84dcafe9f666e3443fe29e73e6779f659ff7f28

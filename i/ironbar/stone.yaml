@@ -3,7 +3,7 @@
 
 name        : ironbar
 version     : "0.19.0"
-release     : 2
+release     : 3
 homepage    : https://github.com/JakeStanger/ironbar
 upstreams   :
     - https://github.com/JakeStanger/ironbar/archive/refs/tags/v0.19.0.tar.gz : 0d25c2f0c72f839b4018ae12b876a71d04b946ce6fe629a0bb12b8b279ca3699

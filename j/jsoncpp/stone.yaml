@@ -3,7 +3,7 @@
 
 name        : jsoncpp
 version     : "1.9.8"
-release     : 10
+release     : 11
 homepage    : https://github.com/open-source-parsers/jsoncpp/
 upstreams   :
     - https://github.com/open-source-parsers/jsoncpp/archive/1.9.8.tar.gz :

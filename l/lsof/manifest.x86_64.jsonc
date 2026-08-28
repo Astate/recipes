@@ -46,6 +46,6 @@
 		}
 	},
 	"source-name": "lsof",
-	"source-release": "5",
+	"source-release": "6",
 	"source-version": "4.99.7"
 }

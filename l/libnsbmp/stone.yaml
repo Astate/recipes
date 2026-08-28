@@ -3,7 +3,7 @@
 
 name        : libnsbmp
 version     : "0.1.7+git.77ce1da"
-release     : 1
+release     : 2
 homepage    : https://www.netsurf-browser.org/projects/libnsbmp
 upstreams   :
     - git|https://github.com/netsurf-browser/libnsbmp.git :

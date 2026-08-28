@@ -3,7 +3,7 @@
 
 name        : gnome-bluetooth
 version     : "47.2"
-release     : 11
+release     : 12
 homepage    : https://gitlab.gnome.org/GNOME/gnome-bluetooth
 upstreams   :
     - https://download.gnome.org/sources/gnome-bluetooth/47/gnome-bluetooth-47.2.tar.xz : 41f20e6d6176b72590af63552b232d83f2fffdd77ecfaa5eaf32c5a4a86fad64

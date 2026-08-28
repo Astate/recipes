@@ -3,7 +3,7 @@
 
 name        : luajit
 version     : "2.1-20260606"
-release     : 7
+release     : 8
 homepage    : https://luajit.org/
 upstreams   :
     - https://github.com/openresty/luajit2/archive/refs/tags/v2.1-20260606.tar.gz : 8f075a15bfdd2bfefc6f54fec0d35eedccb9b7fbc6ed5dba8ccb03da1f157c5c

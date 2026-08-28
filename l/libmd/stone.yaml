@@ -3,7 +3,7 @@
 
 name        : libmd
 version     : "1.2.0"
-release     : 4
+release     : 5
 upstreams   :
     - https://libbsd.freedesktop.org/releases/libmd-1.2.0.tar.xz : ac15ffb8430502fbaccdec66c5a82ee0eab0b0f36220df56710feadfeb13d0a0
 homepage    : https://www.hadrons.org/software/libmd

@@ -3,7 +3,7 @@
 
 name        : drm-info
 version     : "2.10.0"
-release     : 5
+release     : 6
 homepage    : https://gitlab.freedesktop.org/emersion/drm_info
 upstreams   :
     - https://gitlab.freedesktop.org/emersion/drm_info/-/archive/v2.10.0/drm_info-v2.10.0.tar.gz : 17bcca16920ecf22904b0af82c2d8c94545991b9840332833adfe8ae3e8f232d

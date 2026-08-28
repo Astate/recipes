@@ -3,7 +3,7 @@
 
 name        : libayatana-indicator
 version     : "0.9.5"
-release     : 2
+release     : 3
 upstreams   :
     - https://github.com/AyatanaIndicators/libayatana-indicator/archive/refs/tags/0.9.5.tar.gz : 73d71c908b803f12e4a5ecd8392511b58afbdd0c82ad7909611a17bb7847c5c8
 homepage    : https://github.com/AyatanaIndicators/libayatana-indicator

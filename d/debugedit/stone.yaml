@@ -3,7 +3,7 @@
 
 name        : debugedit
 version     : "5.3"
-release     : 1
+release     : 2
 upstreams   :
     - https://sourceware.org/ftp/debugedit/5.3/debugedit-5.3.tar.xz : 3b8c6396fe235e0270c9b9c0d244cfd0e86c284fc27e820acc58360e7cfa08c2
 homepage    : https://sourceware.org/debugedit

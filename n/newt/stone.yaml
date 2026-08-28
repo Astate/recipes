@@ -3,7 +3,7 @@
 
 name        : newt
 version     : "0.52.25"
-release     : 2
+release     : 3
 homepage    : https://pagure.io/newt
 upstreams   :
     - https://releases.pagure.org/newt/newt-0.52.25.tar.gz : ef0ca9ee27850d1a5c863bb7ff9aa08096c9ed312ece9087b30f3a426828de82

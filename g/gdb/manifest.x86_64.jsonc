@@ -19,7 +19,6 @@
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libdebuginfod.so.1(x86_64))",
 				"soname(libexpat.so.1(x86_64))",
@@ -170,6 +169,6 @@
 		}
 	},
 	"source-name": "gdb",
-	"source-release": "10",
+	"source-release": "11",
 	"source-version": "17.2"
 }

@@ -3,7 +3,7 @@
 
 name        : ddcutil
 version     : "2.2.7"
-release     : 7
+release     : 8
 upstreams   :
     - https://github.com/rockowitz/ddcutil/archive/v2.2.7.tar.gz : 7b5cb9824c23974241146f4a696abc65f8e9d1e950198c8dc00e4a5c6a2f41ee
 homepage    : https://ddcutil.com/

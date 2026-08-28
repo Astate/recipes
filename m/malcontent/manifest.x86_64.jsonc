@@ -26,6 +26,7 @@
 				"soname(libaccountsservice.so.1(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcdb.so.1(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))"
@@ -68,6 +69,7 @@
 				"polkit",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcdb.so.1(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))",
@@ -287,6 +289,7 @@
 				"malcontent",
 				"soname(libadwaita-1.so.0(x86_64))",
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))",
@@ -694,6 +697,7 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))",
@@ -812,6 +816,7 @@
 				"soname(libappstream.so.5(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libflatpak.so.0(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))",
@@ -829,6 +834,6 @@
 		}
 	},
 	"source-name": "malcontent",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "0.14.0"
 }

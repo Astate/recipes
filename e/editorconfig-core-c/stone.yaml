@@ -3,7 +3,7 @@
 
 name        : editorconfig-core-c
 version     : "0.12.11"
-release     : 6
+release     : 7
 homepage    : https://editorconfig.org/
 upstreams   :
     - https://github.com/editorconfig/editorconfig-core-c/archive/refs/tags/v0.12.11.tar.gz : 9d8b420b56a969ea3cf784861c72d26fa0e158fa1494d732df2c8a1480d36a5c

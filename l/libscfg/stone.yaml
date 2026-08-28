@@ -3,7 +3,7 @@
 
 name        : libscfg
 version     : "0.2.0"
-release     : 1
+release     : 2
 upstreams   :
     - https://codeberg.org/emersion/libscfg/releases/download/v0.2.0/libscfg-0.2.0.tar.gz : 18bf24666aa77b12347b6dffeec32b2e7d24719698041c372ab27da80d16150c
 homepage    : https://codeberg.org/emersion/libscfg

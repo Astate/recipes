@@ -3,7 +3,7 @@
 
 name        : libqb
 version     : "2.0.10"
-release     : 5
+release     : 6
 homepage    : https://github.com/ClusterLabs/libqb
 upstreams   :
     - https://github.com/ClusterLabs/libqb/releases/download/v2.0.10/libqb-2.0.10.tar.xz : 326a69fb5b2ee4479f0db4f98d10d670ad0798b5ded8c4cfd585b765fd8941e8

@@ -3,7 +3,7 @@
 
 name        : keyd
 version     : "2.6.0"
-release     : 6
+release     : 7
 homepage    : https://github.com/rvaiya/keyd
 upstreams   :
     - https://github.com/rvaiya/keyd/archive/refs/tags/v2.6.0.tar.gz : 697089681915b89d9e98caf93d870dbd4abce768af8a647d54650a6a90744e26

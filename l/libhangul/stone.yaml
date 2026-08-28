@@ -3,7 +3,7 @@
 
 name        : libhangul
 version     : "0.2.0"
-release     : 1
+release     : 2
 homepage    : https://github.com/libhangul/libhangul
 upstreams   :
     - https://github.com/libhangul/libhangul/archive/refs/tags/libhangul-0.2.0.tar.gz : db9a256ff1e2c639ea8168f5e8741dae95ad7ea563f257b1dbd098afd8e48487

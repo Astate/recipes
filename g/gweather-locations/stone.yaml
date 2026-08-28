@@ -3,7 +3,7 @@
 
 name        : gweather-locations
 version     : "2026.2"
-release     : 3
+release     : 4
 homepage    : https://wiki.gnome.org/Projects/LibGWeather
 upstreams   :
     - https://download.gnome.org/sources/gweather-locations/2026/gweather-locations-2026.2.tar.xz : e7570a3661e0a752a06387b2032585cf588fc56770b1f9f39f1a55d17b2835fe

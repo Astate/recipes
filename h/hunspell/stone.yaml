@@ -3,7 +3,7 @@
 
 name        : hunspell
 version     : "1.7.3"
-release     : 4
+release     : 5
 upstreams   :
     - https://github.com/hunspell/hunspell/releases/download/v1.7.3/hunspell-1.7.3.tar.gz : 433274dac0619cb00c2e18b43a3dd3a9d50da5b5613fa9b5c21781e35dd76bc1
 homepage    : https://hunspell.github.io

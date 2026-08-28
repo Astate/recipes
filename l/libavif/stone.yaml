@@ -3,7 +3,7 @@
 
 name        : libavif
 version     : "1.4.2"
-release     : 10
+release     : 11
 summary     : Library for encoding and decoding .avif files
 license     : BSD-2-Clause
 homepage    : https://github.com/AOMediaCodec/libavif

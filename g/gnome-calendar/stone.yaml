@@ -3,7 +3,7 @@
 
 name        : gnome-calendar
 version     : "50.0"
-release     : 7
+release     : 8
 homepage    : https://apps.gnome.org/Calendar/
 upstreams   :
     - https://download.gnome.org/sources/gnome-calendar/50/gnome-calendar-50.0.tar.xz : 4b75df071a52d98fb35e647d018030129d24d9007790d02457746c98617aeab0

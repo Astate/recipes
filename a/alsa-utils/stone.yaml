@@ -3,7 +3,7 @@
 
 name        : alsa-utils
 version     : "1.2.16"
-release     : 10
+release     : 11
 homepage    : https://www.alsa-project.org/wiki/Main_Page
 upstreams   :
     - https://github.com/alsa-project/alsa-utils/archive/refs/tags/v1.2.16.tar.gz : 4d613eac36b0b41eb11b7917f61f372cd0e56e30812319d8a8cca62a8249ea95

@@ -3,7 +3,7 @@
 
 name        : orca
 version     : "50.2"
-release     : 1
+release     : 2
 upstreams   :
     - https://download.gnome.org/sources/orca/50/orca-50.2.tar.xz : 0714421cde8ec4baf47f18e4b4a12b4e5c4a3cfe3b161569e070fe037713fd04
 homepage    : https://orca.gnome.org/

@@ -3,7 +3,7 @@
 
 name        : hexyl
 version     : "0.17.0"
-release     : 1
+release     : 2
 homepage    : https://github.com/sharkdp/hexyl
 upstreams   :
     - https://github.com/sharkdp/hexyl/archive/refs/tags/v0.17.0.tar.gz : 72fa17397ad187eec6b295d02c7caabbb209a6e0d5706187b8a599bd5df8615e
