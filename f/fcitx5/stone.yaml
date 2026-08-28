@@ -3,7 +3,7 @@
 
 name        : fcitx5
 version     : "5.1.21"
-release     : 1
+release     : 2
 homepage    : https://github.com/fcitx/fcitx5
 upstreams   :
     - https://github.com/fcitx/fcitx5/archive/refs/tags/5.1.21.tar.gz : 8211fe5996db22254e5df9617cbd45873ae7fab82e7e0c42bde5a197299d1276
