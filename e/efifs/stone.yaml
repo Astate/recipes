@@ -3,7 +3,7 @@
 
 name        : efifs
 version     : "1.12"
-release     : 2
+release     : 3
 homepage    : https://github.com/pbatard/EfiFs
 upstreams   :
     - https://github.com/pbatard/EfiFs/archive/refs/tags/v1.12.tar.gz:
