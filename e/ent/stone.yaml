@@ -3,7 +3,7 @@
 
 name        : ent
 version     : "0.1.0+7ca2a68"
-release     : 8
+release     : 9
 homepage    : https://github.com/AerynOS/ent
 upstreams   :
     - git|https://github.com/AerynOS/ent.git:
