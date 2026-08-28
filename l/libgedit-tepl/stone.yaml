@@ -3,7 +3,7 @@
 
 name        : libgedit-tepl
 version     : "6.14.0"
-release     : 2
+release     : 3
 homepage    : https://gitlab.gnome.org/World/gedit/libgedit-tepl
 upstreams   :
     - git|https://gitlab.gnome.org/World/gedit/libgedit-tepl.git : d60f7ded17b52ea42091c073ea81090e91f38620
