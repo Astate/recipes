@@ -3,7 +3,7 @@
 
 name        : gnome-text-editor
 version     : "50.1"
-release     : 15
+release     : 16
 homepage    : https://apps.gnome.org/TextEditor/
 upstreams   :
     - https://download.gnome.org/sources/gnome-text-editor/50/gnome-text-editor-50.1.tar.xz : f68036b09d378faa883bfe936e479c6ff37027c2ffed101daf912df70c51d0e6
