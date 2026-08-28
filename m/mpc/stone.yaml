@@ -3,7 +3,7 @@
 
 name        : mpc
 version     : "1.4.1"
-release     : 5
+release     : 6
 summary     : Library for arbitrary precision arithmetic
 license     :
     - LGPL-3.0-or-later
