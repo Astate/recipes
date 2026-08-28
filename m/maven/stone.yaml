@@ -3,7 +3,7 @@
 
 name        : maven
 version     : 3.9.16
-release     : 3
+release     : 4
 homepage    : https://maven.apache.org
 upstreams   :
     - https://dlcdn.apache.org/maven/maven-3/3.9.16/source/apache-maven-3.9.16-src.tar.gz:
