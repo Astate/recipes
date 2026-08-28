@@ -6,6 +6,7 @@
 			"build-depends": [
 				"cmake(Qt6)",
 				"cmake(Qt6Core5Compat)",
+				"pkgconfig(libpkcs11-helper-1)",
 				"pkgconfig(nss)",
 				"pkgconfig(openssl)"
 			],
@@ -17,18 +18,20 @@
 				"soname(libcrypto.so.3(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libnss3.so(x86_64))",
+				"soname(libpkcs11-helper.so.1(x86_64))",
 				"soname(libssl.so.3(x86_64))",
 				"soname(libstdc++.so.6(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libqca-qt6.so.2",
-				"/usr/lib/libqca-qt6.so.2.3.10",
+				"/usr/lib/libqca-qt6.so.2.3.12",
 				"/usr/lib/qt6/bin/mozcerts-qt6",
 				"/usr/lib/qt6/bin/qcatool-qt6",
 				"/usr/lib/qt6/plugins/crypto/libqca-gnupg.so",
 				"/usr/lib/qt6/plugins/crypto/libqca-logger.so",
 				"/usr/lib/qt6/plugins/crypto/libqca-nss.so",
 				"/usr/lib/qt6/plugins/crypto/libqca-ossl.so",
+				"/usr/lib/qt6/plugins/crypto/libqca-pkcs11.so",
 				"/usr/lib/qt6/plugins/crypto/libqca-softstore.so",
 				"/usr/share/man/man1/qcatool-qt6.1"
 			],
@@ -39,6 +42,7 @@
 				"soname(qt6/plugins/crypto/libqca-logger.so(x86_64))",
 				"soname(qt6/plugins/crypto/libqca-nss.so(x86_64))",
 				"soname(qt6/plugins/crypto/libqca-ossl.so(x86_64))",
+				"soname(qt6/plugins/crypto/libqca-pkcs11.so(x86_64))",
 				"soname(qt6/plugins/crypto/libqca-softstore.so(x86_64))"
 			]
 		},
@@ -46,6 +50,7 @@
 			"build-depends": [
 				"cmake(Qt6)",
 				"cmake(Qt6Core5Compat)",
+				"pkgconfig(libpkcs11-helper-1)",
 				"pkgconfig(nss)",
 				"pkgconfig(openssl)"
 			],
@@ -83,6 +88,6 @@
 		}
 	},
 	"source-name": "qca",
-	"source-release": "5",
-	"source-version": "2.3.10"
+	"source-release": "6",
+	"source-version": "2.3.12"
 }

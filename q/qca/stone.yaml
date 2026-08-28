@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : qca
-version     : "2.3.10"
-release     : 5
+version     : "2.3.12"
+release     : 6
 upstreams   :
-    - https://download.kde.org/stable/qca/2.3.10/qca-2.3.10.tar.xz : 1c5b722da93d559365719226bb121c726ec3c0dc4c67dea34f1e50e4e0d14a02
+    - https://download.kde.org/stable/qca/2.3.12/qca-2.3.12.tar.xz : d4a2b3aa0272d73ea0c4cd2140960177fa34ddc2030e59a48ecfb80c757572c3
 homepage    : https://userbase.kde.org/QCA
 license     : LGPL-2.1-only
 summary     : Cryptographic library with an easy API
@@ -14,6 +14,7 @@ description : |
 builddeps   :
     - cmake(Qt6)
     - cmake(Qt6Core5Compat)
+    - pkgconfig(libpkcs11-helper-1)
     - pkgconfig(openssl)
     - pkgconfig(nss)
     # Maybe build with botan3 support at some point? NSS/libcrypto/gnupg is probably sufficient for now
@@ -35,6 +36,7 @@ packages    :
             - /usr/lib/qt6/bin
             - /usr/lib/qt6/plugins
             - /usr/share/man/man1
+
     - "%(name)-qt6-devel":
         summary: Development files for %(name)-qt6
         description: Development files for %(name)-qt6
