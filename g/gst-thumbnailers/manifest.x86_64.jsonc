@@ -23,8 +23,7 @@
 				"soname(libgstapp-1.0.so.0(x86_64))",
 				"soname(libgstbase-1.0.so.0(x86_64))",
 				"soname(libgstreamer-1.0.so.0(x86_64))",
-				"soname(libgstvideo-1.0.so.0(x86_64))",
-				"soname(libm.so.6(x86_64))"
+				"soname(libgstvideo-1.0.so.0(x86_64))"
 			],
 			"files": [
 				"/usr/bin/gst-audio-thumbnailer",
@@ -40,6 +39,6 @@
 		}
 	},
 	"source-name": "gst-thumbnailers",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "1.0.0"
 }

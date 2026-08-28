@@ -3,7 +3,7 @@
 
 name        : gst-thumbnailers
 version     : "1.0.0"
-release     : 2
+release     : 3
 homepage    : https://gitlab.gnome.org/GNOME/gst-thumbnailers
 upstreams   :
     - https://download.gnome.org/sources/gst-thumbnailers/1.0/gst-thumbnailers-1.0.0.tar.xz : f2a68019d319995d20a55cf0c32db1bb248834c2300ee757b417a5337d5d6497
