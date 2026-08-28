@@ -18,7 +18,6 @@
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libX11.so.6(x86_64))",
 				"soname(libXext.so.6(x86_64))",
 				"soname(libXrandr.so.2(x86_64))",
@@ -60,7 +59,6 @@
 				"pkgconfig(xrandr)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libX11.so.6(x86_64))",
 				"soname(libXext.so.6(x86_64))",
 				"soname(libXrandr.so.2(x86_64))",
@@ -114,6 +112,6 @@
 		}
 	},
 	"source-name": "ddcutil",
-	"source-release": "7",
+	"source-release": "8",
 	"source-version": "2.2.7"
 }
