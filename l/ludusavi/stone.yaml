@@ -3,7 +3,7 @@
 
 name        : ludusavi
 version     : "0.31.0"
-release     : 1
+release     : 2
 upstreams   :
     - https://github.com/mtkennerly/ludusavi/archive/refs/tags/v0.31.0.tar.gz : e7dcfa4fb17fcd2be9ef34d55fe0ca0d3f79fdf570107aeaa5b4e76910e2f8a1
 homepage    : https://youki-dev.github.io/youki/
