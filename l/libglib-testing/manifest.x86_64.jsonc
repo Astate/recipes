@@ -8,6 +8,7 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))"
@@ -44,6 +45,6 @@
 		}
 	},
 	"source-name": "libglib-testing",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "0.2.0"
 }
