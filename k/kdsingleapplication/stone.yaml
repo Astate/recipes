@@ -3,7 +3,7 @@
 
 name        : kdsingleapplication
 version     : "1.2.1"
-release     : 5
+release     : 6
 upstreams   :
     - https://github.com/KDAB/KDSingleApplication/releases/download/v1.2.1/kdsingleapplication-1.2.1.tar.gz : e3254ce9dc5ecf6d61ef83264bc61d486a307f0e3c9ed1bb2176f068cdbcbe09
 license     : MIT
