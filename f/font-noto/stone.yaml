@@ -3,7 +3,7 @@
 
 name        : font-noto
 version     : "2026.06.01"
-release     : 8
+release     : 9
 homepage    : https://notofonts.github.io/
 upstreams   :
     - https://github.com/notofonts/notofonts.github.io/archive/refs/tags/noto-monthly-release-2026.06.01.tar.gz : 2f8539d08b9b6c73e86dce670eaa46e1d47d2330137ccb11ef4c69b27c865601
