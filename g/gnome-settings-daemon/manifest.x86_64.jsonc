@@ -42,6 +42,7 @@
 				"soname(libcolord.so.2(x86_64))",
 				"soname(libcups.so.2(x86_64))",
 				"soname(libfontconfig.so.1(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgck-2.so.2(x86_64))",
 				"soname(libgcr-4.so.4(x86_64))",
 				"soname(libgeoclue-2.so.0(x86_64))",
@@ -278,6 +279,6 @@
 		}
 	},
 	"source-name": "gnome-settings-daemon",
-	"source-release": "17",
+	"source-release": "18",
 	"source-version": "50.1"
 }
