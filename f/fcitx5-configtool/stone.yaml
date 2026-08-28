@@ -3,7 +3,7 @@
 
 name        : fcitx5-configtool
 version     : "5.1.14"
-release     : 1
+release     : 2
 homepage    : https://github.com/fcitx/fcitx5-configtool
 upstreams   :
     - https://github.com/fcitx/fcitx5-configtool/archive/refs/tags/5.1.14.tar.gz : e0c7a8f71b139bede9def20093f1dcd38a4ab03348fae57dec65115c4e1e322a
