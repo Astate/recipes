@@ -3,7 +3,7 @@
 
 name        : gamescope-session-steam
 version     : "0.r10.1a3fdb7"
-release     : 5
+release     : 6
 homepage    : https://github.com/OpenGamingCollective/gamescope-session-steam
 upstreams   :
     - git|https://github.com/OpenGamingCollective/gamescope-session-steam.git : 1a3fdb7fa15a4bba7204bef69702b7a10a297828
