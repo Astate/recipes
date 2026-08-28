@@ -9,7 +9,6 @@
 				"pkgconfig(libzstd)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libdwarf.so.2(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
@@ -61,6 +60,6 @@
 		}
 	},
 	"source-name": "cpptrace",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "1.0.4"
 }
