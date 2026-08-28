@@ -4,6 +4,8 @@
 	"packages": {
 		"automake": {
 			"build-depends": [
+				"binary(gzip)",
+				"binary(rst2html)",
 				"binary(tar)",
 				"binary(zstd)"
 			],
@@ -147,6 +149,6 @@
 		}
 	},
 	"source-name": "automake",
-	"source-release": "8",
+	"source-release": "9",
 	"source-version": "1.18.1"
 }
