@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : python-flit-core
-version     : "3.12.0"
-release     : 8
+version     : "4.0.2"
+release     : 9
 homepage    : https://github.com/pypa/flit
 upstreams   :
-    - https://pypi.debian.net/flit-core/flit_core-3.12.0.tar.gz:
-        hash: 18f63100d6f94385c6ed57a72073443e1a71a4acb4339491615d0f16d6ff01b2
+    - https://pypi.debian.net/flit-core/flit_core-4.0.2.tar.gz:
+        hash: b6929defd93884b584d7c87829e0e7b5c26ed6be17b0b873979019314aa841c8
         rename: flit_core.tar.gz
 
     # Comment out if not bootstrapping
