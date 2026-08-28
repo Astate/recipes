@@ -4,6 +4,7 @@
 	"packages": {
 		"libfido2": {
 			"build-depends": [
+				"binary(gzip)",
 				"pkgconfig(hidapi-hidraw)",
 				"pkgconfig(libcbor)",
 				"pkgconfig(libpcsclite)",
@@ -12,7 +13,6 @@
 				"pkgconfig(zlib)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcbor.so.0.14(x86_64))",
 				"soname(libcrypto.so.3(x86_64))",
@@ -34,6 +34,7 @@
 		},
 		"libfido2-devel": {
 			"build-depends": [
+				"binary(gzip)",
 				"pkgconfig(hidapi-hidraw)",
 				"pkgconfig(libcbor)",
 				"pkgconfig(libpcsclite)",
@@ -364,6 +365,7 @@
 		},
 		"libfido2-tools": {
 			"build-depends": [
+				"binary(gzip)",
 				"pkgconfig(hidapi-hidraw)",
 				"pkgconfig(libcbor)",
 				"pkgconfig(libpcsclite)",
@@ -396,6 +398,6 @@
 		}
 	},
 	"source-name": "libfido2",
-	"source-release": "5",
+	"source-release": "6",
 	"source-version": "1.17.0"
 }
