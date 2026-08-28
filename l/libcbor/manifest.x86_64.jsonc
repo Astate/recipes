@@ -63,6 +63,6 @@
 		}
 	},
 	"source-name": "libcbor",
-	"source-release": "6",
+	"source-release": "7",
 	"source-version": "0.14.0"
 }
