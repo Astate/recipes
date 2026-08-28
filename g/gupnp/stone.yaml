@@ -3,7 +3,7 @@
 
 name        : gupnp
 version     : "1.6.10"
-release     : 3
+release     : 4
 upstreams   :
     - https://download.gnome.org/sources/gupnp/1.6/gupnp-1.6.10.tar.xz : a1ee07b7b12673c32d7fc73ca158a50c1a4dc69ab35b65e94d24d38ac875345e
 homepage    : https://gitlab.gnome.org/GNOME/gupnp
