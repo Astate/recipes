@@ -3,7 +3,7 @@
 
 name        : cups
 version     : "2.4.19"
-release     : 24
+release     : 25
 homepage    : https://openprinting.github.io/cups/
 upstreams   :
     - https://github.com/OpenPrinting/cups/releases/download/v2.4.19/cups-2.4.19-source.tar.gz : 820984b12a67f98705785aae2dd1347fe0ac097828001d4583ff64574aed6389
