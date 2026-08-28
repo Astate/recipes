@@ -7,7 +7,6 @@
 				"pkgconfig(libudev)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libudev.so.1(x86_64))"
 			],
@@ -39,6 +38,6 @@
 		}
 	},
 	"source-name": "libusb",
-	"source-release": "5",
+	"source-release": "6",
 	"source-version": "1.0.30"
 }
