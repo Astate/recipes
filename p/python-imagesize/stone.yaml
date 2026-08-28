@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : python-imagesize
-version     : "2.0.0"
-release     : 4
+version     : "2.0.1"
+release     : 5
 homepage    : https://github.com/shibukawa/imagesize_py
 upstreams   :
-    - https://pypi.debian.net/imagesize/imagesize-2.0.0.tar.gz : 8e8358c4a05c304f1fccf7ff96f036e7243a189e9e42e90851993c558cfe9ee3
+    - https://pypi.debian.net/imagesize/imagesize-2.0.1.tar.gz : b2ba6a4dea487a7ebcd53248d3476aca449d30db12a2dde5e0c5ca9624fd77e5
 summary     : Python lib for getting image size from png/jpeg/jpeg2000/gif file
 description : |
     This module analyzes JPEG/JPEG 2000/PNG/GIF/TIFF/SVG/Netpbm/WebP image headers and returns image size or DIP.
