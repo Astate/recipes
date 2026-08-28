@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : wireplumber
-version     : "0.5.15"
-release     : 15
+version     : "0.5.16"
+release     : 16
 homepage    : https://gitlab.freedesktop.org/pipewire/wireplumber/
 upstreams   :
-    - https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.15/wireplumber-0.5.15.tar.gz : baa121bc918df5fa0e0e70755bb1c99ffab0ab107225ecf99aa470e2c6ba5e7b
+    - https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/0.5.16/wireplumber-0.5.16.tar.gz : 59f2f72129dc385e13aaac3820122c6927d783c9699811b56f13a74296993d3a
 summary     : Session / policy manager implementation for PipeWire
 description : |
     Session / policy manager implementation for PipeWire
