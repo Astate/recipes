@@ -3,7 +3,7 @@
 
 name        : hyprpolkitagent
 version     : "0.1.3"
-release     : 1
+release     : 2
 upstreams   :
     - https://github.com/hyprwm/hyprpolkitagent/archive/refs/tags/v0.1.3.tar.gz : a8fa714b92d47331f056b608cb731dd1f5cc3845a9109cb22c6e6eb55b4eac84
 homepage    : https://github.com/hyprwm/hyprpolkitagent
