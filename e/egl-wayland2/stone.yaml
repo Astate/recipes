@@ -3,7 +3,7 @@
 
 name        : egl-wayland2
 version     : "1.0.1"
-release     : 1
+release     : 2
 homepage    : https://github.com/NVIDIA/egl-wayland2
 upstreams   :
     - https://github.com/NVIDIA/egl-wayland2/archive/refs/tags/v1.0.1.tar.gz : 1d8f154e69b3055cb20f5eddda0fa438aea292e6ef835b129cd2efaae5eb95fc
