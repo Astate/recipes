@@ -3,7 +3,7 @@
 
 name        : gmp
 version     : "6.3.0"
-release     : 6
+release     : 7
 summary     : Library for arbitrary precision arithmetic
 license     :
     - GPL-2.0-or-later
