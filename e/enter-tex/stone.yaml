@@ -3,7 +3,7 @@
 
 name        : enter-tex
 version     : "3.49.0"
-release     : 1
+release     : 2
 homepage    : https://gitlab.gnome.org/World/gedit/enter-tex
 upstreams   :
     - git|https://gitlab.gnome.org/World/gedit/enter-tex.git : b0fad18c98fb7ae6576eb29354df438c0c22ace1
