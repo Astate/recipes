@@ -3,7 +3,7 @@
 
 name        : gtk-doc
 version     : "1.36.1"
-release     : 10
+release     : 11
 homepage    : https://gitlab.gnome.org/GNOME/gtk-doc
 upstreams   :
     - https://download.gnome.org/sources/gtk-doc/1.36/gtk-doc-1.36.1.tar.xz : 0e517a5f97069831181be177516bde8aa8b3922398f2bdb09e265d22aecadbc5
