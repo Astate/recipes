@@ -3,7 +3,7 @@
 
 name        : mangowc
 version     : "0.12.4"
-release     : 6
+release     : 7
 homepage    : https://github.com/DreamMaoMao/mangowc
 upstreams   :
     - https://github.com/DreamMaoMao/mangowc/archive/refs/tags/0.12.4.tar.gz : 8581bfb6b4a73154748e6a305c9b410530b7f5a2037a7e45ea588efe2ac99f8c
