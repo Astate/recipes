@@ -3,7 +3,7 @@
 
 name        : ibus
 version     : "1.5.34"
-release     : 12
+release     : 13
 homepage    : https://github.com/ibus/ibus
 upstreams   :
     - https://github.com/ibus/ibus/releases/download/1.5.34/ibus-1.5.34.tar.gz : 12a72210ce5250f8a66df562a75e034e67b2bce74c4df2983dc86d1154894943
