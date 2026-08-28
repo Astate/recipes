@@ -49,7 +49,8 @@
 				"/usr/lib/cmake/MpvQt/MpvQtConfigVersion.cmake",
 				"/usr/lib/cmake/MpvQt/MpvQtTargets-release.cmake",
 				"/usr/lib/cmake/MpvQt/MpvQtTargets.cmake",
-				"/usr/lib/libMpvQt.so"
+				"/usr/lib/libMpvQt.so",
+				"/usr/lib/qt6/metatypes/qt6mpvqt_metatypes.json"
 			],
 			"name": "mpvqt-devel",
 			"provides": [
@@ -58,6 +59,6 @@
 		}
 	},
 	"source-name": "mpvqt",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "1.2.0"
 }
