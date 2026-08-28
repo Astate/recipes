@@ -3,7 +3,7 @@
 
 name        : decibels
 version     : "49.6.1"
-release     : 6
+release     : 7
 homepage    : https://apps.gnome.org/Decibels/
 upstreams   :
     - https://download.gnome.org/sources/decibels/49/decibels-49.6.1.tar.xz : 9a67ba14df23517c849fcfdea764c73a241e59055299b125e98aeab2a7801ad5
@@ -35,6 +35,8 @@ rundeps     :
     - gstreamer-plugins-good
     - gstreamer-plugins-ugly
 setup       : |
+    %patch %(pkgdir)/ftbfs-typescript-6.patch
+
     %meson
 build       : |
     %meson_build
