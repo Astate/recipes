@@ -3,7 +3,7 @@
 
 name        : atkmm
 version     : "2.36.4"
-release     : 5
+release     : 6
 homepage    : https://gtkmm.gnome.org
 upstreams   :
     - https://download.gnome.org/sources/atkmm/2.36/atkmm-2.36.4.tar.xz : 19cd0758ed752cb89f5bf02247663dfad0926d9351984a20e3c6cf7da62552ac
