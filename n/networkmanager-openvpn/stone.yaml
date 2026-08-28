@@ -3,7 +3,7 @@
 
 name        : networkmanager-openvpn
 version     : "1.12.5"
-release     : 3
+release     : 4
 upstreams   :
     - https://download.gnome.org/sources/NetworkManager-openvpn/1.12/NetworkManager-openvpn-1.12.5.tar.xz : ce32e38b0500eddf2fc8072ca17679817fc2d35eb91f6ff7b9904209c14b5afd
 homepage    : https://www.gnome.org/projects/NetworkManager/

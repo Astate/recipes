@@ -18,6 +18,7 @@
 				"networkmanager",
 				"openvpn",
 				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgmodule-2.0.so.0(x86_64))",
@@ -118,6 +119,7 @@
 				"soname(libc.so.6(x86_64))",
 				"soname(libcairo-gobject.so.2(x86_64))",
 				"soname(libcairo.so.2(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgdk-3.so.0(x86_64))",
 				"soname(libgdk_pixbuf-2.0.so.0(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
@@ -150,6 +152,6 @@
 		}
 	},
 	"source-name": "networkmanager-openvpn",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "1.12.5"
 }
