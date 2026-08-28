@@ -3,7 +3,7 @@
 
 name        : bolt
 version     : "0.9.11"
-release     : 6
+release     : 7
 homepage    : https://gitlab.freedesktop.org/bolt/bolt
 upstreams   :
     - https://gitlab.freedesktop.org/bolt/bolt/-/archive/0.9.11/bolt-0.9.11.tar.gz : cde4fc6d4a188e37d088cf59a5b2d174ac4b03d57bf9d084d711ba92105c33c0
