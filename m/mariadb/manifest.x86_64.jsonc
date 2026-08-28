@@ -28,7 +28,6 @@
 			],
 			"depends": [
 				"mariadb-config",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcrypto.so.3(x86_64))",
 				"soname(libssl.so.3(x86_64))",
@@ -307,7 +306,6 @@
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libaio.so.1(x86_64))",
 				"soname(libbz2.so.1.0(x86_64))",
 				"soname(libc.so.6(x86_64))",
@@ -865,7 +863,6 @@
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"mariadb-common",
 				"mariadb-errmsg",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libaio.so.1(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcrypto.so.3(x86_64))",
@@ -1480,6 +1477,6 @@
 		}
 	},
 	"source-name": "mariadb",
-	"source-release": "6",
+	"source-release": "7",
 	"source-version": "11.8.8"
 }
