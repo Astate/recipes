@@ -3,7 +3,7 @@
 
 name        : sshfs
 version     : "3.7.6"
-release     : 3
+release     : 4
 upstreams   :
     - https://github.com/libfuse/sshfs/archive/refs/tags/sshfs-3.7.6.tar.gz : 67a3e166a39b07708497ee0aee308547dba386053cf8d816b4ce8a9b3066a6ce
 homepage    : https://github.com/libfuse/sshfs
