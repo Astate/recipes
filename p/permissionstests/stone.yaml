@@ -3,7 +3,7 @@
 
 name        : permissionstests
 version     : "0"
-release     : 1
+release     : 2
 homepage    : https://aerynos.com
 license     : MPL-2.0
 summary     : Test that boulder and moss handle file permissions properly
