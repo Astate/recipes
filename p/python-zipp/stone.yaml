@@ -3,7 +3,7 @@
 
 name        : python-zipp
 version     : "4.1.0"
-release     : 4
+release     : 5
 homepage    : https://pypi.org/project/zipp
 upstreams   :
     - https://files.pythonhosted.org/packages/source/z/zipp/zipp-4.1.0.tar.gz : 4cb57381f544315db7688e976e922a2b18cdb513d21cc194eb42232ba2a3e602
