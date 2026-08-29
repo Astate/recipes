@@ -3,7 +3,7 @@
 
 name        : rdfind
 version     : "1.8.0"
-release     : 4
+release     : 5
 homepage    : https://github.com/pauldreik/rdfind
 upstreams   :
     - https://rdfind.pauldreik.se/rdfind-1.8.0.tar.gz : 0a2d0d32002cc2dc0134ee7b649bcc811ecfb2f8d9f672aa476a851152e7af35
