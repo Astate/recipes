@@ -12,9 +12,9 @@
 				"/usr/bin/orc-bugreport",
 				"/usr/bin/orcc",
 				"/usr/lib/liborc-0.4.so.0",
-				"/usr/lib/liborc-0.4.so.0.42.0",
+				"/usr/lib/liborc-0.4.so.0.43.0",
 				"/usr/lib/liborc-test-0.4.so.0",
-				"/usr/lib/liborc-test-0.4.so.0.42.0"
+				"/usr/lib/liborc-test-0.4.so.0.43.0"
 			],
 			"name": "orc",
 			"provides": [
@@ -36,6 +36,8 @@
 				"/usr/include/orc-0.4/orc/orc-stdint.h",
 				"/usr/include/orc-0.4/orc/orc.h",
 				"/usr/include/orc-0.4/orc/orcarm.h",
+				"/usr/include/orc-0.4/orc/orcarm64insn.h",
+				"/usr/include/orc-0.4/orc/orcarminsn.h",
 				"/usr/include/orc-0.4/orc/orcavx.h",
 				"/usr/include/orc-0.4/orc/orcavxinsn.h",
 				"/usr/include/orc-0.4/orc/orcbytecode.h",
@@ -84,6 +86,6 @@
 		}
 	},
 	"source-name": "orc",
-	"source-release": "6",
-	"source-version": "0.4.42"
+	"source-release": "7",
+	"source-version": "0.4.43"
 }
