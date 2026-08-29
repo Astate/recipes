@@ -56,6 +56,6 @@
 		}
 	},
 	"source-name": "spice-vdagent",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "0.23.0"
 }
