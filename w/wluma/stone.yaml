@@ -3,7 +3,7 @@
 
 name        : wluma
 version     : "4.11.1"
-release     : 3
+release     : 4
 upstreams   :
     - https://github.com/max-baz/wluma/releases/download/4.11.1/wluma-4.11.1-vendored.tar.gz : 3bfedfb607c23851e2bccef4dd5958599a3577d57e9cc5eeaa4d321aeb1ad158
 homepage    : https://github.com/maximbaz/wluma
