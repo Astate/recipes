@@ -3,7 +3,7 @@
 
 name        : powerstat
 version     : "0.04.06"
-release     : 5
+release     : 6
 homepage    : https://github.com/ColinIanKing/powerstat
 upstreams   :
     - https://github.com/ColinIanKing/powerstat/archive/refs/tags/V0.04.06.tar.gz : 91e9306525d9c84c7811c1f105426a2047fb94e27a2f98f2c88b334a6bff2a91
@@ -11,6 +11,8 @@ summary     : Power consumption statistics
 description : |
     Powerstat is a small utility to retrieve power consumption statistics from the kernel.
 license     : GPL-2.0-or-later
+builddeps   :
+    - binary(gzip)
 build       : |
     %make
 install     : |
