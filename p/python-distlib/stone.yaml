@@ -3,7 +3,7 @@
 
 name        : python-distlib
 version     : "0.4.3"
-release     : 3
+release     : 4
 homepage    : https://github.com/pypa/distlib
 upstreams   :
   - https://pypi.debian.net/distlib/distlib-0.4.3.tar.gz: f152097224a0ae24be5a0f6bae1b9359af82133bce63f98a95f86cae1aede9ed
