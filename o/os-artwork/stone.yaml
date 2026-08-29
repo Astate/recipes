@@ -3,7 +3,7 @@
 
 name        : os-artwork
 version     : "3"
-release     : 8
+release     : 9
 summary     : Operating System Artwork
 license     : Distributable
 homepage    : https://www.aerynos.com/
