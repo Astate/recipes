@@ -3,7 +3,7 @@
 
 name        : vali
 version     : "0.1.1"
-release     : 1
+release     : 2
 upstreams   :
     - https://gitlab.freedesktop.org/emersion/vali/-/releases/v0.1.1/downloads/vali-0.1.1.tar.gz : 791785eca66392f91f28ca371ba9cfa2dc11915df0bff9f590a33453f67e5756
 homepage    : https://gitlab.freedesktop.org/emersion/vali
