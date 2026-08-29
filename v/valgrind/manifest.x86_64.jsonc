@@ -6,7 +6,8 @@
 			"depends": [
 				"glibc-dbginfo",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(libc.so.6(x86_64))"
+				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))"
 			],
 			"files": [
 				"/usr/bin/callgrind_annotate",
@@ -392,6 +393,6 @@
 		}
 	},
 	"source-name": "valgrind",
-	"source-release": "12",
+	"source-release": "13",
 	"source-version": "3.27.1"
 }
