@@ -85,6 +85,6 @@
 		}
 	},
 	"source-name": "python-dbus",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "1.4.0"
 }
