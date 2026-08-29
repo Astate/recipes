@@ -3,7 +3,7 @@
 
 name        : python-mss
 version     : "10.2.0"
-release     : 1
+release     : 2
 homepage    : https://github.com/BoboTiG/python-mss
 upstreams   :
     - https://pypi.debian.net/mss/mss-10.2.0.tar.gz : ab271860775545e62f29d7b11f82f279ac1048f5bbdd26cfad84830208dbd393
