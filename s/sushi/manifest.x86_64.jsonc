@@ -19,6 +19,7 @@
 				"soname(libepoxy.so.0(x86_64))",
 				"soname(libevdocument3.so.4(x86_64))",
 				"soname(libfreetype.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgdk-3.so.0(x86_64))",
 				"soname(libgdk_pixbuf-2.0.so.0(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
@@ -136,6 +137,6 @@
 		}
 	},
 	"source-name": "sushi",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "50.0"
 }

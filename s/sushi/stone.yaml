@@ -3,7 +3,7 @@
 
 name        : sushi
 version     : "50.0"
-release     : 1
+release     : 2
 homepage    : https://gitlab.gnome.org/GNOME/sushi
 upstreams   :
     - https://gitlab.gnome.org/GNOME/sushi/-/archive/50.0/sushi-50.0.tar.gz : 20de211dc17855067819e957732b2374a22866db7f53a2cfa412fad2ee65a533
