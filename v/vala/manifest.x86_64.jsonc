@@ -356,8 +356,7 @@
 				"/usr/share/vala-0.56/vapi/xtst.deps",
 				"/usr/share/vala-0.56/vapi/xtst.vapi",
 				"/usr/share/vala-0.56/vapi/zlib.vapi",
-				"/usr/share/vala/Makefile.vapigen",
-				"/usr/share/vala/vapi/libvala-0.56.vapi"
+				"/usr/share/vala/Makefile.vapigen"
 			],
 			"name": "vala",
 			"provides": [
@@ -394,7 +393,8 @@
 				"/usr/lib/pkgconfig/vapigen-0.56.pc",
 				"/usr/lib/pkgconfig/vapigen.pc",
 				"/usr/share/aclocal/vala.m4",
-				"/usr/share/aclocal/vapigen.m4"
+				"/usr/share/aclocal/vapigen.m4",
+				"/usr/share/vala/vapi/libvala-0.56.vapi"
 			],
 			"name": "vala-devel",
 			"provides": [
@@ -405,6 +405,6 @@
 		}
 	},
 	"source-name": "vala",
-	"source-release": "6",
+	"source-release": "7",
 	"source-version": "0.56.19"
 }
