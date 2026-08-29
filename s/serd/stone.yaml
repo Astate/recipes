@@ -3,7 +3,7 @@
 
 name        : serd
 version     : "0.32.10"
-release     : 5
+release     : 6
 homepage    : https://gitlab.com/drobilla/serd
 upstreams   :
     - https://gitlab.com/drobilla/serd/-/archive/v0.32.10/serd-v0.32.10.tar.gz : d17b99ef250e4dffcdd08c8eaad2459a1519c1ff2553fa91176ce71ac0dd0739
