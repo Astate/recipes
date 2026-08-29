@@ -3,7 +3,7 @@
 
 name        : tinycdb
 version     : "0.81"
-release     : 2
+release     : 3
 homepage    : https://www.corpit.ru/mjt/tinycdb.html
 upstreams   :
     - https://www.corpit.ru/mjt/tinycdb/tinycdb-0.81.tar.gz : 469de2d445bf54880f652f4b6dc95c7cdf6f5502c35524a45b2122d70d47ebc2
