@@ -3,7 +3,7 @@
 
 name        : polkit-qt-1
 version     : "0.201.1"
-release     : 5
+release     : 6
 upstreams   :
     - https://download.kde.org/stable/polkit-qt-1/polkit-qt-1-0.201.1.tar.xz : 95d8e2cae530c546d9437459deb8a1bea38d572f0f9772cc2860dc143637f256
 homepage    : https://api.kde.org/polkit-qt-1/html/
