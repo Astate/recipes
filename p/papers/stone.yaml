@@ -3,7 +3,7 @@
 
 name        : papers
 version     : "50.2"
-release     : 18
+release     : 19
 homepage    : https://apps.gnome.org/Papers/
 upstreams   :
     - https://download.gnome.org/sources/papers/50/papers-50.2.tar.xz : ae1bdcf1cd47cb50c9d84765784607f81c72df17dd6e6ad933fea14173d2b9f4
