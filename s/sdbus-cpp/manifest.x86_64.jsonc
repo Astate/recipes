@@ -8,7 +8,6 @@
 				"pkgconfig(libsystemd)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
@@ -76,6 +75,6 @@
 		}
 	},
 	"source-name": "sdbus-cpp",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "2.3.1"
 }
