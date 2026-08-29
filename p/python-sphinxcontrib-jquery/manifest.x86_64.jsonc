@@ -20,6 +20,7 @@
 				"/usr/lib/python3.14/site-packages/sphinxcontrib_jquery-4.1.dist-info/METADATA",
 				"/usr/lib/python3.14/site-packages/sphinxcontrib_jquery-4.1.dist-info/RECORD",
 				"/usr/lib/python3.14/site-packages/sphinxcontrib_jquery-4.1.dist-info/WHEEL",
+				"/usr/lib/python3.14/site-packages/sphinxcontrib_jquery-4.1.dist-info/licenses/AUTHORS",
 				"/usr/lib/python3.14/site-packages/sphinxcontrib_jquery-4.1.dist-info/licenses/LICENCE"
 			],
 			"name": "python-sphinxcontrib-jquery",
@@ -29,6 +30,6 @@
 		}
 	},
 	"source-name": "python-sphinxcontrib-jquery",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "4.1"
 }
