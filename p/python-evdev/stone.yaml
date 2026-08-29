@@ -3,7 +3,7 @@
 
 name        : python-evdev
 version     : "2.0.0"
-release     : 5
+release     : 6
 upstreams   :
     - https://github.com/gvalkov/python-evdev/archive/refs/tags/v2.0.0.tar.gz : 44ba9e56229cf7c3d7d5276229afefd54cc8fc7bca512947dcadda6155f25854
 homepage    : https://github.com/gvalkov/python-evdev

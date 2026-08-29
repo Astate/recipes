@@ -3,7 +3,7 @@
 
 name        : python-icoextract
 version     : "0.3.0"
-release     : 2
+release     : 3
 homepage    : https://github.com/jlu5/icoextract
 upstreams   :
     - https://github.com/jlu5/icoextract/archive/refs/tags/0.3.0.tar.gz : ce46a9dde2054edd13922dbe254e01eefe64a110ebbfe3c0d695fe703e9d295a

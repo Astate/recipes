@@ -3,7 +3,7 @@
 
 name        : plymouth
 version     : "26.134.222"
-release     : 14
+release     : 15
 homepage    : https://www.freedesktop.org/wiki/Software/Plymouth/
 upstreams   :
     - https://www.freedesktop.org/software/plymouth/releases/plymouth-26.134.222.tar.xz : 6ee1068216c5047923fabf0f6aa583e9d77cab383077358df3fc22f2ee398bb0

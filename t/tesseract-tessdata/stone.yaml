@@ -3,7 +3,7 @@
 
 name        : tesseract-tessdata
 version     : "4.1.0"
-release     : 1
+release     : 2
 upstreams   :
     - git|https://github.com/tesseract-ocr/tessdata_fast.git : 65727574dfcd264acbb0c3e07860e4e9e9b22185
 homepage    : https://github.com/tesseract-ocr/tessdata_fast

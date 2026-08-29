@@ -3,7 +3,7 @@
 
 name        : python-editables
 version     : "0.6"
-release     : 7
+release     : 8
 homepage    : https://pypi.org/project/editables
 upstreams   :
     - https://pypi.debian.net/editables/editables-0.6.tar.gz : 1163834902381c4613787951c5914800fdf155ae08848a373b8ea5006780977c

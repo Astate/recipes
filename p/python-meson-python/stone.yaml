@@ -3,7 +3,7 @@
 
 name        : python-meson-python
 version     : "0.20.0"
-release     : 2
+release     : 3
 homepage    : https://pypi.debian.net/meson-python
 upstreams   :
     - https://pypi.debian.net/meson-python/meson_python-0.20.0.tar.gz : 6d9726ae6cd37e22f210c74b364b30180a68c20442e97ff09f3c566a414af738

@@ -3,7 +3,7 @@
 
 name        : spice-vdagent
 version     : "0.23.0"
-release     : 4
+release     : 5
 homepage    : https://www.spice-space.org
 upstreams   :
     - https://www.spice-space.org/download/releases/spice-vdagent-0.23.0.tar.bz2 : 63e0f9bd5597c4638acfd6f10d7a2354f599bd9df5b31e443270cacf07e16a40

@@ -9,7 +9,6 @@
 				"pkgconfig(spdlog)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcurl.so.4(x86_64))",
 				"soname(libevent_core-2.1.so.7(x86_64))",
@@ -55,6 +54,6 @@
 		}
 	},
 	"source-name": "coeurl",
-	"source-release": "8",
+	"source-release": "9",
 	"source-version": "0.3.2"
 }

@@ -152,6 +152,6 @@
 		}
 	},
 	"source-name": "sdl2-compat",
-	"source-release": "12",
+	"source-release": "13",
 	"source-version": "2.32.70"
 }

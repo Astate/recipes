@@ -3,7 +3,7 @@
 
 name        : zls
 version     : "0.16.0"
-release     : 3
+release     : 4
 homepage    : https://github.com/zigtools/zls
 upstreams   :
     - https://github.com/zigtools/zls/archive/refs/tags/0.16.0.tar.gz : e7c5936f5b3a057ce851be0876e4e259b5c4d02f9aae038cd24a5d6b586b029f
