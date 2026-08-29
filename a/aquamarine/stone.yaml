@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : aquamarine
-version     : "0.14.0"
-release     : 7
+version     : "0.15.0"
+release     : 8
 upstreams   :
-    - https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.14.0.tar.gz : 5dcf0b17f7dd51539fd7e79d68484f04240b3b63cf9f5f21d5b6dea0088168f9
+    - https://github.com/hyprwm/aquamarine/archive/refs/tags/v0.15.0.tar.gz : bb5323f58cd2f379cb11c39893336e49980fe2e9fb101745addd87cebde3d13d
 homepage    : https://github.com/hyprwm/aquamarine
 license     : BSD-3-Clause
 summary     : A very light linux rendering backend library
