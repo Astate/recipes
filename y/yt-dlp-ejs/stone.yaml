@@ -3,7 +3,7 @@
 
 name        : yt-dlp-ejs
 version     : "0.8.0"
-release     : 1
+release     : 2
 homepage    : https://github.com/yt-dlp/ejs
 upstreams   :
     - https://github.com/yt-dlp/ejs/archive/refs/tags/0.8.0.tar.gz : 2704dfcac899fcb443d3b80cb8bb6337c5eb98d09ebf0760295d1c58e9461e53
