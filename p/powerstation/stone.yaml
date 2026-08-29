@@ -3,7 +3,7 @@
 
 name        : powerstation
 version     : "0.8.1"
-release     : 12
+release     : 13
 homepage    : https://github.com/ShadowBlip/PowerStation
 upstreams   :
     - https://github.com/ShadowBlip/PowerStation/archive/refs/tags/v0.8.1.tar.gz : 8cd83d570a6e4d3ae3178a9073329c31526e8cd5e5900e8309a57d1db3c83ab4
