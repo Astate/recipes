@@ -119,7 +119,6 @@
 				"pkgconfig32(zlib)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libblkid.so.1(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libuuid.so.1(x86_64))"
@@ -381,7 +380,6 @@
 				"pkgconfig32(zlib)"
 			],
 			"depends": [
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))"
 			],
 			"files": [
@@ -496,13 +494,13 @@
 			"depends": [
 				"binary(su)",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libblkid.so.1(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcap-ng.so.0(x86_64))",
 				"soname(libcrypt.so.2(x86_64))",
 				"soname(libeconf.so.0(x86_64))",
 				"soname(libfdisk.so.1(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libmagic.so.1(x86_64))",
 				"soname(libmount.so.1(x86_64))",
 				"soname(libncursesw.so.6(x86_64))",
@@ -1100,7 +1098,6 @@
 				"pkgconfig32(zlib)"
 			],
 			"depends": [
-				"soname(ld-linux.so.2(386))",
 				"soname(libc.so.6(386))",
 				"soname(libeconf.so.0(386))",
 				"soname(libgcc_s.so.1(386))",
@@ -1210,6 +1207,6 @@
 		}
 	},
 	"source-name": "util-linux",
-	"source-release": "22",
+	"source-release": "23",
 	"source-version": "2.42.2"
 }

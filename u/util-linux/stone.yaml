@@ -3,7 +3,7 @@
 
 name        : util-linux
 version     : "2.42.2"
-release     : 22
+release     : 23
 summary     : Random collection of Linux utilities
 license     :
     - BSD-3-Clause
