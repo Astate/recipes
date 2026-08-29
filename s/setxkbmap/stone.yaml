@@ -3,7 +3,7 @@
 
 name        : setxkbmap
 version     : "1.3.5"
-release     : 3
+release     : 4
 homepage    : https://www.x.org/
 upstreams   :
     - https://www.x.org/releases/individual/app/setxkbmap-1.3.5.tar.gz : fe5948c40209b2ae35651968566cd09723865bf86a10a27b1e2ce3c6c543dd31
