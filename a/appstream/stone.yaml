@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : appstream
-version     : "1.1.6"
-release     : 20
+version     : "1.2.0"
+release     : 21
 homepage    : https://www.freedesktop.org/wiki/Distributions/AppStream/
 upstreams   :
-    - https://www.freedesktop.org/software/appstream/releases/AppStream-1.1.6.tar.xz : e298929f39729e84a70f6be6941f3e7f3fc2ee3c83cb3ea1b1b5b280a8fe3a24
+    - https://www.freedesktop.org/software/appstream/releases/AppStream-1.2.0.tar.xz : 901919378910550271feb2d826034c9af6522f3ad218de04d3d6d35ddba5cb45
 summary     : Tools and libraries to work with AppStream metadata
 description : |
     AppStream is a cross-distribution effort for enhancing the way we interact with the software repositories provided by (Linux) distributions by standardizing software component metadata.
@@ -27,10 +27,10 @@ builddeps   :
     - pkgconfig(libblake3)
     - pkgconfig(libcurl)
     - pkgconfig(libfyaml)
-    - pkgconfig(librsvg-2.0)
     - pkgconfig(libsystemd)
     - pkgconfig(libxml-2.0)
     - pkgconfig(libzstd)
+    - pkgconfig(vips)
     - pkgconfig(xmlb)
     - docbook
     - docbook-xsl
@@ -65,6 +65,7 @@ packages    :
             Compose AppStream metadata catalog from directory trees
         paths:
             - /usr/lib/appstream/appstreamcli-compose
+            - /usr/lib/ascompose/asc-mediaworker
             - /usr/lib/libappstream-compose.so.*
             - /usr/lib/girepository-1.0/AppStreamCompose-1.0.typelib
             - /usr/share/man/man1/appstreamcli-compose.1
