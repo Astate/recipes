@@ -8,13 +8,13 @@ Subject: [PATCH] No dkms
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/Makefile b/Makefile
-index 6df2b274..52b0c617 100644
+index 7a4d9a333..5f8130a1a 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -206,7 +206,7 @@ BASH_COMPLETION_DIR?=$(shell $(PKG_CONFIG) --variable=completionsdir bash-comple
+@@ -348,7 +348,7 @@ endif
+ endif
  
  install: INITRAMFS_HOOK=$(INITRAMFS_DIR)/hooks/bcachefs
- install: INITRAMFS_SCRIPT=$(INITRAMFS_DIR)/scripts/local-premount/bcachefs
 -install: all install_dkms $(optional_install)
 +install: all $(optional_install)
  	$(INSTALL) -m0755 -D $(BUILT_BIN)  -t $(DESTDIR)$(ROOT_SBINDIR)
