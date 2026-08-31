@@ -1,0 +1,8 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+releases:
+  id: ~ # Not on https://release-monitoring.org/ (checked 2026-08-31)
+  rss: https://github.com/noctalia-dev/umbriel/releases.atom
+security:
+  cpe: ~ # No CPE found, last checked (2026-08-31)

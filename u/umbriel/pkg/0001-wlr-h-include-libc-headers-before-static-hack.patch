@@ -1,0 +1,34 @@
+From: AerynOS Developers <contact@aerynos.com>
+Subject: [PATCH] wlr.h: include libc headers before static hack
+
+With _FORTIFY_SOURCE enabled, glibc's fortified wrappers (printf & co.)
+are declared `static __always_inline`. The `#define static` hack used to
+cope with C99 `float color[static N]` in wlroots/SceneFX headers strips
+that `static`, turning the wrappers into external definitions duplicated
+in every translation unit and failing the link with duplicate symbols.
+Pull in the libc headers first so their include guards keep them out of
+the hacked region.
+---
+diff --git a/src/wlr.h b/src/wlr.h
+index 558784e..88d3135 100644
+--- a/src/wlr.h
++++ b/src/wlr.h
+@@ -1,5 +1,18 @@
+ #pragma once
+ 
++// Include the libc headers used below before the `#define static` hack:
++// with _FORTIFY_SOURCE enabled, glibc's fortified wrappers (printf & co.)
++// are declared `static __always_inline`; stripping the `static` turns them
++// into external definitions duplicated in every translation unit.
++#include <assert.h>
++#include <fcntl.h>
++#include <math.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
++#include <time.h>
++#include <unistd.h>
++
+ extern "C" {
+ // wlroots / SceneFX headers use C99 `float color[static N]`.
+ #define static

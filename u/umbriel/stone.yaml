@@ -1,0 +1,52 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : umbriel
+version     : "0.1.0+git.e677dbb"
+release     : 1
+homepage    : https://github.com/noctalia-dev/umbriel
+upstreams   :
+    - git|https://github.com/noctalia-dev/umbriel.git :
+        ref : e677dbbe2728ee65156bdbcc6775b0b36b388b64
+        clonedir : umbriel
+description : |
+    Umbriel is a Wayland compositor built on wlroots and SceneFX, from the
+    Noctalia project. It pairs with the Noctalia shell for panels,
+    notifications, launching and locking, and uses xwayland-satellite for X11
+    application support.
+license     : MIT
+builddeps   :
+    - pkgconfig(cairo)
+    - pkgconfig(egl)
+    - pkgconfig(gbm)
+    - pkgconfig(glesv2)
+    - pkgconfig(jemalloc)
+    - pkgconfig(lcms2)
+    - pkgconfig(libdrm)
+    - pkgconfig(libglvnd)
+    - pkgconfig(libinput)
+    - pkgconfig(nlohmann_json)
+    - pkgconfig(pangocairo)
+    - pkgconfig(pixman-1)
+    - pkgconfig(tomlplusplus)
+    - pkgconfig(wayland-client)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(wayland-scanner)
+    - pkgconfig(wayland-server)
+    - pkgconfig(wlroots-0.20)
+    - pkgconfig(xkbcommon)
+rundeps     :
+    - binary(xwayland-satellite)
+setup       : |
+    %patch %(pkgdir)/0001-wlr-h-include-libc-headers-before-static-hack.patch
+    %meson \
+        -Db_ndebug=true \
+        -Djemalloc=enabled
+build       : |
+    %meson_build
+check       : |
+    %meson_test
+install     : |
+    # --skip-subprojects keeps the vendored SceneFX static lib, headers and
+    # .pc file out of the package; it is linked into the umbriel binary.
+    %meson_install --skip-subprojects
