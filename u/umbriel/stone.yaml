@@ -2,18 +2,18 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : umbriel
-version     : "0.1.0+git.e677dbb"
-release     : 1
+version     : "0.1.0+git.8235b9e"
+release     : 2
 homepage    : https://github.com/noctalia-dev/umbriel
 upstreams   :
     - git|https://github.com/noctalia-dev/umbriel.git :
-        ref : e677dbbe2728ee65156bdbcc6775b0b36b388b64
+        ref : 8235b9e0cb97725bcaec9fe1757f5597c847b7e6
         clonedir : umbriel
 description : |
-    Umbriel is a Wayland compositor built on wlroots and SceneFX, from the
-    Noctalia project. It pairs with the Noctalia shell for panels,
-    notifications, launching and locking, and uses xwayland-satellite for X11
-    application support.
+    Umbriel is a Wayland compositor built on wlroots and umbrielfx (a hard
+    fork of SceneFX), from the Noctalia project. It pairs with the Noctalia
+    shell for panels, notifications, launching and locking, and uses
+    xwayland-satellite for X11 application support.
 license     : MIT
 builddeps   :
     - pkgconfig(cairo)
@@ -45,8 +45,12 @@ setup       : |
 build       : |
     %meson_build
 check       : |
+    # `tests` defaults to auto, which upstream only resolves to enabled for
+    # unsanitized debug builds; our plain/release build defines no test
+    # targets, so this is a no-op rather than a real test run.
     %meson_test
 install     : |
-    # --skip-subprojects keeps the vendored SceneFX static lib, headers and
-    # .pc file out of the package; it is linked into the umbriel binary.
-    %meson_install --skip-subprojects
+    # umbrielfx (the vendored SceneFX fork) is a plain subdir(), not a
+    # subproject, and installs nothing on its own, so no --skip-subprojects
+    # is needed here.
+    %meson_install
