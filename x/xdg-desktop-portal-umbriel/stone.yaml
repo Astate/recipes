@@ -1,0 +1,38 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : xdg-desktop-portal-umbriel
+version     : "0.1.0+git.d996f0c"
+release     : 1
+homepage    : https://github.com/noctalia-dev/xdg-desktop-portal-umbriel
+upstreams   :
+    - git|https://github.com/noctalia-dev/xdg-desktop-portal-umbriel.git :
+        ref : d996f0c2bd4e8c868c0a143f0c9ce060f3c47ed5
+        clonedir : xdg-desktop-portal-umbriel
+summary     : xdg-desktop-portal backend for the Umbriel compositor
+description : |
+    An xdg-desktop-portal backend for the Umbriel compositor, from the
+    Noctalia project. Implements the ScreenCast and Screenshot portal
+    interfaces.
+license     : MIT
+builddeps   :
+    - pkgconfig(cairo)
+    - pkgconfig(gbm)
+    - pkgconfig(gtk4)
+    - pkgconfig(libdrm)
+    - pkgconfig(libpipewire-0.3)
+    - pkgconfig(nlohmann_json)
+    - pkgconfig(sdbus-c++)
+    - pkgconfig(tomlplusplus)
+    - pkgconfig(wayland-client)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(wayland-scanner)
+rundeps     :
+    - binary(pipewire) # service
+    - xdg-desktop-portal
+setup       : |
+    %meson
+build       : |
+    %meson_build
+install     : |
+    %meson_install
