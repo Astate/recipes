@@ -13,6 +13,7 @@
 				"pkgconfig(libdrm)",
 				"pkgconfig(libglvnd)",
 				"pkgconfig(libinput)",
+				"pkgconfig(libudev)",
 				"pkgconfig(nlohmann_json)",
 				"pkgconfig(pangocairo)",
 				"pkgconfig(pixman-1)",
@@ -45,6 +46,7 @@
 				"soname(libpixman-1.so.0(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libtomlplusplus.so.3(x86_64))",
+				"soname(libudev.so.1(x86_64))",
 				"soname(libwayland-client.so.0(x86_64))",
 				"soname(libwayland-server.so.0(x86_64))",
 				"soname(libwlroots-0.20.so(x86_64))",
@@ -57,6 +59,8 @@
 				"/usr/lib/systemd/user/umbriel-shutdown.target",
 				"/usr/lib/systemd/user/umbriel.service",
 				"/usr/share/umbriel/config.toml",
+				"/usr/share/umbriel/shaders/reveal.glsl",
+				"/usr/share/umbriel/shaders/squash.glsl",
 				"/usr/share/wayland-sessions/umbriel.desktop"
 			],
 			"name": "umbriel",
@@ -67,6 +71,6 @@
 		}
 	},
 	"source-name": "umbriel",
-	"source-release": "2",
-	"source-version": "0.1.0+git.8235b9e"
+	"source-release": "3",
+	"source-version": "0.1.0+git.70f1a0b"
 }
