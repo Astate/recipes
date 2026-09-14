@@ -17,12 +17,12 @@
 			"files": [
 				"/usr/bin/cffi-gen-src",
 				"/usr/lib/python3.14/site-packages/_cffi_backend.cpython-314-x86_64-linux-gnu.so",
-				"/usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/METADATA",
-				"/usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/RECORD",
-				"/usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/WHEEL",
-				"/usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/entry_points.txt",
-				"/usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/licenses/LICENSE",
-				"/usr/lib/python3.14/site-packages/cffi-2.1.0.dist-info/top_level.txt",
+				"/usr/lib/python3.14/site-packages/cffi-2.1.1.dist-info/METADATA",
+				"/usr/lib/python3.14/site-packages/cffi-2.1.1.dist-info/RECORD",
+				"/usr/lib/python3.14/site-packages/cffi-2.1.1.dist-info/WHEEL",
+				"/usr/lib/python3.14/site-packages/cffi-2.1.1.dist-info/entry_points.txt",
+				"/usr/lib/python3.14/site-packages/cffi-2.1.1.dist-info/licenses/LICENSE",
+				"/usr/lib/python3.14/site-packages/cffi-2.1.1.dist-info/top_level.txt",
 				"/usr/lib/python3.14/site-packages/cffi/__init__.py",
 				"/usr/lib/python3.14/site-packages/cffi/__pycache__/__init__.cpython-314.opt-1.pyc",
 				"/usr/lib/python3.14/site-packages/cffi/__pycache__/__init__.cpython-314.pyc",
@@ -97,6 +97,6 @@
 		}
 	},
 	"source-name": "python-cffi",
-	"source-release": "6",
-	"source-version": "2.1.0"
+	"source-release": "7",
+	"source-version": "2.1.1"
 }
