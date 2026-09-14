@@ -40,7 +40,7 @@
 			"files": [
 				"/usr/lib/girepository-1.0/Rsvg-2.0.typelib",
 				"/usr/lib/librsvg-2.so.2",
-				"/usr/lib/librsvg-2.so.2.62.3"
+				"/usr/lib/librsvg-2.so.2.63.0"
 			],
 			"name": "librsvg",
 			"provides": [
@@ -299,6 +299,6 @@
 		}
 	},
 	"source-name": "librsvg",
-	"source-release": "21",
-	"source-version": "2.62.3"
+	"source-release": "22",
+	"source-version": "2.63.0"
 }
