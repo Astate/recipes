@@ -1176,6 +1176,7 @@
 				"/usr/share/vim/vim92/ftplugin/rmd.vim",
 				"/usr/share/vim/vim92/ftplugin/rnc.vim",
 				"/usr/share/vim/vim92/ftplugin/rnoweb.vim",
+				"/usr/share/vim/vim92/ftplugin/robot.vim",
 				"/usr/share/vim/vim92/ftplugin/roc.vim",
 				"/usr/share/vim/vim92/ftplugin/routeros.vim",
 				"/usr/share/vim/vim92/ftplugin/rpl.vim",
@@ -2579,6 +2580,7 @@
 				"/usr/share/vim/vim92/syntax/structurizr.vim",
 				"/usr/share/vim/vim92/syntax/stylus.vim",
 				"/usr/share/vim/vim92/syntax/sudoers.vim",
+				"/usr/share/vim/vim92/syntax/svelte.vim",
 				"/usr/share/vim/vim92/syntax/svg.vim",
 				"/usr/share/vim/vim92/syntax/svn.vim",
 				"/usr/share/vim/vim92/syntax/swayconfig.vim",
@@ -2868,6 +2870,6 @@
 		}
 	},
 	"source-name": "vim",
-	"source-release": "31",
-	"source-version": "9.2.1025"
+	"source-release": "32",
+	"source-version": "9.2.1099"
 }

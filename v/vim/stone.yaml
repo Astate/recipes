@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : vim
-version     : "9.2.1025"
-release     : 31
+version     : "9.2.1099"
+release     : 32
 homepage    : https://github.com/vim/vim
 upstreams   :
-    - https://github.com/vim/vim/archive/refs/tags/v9.2.1025.tar.gz:
-        hash: cb0dbf701f8550bb54940304fa4d8b875e078db84967e5b36a0eb7ebe8a6d0cc
+    - https://github.com/vim/vim/archive/refs/tags/v9.2.1099.tar.gz:
+        hash: 9a5e2df1c0544e145e5c20e79adbeb174d4efece5a2cee6a9608245ffa435dd9
         unpack: false
         rename: vim.tar.gz
 summary     : Vi IMproved, an advanced text editor
