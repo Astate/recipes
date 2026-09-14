@@ -4,6 +4,8 @@
 	"packages": {
 		"libportal": {
 			"build-depends": [
+				"binary(lrelease6)",
+				"binary(qmlcachegen6)",
 				"cmake(Qt6CorePrivate)",
 				"pkgconfig(Qt6Gui)",
 				"pkgconfig(gobject-introspection-1.0)",
@@ -30,6 +32,8 @@
 		},
 		"libportal-devel": {
 			"build-depends": [
+				"binary(lrelease6)",
+				"binary(qmlcachegen6)",
 				"cmake(Qt6CorePrivate)",
 				"pkgconfig(Qt6Gui)",
 				"pkgconfig(gobject-introspection-1.0)",
@@ -50,6 +54,7 @@
 				"/usr/include/libportal/dynamic-launcher.h",
 				"/usr/include/libportal/email.h",
 				"/usr/include/libportal/filechooser.h",
+				"/usr/include/libportal/globalshortcuts.h",
 				"/usr/include/libportal/inhibit.h",
 				"/usr/include/libportal/inputcapture-pointerbarrier.h",
 				"/usr/include/libportal/inputcapture-zone.h",
@@ -84,6 +89,8 @@
 		},
 		"libportal-gtk3": {
 			"build-depends": [
+				"binary(lrelease6)",
+				"binary(qmlcachegen6)",
 				"cmake(Qt6CorePrivate)",
 				"pkgconfig(Qt6Gui)",
 				"pkgconfig(gobject-introspection-1.0)",
@@ -111,6 +118,8 @@
 		},
 		"libportal-gtk3-devel": {
 			"build-depends": [
+				"binary(lrelease6)",
+				"binary(qmlcachegen6)",
 				"cmake(Qt6CorePrivate)",
 				"pkgconfig(Qt6Gui)",
 				"pkgconfig(gobject-introspection-1.0)",
@@ -140,6 +149,8 @@
 		},
 		"libportal-gtk4": {
 			"build-depends": [
+				"binary(lrelease6)",
+				"binary(qmlcachegen6)",
 				"cmake(Qt6CorePrivate)",
 				"pkgconfig(Qt6Gui)",
 				"pkgconfig(gobject-introspection-1.0)",
@@ -166,6 +177,8 @@
 		},
 		"libportal-gtk4-devel": {
 			"build-depends": [
+				"binary(lrelease6)",
+				"binary(qmlcachegen6)",
 				"cmake(Qt6CorePrivate)",
 				"pkgconfig(Qt6Gui)",
 				"pkgconfig(gobject-introspection-1.0)",
@@ -195,6 +208,8 @@
 		},
 		"libportal-qt6": {
 			"build-depends": [
+				"binary(lrelease6)",
+				"binary(qmlcachegen6)",
 				"cmake(Qt6CorePrivate)",
 				"pkgconfig(Qt6Gui)",
 				"pkgconfig(gobject-introspection-1.0)",
@@ -224,6 +239,8 @@
 		},
 		"libportal-qt6-devel": {
 			"build-depends": [
+				"binary(lrelease6)",
+				"binary(qmlcachegen6)",
 				"cmake(Qt6CorePrivate)",
 				"pkgconfig(Qt6Gui)",
 				"pkgconfig(gobject-introspection-1.0)",
@@ -252,6 +269,6 @@
 		}
 	},
 	"source-name": "libportal",
-	"source-release": "16",
-	"source-version": "0.10.0"
+	"source-release": "17",
+	"source-version": "0.11.0"
 }
