@@ -2,16 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gnome-system-monitor
-version     : "50.0"
-release     : 10
+version     : "51.0"
+release     : 11
 homepage    : https://apps.gnome.org/SystemMonitor/
 upstreams   :
-    - https://download.gnome.org/sources/gnome-system-monitor/50/gnome-system-monitor-50.0.tar.xz : a4138aa754b4584c46de91fad1d685e27b12bc2457de761863b6be02d84c4862
+    - https://download.gnome.org/sources/gnome-system-monitor/51/gnome-system-monitor-51.0.tar.xz : 8887b03427230ac0816d4b0c801ce6628ad1fc9139ed3072914e9faa881ba868
 summary     : View and manage system resources
 description : |
   System Monitor is a process viewer and system monitor with an attractive, easy-to-use interface. System Monitor can help you find out what applications are using the processor or the memory of your computer, can manage the running applications, force stop processes not responding, and change the state or priority of existing processes. The resource graphs feature shows you a quick overview of what is going on with your computer displaying recent network, memory and processor usage.
 license     : GPL-2.0-or-later
 builddeps   :
+    - binary(appstreamcli)
     - binary(itstool)
     - binary(msgfmt)
     - binary(python3)
