@@ -10,7 +10,6 @@
 				"pkgconfig(cairo)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libheif)",
 				"pkgconfig(libjxl)",
 				"pkgconfig(librsvg-2.0)",
@@ -30,7 +29,6 @@
 				"pkgconfig(cairo)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libheif)",
 				"pkgconfig(libjxl)",
 				"pkgconfig(librsvg-2.0)",
@@ -53,7 +51,6 @@
 				"pkgconfig(cairo)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libheif)",
 				"pkgconfig(libjxl)",
 				"pkgconfig(librsvg-2.0)",
@@ -86,7 +83,6 @@
 				"pkgconfig(cairo)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libheif)",
 				"pkgconfig(libjxl)",
 				"pkgconfig(librsvg-2.0)",
@@ -99,7 +95,6 @@
 				"pkgconfig(gio-2.0)",
 				"pkgconfig(glycin-2)",
 				"pkgconfig(gtk4)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libseccomp)"
 			],
 			"files": [
@@ -123,7 +118,6 @@
 				"pkgconfig(cairo)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libheif)",
 				"pkgconfig(libjxl)",
 				"pkgconfig(librsvg-2.0)",
@@ -139,7 +133,7 @@
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))",
-				"soname(liblcms2.so.2(x86_64))",
+				"soname(libm.so.6(x86_64))",
 				"soname(libseccomp.so.2(x86_64))"
 			],
 			"files": [
@@ -159,7 +153,6 @@
 				"pkgconfig(cairo)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libheif)",
 				"pkgconfig(libjxl)",
 				"pkgconfig(librsvg-2.0)",
@@ -170,7 +163,6 @@
 				"glycin-libs",
 				"pkgconfig(fontconfig)",
 				"pkgconfig(gio-2.0)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libseccomp)"
 			],
 			"files": [
@@ -194,7 +186,6 @@
 				"pkgconfig(cairo)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libheif)",
 				"pkgconfig(libjxl)",
 				"pkgconfig(librsvg-2.0)",
@@ -237,7 +228,6 @@
 				"pkgconfig(cairo)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)",
-				"pkgconfig(lcms2)",
 				"pkgconfig(libheif)",
 				"pkgconfig(libjxl)",
 				"pkgconfig(librsvg-2.0)",
@@ -249,13 +239,11 @@
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libfontconfig.so.1(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
-				"soname(libgobject-2.0.so.0(x86_64))",
-				"soname(liblcms2.so.2(x86_64))",
-				"soname(libseccomp.so.2(x86_64))"
+				"soname(libglycin-2.so.0(x86_64))",
+				"soname(libgobject-2.0.so.0(x86_64))"
 			],
 			"files": [
 				"/usr/bin/glycin-thumbnailer",
@@ -271,6 +259,6 @@
 		}
 	},
 	"source-name": "glycin",
-	"source-release": "19",
-	"source-version": "2.0.8"
+	"source-release": "20",
+	"source-version": "2.2.0"
 }
