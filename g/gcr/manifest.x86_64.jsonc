@@ -89,6 +89,7 @@
 				"/usr/share/locale/kk/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/kn/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/ko/LC_MESSAGES/gcr-4.mo",
+				"/usr/share/locale/lo/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/lt/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/lv/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/mai/LC_MESSAGES/gcr-4.mo",
@@ -125,6 +126,7 @@
 				"/usr/share/locale/tr/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/gcr-4.mo",
+				"/usr/share/locale/uz/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/vi/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/xh/LC_MESSAGES/gcr-4.mo",
 				"/usr/share/locale/zh_CN/LC_MESSAGES/gcr-4.mo",
@@ -239,9 +241,9 @@
 				"/usr/lib/girepository-1.0/Gck-2.typelib",
 				"/usr/lib/girepository-1.0/Gcr-4.typelib",
 				"/usr/lib/libgck-2.so.2",
-				"/usr/lib/libgck-2.so.2.4.0",
+				"/usr/lib/libgck-2.so.2.4.1",
 				"/usr/lib/libgcr-4.so.4",
-				"/usr/lib/libgcr-4.so.4.4.0"
+				"/usr/lib/libgcr-4.so.4.4.1"
 			],
 			"name": "gcr-libs",
 			"provides": [
@@ -251,6 +253,6 @@
 		}
 	},
 	"source-name": "gcr",
-	"source-release": "9",
-	"source-version": "4.4.0.1"
+	"source-release": "10",
+	"source-version": "4.4.1"
 }
