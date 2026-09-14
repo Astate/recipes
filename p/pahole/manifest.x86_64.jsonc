@@ -38,7 +38,8 @@
 				"/usr/share/dwarves/runtime/ctracer_relay.c",
 				"/usr/share/dwarves/runtime/ctracer_relay.h",
 				"/usr/share/dwarves/runtime/linux.blacklist.cu",
-				"/usr/share/man/man1/pahole.1"
+				"/usr/share/man/man1/pahole.1",
+				"/usr/share/man/man1/pfunct.1"
 			],
 			"name": "pahole",
 			"provides": [
@@ -91,6 +92,6 @@
 		}
 	},
 	"source-name": "pahole",
-	"source-release": "3",
-	"source-version": "1.31"
+	"source-release": "4",
+	"source-version": "1.32"
 }
