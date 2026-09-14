@@ -5,6 +5,7 @@
 		"wluma": {
 			"build-depends": [
 				"pkgconfig(dbus-1)",
+				"pkgconfig(libpipewire-0.3)",
 				"pkgconfig(libudev)",
 				"pkgconfig(libv4l2)",
 				"pkgconfig(vulkan)"
@@ -16,6 +17,7 @@
 				"soname(libdbus-1.so.3(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libm.so.6(x86_64))",
+				"soname(libpipewire-0.3.so.0(x86_64))",
 				"soname(libudev.so.1(x86_64))",
 				"soname(libv4l2.so.0(x86_64))",
 				"soname(libvulkan.so.1(x86_64))"
@@ -23,8 +25,7 @@
 			"files": [
 				"/usr/bin/wluma",
 				"/usr/lib/systemd/user/wluma.service",
-				"/usr/lib/udev/rules.d/90-wluma-backlight.rules",
-				"/usr/share/wluma/examples/config.toml"
+				"/usr/lib/udev/rules.d/90-wluma-backlight.rules"
 			],
 			"name": "wluma",
 			"provides": [
@@ -33,6 +34,6 @@
 		}
 	},
 	"source-name": "wluma",
-	"source-release": "4",
-	"source-version": "4.11.1"
+	"source-release": "5",
+	"source-version": "5.0.0"
 }
