@@ -19,7 +19,7 @@
 			"files": [
 				"/usr/bin/cxx-rust-cssparser-parse",
 				"/usr/lib/libcxx-rust-cssparser.so.1",
-				"/usr/lib/libcxx-rust-cssparser.so.1.0.0"
+				"/usr/lib/libcxx-rust-cssparser.so.1.1.0"
 			],
 			"name": "cxx-rust-cssparser",
 			"provides": [
@@ -55,6 +55,6 @@
 		}
 	},
 	"source-name": "cxx-rust-cssparser",
-	"source-release": "2",
-	"source-version": "1.0.0"
+	"source-release": "3",
+	"source-version": "1.1.0"
 }
