@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : python-ast-serialize
-version     : "0.8.0"
-release     : 2
+version     : "0.11.2"
+release     : 3
 homepage    : https://github.com/mypyc/ast_serialize
 upstreams   :
-    - https://pypi.debian.net/ast-serialize/ast_serialize-0.8.0.tar.gz : 6c37c43e4004dfb42d321ddedc569dc17ff4259296f3af577c9ea46a809bc010
+    - https://pypi.debian.net/ast-serialize/ast_serialize-0.11.2.tar.gz : 976a5bd75845d22f4b52905ddf53ab669ef1b14dba7735f5512841a2ef2b5450
 summary     : Fast Python parser that generates a serialized AST
 description : |
     Fast Python parser that generates a serialized AST
