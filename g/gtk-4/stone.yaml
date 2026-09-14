@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gtk-4
-version     : "4.22.5"
-release     : 38
+version     : "4.24.0"
+release     : 39
 homepage    : https://www.gtk.org/
 upstreams   :
-    - https://download.gnome.org/sources/gtk/4.22/gtk-4.22.5.tar.xz : 7fd725deb2cb3f8dc218ad862c5056ff8548f49d3b0e4081796e444c22d19686
+    - https://download.gnome.org/sources/gtk/4.24/gtk-4.24.0.tar.xz : 28ba4ac1c04f86eac09b79a163cb163a4c2b54442d9f7eccc04679062a581044
 summary     : The GTK 4 libraries for developing user interfaces
 description : |
     The GTK 4 libraries are used for developing user interfaces
@@ -87,8 +87,6 @@ packages    :
     - "%(name)-devel":
         paths:
             - /usr/bin/gtk4-builder-tool
-            - /usr/bin/gtk4-encode-symbolic-svg
-            - /usr/bin/gtk4-icon-editor
             - /usr/bin/gtk4-image-tool
             - /usr/bin/gtk4-path-tool
             - /usr/bin/gtk4-query-settings
@@ -101,7 +99,6 @@ packages    :
             - /usr/share/bash-completion/completions/gtk4-path-tool
             - /usr/share/bash-completion/completions/gtk4-rendernode-tool
             - /usr/share/man/man1/gtk4-builder-tool.1*
-            - /usr/share/man/man1/gtk4-encode-symbolic-svg.1*
             - /usr/share/man/man1/gtk4-image-tool.1*
             - /usr/share/man/man1/gtk4-path-tool.1*
             - /usr/share/man/man1/gtk4-query-settings.1*
