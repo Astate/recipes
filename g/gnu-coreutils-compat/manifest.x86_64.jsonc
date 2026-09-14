@@ -136,6 +136,6 @@
 		}
 	},
 	"source-name": "gnu-coreutils-compat",
-	"source-release": "8",
-	"source-version": "9.11"
+	"source-release": "9",
+	"source-version": "9.12"
 }
