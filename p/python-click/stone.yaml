@@ -2,17 +2,19 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : python-click
-version     : "8.4.2"
-release     : 6
+version     : "8.5.0"
+release     : 7
 homepage    : https://pypi.org/project/click
 upstreams   :
-    - https://pypi.debian.net/click/click-8.4.2.tar.gz : 9a6cea6e60b17ebe0a44c5cc636d94f09bd66142c1cd7d8b4cd731c4917a15f6
+    - https://pypi.debian.net/click/click-8.5.0.tar.gz : ba0d2089de75ea0310e2dde03160e6ca10009947fb95a182f9b54021bb272e34
 summary     : Composable command line interface toolkit
 description : |
     Click is a Python package for creating beautiful command line interfaces in a composable way with as little code as necessary. It's the "Command Line Interface Creation Kit". It's highly configurable but comes with sensible defaults out of the box.
 license     : BSD-3-Clause
 builddeps   :
     - python(flit-core)
+setup       : |
+    %patch %(pkgdir)/0001-flit-4.patch
 build       : |
     %pyproject_build
 install     : |
