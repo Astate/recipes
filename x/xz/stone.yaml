@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : xz
-version     : "5.8.3"
-release     : 16
+version     : "5.8.4"
+release     : 17
 homepage    : https://tukaani.org/xz
 upstreams   :
-    - https://github.com/tukaani-project/xz/releases/download/v5.8.3/xz-5.8.3.tar.gz : 3d3a1b973af218114f4f889bbaa2f4c037deaae0c8e815eec381c3d546b974a0
+    - https://github.com/tukaani-project/xz/releases/download/v5.8.4/xz-5.8.4.tar.gz : 0014c7886930454fe8bd4228665b51af55eeae560ea135c9c4cd33f55b2591d9
 summary     : Library and command line tools for XZ and LZMA compressed files
 description : |
     Library and command line tools for XZ and LZMA compressed files
