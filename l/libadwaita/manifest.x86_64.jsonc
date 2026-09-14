@@ -7,13 +7,11 @@
 				"binary(msgfmt)",
 				"binary(sassc)",
 				"binary(vapigen)",
-				"pkgconfig(appstream)",
 				"pkgconfig(glib-2.0)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)"
 			],
 			"depends": [
-				"soname(libappstream.so.5(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libfribidi.so.0(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
@@ -30,6 +28,7 @@
 				"/usr/share/locale/ab/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/be/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/bg/LC_MESSAGES/libadwaita.mo",
+				"/usr/share/locale/bs/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/ca/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/cs/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/da/LC_MESSAGES/libadwaita.mo",
@@ -57,6 +56,7 @@
 				"/usr/share/locale/kab/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/kk/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/ko/LC_MESSAGES/libadwaita.mo",
+				"/usr/share/locale/kw/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/lt/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/lv/LC_MESSAGES/libadwaita.mo",
 				"/usr/share/locale/nb/LC_MESSAGES/libadwaita.mo",
@@ -94,7 +94,6 @@
 				"binary(msgfmt)",
 				"binary(sassc)",
 				"binary(vapigen)",
-				"pkgconfig(appstream)",
 				"pkgconfig(glib-2.0)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)"
@@ -125,17 +124,16 @@
 				"binary(msgfmt)",
 				"binary(sassc)",
 				"binary(vapigen)",
-				"pkgconfig(appstream)",
 				"pkgconfig(glib-2.0)",
 				"pkgconfig(gobject-introspection-1.0)",
 				"pkgconfig(gtk4)"
 			],
 			"depends": [
 				"libadwaita",
-				"pkgconfig(appstream)",
 				"pkgconfig(fribidi)",
 				"pkgconfig(gio-2.0)",
 				"pkgconfig(glib-2.0)",
+				"pkgconfig(gobject-2.0)",
 				"pkgconfig(gtk4)"
 			],
 			"files": [
@@ -164,6 +162,7 @@
 				"/usr/include/libadwaita-1/adw-clamp-scrollable.h",
 				"/usr/include/libadwaita-1/adw-clamp.h",
 				"/usr/include/libadwaita-1/adw-combo-row.h",
+				"/usr/include/libadwaita-1/adw-css-class-binding.h",
 				"/usr/include/libadwaita-1/adw-dialog.h",
 				"/usr/include/libadwaita-1/adw-easing.h",
 				"/usr/include/libadwaita-1/adw-entry-row.h",
@@ -243,6 +242,6 @@
 		}
 	},
 	"source-name": "libadwaita",
-	"source-release": "27",
-	"source-version": "1.9.3"
+	"source-release": "28",
+	"source-version": "1.10.0"
 }
