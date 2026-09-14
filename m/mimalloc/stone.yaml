@@ -2,17 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : mimalloc
-version     : "3.5.1"
-release     : 17
+version     : "3.5.2"
+release     : 18
 homepage    : https://github.com/microsoft/mimalloc
 upstreams   :
-    - https://github.com/microsoft/mimalloc/archive/refs/tags/v3.5.1.tar.gz:
-        hash: 2602daad9b64b213a8835dee6fadda96d2081c0171bfcd3fb2db39bdc669d6b3
+    - https://github.com/microsoft/mimalloc/archive/refs/tags/v3.5.2.tar.gz:
+        hash: db5c4aaaf356edfeb1aa236b3a052fe3c67d01419db36613f783999341ed5619
         unpackdir: current
 
-    - https://github.com/microsoft/mimalloc/archive/refs/tags/v2.5.1.tar.gz:
-        hash: 8381e86a7fe49b1e8759574ca1ad4dc915cedc1181182e4623454df53ed9abed
-        unpackdir: compat
+    # - https://github.com/microsoft/mimalloc/archive/refs/tags/v2.5.1.tar.gz:
+    #     hash: 8381e86a7fe49b1e8759574ca1ad4dc915cedc1181182e4623454df53ed9abed
+    #     unpackdir: compat
 summary     : Compact general purpose allocator
 description : |
     mimalloc is a compact general purpose allocator with excellent performance.

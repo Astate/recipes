@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
-  id: 233879 # v2
+  id: 233872
   rss: https://github.com/microsoft/mimalloc/tags.atom
 security:
   cpe: ~ # No known CPE. Last checked 20230104
