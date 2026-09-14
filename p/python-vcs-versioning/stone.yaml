@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : python-vcs-versioning
-version     : "2.2.2"
-release     : 4
+version     : "2.4.0"
+release     : 5
 homepage    : https://github.com/pypa/setuptools-scm
 upstreams   :
-    - https://pypi.debian.net/vcs-versioning/vcs_versioning-2.2.2.tar.gz : 4ac4ded78720cdb4d0291ae58ace87e1e9201912e1023f3029c6cce5c9152cfb
+    - https://pypi.debian.net/vcs-versioning/vcs_versioning-2.4.0.tar.gz : cc4b66c02ae4cfb51e843910024f7142464c3391bb1f7e04608578b45046891b
 summary     : the blessed package to manage your versions by vcs metadata
 description : |
     the blessed package to manage your versions by vcs metadata
