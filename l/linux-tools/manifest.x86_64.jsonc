@@ -413,6 +413,7 @@
 				"/usr/lib/perf/tests/shell/lib/perf_has_symbol.sh",
 				"/usr/lib/perf/tests/shell/lib/perf_json_output_lint.py",
 				"/usr/lib/perf/tests/shell/lib/perf_metric_validation.py",
+				"/usr/lib/perf/tests/shell/lib/perf_record.sh",
 				"/usr/lib/perf/tests/shell/lib/probe.sh",
 				"/usr/lib/perf/tests/shell/lib/probe_vfs_getname.sh",
 				"/usr/lib/perf/tests/shell/lib/setup_python.sh",
@@ -430,6 +431,7 @@
 				"/usr/lib/perf/tests/shell/record+probe_libc_inet_pton.sh",
 				"/usr/lib/perf/tests/shell/record+script_probe_vfs_getname.sh",
 				"/usr/lib/perf/tests/shell/record+zstd_comp_decomp.sh",
+				"/usr/lib/perf/tests/shell/record+zstd_comp_decomp_multi_record.sh",
 				"/usr/lib/perf/tests/shell/record.sh",
 				"/usr/lib/perf/tests/shell/record_bpf_filter.sh",
 				"/usr/lib/perf/tests/shell/record_lbr.sh",
@@ -462,6 +464,7 @@
 				"/usr/lib/perf/tests/shell/test_bpf_metadata.sh",
 				"/usr/lib/perf/tests/shell/test_brstack.sh",
 				"/usr/lib/perf/tests/shell/test_data_symbol.sh",
+				"/usr/lib/perf/tests/shell/test_dwarf_unwind_multithreaded.sh",
 				"/usr/lib/perf/tests/shell/test_event_open_fallback.sh",
 				"/usr/lib/perf/tests/shell/test_intel_pt.sh",
 				"/usr/lib/perf/tests/shell/test_java_symbol.sh",
@@ -611,6 +614,6 @@
 		}
 	},
 	"source-name": "linux-tools",
-	"source-release": "48",
-	"source-version": "7.2.5"
+	"source-release": "49",
+	"source-version": "7.2.6"
 }

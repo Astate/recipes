@@ -112,8 +112,6 @@ ogc/0103-FROM-ML-drm-panel-orientation-quirks-Add-AOKZOE-A2-P.patch
 ogc/0104-FROM-ML-drm-panel-orientation-quirks-Add-OneXPlayer-.patch
 ogc/0105-MAINTAINED-EXTERNALLY-tmp-apply-zotac-screen-quirk.patch
 ogc/0106-FOR-UPSTREAM-drm-panel_orientation_quirks-Add-missin.patch
-ogc/0107-FROM-ML-sched-core-Fix-inter-class-wakeup_preempt.patch
-ogc/0108-FROM-ML-sched-fair-Fix-overflow-in-update_tg_cfs_run.patch
 ogc/0109-FROM-ML-sched-fair-Add-cgroup_mode-switch.patch
 ogc/0110-FROM-ML-sched-fair-Add-cgroup_mode-up.patch
 ogc/0111-FROM-ML-sched-fair-Add-cgroup_mode-max.patch
@@ -138,12 +136,9 @@ ogc/0129-FROM-ML-sched-eevdf-Delayed-dequeue-task-can-t-preem.patch
 ogc/0130-FROM-ML-stop_machine-Make-stop_one_cpu_nowait-return.patch
 ogc/0131-FROM-ML-sched-fair-Prefer-fully-idle-cores-for-NOHZ-.patch
 ogc/0132-FROM-ML-sched-fair-Do-not-skip-CPUs-of-similar-capac.patch
-ogc/0133-FROM-ML-sched-fair-Also-gate-overloaded-status-updat.patch
-ogc/0134-FROM-ML-sched-fair-Check-CPU-capacity-before-compari.patch
 ogc/0135-FROM-ML-sched-fair-Skip-misfit-load-accounting-when-.patch
 ogc/0136-FROM-ML-sched-fair-Allow-load-balancing-between-CPUs.patch
 ogc/0137-FROM-ML-sched-topology-Restore-SD_PREFER_SIBLING-in-.patch
-ogc/0138-FROM-ML-sched-isolation-Defer-freeing-of-cpumask-mem.patch
 ogc/0139-FROM-ML-sched-fair-Fix-flat-hierarchy.patch
 ogc/0140-EXTERNALLY-MAINTAINED-Bluetooth-btrtl-add-suspend-ha.patch
 ogc/0141-EXTERNALLY-MAINTAINED-drm-amd-bump-backlight-brightn.patch
@@ -182,6 +177,7 @@ ogc/0173-FROM-ML-drm-amd-display-Emit-VTEM-for-HF-VSDB-VRR-on.patch
 ogc/0174-FROM-ML-drm-amd-display-freesync_on_desktop-support-.patch
 ogc/0175-FROM-ML-drm-amd-display-Fix-NULL-deref-of-new_stream.patch
 ogc/0176-Revert-drm-amd-display-add-HDMI-2.1-Compliance-Suppo.patch
+ogc/0177-FROM-ML-sched-fair-floor-tg_cpus-at-1.patch
 
 # Valve patches
 # https://github.com/ValveSoftware/steam-devices/pull/83#issuecomment-4786835173
