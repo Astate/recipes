@@ -58,6 +58,7 @@
 				"/usr/share/locale/kk/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/ko/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/kw/LC_MESSAGES/tecla.mo",
+				"/usr/share/locale/lo/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/lt/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/lv/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/nb/LC_MESSAGES/tecla.mo",
@@ -75,6 +76,7 @@
 				"/usr/share/locale/sr/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/sr@latin/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/sv/LC_MESSAGES/tecla.mo",
+				"/usr/share/locale/th/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/tecla.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/tecla.mo",
@@ -109,6 +111,6 @@
 		}
 	},
 	"source-name": "tecla",
-	"source-release": "9",
-	"source-version": "50.0"
+	"source-release": "10",
+	"source-version": "51.0"
 }
