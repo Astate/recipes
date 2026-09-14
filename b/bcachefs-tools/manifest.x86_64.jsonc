@@ -58,6 +58,6 @@
 		}
 	},
 	"source-name": "bcachefs-tools",
-	"source-release": "19",
-	"source-version": "1.39.5"
+	"source-release": "20",
+	"source-version": "1.39.6"
 }
