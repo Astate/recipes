@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : python-hatchling
-version     : "1.31.0"
-release     : 10
+version     : "1.32.0"
+release     : 11
 homepage    : https://pypi.org/project/hatchling/
 upstreams   :
-    - https://pypi.debian.net/hatchling/hatchling-1.31.0.tar.gz : 6b48ad4068a482ed7239b3a8215bc55b47aad3345d58dfc94e553c5d2d46211b
+    - https://pypi.debian.net/hatchling/hatchling-1.32.0.tar.gz : 0bdbde4a52b06c37e3eca395f85a762bf0ef06fe374fd8ae429dc6be10230f5f
 summary     : Modern, extensible Python build backend
 description : |
     Modern, extensible Python build backend, as used by Hatch
@@ -16,6 +16,7 @@ builddeps   :
     - python(packaging)
     - python(pathspec)
     - python(pluggy)
+    - python(tomlkit)
     - python(trove-classifiers)
 rundeps     :
     - binary(python3)
