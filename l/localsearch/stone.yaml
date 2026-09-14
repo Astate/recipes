@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : localsearch
-version     : "3.11.1"
-release     : 22
+version     : "3.12.0"
+release     : 23
 homepage    : https://tracker.gnome.org/
 upstreams   :
-    - https://download.gnome.org/sources/localsearch/3.11/localsearch-3.11.1.tar.xz : 7b39a6c28a8acf2b172f15b2fb5ee7c7a3764c447c2f4a14caa239b7ebe61942
+    - https://download.gnome.org/sources/localsearch/3.12/localsearch-3.12.0.tar.xz : 4bf45440ce7a899f2eca4d20343d31fc620fa2a3fe53bb929de244305330e930
 summary     : Tracker is an efficient search engine and triplestore for desktop, embedded and mobile.
 description : |
     Tracker Miners contains the indexer daemon (tracker-miner-fs-3) and tools to extract metadata from many different filetypes.
@@ -41,6 +41,7 @@ builddeps   :
     # pkgconfig(libgsf-1
     # pkgconfig(libiptcdata)
     - pkgconfig(libjpeg)
+    # libmediainfo
     - pkgconfig(libnm)
     - pkgconfig(libosinfo-1.0)
     - pkgconfig(libpng)
