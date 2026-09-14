@@ -1,0 +1,65 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"python-tomlkit": {
+			"build-depends": [
+				"python(poetry-core)",
+				"python(pytest)"
+			],
+			"depends": [
+				"python-libs"
+			],
+			"files": [
+				"/usr/lib/python3.14/site-packages/tomlkit-0.15.1.dist-info/METADATA",
+				"/usr/lib/python3.14/site-packages/tomlkit-0.15.1.dist-info/RECORD",
+				"/usr/lib/python3.14/site-packages/tomlkit-0.15.1.dist-info/WHEEL",
+				"/usr/lib/python3.14/site-packages/tomlkit-0.15.1.dist-info/licenses/LICENSE",
+				"/usr/lib/python3.14/site-packages/tomlkit/__init__.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/__init__.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/__init__.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/_compat.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/_compat.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/_types.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/_types.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/_utils.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/_utils.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/api.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/api.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/container.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/container.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/exceptions.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/exceptions.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/items.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/items.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/parser.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/parser.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/source.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/source.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/toml_document.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/toml_document.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/toml_file.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/__pycache__/toml_file.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/tomlkit/_compat.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/_types.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/_utils.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/api.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/container.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/exceptions.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/items.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/parser.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/py.typed",
+				"/usr/lib/python3.14/site-packages/tomlkit/source.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/toml_document.py",
+				"/usr/lib/python3.14/site-packages/tomlkit/toml_file.py"
+			],
+			"name": "python-tomlkit",
+			"provides": [
+				"python(tomlkit)"
+			]
+		}
+	},
+	"source-name": "python-tomlkit",
+	"source-release": "1",
+	"source-version": "0.15.1"
+}
