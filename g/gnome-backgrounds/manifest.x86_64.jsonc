@@ -14,6 +14,8 @@
 				"/usr/share/backgrounds/gnome/blendpills-l.jxl",
 				"/usr/share/backgrounds/gnome/blobs-d.svg",
 				"/usr/share/backgrounds/gnome/blobs-l.svg",
+				"/usr/share/backgrounds/gnome/curvaturingster-d.jxl",
+				"/usr/share/backgrounds/gnome/curvaturingster-l.jxl",
 				"/usr/share/backgrounds/gnome/curvy-d.jxl",
 				"/usr/share/backgrounds/gnome/curvy-l.jxl",
 				"/usr/share/backgrounds/gnome/dithered-sun-d.jxl",
@@ -24,6 +26,8 @@
 				"/usr/share/backgrounds/gnome/fold-l.jxl",
 				"/usr/share/backgrounds/gnome/glass-chip-d.jxl",
 				"/usr/share/backgrounds/gnome/glass-chip-l.jxl",
+				"/usr/share/backgrounds/gnome/glass-stripes-d.jxl",
+				"/usr/share/backgrounds/gnome/glass-stripes-l.jxl",
 				"/usr/share/backgrounds/gnome/lcd-rainbow-d.jxl",
 				"/usr/share/backgrounds/gnome/lcd-rainbow-l.jxl",
 				"/usr/share/backgrounds/gnome/map-d.svg",
@@ -60,6 +64,7 @@
 				"/usr/share/gnome-background-properties/drool.xml",
 				"/usr/share/gnome-background-properties/fold.xml",
 				"/usr/share/gnome-background-properties/glass-chip.xml",
+				"/usr/share/gnome-background-properties/glass-stripes.xml",
 				"/usr/share/gnome-background-properties/lcd-rainbow.xml",
 				"/usr/share/gnome-background-properties/map.xml",
 				"/usr/share/gnome-background-properties/morphogenesis.xml",
@@ -78,6 +83,6 @@
 		}
 	},
 	"source-name": "gnome-backgrounds",
-	"source-release": "9",
-	"source-version": "50.0"
+	"source-release": "10",
+	"source-version": "51.0"
 }
