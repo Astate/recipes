@@ -8,22 +8,25 @@
 			],
 			"files": [
 				"/usr/bin/shtab",
-				"/usr/lib/python3.14/site-packages/shtab-1.11.0.dist-info/METADATA",
-				"/usr/lib/python3.14/site-packages/shtab-1.11.0.dist-info/RECORD",
-				"/usr/lib/python3.14/site-packages/shtab-1.11.0.dist-info/WHEEL",
-				"/usr/lib/python3.14/site-packages/shtab-1.11.0.dist-info/entry_points.txt",
-				"/usr/lib/python3.14/site-packages/shtab-1.11.0.dist-info/licenses/LICENCE",
-				"/usr/lib/python3.14/site-packages/shtab-1.11.0.dist-info/scm_file_list.json",
-				"/usr/lib/python3.14/site-packages/shtab-1.11.0.dist-info/scm_version.json",
-				"/usr/lib/python3.14/site-packages/shtab-1.11.0.dist-info/top_level.txt",
+				"/usr/lib/python3.14/site-packages/shtab-1.12.1.dist-info/METADATA",
+				"/usr/lib/python3.14/site-packages/shtab-1.12.1.dist-info/RECORD",
+				"/usr/lib/python3.14/site-packages/shtab-1.12.1.dist-info/WHEEL",
+				"/usr/lib/python3.14/site-packages/shtab-1.12.1.dist-info/entry_points.txt",
+				"/usr/lib/python3.14/site-packages/shtab-1.12.1.dist-info/licenses/LICENCE",
+				"/usr/lib/python3.14/site-packages/shtab-1.12.1.dist-info/scm_file_list.json",
+				"/usr/lib/python3.14/site-packages/shtab-1.12.1.dist-info/scm_version.json",
+				"/usr/lib/python3.14/site-packages/shtab-1.12.1.dist-info/top_level.txt",
 				"/usr/lib/python3.14/site-packages/shtab/__init__.py",
 				"/usr/lib/python3.14/site-packages/shtab/__main__.py",
 				"/usr/lib/python3.14/site-packages/shtab/__pycache__/__init__.cpython-314.opt-1.pyc",
 				"/usr/lib/python3.14/site-packages/shtab/__pycache__/__init__.cpython-314.pyc",
 				"/usr/lib/python3.14/site-packages/shtab/__pycache__/__main__.cpython-314.opt-1.pyc",
 				"/usr/lib/python3.14/site-packages/shtab/__pycache__/__main__.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/shtab/__pycache__/click.cpython-314.opt-1.pyc",
+				"/usr/lib/python3.14/site-packages/shtab/__pycache__/click.cpython-314.pyc",
 				"/usr/lib/python3.14/site-packages/shtab/__pycache__/main.cpython-314.opt-1.pyc",
 				"/usr/lib/python3.14/site-packages/shtab/__pycache__/main.cpython-314.pyc",
+				"/usr/lib/python3.14/site-packages/shtab/click.py",
 				"/usr/lib/python3.14/site-packages/shtab/main.py",
 				"/usr/lib/python3.14/site-packages/shtab/py.typed"
 			],
@@ -35,6 +38,6 @@
 		}
 	},
 	"source-name": "python-shtab",
-	"source-release": "7",
-	"source-version": "1.11.0"
+	"source-release": "8",
+	"source-version": "1.12.1"
 }
