@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libpcap
-version     : "1.10.7"
-release     : 8
+version     : "1.11.0"
+release     : 9
 homepage    : https://www.tcpdump.org/
 upstreams   :
-    - https://www.tcpdump.org/release/libpcap-1.10.7.tar.gz : 0b394ac90dbc0a9838ff97468e05c9c9a3e873dec2514cd58db65d859d296e31
+    - https://www.tcpdump.org/release/libpcap-1.11.0.tar.gz : 596389bc8560ea027dff9db8aaf6c173d992366d9aef4baf5d7c6d180b4d49ad
 summary     : Platform-independent network traffic capture library
 description : |
     Platform-independent network traffic capture library
@@ -20,8 +20,6 @@ builddeps   :
     - pkgconfig(libnl-3.0)
 setup       : |
     %configure \
-        --disable-static \
-        --enable-ipv6 \
         --with-libnl
 build       : |
     %make
