@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : papers
-version     : "50.2"
-release     : 19
+version     : "51.0"
+release     : 20
 homepage    : https://apps.gnome.org/Papers/
 upstreams   :
-    - https://download.gnome.org/sources/papers/50/papers-50.2.tar.xz : ae1bdcf1cd47cb50c9d84765784607f81c72df17dd6e6ad933fea14173d2b9f4
+    - https://download.gnome.org/sources/papers/51/papers-51.0.tar.xz : 4b8caf527d85f7eabc63ebe9d2320e0490653c2e138b88fbf42e6f41dd3e451c
 summary     : Read documents
 description : |
     A document viewer for the GNOME desktop. You can view, search or annotate documents in many different formats.
@@ -14,6 +14,7 @@ description : |
 license     : GPL-2.0-or-later
 networking  : true
 builddeps   :
+    - binary(appstreamcli)
     - binary(blueprint-compiler)
     - binary(cargo)
     - binary(gi-docgen)
@@ -46,3 +47,16 @@ install     : |
     %meson_install
 check       : |
     %meson_test
+packages    :
+    # TODO: Split out nautilus extension once we have conditional deps
+    - "%(name)-libs":
+        summary: "Library files for %(name)"
+        description: |
+            Library files for %(name), typically pulled in as a dependency of another package.
+        paths:
+            - /usr/lib/girepository-1.0/*.typelib
+            - /usr/lib/libppsdocument-4.0.so.*
+            - /usr/lib/libppsview-4.0.so.*
+            - /usr/lib/papers/*/backends/lib*.so
+            - /usr/lib/papers/*/backends/*.papers-backend
+            - /usr/share/metainfo/*Document.metainfo.xml
