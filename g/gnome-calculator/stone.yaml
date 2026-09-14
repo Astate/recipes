@@ -2,17 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gnome-calculator
-version     : "50.0"
-release     : 15
+version     : "51.0"
+release     : 16
 homepage    : https://apps.gnome.org/Calculator/
 upstreams   :
-    - https://download.gnome.org/sources/gnome-calculator/50/gnome-calculator-50.0.tar.xz : 8053d6891565e882874b65c1db51c5bf310005eb788b8bac3546390743350a90
+    - https://download.gnome.org/sources/gnome-calculator/51/gnome-calculator-51.0.tar.xz : 5bfb4c53eec61feb6c03faf85218804e87413ecb647e08fde6379bf2b1839190
 summary     : Perform arithmetic, scientific or financial calculations
 description : |
     Calculator is an application that solves mathematical equations. Though it at first appears to be a simple calculator with only basic arithmetic operations, you can switch into Advanced, Financial, or Programming mode to find a surprising set of capabilities. The Advanced calculator supports many operations, including: logarithms, factorials, trigonometric and hyperbolic functions, modulus division, complex numbers, random number generation, prime factorization and unit conversions. Financial mode supports several computations, including periodic interest rate, present and future value, double declining and straight line depreciation, and many others. Programming mode supports conversion between common bases (binary, octal, decimal, and hexadecimal), boolean algebra, one’s and two’s complementation, character to character code conversion, and more.
-license     :
-    - GPL-3.0-or-later
+license     : GPL-3.0-or-later
 builddeps   :
+    - binary(appstreamcli)
     - binary(blueprint-compiler)
     - binary(itstool)
     - binary(msgfmt)
