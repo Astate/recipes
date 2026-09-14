@@ -6,6 +6,7 @@
 			"build-depends": [
 				"binary(doxygen)",
 				"binary(m4)",
+				"binary(mm-common-get)",
 				"binary(perl)",
 				"binary(python3)",
 				"binary(xsltproc)",
@@ -14,6 +15,7 @@
 				"pkgconfig(glib-2.0)",
 				"pkgconfig(gmodule-2.0)",
 				"pkgconfig(gobject-2.0)",
+				"pkgconfig(mm-common-libstdc++)",
 				"pkgconfig(sigc++-3.0)"
 			],
 			"depends": [
@@ -45,6 +47,7 @@
 			"build-depends": [
 				"binary(doxygen)",
 				"binary(m4)",
+				"binary(mm-common-get)",
 				"binary(perl)",
 				"binary(python3)",
 				"binary(xsltproc)",
@@ -53,6 +56,7 @@
 				"pkgconfig(glib-2.0)",
 				"pkgconfig(gmodule-2.0)",
 				"pkgconfig(gobject-2.0)",
+				"pkgconfig(mm-common-libstdc++)",
 				"pkgconfig(sigc++-3.0)"
 			],
 			"depends": [
@@ -514,6 +518,6 @@
 		}
 	},
 	"source-name": "glibmm",
-	"source-release": "11",
-	"source-version": "2.88.1"
+	"source-release": "12",
+	"source-version": "2.90.0"
 }
