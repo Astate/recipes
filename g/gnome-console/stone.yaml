@@ -2,17 +2,18 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gnome-console
-version     : "50.0"
-release     : 11
+version     : "51.0"
+release     : 12
 homepage    : https://gitlab.gnome.org/GNOME/console
 upstreams   :
-    - https://download.gnome.org/sources/gnome-console/50/gnome-console-50.0.tar.xz : e4950207f0547e6a6c0f18eebfcf6e1a10461eab0f2fae0aae512b1044c7ac6e
+    - https://download.gnome.org/sources/gnome-console/51/gnome-console-51.0.tar.xz : f40d13903b1f067f0c02e0812f78df8ec25d8cd129794e7e46bd56ca0c156f2f
 summary     : A simple user-friendly terminal emulator for the GNOME desktop.
 description : |
     A simple user-friendly terminal emulator for the GNOME desktop.
 license     :
     - GPL-3.0-or-later
 builddeps   :
+    - binary(appstreamcli)
     - binary(msgfmt)
     - binary(update-desktop-database)
     - pkgconfig(gio-2.0)
