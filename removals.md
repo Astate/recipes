@@ -279,3 +279,7 @@ NB: Each entry *must* contain all sub-packages created by the package!
 ### No longer used
 - hyprland-qt-support
 - hyprland-qt-support-dbginfo
+
+### No longer built
+- gvfs-afp
+- gvfs-archive

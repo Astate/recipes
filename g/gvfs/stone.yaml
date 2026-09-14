@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gvfs
-version     : "1.60.2"
-release     : 26
+version     : "1.62.0"
+release     : 27
 homepage    : https://wiki.gnome.org/Projects/gvfs
 upstreams   :
-    - https://download.gnome.org/sources/gvfs/1.60/gvfs-1.60.2.tar.xz : a8d7744615a488a559302fe0cc8f418d5b44aba3c2ba2163e5a9e6f607c1be9a
+    - https://download.gnome.org/sources/gvfs/1.62/gvfs-1.62.0.tar.xz : dd8e6c255fd3bed5eeb190b59027c88b38e63c1be0932ddce9cfeb48f3c43d0f
 summary     : Virtual filesystem implementation for GIO
 description : |
     Virtual filesystem implementation for GIO
@@ -28,7 +28,6 @@ builddeps   :
     - pkgconfig(gobject-2.0)
     - pkgconfig(gsettings-desktop-schemas)
     - pkgconfig(gudev-1.0)
-    - pkgconfig(libarchive)
     # - pkgconfig(libbluray)
     - pkgconfig(libcap)
     - pkgconfig(libcdio_paranoia)
@@ -62,6 +61,12 @@ build       : |
     %meson_build
 install     : |
     %meson_install
+
+    # Deprecated backends
+    for i in %(name)-afp %(name)-archive; do
+        %install_dir %(installroot)%(docdir)/${i}
+        echo "DEPRECATED" > %(installroot)%(docdir)/${i}/README
+    done
 packages    :
     - "%(name)":
         rundeps:
@@ -71,6 +76,7 @@ packages    :
             - udisks-btrfs
             - udisks-lvm2
             # wsdd
+
     - "%(name)-clients":
         summary: Client modules of backends for the gio framework in GLib
         description: |
@@ -113,8 +119,7 @@ packages    :
         rundeps:
             - "%(name)"
         paths:
-            - /usr/lib/gvfs/gvfsd-archive*
-            - /usr/share/gvfs/mounts/archive.mount
+            - /usr/share/doc/gvfs-archive/README
 
     - "%(name)-gphoto2":
         summary: gphoto2 support for gvfs
@@ -156,8 +161,7 @@ packages    :
         rundeps:
             - "%(name)"
         paths:
-            - /usr/lib/gvfs/gvfsd-afp*
-            - /usr/share/gvfs/mounts/afp*.mount
+            - /usr/share/doc/gvfs-afp/README
 
     - "%(name)-mtp":
         summary: MTP support for gvfs
