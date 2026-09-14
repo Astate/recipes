@@ -2,19 +2,20 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : bazaar
-version     : "0.9.2"
-release     : 7
-homepage    : https://github.com/kolunmi/bazaar
+version     : "0.9.5"
+release     : 8
+homepage    : https://gitlab.gnome.org/World/bazaar
 upstreams   :
-    - https://github.com/bazaar-org/bazaar/archive/refs/tags/v0.9.2.tar.gz : d124be398683324f9dcc281cc87692371f124fcab180316bfa451e6cdf66f640
+    - https://gitlab.gnome.org/World/bazaar/-/archive/v0.9.5/bazaar-v0.9.5.tar.gz : 67dfd77cd10b4977c48822b2553aa1bca2361b99534f1cf1c49f511ded4a52c1
 summary     : New App Store for GNOME
 description : |
     Bazaar is a new app store for GNOME with a focus on discovering and installing applications and add-ons from Flatpak remotes, particularly Flathub.
-license     :
-    - GPL-3.0-or-later
+license     : GPL-3.0-or-later
 builddeps   :
     - binary(msgfmt)
     - binary(update-desktop-database)
+    - binary(valac)
+    - pkgconfig(appstream)
     - pkgconfig(blueprint-compiler)
     - pkgconfig(flatpak)
     - pkgconfig(glycin-2)
@@ -35,7 +36,10 @@ builddeps   :
     - python(babel)
 setup       : |
     # Fixes build failure
-    export CFLAGS="${CFLAGS} -Wno-format-nonliteral"
+    export CFLAGS+=" -Wno-format-nonliteral"
+
+    # fatal error: 'appstream.h' file not found
+    export CFLAGS+=" -I%(includedir)/appstream"
 
     %meson
 build       : |
