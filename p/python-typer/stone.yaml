@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : python-typer
-version     : "0.27.0"
-release     : 5
+version     : "0.27.2"
+release     : 6
 homepage    : https://github.com/fastapi/typer
 upstreams   :
-    - https://pypi.debian.net/typer/typer-0.27.0.tar.gz : 629bd12ea5d13a17148125d9a264f949eb171fb3f120f9b04d85873cab054fa5
+    - https://pypi.debian.net/typer/typer-0.27.2.tar.gz : 269b7eb9d3c202ca84b4bc9618cb04ebb43d3d4d1e567e4c768607232c05f945
 summary     : Typer is a library for building CLI applications
 description : |
     Typer is a library for building CLI applications
