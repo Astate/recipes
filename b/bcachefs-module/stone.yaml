@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : bcachefs-module
-version     : "1.39.5"
-release     : 49
+version     : "1.39.6"
+release     : 50
 homepage    : https://bcachefs.org
 upstreams   :
-    - https://evilpiepirate.org/bcachefs-tools/bcachefs-tools-vendored-1.39.5.tar.zst : eeb3acfe39882a09ccf74457778797ce8bcc1c477c333204f2d79086a6c69231
+    - https://evilpiepirate.org/bcachefs-tools/bcachefs-tools-vendored-1.39.6.tar.zst : 17c9e0f2492e6ceba88e3c55b17506982be26a5878cfd01aa9a6907ae65628f9
 summary     : bcachefs kernel module
 description : |
     bcachefs kernel module
@@ -94,7 +94,7 @@ install     : |
     pushd initrd
     find . | cpio -o -H newc | zstd -19 -T0 -c > ../bcachefs-tools.initrd
     popd
-    %install_file bcachefs-tools.initrd %(installroot)%(libdir)/kernel/initrd.d/65-%(name)-shared-%(version)-%(release).initrd
+    %install_file bcachefs-tools.initrd %(installroot)%(libdir)/kernel/initrd.d/65-%(name)-shared.initrd
 
     for _kernel in ${kernels[@]}; do
         pushd ${_kernel}
@@ -135,9 +135,6 @@ install     : |
 
         # Compress modules with zstd
         find "%(installroot)%(libdir)/modules/${_kernel}/" -name '*.ko' -print -exec zstd {} \; -exec rm -v {} \;
-
-        # This is a stupid hack because blsforme doesn't seem to support version-independent initrds yet
-        cp -a %(installroot)%(libdir)/kernel/initrd.d/65-bcachefs-module-shared*.initrd %(installroot)%(libdir)/kernel/${_kernel}/
 
         popd
     done
