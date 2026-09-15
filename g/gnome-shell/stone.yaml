@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gnome-shell
-version     : "50.4"
-release     : 53
+version     : "51.0"
+release     : 54
 homepage    : https://gitlab.gnome.org/GNOME/gnome-shell
 upstreams   :
-    - https://download.gnome.org/sources/gnome-shell/50/gnome-shell-50.4.tar.xz : c531939539db316a41aef23670370abd1330d3254f84bcb0f9f4dae5d6e362cf
+    - https://download.gnome.org/sources/gnome-shell/51/gnome-shell-51.0.tar.xz : 2179bab13af353427065096af8bf3d30da7b86e0c516e5ba86a14998af9575f6
 summary     : The core GNOME desktop experience
 description : |
     GNOME Shell provides core user interface functions for the GNOME desktop,
@@ -44,11 +44,12 @@ builddeps   :
     - pkgconfig(libnm)
     - pkgconfig(libpipewire-0.3)
     - pkgconfig(libpulse)
+    - pkgconfig(librsvg-2.0)
     - pkgconfig(libsecret-1)
     - pkgconfig(libstartup-notification-1.0)
     - pkgconfig(libsystemd)
     - pkgconfig(libxml-2.0)
-    - pkgconfig(mutter-clutter-18)
+    - pkgconfig(mutter-clutter-51)
     - pkgconfig(polkit-agent-1)
     - pkgconfig(systemd)
     - pkgconfig(x11)
@@ -75,7 +76,7 @@ rundeps     :
 setup       : |
     # Redonkulous logo sizes are redonkulous
     %patch %(pkgdir)/3674.patch
-    %patch %(pkgdir)/ftbfs-ical-4.patch
+
     %meson \
         -Dtests=false
 build       : |
