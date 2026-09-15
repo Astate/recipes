@@ -65,7 +65,7 @@
 				"soname(libupower-glib.so.3(x86_64))"
 			],
 			"files": [
-				"/usr/lib/gnome-settings-daemon-50/libgsd.so",
+				"/usr/lib/gnome-settings-daemon-51/libgsd.so",
 				"/usr/lib/gnome-settings-daemon/gsd-a11y-settings",
 				"/usr/lib/gnome-settings-daemon/gsd-color",
 				"/usr/lib/gnome-settings-daemon/gsd-datetime",
@@ -183,10 +183,12 @@
 				"/usr/share/locale/kn/LC_MESSAGES/gnome-settings-daemon.mo",
 				"/usr/share/locale/ko/LC_MESSAGES/gnome-settings-daemon.mo",
 				"/usr/share/locale/ku/LC_MESSAGES/gnome-settings-daemon.mo",
+				"/usr/share/locale/lo/LC_MESSAGES/gnome-settings-daemon.mo",
 				"/usr/share/locale/lt/LC_MESSAGES/gnome-settings-daemon.mo",
 				"/usr/share/locale/lv/LC_MESSAGES/gnome-settings-daemon.mo",
 				"/usr/share/locale/mai/LC_MESSAGES/gnome-settings-daemon.mo",
 				"/usr/share/locale/mg/LC_MESSAGES/gnome-settings-daemon.mo",
+				"/usr/share/locale/mi/LC_MESSAGES/gnome-settings-daemon.mo",
 				"/usr/share/locale/mk/LC_MESSAGES/gnome-settings-daemon.mo",
 				"/usr/share/locale/ml/LC_MESSAGES/gnome-settings-daemon.mo",
 				"/usr/share/locale/mn/LC_MESSAGES/gnome-settings-daemon.mo",
@@ -233,7 +235,7 @@
 			],
 			"name": "gnome-settings-daemon",
 			"provides": [
-				"soname(gnome-settings-daemon-50/libgsd.so(x86_64))"
+				"soname(gnome-settings-daemon-51/libgsd.so(x86_64))"
 			]
 		},
 		"gnome-settings-daemon-devel": {
@@ -269,7 +271,7 @@
 				"gnome-settings-daemon"
 			],
 			"files": [
-				"/usr/include/gnome-settings-daemon-50/gnome-settings-daemon/gsd-enums.h",
+				"/usr/include/gnome-settings-daemon-51/gnome-settings-daemon/gsd-enums.h",
 				"/usr/lib/pkgconfig/gnome-settings-daemon.pc"
 			],
 			"name": "gnome-settings-daemon-devel",
@@ -279,6 +281,6 @@
 		}
 	},
 	"source-name": "gnome-settings-daemon",
-	"source-release": "18",
-	"source-version": "50.1"
+	"source-release": "19",
+	"source-version": "51.0"
 }
