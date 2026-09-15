@@ -4,6 +4,7 @@
 	"packages": {
 		"nautilus": {
 			"build-depends": [
+				"binary(appstreamcli)",
 				"binary(blueprint-compiler)",
 				"binary(gi-docgen)",
 				"binary(localsearch)",
@@ -147,7 +148,6 @@
 				"/usr/share/locale/ky/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/li/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/ln/LC_MESSAGES/nautilus.mo",
-				"/usr/share/locale/lo/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/lt/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/lv/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/mai/LC_MESSAGES/nautilus.mo",
@@ -176,6 +176,7 @@
 				"/usr/share/locale/ro/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/ru/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/rw/LC_MESSAGES/nautilus.mo",
+				"/usr/share/locale/sat/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/si/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/sk/LC_MESSAGES/nautilus.mo",
 				"/usr/share/locale/sl/LC_MESSAGES/nautilus.mo",
@@ -220,6 +221,7 @@
 		},
 		"nautilus-devel": {
 			"build-depends": [
+				"binary(appstreamcli)",
 				"binary(blueprint-compiler)",
 				"binary(gi-docgen)",
 				"binary(localsearch)",
@@ -426,6 +428,6 @@
 		}
 	},
 	"source-name": "nautilus",
-	"source-release": "26",
-	"source-version": "50.3.1"
+	"source-release": "27",
+	"source-version": "51.0.1"
 }
