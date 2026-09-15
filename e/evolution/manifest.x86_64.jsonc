@@ -66,7 +66,7 @@
 				"soname(libglib-2.0.so.0(x86_64))",
 				"soname(libgmodule-2.0.so.0(x86_64))",
 				"soname(libgnome-autoar-0.so.0(x86_64))",
-				"soname(libgnome-desktop-3.so.20(x86_64))",
+				"soname(libgnome-desktop-3.so.21(x86_64))",
 				"soname(libgobject-2.0.so.0(x86_64))",
 				"soname(libgspell-1.so.3(x86_64))",
 				"soname(libgtk-3.so.0(x86_64))",
@@ -7416,6 +7416,6 @@
 		}
 	},
 	"source-name": "evolution",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "3.62.0"
 }

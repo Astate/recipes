@@ -3,7 +3,7 @@
 
 name        : evolution
 version     : "3.62.0"
-release     : 2
+release     : 3
 upstreams   :
     - https://download.gnome.org/sources/evolution/3.62/evolution-3.62.0.tar.xz : 7fc2cc40e1699bf706b5cfcf0255650fc4623b99edbc72c5ad026cea2587a3d6
 homepage    : https://gnome.pages.gitlab.gnome.org/evolution/help/
