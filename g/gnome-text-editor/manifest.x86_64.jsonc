@@ -4,6 +4,7 @@
 	"packages": {
 		"gnome-text-editor": {
 			"build-depends": [
+				"binary(appstreamcli)",
 				"binary(itstool)",
 				"binary(msgfmt)",
 				"pkgconfig(editorconfig)",
@@ -24,7 +25,6 @@
 				"soname(libgobject-2.0.so.0(x86_64))",
 				"soname(libgtk-4.so.1(x86_64))",
 				"soname(libgtksourceview-5.so.0(x86_64))",
-				"soname(libm.so.6(x86_64))",
 				"soname(libpango-1.0.so.0(x86_64))",
 				"soname(libspelling-1.so.2(x86_64))"
 			],
@@ -213,6 +213,15 @@
 				"/usr/share/help/pl/gnome-text-editor/legal.xml",
 				"/usr/share/help/pl/gnome-text-editor/media/org.gnome.TextEditor.svg",
 				"/usr/share/help/pl/gnome-text-editor/media/search-recent.png",
+				"/usr/share/help/pt/gnome-text-editor/basics-create-new-file.page",
+				"/usr/share/help/pt/gnome-text-editor/basics-draft-folder.page",
+				"/usr/share/help/pt/gnome-text-editor/basics-open-file.page",
+				"/usr/share/help/pt/gnome-text-editor/edit-search-and-replace.page",
+				"/usr/share/help/pt/gnome-text-editor/edit-undo-redo.page",
+				"/usr/share/help/pt/gnome-text-editor/index.page",
+				"/usr/share/help/pt/gnome-text-editor/legal.xml",
+				"/usr/share/help/pt/gnome-text-editor/media/org.gnome.TextEditor.svg",
+				"/usr/share/help/pt/gnome-text-editor/media/search-recent.png",
 				"/usr/share/help/pt_BR/gnome-text-editor/basics-create-new-file.page",
 				"/usr/share/help/pt_BR/gnome-text-editor/basics-draft-folder.page",
 				"/usr/share/help/pt_BR/gnome-text-editor/basics-open-file.page",
@@ -311,6 +320,8 @@
 				"/usr/share/locale/ko/LC_MESSAGES/gnome-text-editor.mo",
 				"/usr/share/locale/lt/LC_MESSAGES/gnome-text-editor.mo",
 				"/usr/share/locale/lv/LC_MESSAGES/gnome-text-editor.mo",
+				"/usr/share/locale/mi/LC_MESSAGES/gnome-text-editor.mo",
+				"/usr/share/locale/mjw/LC_MESSAGES/gnome-text-editor.mo",
 				"/usr/share/locale/nb/LC_MESSAGES/gnome-text-editor.mo",
 				"/usr/share/locale/ne/LC_MESSAGES/gnome-text-editor.mo",
 				"/usr/share/locale/nl/LC_MESSAGES/gnome-text-editor.mo",
@@ -344,6 +355,6 @@
 		}
 	},
 	"source-name": "gnome-text-editor",
-	"source-release": "16",
-	"source-version": "50.1"
+	"source-release": "17",
+	"source-version": "51.0"
 }
