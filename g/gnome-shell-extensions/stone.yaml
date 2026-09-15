@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gnome-shell-extensions
-version     : "50.3"
-release     : 14
+version     : "51.0"
+release     : 15
 homepage    : https://apps.gnome.org/Extensions/
 upstreams   :
-    - https://download.gnome.org/sources/gnome-shell-extensions/50/gnome-shell-extensions-50.3.tar.xz : 68fc74306f88f697a6bcdb8243cb32a9ec0cd3f6e2bb92249b24b60fc57450b6
+    - https://download.gnome.org/sources/gnome-shell-extensions/51/gnome-shell-extensions-51.0.tar.xz : 3c078d7b88faee3d0f68adcee1392b1bed84731b91a337ec894cc88aa8a8b813
 summary     : Manage your GNOME Extensions
 description : |
     GNOME Extensions handles updating extensions, configuring extension preferences and removing or disabling unwanted extensions.
