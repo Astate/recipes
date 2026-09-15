@@ -3,7 +3,7 @@
 
 name        : lutris
 version     : "0.5.22+git.0747076"
-release     : 2
+release     : 3
 homepage    : https://lutris.net/
 upstreams   :
     - git|https://github.com/lutris/lutris.git : 07470764e709c1abcda8164e680815d9a2239b3c # 0747076
@@ -39,7 +39,7 @@ rundeps     :
     - soname(libGL.so.1(386))
     - soname(libgirepository-1.0.so.1(x86_64))
     - soname(libglib-2.0.so.0(x86_64))
-    - soname(libgnome-desktop-3.so.20(x86_64))
+    - soname(libgnome-desktop-3.so.21(x86_64))
     - soname(libgtk-3.so.0(x86_64))
     - soname(libpango-1.0.so.0(x86_64))
     - soname(libvulkan.so.1(386))
