@@ -12,8 +12,6 @@
 			],
 			"files": [
 				"/usr/lib/girepository-1.0/GDesktopEnums-3.0.typelib",
-				"/usr/share/GConf/gsettings/gsettings-desktop-schemas.convert",
-				"/usr/share/GConf/gsettings/wm-schemas.convert",
 				"/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.applications.gschema.xml",
 				"/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.gschema.xml",
 				"/usr/share/glib-2.0/schemas/org.gnome.desktop.a11y.interface.gschema.xml",
@@ -79,6 +77,7 @@
 				"/usr/share/locale/ka/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/kab/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/kk/LC_MESSAGES/gsettings-desktop-schemas.mo",
+				"/usr/share/locale/lo/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/lt/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/lv/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/ml/LC_MESSAGES/gsettings-desktop-schemas.mo",
@@ -94,12 +93,14 @@
 				"/usr/share/locale/pt_BR/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/ro/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/ru/LC_MESSAGES/gsettings-desktop-schemas.mo",
+				"/usr/share/locale/sat/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/sk/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/sl/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/sr/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/sr@latin/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/sv/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/tg/LC_MESSAGES/gsettings-desktop-schemas.mo",
+				"/usr/share/locale/th/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/tr/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/gsettings-desktop-schemas.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/gsettings-desktop-schemas.mo",
@@ -131,6 +132,6 @@
 		}
 	},
 	"source-name": "gsettings-desktop-schemas",
-	"source-release": "13",
-	"source-version": "50.1"
+	"source-release": "14",
+	"source-version": "51.0"
 }
