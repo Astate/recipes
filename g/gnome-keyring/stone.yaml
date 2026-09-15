@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gnome-keyring
-version     : "50.0"
-release     : 8
+version     : "51.0"
+release     : 9
 homepage    : https://gitlab.gnome.org/GNOME/gnome-keyring
 upstreams   :
-    - https://download.gnome.org/sources/gnome-keyring/50/gnome-keyring-50.0.tar.xz : cbd72062c53c9702bc2c4733991ad5f051ca682882b30905a2829bcf1a8ecc7c
+    - https://download.gnome.org/sources/gnome-keyring/51/gnome-keyring-51.0.tar.xz : 2aebaa2d474cc31507c87a7bbbdb3e16dbe26b1cfef9f206457f3f9df43558b0
 summary     : gnome-keyring is a program that keep password and other secrets for users
 description : |
   gnome-keyring is a program that keep password and other secrets for users. It is run as a daemon in the session, similar to ssh-agent, and other applications locate it via an environment variable or a D-Bus.
