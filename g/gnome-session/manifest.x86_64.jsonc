@@ -165,6 +165,7 @@
 				"/usr/share/locale/ro/LC_MESSAGES/gnome-session.mo",
 				"/usr/share/locale/ru/LC_MESSAGES/gnome-session.mo",
 				"/usr/share/locale/rw/LC_MESSAGES/gnome-session.mo",
+				"/usr/share/locale/sat/LC_MESSAGES/gnome-session.mo",
 				"/usr/share/locale/si/LC_MESSAGES/gnome-session.mo",
 				"/usr/share/locale/sk/LC_MESSAGES/gnome-session.mo",
 				"/usr/share/locale/sl/LC_MESSAGES/gnome-session.mo",
@@ -205,6 +206,6 @@
 		}
 	},
 	"source-name": "gnome-session",
-	"source-release": "31",
-	"source-version": "50.1"
+	"source-release": "32",
+	"source-version": "51.0"
 }
