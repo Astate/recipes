@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gdm
-version     : "50.3"
-release     : 34
+version     : "51.0"
+release     : 35
 homepage    : https://gitlab.gnome.org/GNOME/gdm
 upstreams   :
-    - https://download.gnome.org/sources/gdm/50/gdm-50.3.tar.xz : adac0710b8b797108ea40ea4573bd1a5e6d9b24e0a7990a994216e8dffe2d15e
+    - https://download.gnome.org/sources/gdm/51/gdm-51.0.tar.xz : 2ce5acf5a438b8f6dc1d14fd777a911be5eeb2f7ab9a7c4600166205b15d6536
 summary     : GNOME Display Manager
 description : |
     Login/lock and session management with the GNOME Display Manager
@@ -38,8 +38,6 @@ rundeps     :
     - gnome-settings-daemon
     - systemd-userdbd
 setup       : |
-    %patch %(pkgdir)/upstream-kmscon.patch
-
     %meson \
         -Ddbus-sys=%(datadir)/dbus-1/system.d \
         -Ddefault-pam-config=lfs \
@@ -47,6 +45,7 @@ setup       : |
         -Dgdm-xsession=true \
         -Dpam-mod-dir=%(libdir)/security \
         -Dpam-prefix=%(vendordir) \
+        -Dpam-services-dir=%(vendordir)/pam.d \
         -Dplymouth=enabled \
         -Dx11-support=false
 build       : |

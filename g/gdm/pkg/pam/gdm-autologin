@@ -9,6 +9,7 @@ auth       required                    pam_unix.so
 auth       optional                    pam_permit.so
 auth       [success=ok default=1]      pam_gdm.so
 -auth      optional                    pam_gnome_keyring.so
+-auth      optional                    pam_oo7.so
 -auth      optional                    pam_kwallet5.so
 
 account    include                     system-local-login
@@ -17,4 +18,5 @@ password   include                     system-local-login
 
 session    include                     system-local-login
 -session   optional                    pam_gnome_keyring.so auto_start
+-session   optional                    pam_oo7.so auto_start
 -session   optional                    pam_kwallet5.so auto_start
