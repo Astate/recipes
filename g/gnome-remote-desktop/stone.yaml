@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gnome-remote-desktop
-version     : "50.2"
-release     : 23
+version     : "51.0"
+release     : 24
 homepage    : https://gitlab.gnome.org/GNOME/gnome-remote-desktop
 upstreams   :
-    - https://download.gnome.org/sources/gnome-remote-desktop/50/gnome-remote-desktop-50.2.tar.xz : 31df628f4113573f136ffc8dc001763aed633cd85bed21e58bc61f8a17df091f
+    - https://download.gnome.org/sources/gnome-remote-desktop/51/gnome-remote-desktop-51.0.tar.xz : c7954b34da5766288ea19b56026421c9c1fe2c23ef379e57ec209dc0cf13df2b
 summary     : Remote desktop daemon for GNOME using pipewire
 description : |
     Remote desktop server which allows you to connect to your machine remotely
@@ -64,3 +64,7 @@ build       : |
     %meson_build
 install     : |
     %meson_install
+packages    :
+    - "%(name)":
+        paths:
+            - /usr/lib/lib*.so
