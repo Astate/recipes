@@ -76,6 +76,7 @@
 				"soname(libgnome-bg-4.so.2(x86_64))",
 				"soname(libgnome-bluetooth-ui-3.0.so.13(x86_64))",
 				"soname(libgnome-desktop-4.so.2(x86_64))",
+				"soname(libgnome-qr-gtk-4.so.0(x86_64))",
 				"soname(libgnutls.so.30(x86_64))",
 				"soname(libgoa-1.0.so.0(x86_64))",
 				"soname(libgoa-backend-1.0.so.2(x86_64))",
@@ -311,6 +312,7 @@
 				"/usr/share/locale/mai/LC_MESSAGES/gnome-control-center-2.0-timezones.mo",
 				"/usr/share/locale/mai/LC_MESSAGES/gnome-control-center-2.0.mo",
 				"/usr/share/locale/mg/LC_MESSAGES/gnome-control-center-2.0.mo",
+				"/usr/share/locale/mi/LC_MESSAGES/gnome-control-center-2.0.mo",
 				"/usr/share/locale/mjw/LC_MESSAGES/gnome-control-center-2.0.mo",
 				"/usr/share/locale/mk/LC_MESSAGES/gnome-control-center-2.0-timezones.mo",
 				"/usr/share/locale/mk/LC_MESSAGES/gnome-control-center-2.0.mo",
@@ -348,6 +350,7 @@
 				"/usr/share/locale/ru/LC_MESSAGES/gnome-control-center-2.0-timezones.mo",
 				"/usr/share/locale/ru/LC_MESSAGES/gnome-control-center-2.0.mo",
 				"/usr/share/locale/rw/LC_MESSAGES/gnome-control-center-2.0.mo",
+				"/usr/share/locale/sat/LC_MESSAGES/gnome-control-center-2.0.mo",
 				"/usr/share/locale/si/LC_MESSAGES/gnome-control-center-2.0-timezones.mo",
 				"/usr/share/locale/si/LC_MESSAGES/gnome-control-center-2.0.mo",
 				"/usr/share/locale/sk/LC_MESSAGES/gnome-control-center-2.0-timezones.mo",
@@ -482,6 +485,6 @@
 		}
 	},
 	"source-name": "gnome-control-center",
-	"source-release": "37",
-	"source-version": "50.4"
+	"source-release": "38",
+	"source-version": "51.0"
 }
