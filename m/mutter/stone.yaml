@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : mutter
-version     : "50.4"
-release     : 39
+version     : "51.0"
+release     : 40
 homepage    : https://gnome.org
 upstreams   :
-    - https://download.gnome.org/sources/mutter/50/mutter-50.4.tar.xz : 273d33c875abcb4b6cbea3f4ec045d18155fbc510c3521fc7e47926371310988
+    - https://download.gnome.org/sources/mutter/51/mutter-51.0.tar.xz : 5d28f3ae225692428fcafb96500d673f34328b698b86960c9c1460d0b1d983b3
 summary     : A Wayland display server and compositor library.
 description : |
     A Wayland display server and compositor library.
@@ -32,7 +32,6 @@ builddeps   :
     - pkgconfig(gl)
     - pkgconfig(glesv2)
     - pkgconfig(glib-2.0)
-    - pkgconfig(glycin-2)
     - pkgconfig(gmodule-no-export-2.0)
     - pkgconfig(gnome-desktop-4)
     - pkgconfig(gnome-settings-daemon)
@@ -67,7 +66,6 @@ builddeps   :
     - pkgconfig(wayland-client)
     - pkgconfig(wayland-cursor)
     - pkgconfig(wayland-egl)
-    - pkgconfig(wayland-eglstream-protocols)
     - pkgconfig(wayland-protocols)
     - pkgconfig(wayland-server)
     - pkgconfig(x11)
@@ -95,10 +93,8 @@ rundeps     :
     - binary(Xwayland)
 setup       : |
     %meson \
-        -Degl_device=true \
         -Dtests=disabled \
-        -Dprofiler=true \
-        -Dwayland_eglstream=true
+        -Dprofiler=true
 build       : |
     %meson_build
 install     : |
