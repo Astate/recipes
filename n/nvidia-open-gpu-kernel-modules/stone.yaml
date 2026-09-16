@@ -3,7 +3,7 @@
 
 name        : nvidia-open-gpu-kernel-modules
 version     : "615.71.09"
-release     : 127
+release     : 128
 homepage    : https://github.com/NVIDIA/open-gpu-kernel-modules
 upstreams   :
     - https://download.nvidia.com/XFree86/NVIDIA-kernel-module-source/NVIDIA-kernel-module-source-615.71.09.tar.xz:
@@ -15,14 +15,12 @@ description : |
     NVIDIA open GPU kernel modules
 license     : GPL-2.0-only
 builddeps   :
-    - binary(cpio)
     - binary(eu-readelf)
     - binary(jq)
     - binary(zstd)
     - linux-gaming-devel
     - linux-lts-devel
     - linux-stable-devel
-    - nvidia-graphics-driver-firmware
 tuning      :
     - asneeded: false
     - base: false
@@ -113,22 +111,9 @@ install     : |
         done
         popd
 
-        # Create an initrd for .ko files
-        mkdir -p initrd/%(libdir)/modules/${_kernel}/extra/drivers/video
-        %install_file %(pkgdir)/nvidia.modprobe initrd/%(libdir)/modprobe.d/nvidia.conf
-        %install_file %(pkgdir)/nvidia-sleep.modprobe initrd/%(libdir)/modprobe.d/nvidia-sleep.conf
-        find %(installroot)%(libdir)/modules -name '*.ko' -exec cp -v {} initrd/%(libdir)/modules/${_kernel}/extra/drivers/video \;
-        touch initrd/.dracut-depmod-invalidate
-        pushd initrd
-        %install_dir %(installroot)%(libdir)/kernel/${_kernel}
-        find . | cpio -o -H newc | zstd -19 -T0 -c > %(installroot)%(libdir)/kernel/${_kernel}/60-nvidia-%(version)-%(release).initrd
-        popd
-
         # Compress modules with zstd
         find "%(installroot)%(libdir)/modules/${_kernel}/" -name '*.ko' -print -exec zstd {} \; -exec rm -v {} \;
 
-        # This is a stupid hack because blsforme doesn't support version-independent initrds yet
-        cp -a /usr/lib/kernel/initrd.d/55-nvidia-firmware*.initrd %(installroot)%(libdir)/kernel/${_kernel}/
         popd
     done
 packages    :
@@ -155,7 +140,6 @@ packages    :
 
             - linux-gaming
         paths:
-            - /usr/lib/kernel/*.gaming/
             - /usr/lib/modules/*.gaming/
 
     - "%(name)-lts":
@@ -168,7 +152,6 @@ packages    :
 
             - linux-lts
         paths:
-            - /usr/lib/kernel/*.lts/
             - /usr/lib/modules/*.lts/
 
     - "%(name)-stable":
@@ -181,5 +164,4 @@ packages    :
 
             - linux-stable
         paths:
-            - /usr/lib/kernel/*.stable/
             - /usr/lib/modules/*.stable/
