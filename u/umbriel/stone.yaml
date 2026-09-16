@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : umbriel
-version     : "0.1.0+git.70f1a0b"
-release     : 3
+version     : "0.1.0+git.0341bc5"
+release     : 4
 homepage    : https://github.com/noctalia-dev/umbriel
 upstreams   :
     - git|https://github.com/noctalia-dev/umbriel.git :
-        ref : 70f1a0b16becf070486e0bf0a4fc59db67d6133c
+        ref : 0341bc5a15d7e340fa03159b953893ee23fa1009
         clonedir : umbriel
 description : |
     Umbriel is a Wayland compositor built on wlroots and umbrielfx (a hard
