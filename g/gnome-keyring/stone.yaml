@@ -3,7 +3,7 @@
 
 name        : gnome-keyring
 version     : "51.0"
-release     : 9
+release     : 10
 homepage    : https://gitlab.gnome.org/GNOME/gnome-keyring
 upstreams   :
     - https://download.gnome.org/sources/gnome-keyring/51/gnome-keyring-51.0.tar.xz : 2aebaa2d474cc31507c87a7bbbdb3e16dbe26b1cfef9f206457f3f9df43558b0
@@ -34,6 +34,8 @@ rundeps     :
 environment : |
     %export_docbook_catalogs
 setup       : |
+    %patch %(pkgdir)/114.patch
+
     %meson
 build       : |
     %meson_build
