@@ -3,7 +3,7 @@
 
 name        : nvidia-graphics-driver
 version     : "615.71.09"
-release     : 50
+release     : 51
 homepage    : https://www.nvidia.com/
 upstreams   :
     - https://us.download.nvidia.com/XFree86/Linux-x86_64/615.71.09/NVIDIA-Linux-x86_64-615.71.09.run:
@@ -22,7 +22,6 @@ strip       : false
 builddeps   :
     - glibc-32bit
     - binary(bzip2)
-    - binary(cpio)
     - binary(systemctl) # Needs to detect that we are a systemd distribution or it won't install the systemd units
     - binary(tar)
     - binary(zstd)
@@ -65,14 +64,6 @@ install     : |
     pushd %(installroot)%(libdir)/firmware/nvidia/%(version)/
     find . -name '*.bin' -print -exec zstd -19 {} \; -exec rm -v {} \;
     popd
-
-    # Create firmware initrd
-    mkdir -p initrd
-    %install_file extracted/firmware/*.bin -t initrd/%(libdir)/firmware/nvidia/%(version)
-    pushd initrd
-    find . | cpio -o -H newc | zstd -19 -T0 -c > ../firmware.initrd
-    popd
-    %install_file firmware.initrd %(installroot)%(libdir)/kernel/initrd.d/55-nvidia-firmware-%(version)-%(release).initrd
 
     # Fix gbm
     rm -v %(installroot)%(libdir)/gbm/nvidia-drm_gbm.so
@@ -198,4 +189,3 @@ packages    :
         description: Firmware for Nvidia GPUs
         paths:
             - /usr/lib/firmware/nvidia/
-            - /usr/lib/kernel/initrd.d/55-nvidia-firmware*.initrd

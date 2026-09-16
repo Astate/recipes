@@ -5,7 +5,6 @@
 		"nvidia-graphics-driver": {
 			"build-depends": [
 				"binary(bzip2)",
-				"binary(cpio)",
 				"binary(systemctl)",
 				"binary(tar)",
 				"binary(zstd)",
@@ -232,7 +231,6 @@
 		"nvidia-graphics-driver-32bit": {
 			"build-depends": [
 				"binary(bzip2)",
-				"binary(cpio)",
 				"binary(systemctl)",
 				"binary(tar)",
 				"binary(zstd)",
@@ -332,7 +330,6 @@
 		"nvidia-graphics-driver-firmware": {
 			"build-depends": [
 				"binary(bzip2)",
-				"binary(cpio)",
 				"binary(systemctl)",
 				"binary(tar)",
 				"binary(zstd)",
@@ -345,13 +342,12 @@
 				"/usr/lib/firmware/nvidia/615.71.09/gsp_ga10x.bin.zst",
 				"/usr/lib/firmware/nvidia/615.71.09/gsp_tu10x.bin.zst",
 				"/usr/lib/firmware/nvidia/615.71.09/ucodes_ga10x.bin.zst",
-				"/usr/lib/firmware/nvidia/615.71.09/ucodes_tu10x.bin.zst",
-				"/usr/lib/kernel/initrd.d/55-nvidia-firmware-615.71.09-50.initrd"
+				"/usr/lib/firmware/nvidia/615.71.09/ucodes_tu10x.bin.zst"
 			],
 			"name": "nvidia-graphics-driver-firmware"
 		}
 	},
 	"source-name": "nvidia-graphics-driver",
-	"source-release": "50",
+	"source-release": "51",
 	"source-version": "615.71.09"
 }
