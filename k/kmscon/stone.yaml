@@ -3,7 +3,7 @@
 
 name        : kmscon
 version     : "10.0.3"
-release     : 14
+release     : 15
 upstreams   :
     - https://github.com/kmscon/kmscon/archive/refs/tags/v10.0.3.tar.gz : 4a0552d3cd3ba16df4fcff61f2b1431650bcd9e7ecabc03625ce52345b9c95c5
 homepage    : https://www.freedesktop.org/wiki/Software/kmscon
@@ -48,6 +48,7 @@ packages    :
         description: Adds OpenGL/DRM support to kmscon
         rundeps:
             - "%(name)"
+            - drm-awaiter
         paths:
             - /usr/lib/kmscon/mod-drm3d.so
             - /usr/lib/kmscon/mod-gltex.so
