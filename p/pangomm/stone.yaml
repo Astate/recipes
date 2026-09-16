@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : pangomm
-version     : "2.56.2"
-release     : 8
+version     : "2.58.0"
+release     : 9
 homepage    : https://www.gtkmm.org
 upstreams   :
-    - https://download.gnome.org/sources/pangomm/2.56/pangomm-2.56.2.tar.xz : f1e984c85a85b6a0e61616366521f51dd8282a072bb45d15b5084762b62f4c0e
+    - https://download.gnome.org/sources/pangomm/2.58/pangomm-2.58.0.tar.xz : 217514c1a65035c2fce6e69e33b0d92bafa2594cc474e995a4473441b10f3a33
 summary     : C++ API for Pango (2.48 ABI)
 description : |
     C++ API for Pango (2.48 ABI)
@@ -14,11 +14,13 @@ license     : LGPL-2.1-or-later
 builddeps   :
     - binary(doxygen)
     - binary(m4)
+    - binary(mm-common-get)
     - binary(perl)
     - binary(python3)
     - binary(xsltproc)
     - pkgconfig(cairomm-1.16)
     - pkgconfig(glibmm-2.68)
+    - pkgconfig(mm-common-libstdc++)
     - pkgconfig(pangocairo)
 setup       : |
     %meson

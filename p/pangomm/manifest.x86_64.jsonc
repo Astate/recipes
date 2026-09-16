@@ -6,11 +6,13 @@
 			"build-depends": [
 				"binary(doxygen)",
 				"binary(m4)",
+				"binary(mm-common-get)",
 				"binary(perl)",
 				"binary(python3)",
 				"binary(xsltproc)",
 				"pkgconfig(cairomm-1.16)",
 				"pkgconfig(glibmm-2.68)",
+				"pkgconfig(mm-common-libstdc++)",
 				"pkgconfig(pangocairo)"
 			],
 			"depends": [
@@ -39,11 +41,13 @@
 			"build-depends": [
 				"binary(doxygen)",
 				"binary(m4)",
+				"binary(mm-common-get)",
 				"binary(perl)",
 				"binary(python3)",
 				"binary(xsltproc)",
 				"pkgconfig(cairomm-1.16)",
 				"pkgconfig(glibmm-2.68)",
+				"pkgconfig(mm-common-libstdc++)",
 				"pkgconfig(pangocairo)"
 			],
 			"depends": [
@@ -122,6 +126,6 @@
 		}
 	},
 	"source-name": "pangomm",
-	"source-release": "8",
-	"source-version": "2.56.2"
+	"source-release": "9",
+	"source-version": "2.58.0"
 }
