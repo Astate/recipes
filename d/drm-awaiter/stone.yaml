@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : drm-awaiter
+version     : "0.0.0"
+release     : 1
+homepage    : https://github.com/CachyOS/CachyOS-PKGBUILDS/tree/master/cachyos-drm-awaiter
+license     : GPL-3.0-or-later
+summary     : Configuration for proper systemd chain-loading of DRM modules
+description : |
+    Configuration for proper systemd chain-loading of DRM modules
+rundeps     :
+    - binary(bash)
+    - sysbinary(modprobe)
+install     : |
+    %install_exe %(pkgdir)/drm-module-awaiter-generator -t %(installroot)%(libdir)/systemd/system-generators/

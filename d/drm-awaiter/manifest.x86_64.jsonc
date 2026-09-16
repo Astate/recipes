@@ -1,0 +1,19 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"drm-awaiter": {
+			"depends": [
+				"binary(bash)",
+				"sysbinary(modprobe)"
+			],
+			"files": [
+				"/usr/lib/systemd/system-generators/drm-module-awaiter-generator"
+			],
+			"name": "drm-awaiter"
+		}
+	},
+	"source-name": "drm-awaiter",
+	"source-release": "1",
+	"source-version": "0.0.0"
+}
