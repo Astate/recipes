@@ -3,7 +3,7 @@
 
 name        : linux-firmware
 version     : "20260916"
-release     : 47
+release     : 48
 homepage    : https://kernel.org
 upstreams   :
     - git|https://gitlab.com/kernel-firmware/linux-firmware.git : ab23307cfe7f9366c819025ca3e4778299bc2db2
@@ -49,8 +49,8 @@ install     : |
     for i in %(installroot)%(libdir)/firmware/amd-ucode/*.bin; do
         cat ${i} >> kernel/x86/microcode/AuthenticAMD.bin
     done
-
-    find . | cpio -o -H newc > ../amd64-microcode.initrd
+    find . -exec touch -d @0 {} \;
+    find . | cpio -o -H newc --device-independent --reproducible > ../amd64-microcode.initrd
     popd
     %install_file amd64-microcode.initrd %(installroot)%(libdir)/kernel/initrd.d/00-amd64-microcode.initrd
 
@@ -66,7 +66,8 @@ install     : |
     done
 
     pushd initrdpsp
-    find . | cpio -o -H newc | zstd -19 -T0 -c > ../amd-psp-firmware.initrd
+    find . -exec touch -d @0 {} \;
+    find . | cpio -o -H newc --device-independent --reproducible | zstd -19 -T0 -c > ../amd-psp-firmware.initrd
     popd
     %install_file amd-psp-firmware.initrd %(installroot)%(libdir)/kernel/initrd.d/55-amd-psp-firmware.initrd
 
