@@ -107,6 +107,7 @@
 				"/usr/share/locale/kn/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/ko/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/kw/LC_MESSAGES/gtksourceview-5.mo",
+				"/usr/share/locale/lo/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/lt/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/lv/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/mai/LC_MESSAGES/gtksourceview-5.mo",
@@ -143,6 +144,7 @@
 				"/usr/share/locale/tr/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/ug/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/uk/LC_MESSAGES/gtksourceview-5.mo",
+				"/usr/share/locale/uz/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/vi/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/xh/LC_MESSAGES/gtksourceview-5.mo",
 				"/usr/share/locale/zh_CN/LC_MESSAGES/gtksourceview-5.mo",
@@ -252,6 +254,6 @@
 		}
 	},
 	"source-name": "gtksourceview",
-	"source-release": "13",
-	"source-version": "5.20.0"
+	"source-release": "14",
+	"source-version": "5.21.0"
 }
