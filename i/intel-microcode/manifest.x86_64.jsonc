@@ -3,6 +3,9 @@
 	"manifest-version": "0.2",
 	"packages": {
 		"intel-microcode": {
+			"build-depends": [
+				"binary(cpio)"
+			],
 			"files": [
 				"/usr/lib/firmware/intel-ucode/06-03-02",
 				"/usr/lib/firmware/intel-ucode/06-05-00",
@@ -161,6 +164,7 @@
 				"/usr/lib/firmware/intel-ucode/0f-06-04",
 				"/usr/lib/firmware/intel-ucode/0f-06-05",
 				"/usr/lib/firmware/intel-ucode/0f-06-08",
+				"/usr/lib/kernel/initrd.d/00-intel-microcode.initrd",
 				"/usr/share/doc/intel-microcode/README.md",
 				"/usr/share/doc/intel-microcode/license",
 				"/usr/share/doc/intel-microcode/releasenote.md"
@@ -169,6 +173,6 @@
 		}
 	},
 	"source-name": "intel-microcode",
-	"source-release": "19",
+	"source-release": "20",
 	"source-version": "20260812"
 }
