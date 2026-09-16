@@ -15,6 +15,7 @@
 			],
 			"depends": [
 				"binary(weston)",
+				"drm-awaiter",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"qt6-wayland",
 				"soname(libQt6Core.so.6(x86_64))",
@@ -242,6 +243,6 @@
 		}
 	},
 	"source-name": "sddm",
-	"source-release": "15",
+	"source-release": "16",
 	"source-version": "0.21.0"
 }
