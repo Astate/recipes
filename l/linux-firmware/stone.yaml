@@ -3,7 +3,7 @@
 
 name        : linux-firmware
 version     : "20260910"
-release     : 45
+release     : 46
 homepage    : https://kernel.org
 upstreams   :
     - git|https://gitlab.com/kernel-firmware/linux-firmware.git : eeccccbe83daf22e1931e3557ba05b2c02427e4e
@@ -14,6 +14,7 @@ license     :
     - GPL-2.0-or-later
     - Distributable
 builddeps   :
+    - binary(cpio)
     - binary(make)
     - binary(python3)
     - binary(rdfind)
@@ -61,10 +62,18 @@ install     : |
         rm -rvf "%(installroot)/%(libdir)/firmware/${forbidden}"
     done
 
-    # unzstd the amd microcode to unfudge dracut
-    for file in %(installroot)%(libdir)/firmware/amd-ucode/*.zst ; do
-        unzstd --rm $file
+    # Construct early microcode initrd
+    %install_dir initrd/kernel/x86/microcode/
+    pushd initrd
+
+    touch kernel/x86/microcode/AuthenticAMD.bin
+    for i in %(installroot)%(libdir)/firmware/amd-ucode/*.bin; do
+        cat ${i} >> kernel/x86/microcode/AuthenticAMD.bin
     done
+
+    find . | cpio -o -H newc > ../amd64-microcode.initrd
+    popd
+    %install_file amd64-microcode.initrd %(installroot)%(libdir)/kernel/initrd.d/00-amd64-microcode.initrd
 
     # unzstd README files
     for file in %(installroot)%(libdir)/firmware/*/README*.zst ; do
@@ -88,6 +97,7 @@ packages    :
             - /usr/lib/firmware/amd/amd_sev*
             - /usr/lib/firmware/amd/READ*
             - /usr/lib/firmware/amdtee
+            - /usr/lib/kernel/initrd.d/00-amd64-microcode.initrd
 
     - "%(name)-amd-graphics":
         summary: Support for AMD graphics and NPU chips

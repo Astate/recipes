@@ -4,6 +4,7 @@
 	"packages": {
 		"linux-firmware": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -46,6 +47,7 @@
 		},
 		"linux-firmware-amd": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -63,6 +65,7 @@
 		},
 		"linux-firmware-amd-graphics": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -1034,6 +1037,7 @@
 		},
 		"linux-firmware-amd64-microcode": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -1058,12 +1062,14 @@
 				"/usr/lib/firmware/amdtee/773bd96f-b83f-4d52-b12dc529b13d8543.bin.zst",
 				"/usr/lib/firmware/amdtee/amd_pmf_v3.bin.zst",
 				"/usr/lib/firmware/amdtee/amd_pmf_v3_1.bin.zst",
-				"/usr/lib/firmware/amdtee/f29bb3d9-bd66-5441-afb88acc2b2b60d6.bin.zst"
+				"/usr/lib/firmware/amdtee/f29bb3d9-bd66-5441-afb88acc2b2b60d6.bin.zst",
+				"/usr/lib/kernel/initrd.d/00-amd64-microcode.initrd"
 			],
 			"name": "linux-firmware-amd64-microcode"
 		},
 		"linux-firmware-atheros": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -1470,6 +1476,7 @@
 		},
 		"linux-firmware-bnx2": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -1487,6 +1494,7 @@
 		},
 		"linux-firmware-bnx2x": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -1511,6 +1519,7 @@
 		},
 		"linux-firmware-brcm80211": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -1659,6 +1668,7 @@
 		},
 		"linux-firmware-cavium": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -1677,6 +1687,7 @@
 		},
 		"linux-firmware-cirrus": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -3909,6 +3920,7 @@
 		},
 		"linux-firmware-intel": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -3928,6 +3940,7 @@
 		},
 		"linux-firmware-intel-graphics": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -4121,6 +4134,7 @@
 		},
 		"linux-firmware-intel-misc": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -4183,6 +4197,7 @@
 		},
 		"linux-firmware-intel-sound": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -4228,6 +4243,7 @@
 		},
 		"linux-firmware-iwlwifi": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -4760,6 +4776,7 @@
 		},
 		"linux-firmware-libertas": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -4824,6 +4841,7 @@
 		},
 		"linux-firmware-marvell-prestera": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -4841,6 +4859,7 @@
 		},
 		"linux-firmware-mediatek": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -4988,6 +5007,7 @@
 		},
 		"linux-firmware-mellanox": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -5076,6 +5096,7 @@
 		},
 		"linux-firmware-misc": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -6091,6 +6112,7 @@
 		},
 		"linux-firmware-myricom": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -6111,6 +6133,7 @@
 		},
 		"linux-firmware-netronome": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -6201,6 +6224,7 @@
 		},
 		"linux-firmware-netxen": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -6214,6 +6238,7 @@
 		},
 		"linux-firmware-nvidia": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -6230,6 +6255,7 @@
 		},
 		"linux-firmware-nvidia-graphics": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -6722,6 +6748,7 @@
 		},
 		"linux-firmware-qcom-soc": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -7119,6 +7146,7 @@
 		},
 		"linux-firmware-qlogic": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -7143,6 +7171,7 @@
 		},
 		"linux-firmware-realtek": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -7319,6 +7348,7 @@
 		},
 		"linux-firmware-samsung": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -7337,6 +7367,7 @@
 		},
 		"linux-firmware-siano": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -7354,6 +7385,7 @@
 		},
 		"linux-firmware-ti-connectivity": {
 			"build-depends": [
+				"binary(cpio)",
 				"binary(make)",
 				"binary(python3)",
 				"binary(rdfind)",
@@ -7403,6 +7435,6 @@
 		}
 	},
 	"source-name": "linux-firmware",
-	"source-release": "45",
+	"source-release": "46",
 	"source-version": "20260910"
 }
