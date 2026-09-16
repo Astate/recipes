@@ -3,7 +3,7 @@
 
 name        : plasma-login-manager
 version     : "6.7.5"
-release     : 26
+release     : 27
 homepage    : https://kde.org/plasma-desktop/
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/plasma-login-manager-6.7.5.tar.xz : 6ed7c3bbac1c79bc1a21c330923804aa6c3f720fafd6accb1a6a1fada684e84f
@@ -34,6 +34,7 @@ builddeps   :
     - pkgconfig(systemd)
     - pkgconfig(xau)
 rundeps     :
+    - drm-awaiter
     - kwin # Doesn't support any other compositor AFAIK
     - plasma-workspace # QML dep
     - qt6-wayland

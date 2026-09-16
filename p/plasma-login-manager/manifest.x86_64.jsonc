@@ -26,6 +26,7 @@
 				"pkgconfig(xau)"
 			],
 			"depends": [
+				"drm-awaiter",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"kwin",
 				"plasma-workspace",
@@ -182,6 +183,6 @@
 		}
 	},
 	"source-name": "plasma-login-manager",
-	"source-release": "26",
+	"source-release": "27",
 	"source-version": "6.7.5"
 }
