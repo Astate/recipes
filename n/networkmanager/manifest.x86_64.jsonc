@@ -1106,12 +1106,12 @@
 			],
 			"files": [
 				"/usr/lib/NetworkManager/1.58.1/libnm-ppp-plugin.so",
-				"/usr/lib/pppd/2.5.3/nm-pppd-plugin.so"
+				"/usr/lib/pppd/2.5.4/nm-pppd-plugin.so"
 			],
 			"name": "networkmanager-ppp",
 			"provides": [
 				"soname(NetworkManager/1.58.1/libnm-ppp-plugin.so(x86_64))",
-				"soname(pppd/2.5.3/nm-pppd-plugin.so(x86_64))"
+				"soname(pppd/2.5.4/nm-pppd-plugin.so(x86_64))"
 			]
 		},
 		"networkmanager-tui": {
@@ -1298,6 +1298,6 @@
 		}
 	},
 	"source-name": "networkmanager",
-	"source-release": "18",
+	"source-release": "19",
 	"source-version": "1.58.1"
 }
