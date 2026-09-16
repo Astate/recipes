@@ -3,7 +3,7 @@
 
 name        : linux-lts
 version     : "6.18.52"
-release     : 36
+release     : 37
 homepage    : https://kernel.org/
 upstreams   :
     - https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.52.tar.xz : 2b69564f7d4fea0c859b1959ba33709ee6e9139bd100e30a853b57159a8221b8
@@ -52,12 +52,7 @@ builddeps   :
     - sysbinary(fsck.xfs)
     - sysbinary(lvm)
     - font-cantarell
-    - intel-microcode
     - libgcc # libgcc_s.so.1 - needed until we get llvm-libgcc
-    - linux-firmware-amd-graphics
-    - linux-firmware-amd64-microcode
-    - linux-firmware-intel-graphics
-    - linux-firmware-nvidia-graphics
     - rust-devel # Needs Rust source
     - serpent-artwork
     - systemd
@@ -153,51 +148,23 @@ install     : |
     popd
     /usr/sbin/depmod -b %(installroot)/usr ${kernelVersion} -a
 
-    # We can make the initrd smaller by decompressing the firmware prior to compressing the entire initrd.
-    mkdir -p usr/lib/firmware/
-    cp -ra /usr/lib/firmware/* usr/lib/firmware
-    file_list=()
-    while IFS=  read -r -d $'\0'; do
-        file_list+=("${REPLY}")
-    done < <(find usr/lib/firmware -type f -print0)
-    for file in "${file_list[@]}"; do
-        if [ -z ${file##*.zst} ]; then
-            unzstd --rm "${file}"
-        fi
-    done
-
-    # Update symlinks
-    link_list=()
-    while IFS=  read -r -d $'\0'; do
-        link_list+=("${REPLY}")
-    done < <(find usr/lib/firmware -type l -print0)
-    for file in "${link_list[@]}"; do
-        link=$(readlink "${file}")
-        if [ -z ${link##*.zst} ]; then
-            new_link="${link%.zst}"
-            ln -sfv "${new_link}" "${file}"
-        fi
-        if [ -z ${file##*.zst} ]; then
-            new_filename="${file%.zst}"
-            mv -v "${file}" "${new_filename}"
-        fi
-    done
-
-    # Include early microcode
     # 2025-07-29: Add vfio kernel modules to initrd as they need to be loaded very early in the boot process
-    drm_modules="amdgpu hyperv_drm i915 nouveau qxl radeon simpledrm vboxvideo virtio-gpu vmwgfx xe"
+    # 2026-09-16: Only include simpledrm for plymouth, exclude all other DRM drivers. Exclude early microcode in favor of generating initrds in linux-firmware/intel-microcode
+    drm_modules="simpledrm"
+    omit_modules="amdgpu hyperv_drm i915 nouveau qxl radeon vboxvideo virtio-gpu vmwgfx xe"
     vfio_modules="vfio_pci vfio_iommu_type1"
     PATH="/usr/bin:/usr/sbin" dracut \
-        --add "bash rescue systemd drm virtiofs lvm dm moss zz-init-extension" \
+        --add "bash rescue systemd plymouth simpledrm virtiofs lvm dm moss zz-init-extension" \
         --add-drivers "${drm_modules} ${vfio_modules}" \
-        --early-microcode \
+        --omit-drivers "${omit_modules}" \
         --force \
-        --fwdir usr/lib/firmware/ \
         --hardlink \
         --include %(pkgdir)/initrd/50-protectsystem-off.conf %(libdir)/systemd/system.conf.d/50-protectsystem-off.conf \
         --include %(pkgdir)/initrd/timeouts.conf %(libdir)/systemd/system.conf.d/timeouts.conf \
         --kmoddir %(installroot)%(libdir)/modules/${kernelVersion} \
         --kver ${kernelVersion} \
+        --no-early-microcode \
+        --no-firmware \
         --no-hostonly \
         --nolvmconf \
         --nomdadmconf \
