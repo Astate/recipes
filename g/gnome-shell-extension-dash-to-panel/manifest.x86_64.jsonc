@@ -34,6 +34,7 @@
 				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/panelPositions.js",
 				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/panelSettings.js",
 				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/panelStyle.js",
+				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/pointerWatcher.js",
 				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/prefs.js",
 				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/proximity.js",
 				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/stylesheet.css",
@@ -63,12 +64,14 @@
 				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/ui/SettingsStyle.ui",
 				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/utils.js",
 				"/usr/share/gnome-shell/extensions/dash-to-panel@jderose9.github.com/windowPreview.js",
+				"/usr/share/locale/az/LC_MESSAGES/dash-to-panel.mo",
 				"/usr/share/locale/cs/LC_MESSAGES/dash-to-panel.mo",
 				"/usr/share/locale/de/LC_MESSAGES/dash-to-panel.mo",
 				"/usr/share/locale/es/LC_MESSAGES/dash-to-panel.mo",
 				"/usr/share/locale/fa/LC_MESSAGES/dash-to-panel.mo",
 				"/usr/share/locale/fr/LC_MESSAGES/dash-to-panel.mo",
 				"/usr/share/locale/gl/LC_MESSAGES/dash-to-panel.mo",
+				"/usr/share/locale/gr/LC_MESSAGES/dash-to-panel.mo",
 				"/usr/share/locale/hu/LC_MESSAGES/dash-to-panel.mo",
 				"/usr/share/locale/it/LC_MESSAGES/dash-to-panel.mo",
 				"/usr/share/locale/ja/LC_MESSAGES/dash-to-panel.mo",
@@ -90,6 +93,6 @@
 		}
 	},
 	"source-name": "gnome-shell-extension-dash-to-panel",
-	"source-release": "9",
-	"source-version": "73"
+	"source-release": "10",
+	"source-version": "74"
 }
