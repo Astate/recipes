@@ -17,7 +17,7 @@ index 7f247fd0..6ab498d3 100644
  # upgrades.
  [Daemon]
 -Theme=spinner
-+UseSimpledrm=1
++UseSimpledrmNoLuks=1
 +Theme=bgrt
  ShowDelay=0
  DeviceTimeout=8
