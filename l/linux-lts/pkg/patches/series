@@ -1,6 +1,3 @@
-# Firmware
-0001-drivers-firmware-skip-simpledrm-if-nvidia-drm.modese.patch
-
 # Enable x86_64-v2 build optimisations
 more-ISA-levels-and-uarches-for-kernel-6.16+.patch
 
