@@ -83,6 +83,7 @@
 				"/usr/share/libinput/50-system-asus.quirks",
 				"/usr/share/libinput/50-system-cyborg.quirks",
 				"/usr/share/libinput/50-system-dell.quirks",
+				"/usr/share/libinput/50-system-eaecis.quirks",
 				"/usr/share/libinput/50-system-framework.quirks",
 				"/usr/share/libinput/50-system-gigabyte.quirks",
 				"/usr/share/libinput/50-system-google.quirks",
@@ -95,6 +96,7 @@
 				"/usr/share/libinput/50-system-lenovo.quirks",
 				"/usr/share/libinput/50-system-lg.quirks",
 				"/usr/share/libinput/50-system-minisforum.quirks",
+				"/usr/share/libinput/50-system-panasonic.quirks",
 				"/usr/share/libinput/50-system-pine64.quirks",
 				"/usr/share/libinput/50-system-positivo.quirks",
 				"/usr/share/libinput/50-system-sony.quirks",
@@ -157,6 +159,6 @@
 		}
 	},
 	"source-name": "libinput",
-	"source-release": "18",
-	"source-version": "1.31.3"
+	"source-release": "19",
+	"source-version": "1.32.0"
 }
