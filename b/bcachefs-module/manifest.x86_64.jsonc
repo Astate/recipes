@@ -16,7 +16,7 @@
 				"sysbinary(bcachefs)"
 			],
 			"depends": [
-				"bcachefs-tools-initrd",
+				"bcachefs-module-shared",
 				"linux-gaming",
 				"sysbinary(depmod)"
 			],
@@ -94,6 +94,6 @@
 		}
 	},
 	"source-name": "bcachefs-module",
-	"source-release": "55",
+	"source-release": "56",
 	"source-version": "1.39.6"
 }
