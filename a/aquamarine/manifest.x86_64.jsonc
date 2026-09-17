@@ -36,7 +36,7 @@
 				"soname(libwayland-client.so.0(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libaquamarine.so.0.15.0",
+				"/usr/lib/libaquamarine.so.0.15.1",
 				"/usr/lib/libaquamarine.so.14"
 			],
 			"name": "aquamarine",
@@ -92,6 +92,6 @@
 		}
 	},
 	"source-name": "aquamarine",
-	"source-release": "8",
-	"source-version": "0.15.0"
+	"source-release": "9",
+	"source-version": "0.15.1"
 }
