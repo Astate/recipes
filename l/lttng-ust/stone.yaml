@@ -1,0 +1,36 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : lttng-ust
+version     : "2.16.0"
+release     : 1
+upstreams   :
+    - https://lttng.org/files/lttng-ust/lttng-ust-2.16.0.tar.bz2 : 1e84e02fa1fc1261eb6cf3d14d64006506a29f7c605ac85de02180318c6aa38a
+homepage    : https://lttng.org
+license     : LGPL-2.1-only AND MIT AND GPL-2.0-only AND BSD-3-Clause AND BSD-2-Clause
+summary     : LTTng Userspace Tracer library
+description : |
+    This library may be used by user-space applications to generate trace-points using LTTng.
+builddeps   :
+    - pkgconfig(liburcu)
+    - pkgconfig(numa)
+    # systemtap
+    # python bindings?
+# rculfhash.c:763:2: error: address argument to atomic operation must be a pointer to integer
+toolchain   : gnu
+setup       : |
+    %configure
+build       : |
+    %make
+install     : |
+    %make_install
+packages    :
+    - "%(name)":
+        paths:
+            - /usr/share/man/man3/
+
+    - "%(name)-devel":
+        paths:
+            - /usr/bin/lttng-gen-tp
+            - /usr/share/man/man1/lttng-gen-tp.1*
+            - /usr/share/doc/lttng-ust/examples/
