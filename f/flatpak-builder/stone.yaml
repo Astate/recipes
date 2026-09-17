@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : flatpak-builder
-version     : "1.4.11"
-release     : 4
+version     : "1.4.12"
+release     : 5
 upstreams   :
-    - https://github.com/flatpak/flatpak-builder/releases/download/1.4.11/flatpak-builder-1.4.11.tar.xz : 2a5ef4f3eaea86f808aa477e57e65b6f68978eb1c034fafe05bffdebbf1dcd03
+    - https://github.com/flatpak/flatpak-builder/releases/download/1.4.12/flatpak-builder-1.4.12.tar.xz : 8d5b791f7a8449d6a8ebcff0c8d6abd5335113f56703bf5777ee4c7db4bda378
 homepage    : https://flatpak.org
 license     : LGPL-2.1-or-later
 summary     : Tool to build flatpaks from source

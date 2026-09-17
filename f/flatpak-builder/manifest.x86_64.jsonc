@@ -51,6 +51,6 @@
 		}
 	},
 	"source-name": "flatpak-builder",
-	"source-release": "4",
-	"source-version": "1.4.11"
+	"source-release": "5",
+	"source-version": "1.4.12"
 }
