@@ -3,7 +3,7 @@
 
 name        : linux-stable
 version     : "7.2.6"
-release     : 61
+release     : 62
 homepage    : https://kernel.org/
 upstreams   :
         - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.6.tar.xz : 039aef84f2b0994aeda3f4fcfc3d02ec9d7a9bbb9020ea264c43f446c860f606
@@ -162,11 +162,12 @@ install     : |
 
     # 2025-07-29: Add vfio kernel modules to initrd as they need to be loaded very early in the boot process
     # 2026-09-16: Only include simpledrm for plymouth, exclude all other DRM drivers. Exclude early microcode in favor of generating initrds in linux-firmware/intel-microcode
-    drm_modules="simpledrm"
+    # 2026-09-17: simpledrm is now a kernel built-in and doesn't need to be added
+    drm_modules=""
     omit_modules="amdgpu hyperv_drm i915 nouveau qxl radeon vboxvideo virtio-gpu vmwgfx xe"
     vfio_modules="vfio_pci vfio_iommu_type1"
     PATH="/usr/bin:/usr/sbin" dracut \
-        --add "bash rescue systemd plymouth simpledrm virtiofs lvm dm moss zz-init-extension" \
+        --add "bash rescue systemd plymouth virtiofs lvm dm moss zz-init-extension" \
         --add-drivers "${drm_modules} ${vfio_modules}" \
         --omit-drivers "${omit_modules}" \
         --force \
