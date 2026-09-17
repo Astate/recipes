@@ -18,7 +18,7 @@
 				"soname(libstdc++.so.6(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libKF6PulseAudioQt.so.1.8.1",
+				"/usr/lib/libKF6PulseAudioQt.so.1.9.0",
 				"/usr/lib/libKF6PulseAudioQt.so.5"
 			],
 			"name": "pulseaudio-qt-qt6",
@@ -82,7 +82,8 @@
 				"/usr/lib/cmake/KF6PulseAudioQt/KF6PulseAudioQtTargets-release.cmake",
 				"/usr/lib/cmake/KF6PulseAudioQt/KF6PulseAudioQtTargets.cmake",
 				"/usr/lib/libKF6PulseAudioQt.so",
-				"/usr/lib/pkgconfig/KF6PulseAudioQt.pc"
+				"/usr/lib/pkgconfig/KF6PulseAudioQt.pc",
+				"/usr/lib/qt6/metatypes/qt6kf6pulseaudioqt_metatypes.json"
 			],
 			"name": "pulseaudio-qt-qt6-devel",
 			"provides": [
@@ -92,6 +93,6 @@
 		}
 	},
 	"source-name": "pulseaudio-qt",
-	"source-release": "4",
-	"source-version": "1.8.1"
+	"source-release": "5",
+	"source-version": "1.9.0"
 }
