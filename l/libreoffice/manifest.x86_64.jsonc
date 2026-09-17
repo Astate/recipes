@@ -30,6 +30,7 @@
 				"cmake(OpenJPEG)",
 				"cmake(Qt6Multimedia)",
 				"cmake(absl)",
+				"cmake(glm)",
 				"hyphen-devel",
 				"openjdk-25-devel",
 				"pkgconfig(COLAMD)",
@@ -4602,6 +4603,7 @@
 				"cmake(OpenJPEG)",
 				"cmake(Qt6Multimedia)",
 				"cmake(absl)",
+				"cmake(glm)",
 				"hyphen-devel",
 				"openjdk-25-devel",
 				"pkgconfig(COLAMD)",
@@ -4734,6 +4736,7 @@
 				"cmake(OpenJPEG)",
 				"cmake(Qt6Multimedia)",
 				"cmake(absl)",
+				"cmake(glm)",
 				"hyphen-devel",
 				"openjdk-25-devel",
 				"pkgconfig(COLAMD)",
@@ -4869,6 +4872,7 @@
 				"cmake(OpenJPEG)",
 				"cmake(Qt6Multimedia)",
 				"cmake(absl)",
+				"cmake(glm)",
 				"hyphen-devel",
 				"openjdk-25-devel",
 				"pkgconfig(COLAMD)",
@@ -5005,6 +5009,7 @@
 				"cmake(OpenJPEG)",
 				"cmake(Qt6Multimedia)",
 				"cmake(absl)",
+				"cmake(glm)",
 				"hyphen-devel",
 				"openjdk-25-devel",
 				"pkgconfig(COLAMD)",
@@ -5110,6 +5115,6 @@
 		}
 	},
 	"source-name": "libreoffice",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "26.8.0.3"
 }

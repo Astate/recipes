@@ -8,7 +8,7 @@ name        : libreoffice
 ##@@BEGIN_VERSION
 version     : "26.8.0.3"
 ##@@END_VERSION
-release     : 2
+release     : 3
 upstreams   :
 ##@@BEGIN_SOURCE
     - https://download.documentfoundation.org/libreoffice/src/26.8.0/libreoffice-26.8.0.3.tar.xz:
@@ -504,6 +504,7 @@ builddeps   :
     - cmake(OpenJPEG)
     - cmake(Qt6Multimedia)
     - cmake(absl)
+    - cmake(glm)
     - pkgconfig(COLAMD)
     - pkgconfig(atk)
     - pkgconfig(bluez)
@@ -595,7 +596,6 @@ builddeps   :
     # hsqldb
     # mdds
     # libfixmath
-    # glm
     # orcus
     # redland
     # zxcvbn
@@ -636,7 +636,6 @@ setup       : |
         --without-system-dragonbox \
         --without-system-firebird \
         --without-system-frozen \
-        --without-system-glm \
         --without-system-java-websocket \
         --without-system-jfreereport \
         --without-system-libcdr \
