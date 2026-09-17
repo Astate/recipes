@@ -1,0 +1,29 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : glm
+version     : "1.0.3"
+release     : 1
+upstreams   :
+    - https://github.com/g-truc/glm/archive/1.0.3.tar.gz : 6775e47231a446fd086d660ecc18bcd076531cfedd912fbd66e576b118607001
+homepage    : https://github.com/g-truc/glm
+license     : MIT
+summary     : OpenGL Mathematics library
+description : |
+    GLM is a C++ library for doing mathematics operations
+    required in many OpenGL based applications. Its interface
+    has been designed to resemble the built-in matrix and vector
+    types of the OpenGL shading language.
+setup       : |
+    %cmake \
+        -DCMAKE_INSTALL_DATAROOTDIR=%(datadir)/cmake \
+        -DGLM_BUILD_LIBRARY=OFF
+build       : |
+    %cmake_build
+install     : |
+    %cmake_install
+packages    :
+    - "%(name)":
+        paths:
+            - /usr/include/
+            - /usr/share/cmake/
