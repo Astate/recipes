@@ -1,0 +1,104 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : mir
+version     : "2.29.0"
+release     : 1
+upstreams   :
+    - https://github.com/canonical/mir/releases/download/v2.29.0/mir-2.29.0.tar.xz : 9ef7d7fb1d05938cc30341cb4a3cf5dd6e9f84a8fe8d309481ee382b2bebaae1
+homepage    : https://mir-server.io/
+license     :
+    - GPL-2.0-only
+    - GPL-3.0-only
+    - LGPL-2.1-only
+    - LGPL-3.0-only
+summary     : Next generation Wayland display server toolkit
+description : |
+    Mir is set of libraries for building Wayland based shells. Mir simplifies the complexity that shell authors need to deal with. It provides a stable, well tested and performant platform with touch, mouse and tablet input, multi-display capability and secure client-server communications.
+builddeps   :
+    - binary(cargo)
+    - cmake(Boost)
+    - cmake(glm)
+    - cmake(yaml-cpp)
+    - pkgconfig(egl)
+    - pkgconfig(epoxy)
+    - pkgconfig(freetype2)
+    - pkgconfig(gbm)
+    - pkgconfig(gio-2.0)
+    - pkgconfig(gio-unix-2.0)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(glesv2)
+    - pkgconfig(libdisplay-info)
+    - pkgconfig(libdrm)
+    - pkgconfig(libevdev)
+    - pkgconfig(libinput)
+    - pkgconfig(libudev)
+    - pkgconfig(libxml++-5.0)
+    - pkgconfig(lttng-ust)
+    - pkgconfig(pixman-1)
+    - pkgconfig(uuid)
+    - pkgconfig(wayland-client)
+    - pkgconfig(wayland-egl)
+    - pkgconfig(xcb)
+    - pkgconfig(xcb-composite)
+    - pkgconfig(xcb-randr)
+    - pkgconfig(xcb-render)
+    - pkgconfig(xcb-res)
+    - pkgconfig(xcb-xfixes)
+    - pkgconfig(xcursor)
+    - pkgconfig(xkbcommon)
+    - pkgconfig(xkbcommon-x11)
+    - python(pillow)
+    # libapparmor
+networking  : true
+tuning      :
+    # error: loop not unrolled: the optimizer was unable to perform the requested transformation; the transformation might be disabled
+    - lto: false
+setup       : |
+    %patch %(pkgdir)/libxml++5.patch
+    %patch %(pkgdir)/0001-ftbfs-libinput-1.32.0.patch
+
+    %cmake \
+        -DMIR_ENABLE_TESTS:BOOL=OFF
+build       : |
+    %cmake_build
+install     : |
+    %cmake_install
+
+    # Useless without the rest of the test tools
+    rm -v %(installroot)%(libdir)/mir/tools/libmirserverlttng.so
+
+    rmdir -v %(installroot)%(libdir)/mir/tools
+packages    :
+    - "%(name)-libs":
+        summary: "Library files for %(name)"
+        description: |
+            Library files for %(name), typically pulled in as a dependency of another package.
+        paths:
+            - /usr/lib/libmircore.so.*
+            - /usr/lib/libmircommon.so.*
+            - /usr/lib/libmiroil.so.*
+            - /usr/lib/libmiral.so.*
+            - /usr/lib/libmirserver.so.*
+            - /usr/lib/libmirplatform.so.*
+            - /usr/lib/libmirwayland.so.*
+            - /usr/lib/mir/server-platform/*.so.*
+
+    - "%(name)-libs-devel":
+        rundeps:
+            - "%(name)-libs"
+            - cmake(Boost)
+            - pkgconfig(gbm)
+        paths:
+            - /usr/bin/mir_wayland_generator
+            - /usr/include/
+            - /usr/lib/lib*.so
+            - /usr/lib/pkgconfig/
+
+    - "%(name)-demos":
+        paths:
+            - /usr/bin/mir-x11-kiosk*
+            - /usr/bin/mir_demo*
+            - /usr/bin/miral-*
+            - /usr/share/applications/miral-shell.desktop
+            - /usr/share/icons/hicolor/scalable/apps/spiral-logo.svg
