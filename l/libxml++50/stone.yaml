@@ -1,0 +1,33 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : libxml++50
+version     : "5.6.1"
+release     : 1
+upstreams   :
+    - https://github.com/libxmlplusplus/libxmlplusplus/releases/download/5.6.1/libxml++-5.6.1.tar.xz : 4996e8a73995e8a4cd656c8591dce38181146edfc30cb47c97d1db3c56990ad7
+homepage    : https://libxmlplusplus.github.io/libxmlplusplus/
+license     : LGPL-2.1-or-later
+summary     : C++ wrapper for the libxml2 XML parser library
+description : |
+    libxml++ is a C++ wrapper for the libxml2 XML parser library. Its original
+    author is Ari Johnson and it is currently maintained by Christophe de Vienne
+    and Murray Cumming.
+builddeps   :
+    - binary(dot)
+    - binary(doxygen)
+    - binary(mm-common-get)
+    - binary(xsltproc)
+    - pkgconfig(libxml-2.0)
+    - pkgconfig(mm-common-libstdc++)
+    # dblatex, fop
+setup       : |
+    %meson
+build       : |
+    %meson_build
+install     : |
+    %meson_install
+packages    :
+    - "%(name)-devel":
+        paths:
+            - /usr/lib/libxml++-5.0/include/
