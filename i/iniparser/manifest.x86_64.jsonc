@@ -11,7 +11,7 @@
 			],
 			"files": [
 				"/usr/lib/libiniparser.so.4",
-				"/usr/lib/libiniparser.so.4.2.6"
+				"/usr/lib/libiniparser.so.4.3.0"
 			],
 			"name": "iniparser",
 			"provides": [
@@ -28,6 +28,7 @@
 			"files": [
 				"/usr/include/iniparser/dictionary.h",
 				"/usr/include/iniparser/iniparser.h",
+				"/usr/include/iniparser/version.h",
 				"/usr/lib/cmake/iniparser/iniparser-config-version.cmake",
 				"/usr/lib/cmake/iniparser/iniparser-config.cmake",
 				"/usr/lib/cmake/iniparser/iniparser-sharedTargets-release.cmake",
@@ -46,6 +47,6 @@
 		}
 	},
 	"source-name": "iniparser",
-	"source-release": "2",
-	"source-version": "4.2.6"
+	"source-release": "3",
+	"source-version": "4.3.0"
 }
