@@ -23,6 +23,7 @@
 				"soname(libcairo.so.2(x86_64))",
 				"soname(libfontconfig.so.1(x86_64))",
 				"soname(libfribidi.so.0(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgdk_pixbuf-2.0.so.0(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
@@ -254,6 +255,6 @@
 		}
 	},
 	"source-name": "gtksourceview",
-	"source-release": "14",
-	"source-version": "5.21.0"
+	"source-release": "15",
+	"source-version": "5.22.0"
 }
