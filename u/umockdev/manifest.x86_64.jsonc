@@ -1,0 +1,79 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"umockdev": {
+			"build-depends": [
+				"binary(g-ir-compiler)",
+				"binary(valac)",
+				"pkgconfig(gio-2.0)",
+				"pkgconfig(gio-unix-2.0)",
+				"pkgconfig(glib-2.0)",
+				"pkgconfig(gobject-2.0)",
+				"pkgconfig(gudev-1.0)",
+				"pkgconfig(libpcap)",
+				"pkgconfig(libudev)"
+			],
+			"depends": [
+				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
+				"soname(libc.so.6(x86_64))",
+				"soname(libgio-2.0.so.0(x86_64))",
+				"soname(libglib-2.0.so.0(x86_64))",
+				"soname(libgobject-2.0.so.0(x86_64))",
+				"soname(libpcap.so.1(x86_64))",
+				"soname(libudev.so.1(x86_64))"
+			],
+			"files": [
+				"/usr/bin/umockdev-record",
+				"/usr/bin/umockdev-run",
+				"/usr/bin/umockdev-wrapper",
+				"/usr/lib/girepository-1.0/UMockdev-1.0.typelib",
+				"/usr/lib/libumockdev-preload.so.0",
+				"/usr/lib/libumockdev-preload.so.0.0.0",
+				"/usr/lib/libumockdev.so.0",
+				"/usr/lib/libumockdev.so.0.3.0"
+			],
+			"name": "umockdev",
+			"provides": [
+				"binary(umockdev-record)",
+				"binary(umockdev-run)",
+				"binary(umockdev-wrapper)",
+				"soname(libumockdev-preload.so.0(x86_64))",
+				"soname(libumockdev.so.0(x86_64))"
+			]
+		},
+		"umockdev-devel": {
+			"build-depends": [
+				"binary(g-ir-compiler)",
+				"binary(valac)",
+				"pkgconfig(gio-2.0)",
+				"pkgconfig(gio-unix-2.0)",
+				"pkgconfig(glib-2.0)",
+				"pkgconfig(gobject-2.0)",
+				"pkgconfig(gudev-1.0)",
+				"pkgconfig(libpcap)",
+				"pkgconfig(libudev)"
+			],
+			"depends": [
+				"pkgconfig(glib-2.0)",
+				"pkgconfig(gobject-2.0)",
+				"umockdev"
+			],
+			"files": [
+				"/usr/include/umockdev-1.0/umockdev.h",
+				"/usr/lib/libumockdev-preload.so",
+				"/usr/lib/libumockdev.so",
+				"/usr/lib/pkgconfig/umockdev-1.0.pc",
+				"/usr/share/gir-1.0/UMockdev-1.0.gir",
+				"/usr/share/vala/vapi/umockdev-1.0.vapi"
+			],
+			"name": "umockdev-devel",
+			"provides": [
+				"pkgconfig(umockdev-1.0)"
+			]
+		}
+	},
+	"source-name": "umockdev",
+	"source-release": "1",
+	"source-version": "0.19.8"
+}

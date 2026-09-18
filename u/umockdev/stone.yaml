@@ -1,0 +1,35 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : umockdev
+version     : "0.19.8"
+release     : 1
+upstreams   :
+    - https://github.com/martinpitt/umockdev/releases/download/0.19.8/umockdev-0.19.8.tar.xz : 9d57c917a32dc696877ab525eb510971a8109899d5b92d986e7bac32573125b0
+homepage    : https://github.com/martinpitt/umockdev
+license     : LGPL-2.1-or-later
+summary     : Mock hardware devices
+description : |
+    With this program and libraries you can easily create mock udev objects.
+    This is useful for writing tests for software which talks to
+    hardware devices.
+builddeps   :
+    - binary(g-ir-compiler)
+    - binary(valac)
+    - pkgconfig(gio-2.0)
+    - pkgconfig(gio-unix-2.0)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(gobject-2.0)
+    - pkgconfig(gudev-1.0)
+    - pkgconfig(libpcap)
+    - pkgconfig(libudev)
+tuning      :
+    # ld.lld: error: undefined symbol: __readlinkat_alias
+    - fortify: false
+    - optimize: false
+setup       : |
+    %meson
+build       : |
+    %meson_build
+install     : |
+    %meson_install

@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+releases:
+  id: 12946
+  rss: https://github.com/martinpitt/umockdev/releases.atom
+security:
+  # No known CPE, last checked 2024-02-15
+  cpe: ~
