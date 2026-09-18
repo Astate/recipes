@@ -436,7 +436,7 @@
 			],
 			"files": [
 				"/usr/lib/libavcodec.so.63",
-				"/usr/lib/libavcodec.so.63.1.101"
+				"/usr/lib/libavcodec.so.63.1.102"
 			],
 			"name": "libavcodec",
 			"provides": [
@@ -645,7 +645,7 @@
 			],
 			"files": [
 				"/usr/lib/libavdevice.so.63",
-				"/usr/lib/libavdevice.so.63.1.101"
+				"/usr/lib/libavdevice.so.63.1.102"
 			],
 			"name": "libavdevice",
 			"provides": [
@@ -840,7 +840,7 @@
 			],
 			"files": [
 				"/usr/lib/libavfilter.so.12",
-				"/usr/lib/libavfilter.so.12.1.101"
+				"/usr/lib/libavfilter.so.12.1.102"
 			],
 			"name": "libavfilter",
 			"provides": [
@@ -1024,7 +1024,7 @@
 			],
 			"files": [
 				"/usr/lib/libavformat.so.63",
-				"/usr/lib/libavformat.so.63.1.101"
+				"/usr/lib/libavformat.so.63.1.102"
 			],
 			"name": "libavformat",
 			"provides": [
@@ -1205,7 +1205,7 @@
 			],
 			"files": [
 				"/usr/lib/libavutil.so.61",
-				"/usr/lib/libavutil.so.61.1.101"
+				"/usr/lib/libavutil.so.61.1.102"
 			],
 			"name": "libavutil",
 			"provides": [
@@ -1624,7 +1624,7 @@
 			],
 			"files": [
 				"/usr/lib/libswresample.so.7",
-				"/usr/lib/libswresample.so.7.1.101"
+				"/usr/lib/libswresample.so.7.1.102"
 			],
 			"name": "libswresample",
 			"provides": [
@@ -1794,7 +1794,7 @@
 			],
 			"files": [
 				"/usr/lib/libswscale.so.10",
-				"/usr/lib/libswscale.so.10.1.101"
+				"/usr/lib/libswscale.so.10.1.102"
 			],
 			"name": "libswscale",
 			"provides": [
@@ -1889,6 +1889,6 @@
 		}
 	},
 	"source-name": "ffmpeg",
-	"source-release": "39",
-	"source-version": "9.0.1"
+	"source-release": "40",
+	"source-version": "9.0.2"
 }
