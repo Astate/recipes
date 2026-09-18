@@ -4,6 +4,7 @@
 	"packages": {
 		"qpdf": {
 			"build-depends": [
+				"pkgconfig(gnutls)",
 				"pkgconfig(libjpeg)",
 				"pkgconfig(libssl)",
 				"pkgconfig(zlib)"
@@ -34,11 +35,13 @@
 		},
 		"qpdf-devel": {
 			"build-depends": [
+				"pkgconfig(gnutls)",
 				"pkgconfig(libjpeg)",
 				"pkgconfig(libssl)",
 				"pkgconfig(zlib)"
 			],
 			"depends": [
+				"pkgconfig(gnutls)",
 				"pkgconfig(libjpeg)",
 				"pkgconfig(openssl)",
 				"pkgconfig(zlib)",
@@ -133,6 +136,7 @@
 		},
 		"qpdf-docs": {
 			"build-depends": [
+				"pkgconfig(gnutls)",
 				"pkgconfig(libjpeg)",
 				"pkgconfig(libssl)",
 				"pkgconfig(zlib)"
@@ -169,6 +173,7 @@
 		},
 		"qpdf-libs": {
 			"build-depends": [
+				"pkgconfig(gnutls)",
 				"pkgconfig(libjpeg)",
 				"pkgconfig(libssl)",
 				"pkgconfig(zlib)"
@@ -177,13 +182,14 @@
 				"soname(libc.so.6(x86_64))",
 				"soname(libcrypto.so.3(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
+				"soname(libgnutls.so.30(x86_64))",
 				"soname(libjpeg.so.8(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libz.so.1(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libqpdf.so.30",
-				"/usr/lib/libqpdf.so.30.4.0"
+				"/usr/lib/libqpdf.so.30.4.1"
 			],
 			"name": "qpdf-libs",
 			"provides": [
@@ -192,6 +198,6 @@
 		}
 	},
 	"source-name": "qpdf",
-	"source-release": "8",
-	"source-version": "12.4.0"
+	"source-release": "9",
+	"source-version": "12.4.1"
 }

@@ -2,16 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : qpdf
-version     : "12.4.0"
-release     : 8
+version     : "12.4.1"
+release     : 9
 homepage    : https://qpdf.sf.net
 upstreams   :
-    - https://github.com/qpdf/qpdf/releases/download/v12.4.0/qpdf-12.4.0.tar.gz : 2783a032f443cc886dad41aa6d5fae3dabf23dec00ee7ec2cfb27ef67ebcf529
+    - https://github.com/qpdf/qpdf/releases/download/v12.4.1/qpdf-12.4.1.tar.gz : f045aa277be2356ff53a89a8622945958291177d2483afc20ede7c8a8cd3873c
 summary     : Command-line tools and library for transforming PDF files
 description : |
     Command-line tools and library for transforming PDF files
 license     : Apache-2.0
 builddeps   :
+    - pkgconfig(gnutls)
     - pkgconfig(libjpeg)
     - pkgconfig(libssl)
     - pkgconfig(zlib)
