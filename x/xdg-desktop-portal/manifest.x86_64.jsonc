@@ -7,6 +7,7 @@
 				"binary(bwrap)",
 				"binary(msgfmt)",
 				"binary(rst2man)",
+				"binary(sphinx-build)",
 				"binary(xmlto)",
 				"binary(xsltproc)",
 				"pkgconfig(flatpak)",
@@ -20,7 +21,8 @@
 				"pkgconfig(libgeoclue-2.0)",
 				"pkgconfig(libpipewire-0.3)",
 				"pkgconfig(libportal)",
-				"pkgconfig(libsystemd)"
+				"pkgconfig(libsystemd)",
+				"pkgconfig(umockdev-1.0)"
 			],
 			"depends": [
 				"binary(bwrap)",
@@ -161,6 +163,7 @@
 				"binary(bwrap)",
 				"binary(msgfmt)",
 				"binary(rst2man)",
+				"binary(sphinx-build)",
 				"binary(xmlto)",
 				"binary(xsltproc)",
 				"pkgconfig(flatpak)",
@@ -174,7 +177,8 @@
 				"pkgconfig(libgeoclue-2.0)",
 				"pkgconfig(libpipewire-0.3)",
 				"pkgconfig(libportal)",
-				"pkgconfig(libsystemd)"
+				"pkgconfig(libsystemd)",
+				"pkgconfig(umockdev-1.0)"
 			],
 			"depends": [
 				"xdg-desktop-portal"
@@ -189,6 +193,6 @@
 		}
 	},
 	"source-name": "xdg-desktop-portal",
-	"source-release": "14",
+	"source-release": "15",
 	"source-version": "1.22.1"
 }
