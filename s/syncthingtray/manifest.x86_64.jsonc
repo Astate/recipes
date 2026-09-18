@@ -42,12 +42,12 @@
 			"files": [
 				"/usr/bin/syncthingctl",
 				"/usr/bin/syncthingtray",
-				"/usr/lib/libsyncthingconnector.so.2.1.4",
-				"/usr/lib/libsyncthingconnector.so.39",
-				"/usr/lib/libsyncthingmodel.so.2.1.4",
-				"/usr/lib/libsyncthingmodel.so.39",
-				"/usr/lib/libsyncthingwidgets.so.2.1.4",
-				"/usr/lib/libsyncthingwidgets.so.39",
+				"/usr/lib/libsyncthingconnector.so.2.1.5",
+				"/usr/lib/libsyncthingconnector.so.40",
+				"/usr/lib/libsyncthingmodel.so.2.1.5",
+				"/usr/lib/libsyncthingmodel.so.40",
+				"/usr/lib/libsyncthingwidgets.so.2.1.5",
+				"/usr/lib/libsyncthingwidgets.so.40",
 				"/usr/share/applications/syncthingtray.desktop",
 				"/usr/share/bash-completion/completions/syncthingctl",
 				"/usr/share/bash-completion/completions/syncthingtray",
@@ -58,9 +58,9 @@
 			"provides": [
 				"binary(syncthingctl)",
 				"binary(syncthingtray)",
-				"soname(libsyncthingconnector.so.39(x86_64))",
-				"soname(libsyncthingmodel.so.39(x86_64))",
-				"soname(libsyncthingwidgets.so.39(x86_64))"
+				"soname(libsyncthingconnector.so.40(x86_64))",
+				"soname(libsyncthingmodel.so.40(x86_64))",
+				"soname(libsyncthingwidgets.so.40(x86_64))"
 			]
 		},
 		"syncthingtray-devel": {
@@ -94,6 +94,7 @@
 			"files": [
 				"/usr/include/syncthingconnector/global.h",
 				"/usr/include/syncthingconnector/qstringhash.h",
+				"/usr/include/syncthingconnector/runtimecondition.h",
 				"/usr/include/syncthingconnector/syncthingcompletion.h",
 				"/usr/include/syncthingconnector/syncthingconfig.h",
 				"/usr/include/syncthingconnector/syncthingconnection.h",
@@ -224,9 +225,9 @@
 				"soname(libqtquickforkawesome-qt6.so.1(x86_64))",
 				"soname(libqtutilities-qt6.so.6(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
-				"soname(libsyncthingconnector.so.39(x86_64))",
-				"soname(libsyncthingmodel.so.39(x86_64))",
-				"soname(libsyncthingwidgets.so.39(x86_64))"
+				"soname(libsyncthingconnector.so.40(x86_64))",
+				"soname(libsyncthingmodel.so.40(x86_64))",
+				"soname(libsyncthingwidgets.so.40(x86_64))"
 			],
 			"files": [
 				"/usr/lib/qt6/plugins/kf6/kfileitemaction/libsyncthingfileitemaction.so",
@@ -263,6 +264,6 @@
 		}
 	},
 	"source-name": "syncthingtray",
-	"source-release": "20",
-	"source-version": "2.1.4"
+	"source-release": "21",
+	"source-version": "2.1.5"
 }
