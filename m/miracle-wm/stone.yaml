@@ -1,0 +1,47 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : miracle-wm
+version     : "0.11.0"
+release     : 1
+upstreams   :
+    - https://github.com/miracle-wm-org/miracle-wm/archive/refs/tags/v0.11.0.tar.gz : 5ea17cef4da2e89d8b27d4d00dabec4a924163b52b5a2ff47a02edf80be7ff26
+homepage    : https://miracle-wm.org/
+license     :
+    - GPL-3.0-or-later
+    - MIT
+summary     : A tiling Wayland compositor based on Mir
+description : |
+    miracle-wm is a Wayland compositor based on Mir. It features a tiling window
+    manager at its core, very much in the style of i3 and sway. The intention is
+    to build a compositor that is flashier and more feature-rich than either of
+    those compositors, like swayfx.
+builddeps   :
+    - cmake(glm)
+    - cmake(nlohmann_json)
+    - pkgconfig(egl)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(gtk4)
+    - pkgconfig(gtk4-layer-shell-0)
+    - pkgconfig(json-c)
+    - pkgconfig(libevdev)
+    - pkgconfig(miral)
+    - pkgconfig(mircommon)
+    - pkgconfig(mirplatform)
+    - pkgconfig(mirserver)
+    - pkgconfig(mirserver-internal)
+    - pkgconfig(mirwayland)
+    - pkgconfig(wayland-client)
+    - pkgconfig(yaml-cpp)
+rundeps     :
+    - binary(Xwayland)
+setup       : |
+    # Requires wasmedge for plugins
+    %cmake \
+        -DENABLE_TESTS:BOOL=OFF \
+        -DFEATURE_PLUGIN_SYSTEM:BOOL=OFF \
+        -DSYSTEMD_INTEGRATION:BOOL=ON
+build       : |
+    %cmake_build
+install     : |
+    %cmake_install

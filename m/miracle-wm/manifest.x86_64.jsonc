@@ -1,0 +1,133 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"miracle-wm": {
+			"build-depends": [
+				"cmake(glm)",
+				"cmake(nlohmann_json)",
+				"pkgconfig(egl)",
+				"pkgconfig(glib-2.0)",
+				"pkgconfig(gtk4)",
+				"pkgconfig(gtk4-layer-shell-0)",
+				"pkgconfig(json-c)",
+				"pkgconfig(libevdev)",
+				"pkgconfig(miral)",
+				"pkgconfig(mircommon)",
+				"pkgconfig(mirplatform)",
+				"pkgconfig(mirserver)",
+				"pkgconfig(mirserver-internal)",
+				"pkgconfig(mirwayland)",
+				"pkgconfig(wayland-client)",
+				"pkgconfig(yaml-cpp)"
+			],
+			"depends": [
+				"binary(Xwayland)",
+				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
+				"soname(libEGL.so.1(x86_64))",
+				"soname(libGLESv2.so.2(x86_64))",
+				"soname(libc.so.6(x86_64))",
+				"soname(libcairo.so.2(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
+				"soname(libgio-2.0.so.0(x86_64))",
+				"soname(libglib-2.0.so.0(x86_64))",
+				"soname(libgobject-2.0.so.0(x86_64))",
+				"soname(libgtk-4.so.1(x86_64))",
+				"soname(libgtk4-layer-shell.so.0(x86_64))",
+				"soname(libjson-c.so.5(x86_64))",
+				"soname(libm.so.6(x86_64))",
+				"soname(libmiral.so.8(x86_64))",
+				"soname(libmircommon.so.13(x86_64))",
+				"soname(libmircore.so.3(x86_64))",
+				"soname(libmirplatform.so.35(x86_64))",
+				"soname(libmirserver.so.68(x86_64))",
+				"soname(libmirwayland.so.7(x86_64))",
+				"soname(libpcre2-8.so.0(x86_64))",
+				"soname(libstdc++.so.6(x86_64))",
+				"soname(libwayland-client.so.0(x86_64))",
+				"soname(libwayland-server.so.0(x86_64))",
+				"soname(libxkbcommon.so.0(x86_64))",
+				"soname(libyaml-cpp.so.0.9(x86_64))"
+			],
+			"files": [
+				"/usr/bin/miracle-wm",
+				"/usr/bin/miracle-wm-basic-error-reporter",
+				"/usr/bin/miracle-wm-debug-overlay",
+				"/usr/bin/miracle-wm-sensible-terminal",
+				"/usr/bin/miracle-wm-session",
+				"/usr/bin/miraclemsg",
+				"/usr/lib/libmiracle-wm-c.so.0",
+				"/usr/lib/libmiracle-wm-c.so.0.11.0",
+				"/usr/lib/miracle-wm/miracle-wm-session-setup",
+				"/usr/lib/miracle-wm/miracle-wm-wait-sni-ready",
+				"/usr/lib/systemd/user/miracle-wm-session-shutdown.target",
+				"/usr/lib/systemd/user/miracle-wm-session.target",
+				"/usr/lib/systemd/user/miracle-wm-xdg-autostart.target",
+				"/usr/share/miracle-wm/shaders/output_filter/gray_scale.frag",
+				"/usr/share/miracle-wm/shaders/output_filter/night_light.frag",
+				"/usr/share/wayland-sessions/miracle-wm.desktop"
+			],
+			"name": "miracle-wm",
+			"provides": [
+				"binary(miracle-wm)",
+				"binary(miracle-wm-basic-error-reporter)",
+				"binary(miracle-wm-debug-overlay)",
+				"binary(miracle-wm-sensible-terminal)",
+				"binary(miracle-wm-session)",
+				"binary(miraclemsg)",
+				"soname(libmiracle-wm-c.so.0(x86_64))"
+			]
+		},
+		"miracle-wm-devel": {
+			"build-depends": [
+				"cmake(glm)",
+				"cmake(nlohmann_json)",
+				"pkgconfig(egl)",
+				"pkgconfig(glib-2.0)",
+				"pkgconfig(gtk4)",
+				"pkgconfig(gtk4-layer-shell-0)",
+				"pkgconfig(json-c)",
+				"pkgconfig(libevdev)",
+				"pkgconfig(miral)",
+				"pkgconfig(mircommon)",
+				"pkgconfig(mirplatform)",
+				"pkgconfig(mirserver)",
+				"pkgconfig(mirserver-internal)",
+				"pkgconfig(mirwayland)",
+				"pkgconfig(wayland-client)",
+				"pkgconfig(yaml-cpp)"
+			],
+			"depends": [
+				"miracle-wm",
+				"pkgconfig(glib-2.0)",
+				"pkgconfig(mircore)",
+				"pkgconfig(xkbcommon)",
+				"pkgconfig(yaml-cpp)"
+			],
+			"files": [
+				"/usr/include/miracle/config.h",
+				"/usr/include/miracle/cpp/animation_definition.h",
+				"/usr/include/miracle/cpp/config-cpp.h",
+				"/usr/include/miracle/cpp/cursor_focus_mode.h",
+				"/usr/include/miracle/cpp/default_key_command.h",
+				"/usr/include/miracle/cpp/export.h",
+				"/usr/include/miracle/cpp/file_helpers.h",
+				"/usr/include/miracle/cpp/gaps.h",
+				"/usr/include/miracle/cpp/keyboard.h",
+				"/usr/include/miracle/cpp/modifiers.h",
+				"/usr/include/miracle/cpp/mouse_button.h",
+				"/usr/include/miracle/cpp/touchpad.h",
+				"/usr/include/miracle/cpp/with_default_flag.h",
+				"/usr/lib/libmiracle-wm-c.so",
+				"/usr/lib/pkgconfig/miracle-wm-c.pc"
+			],
+			"name": "miracle-wm-devel",
+			"provides": [
+				"pkgconfig(miracle-wm-c)"
+			]
+		}
+	},
+	"source-name": "miracle-wm",
+	"source-release": "1",
+	"source-version": "0.11.0"
+}
