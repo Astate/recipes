@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : kf6-kirigami-addons
-version     : "1.14.0"
-release     : 17
+version     : "1.14.1"
+release     : 18
 upstreams   :
-    - https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.14.0.tar.xz : 4ae9ef9cf1fc55fef59328d25a70b28572b6f6a787394c3d292f5ed378f19840
+    - https://download.kde.org/stable/kirigami-addons/kirigami-addons-1.14.1.tar.xz : a1d9ee0b2348b4f3396498e54e52b74393fa5b2c598a12a8e0343b0cdf5d04a3
 homepage    : https://invent.kde.org/libraries/kirigami-addons
 license     : GPL-2.0-or-later
 summary     : Convergent visual components ("widgets") for Kirigami-based applications
