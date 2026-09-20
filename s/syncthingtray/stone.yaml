@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : syncthingtray
-version     : "2.1.5"
-release     : 21
+version     : "2.1.6"
+release     : 22
 homepage    : https://martchus.github.io/syncthingtray/
 upstreams   :
-    - https://github.com/Martchus/syncthingtray/archive/refs/tags/v2.1.5.tar.gz : fc6439ecb4cb31ce253dd16586b522f3342eb66ece211b303a8a86ff10e1cee3
+    - https://github.com/Martchus/syncthingtray/archive/refs/tags/v2.1.6.tar.gz : aab82815261a5ef9688b944d6d1d4f8b41e178d39a5b69da56d719e3ec5b70cc
 summary     : Tray application for Syncthing
 description : |
     Syncthing Tray provides a tray icon and further platform integration for Syncthing.
