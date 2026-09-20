@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : xxhash
-version     : "0.8.3"
-release     : 9
+version     : "0.8.4"
+release     : 10
 homepage    : https://github.com/Cyan4973/xxHash
 upstreams   :
-    - https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.3.tar.gz : aae608dfe8213dfd05d909a57718ef82f30722c392344583d3f39050c7f29a80
+    - https://github.com/Cyan4973/xxHash/archive/refs/tags/v0.8.4.tar.gz : 5738270935e7c3d38a79b3adf7c9692566ce7895a25f67de43ad52ab504acd32
 summary     : Extremely fast non-cryptographic hash function
 description : |
     xxHash is an Extremely fast Hash algorithm, processing at RAM speed limits. Code is highly portable, and produces hashes identical across all platforms (little / big endian).
@@ -15,7 +15,7 @@ license     :
     - GPL-2.0-or-later
 tuning      :
     - icf: all
-    - lto
+    - lto: full
     - nosemantic
     - symbolic
 build       : |

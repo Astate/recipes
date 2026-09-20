@@ -14,7 +14,7 @@
 				"/usr/bin/xxh64sum",
 				"/usr/bin/xxhsum",
 				"/usr/lib/libxxhash.so.0",
-				"/usr/lib/libxxhash.so.0.8.3",
+				"/usr/lib/libxxhash.so.0.8.4",
 				"/usr/share/man/man1/xxh128sum.1",
 				"/usr/share/man/man1/xxh32sum.1",
 				"/usr/share/man/man1/xxh3sum.1",
@@ -48,6 +48,6 @@
 		}
 	},
 	"source-name": "xxhash",
-	"source-release": "9",
-	"source-version": "0.8.3"
+	"source-release": "10",
+	"source-version": "0.8.4"
 }
