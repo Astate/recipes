@@ -25,6 +25,7 @@
 				"/usr/share/unicode/ucd/IndicPositionalCategory.txt",
 				"/usr/share/unicode/ucd/IndicSyllabicCategory.txt",
 				"/usr/share/unicode/ucd/Jamo.txt",
+				"/usr/share/unicode/ucd/JurchenSources.txt",
 				"/usr/share/unicode/ucd/LineBreak.txt",
 				"/usr/share/unicode/ucd/NameAliases.txt",
 				"/usr/share/unicode/ucd/NamedSequences.txt",
@@ -40,13 +41,12 @@
 				"/usr/share/unicode/ucd/ReadMe.txt",
 				"/usr/share/unicode/ucd/ScriptExtensions.txt",
 				"/usr/share/unicode/ucd/Scripts.txt",
+				"/usr/share/unicode/ucd/SealSources.txt",
 				"/usr/share/unicode/ucd/SpecialCasing.txt",
 				"/usr/share/unicode/ucd/StandardizedVariants.txt",
 				"/usr/share/unicode/ucd/TangutSources.txt",
 				"/usr/share/unicode/ucd/UCD.zip",
 				"/usr/share/unicode/ucd/USourceData.txt",
-				"/usr/share/unicode/ucd/USourceGlyphs.pdf",
-				"/usr/share/unicode/ucd/USourceRSChart.pdf",
 				"/usr/share/unicode/ucd/UnicodeData.txt",
 				"/usr/share/unicode/ucd/Unikemet.txt",
 				"/usr/share/unicode/ucd/VerticalOrientation.txt",
@@ -98,6 +98,6 @@
 		}
 	},
 	"source-name": "unicode-ucd",
-	"source-release": "4",
-	"source-version": "17.0.0"
+	"source-release": "5",
+	"source-version": "18.0.0"
 }
