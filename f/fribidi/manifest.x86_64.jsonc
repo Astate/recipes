@@ -48,6 +48,7 @@
 				"/usr/include/fribidi/fribidi.h",
 				"/usr/lib/libfribidi.so",
 				"/usr/lib/pkgconfig/fribidi.pc",
+				"/usr/share/man/man1/fribidi.1",
 				"/usr/share/man/man3/fribidi_charset_to_unicode.3",
 				"/usr/share/man/man3/fribidi_debug_status.3",
 				"/usr/share/man/man3/fribidi_get_bidi_type.3",
@@ -88,6 +89,6 @@
 		}
 	},
 	"source-name": "fribidi",
-	"source-release": "6",
-	"source-version": "1.0.16"
+	"source-release": "7",
+	"source-version": "1.0.17"
 }
