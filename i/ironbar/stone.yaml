@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : ironbar
-version     : "0.19.0"
-release     : 3
+version     : "0.19.1"
+release     : 4
 homepage    : https://github.com/JakeStanger/ironbar
 upstreams   :
-    - https://github.com/JakeStanger/ironbar/archive/refs/tags/v0.19.0.tar.gz : 0d25c2f0c72f839b4018ae12b876a71d04b946ce6fe629a0bb12b8b279ca3699
+    - https://github.com/JakeStanger/ironbar/archive/refs/tags/v0.19.1.tar.gz : ce0e7a505a5ba41a50d4402904939bddb1e4eb8f215514c112a0165a5280a211
 summary     :  Customisable Wayland GTK4 bar written in Rust.
 description : |
     A customisable and feature-rich GTK4 bar for Wayland compositors, written in Rust.
