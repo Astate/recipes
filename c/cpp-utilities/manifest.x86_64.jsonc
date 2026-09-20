@@ -15,7 +15,7 @@
 			],
 			"files": [
 				"/usr/lib/libc++utilities.so.5",
-				"/usr/lib/libc++utilities.so.5.35.0"
+				"/usr/lib/libc++utilities.so.5.36.0"
 			],
 			"name": "cpp-utilities",
 			"provides": [
@@ -114,6 +114,6 @@
 		}
 	},
 	"source-name": "cpp-utilities",
-	"source-release": "13",
-	"source-version": "5.35.0"
+	"source-release": "14",
+	"source-version": "5.36.0"
 }

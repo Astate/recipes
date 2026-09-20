@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : cpp-utilities
-version     : "5.35.0"
-release     : 13
+version     : "5.36.0"
+release     : 14
 upstreams   :
-    - https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.35.0.tar.gz : f9e2171ba59a6588afac03b7a8f019ea3170522e96786b2ade5f8f2c9a9157bb
+    - https://github.com/Martchus/cpp-utilities/archive/refs/tags/v5.36.0.tar.gz : 364d43b7cf0ac9225300231d1c3da1f87b9c4a8cb03c24594df505ecb55594d2
 homepage    : https://github.com/Martchus/cpp-utilities
 license     : GPL-2.0-or-later
 summary     : Common C++ classes and routines such as argument parser, IO and conversion utilities
