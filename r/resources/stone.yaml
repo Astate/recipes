@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : resources
-version     : "1.10.2"
-release     : 10
+version     : "51.0"
+release     : 11
 homepage    : https://github.com/nokyan/resources
 upstreams   :
-    - https://github.com/nokyan/resources/archive/refs/tags/v1.10.2.tar.gz : 120aa520cf6b9cf957958c12a84b562db742114d41aeea59ad6b6caa63f34654
+    - https://download.gnome.org/sources/resources/51/resources-51.0.tar.xz : ce1a01c1b772ceeb86e7a59cdb414f82f2196d50da63bae2072c7af8e3b4c735
 summary     : Resources is a system information tool
 description : |
     Resources is a system information tool written in Rust that displays information about your operating system, software and hardware.
@@ -22,11 +22,12 @@ builddeps   :
     - pkgconfig(glib-2.0)
     - pkgconfig(gtk4)
     - pkgconfig(libadwaita-1)
+    - pkgconfig(libsoup-3.0)
 networking  : true
 setup       : |
     %meson \
         --libexecdir=lib \
-        -Dprofile=default
+        -Dprofile=release
 build       : |
     %meson_build
 install     : |
