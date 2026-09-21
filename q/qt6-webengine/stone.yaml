@@ -3,7 +3,7 @@
 
 name        : qt6-webengine
 version     : "6.11.2"
-release     : 35
+release     : 36
 homepage    : https://www.qt.io
 upstreams   :
     - https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtwebengine-everywhere-src-6.11.2.tar.xz: 6101c1aa00ff933d1b65ee5d167f76e8d71b9ac5b378b0111277723ebda7c163
@@ -13,7 +13,7 @@ upstreams   :
 # Don't edit anything between the BEGIN_UPSTREAMS and END_UPSTREAMS tags
 ##@@BEGIN_UPSTREAMS
     - git|https://invent.kde.org/qt/qt/qtwebengine-chromium.git:
-        ref: 40f3c679ac1c1e4fbb757f8ee9b22565f144327e
+        ref: d69c434a9f56bed724258838563be52170cfcf00
 ##@@END_UPSTREAMS
 summary     : Qt6 Webengine Module
 description : |
@@ -93,6 +93,8 @@ setup       : |
     %patch %(pkgdir)/qtwebengine-link-pipewire.patch -d src/3rdparty
 
     # backports
+    %patch %(pkgdir)/upstream-01.patch
+    %patch %(pkgdir)/upstream-02.patch
 
     # TODO: fix webengine_rust_build=ON which might be due to missing PTY support in boulder
     %cmake_qt6 \
