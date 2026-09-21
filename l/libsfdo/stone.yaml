@@ -1,0 +1,19 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : libsfdo
+version     : "0.1.4"
+release     : 1
+upstreams   :
+    - https://gitlab.freedesktop.org/vyivel/libsfdo/-/archive/v0.1.4/libsfdo-v0.1.4.tar.gz : 9d74a9bff1f872e38ab662d8e2b5f6ecd404d7f82f84e9c324013f856688fa2d
+homepage    : https://gitlab.freedesktop.org/vyivel/libsfdo
+license     : BSD-2-Clause
+summary     : freedesktop.org implementation libraries
+description : |
+    A collection of libraries which implement freedesktop.org specifications
+setup       : |
+    %meson
+build       : |
+    %meson_build
+install     : |
+    %meson_install

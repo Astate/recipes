@@ -1,0 +1,55 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"libsfdo": {
+			"depends": [
+				"soname(libc.so.6(x86_64))"
+			],
+			"files": [
+				"/usr/lib/libsfdo-basedir.so.0",
+				"/usr/lib/libsfdo-desktop-file.so.0",
+				"/usr/lib/libsfdo-desktop.so.0",
+				"/usr/lib/libsfdo-icon.so.0"
+			],
+			"name": "libsfdo",
+			"provides": [
+				"soname(libsfdo-basedir.so.0(x86_64))",
+				"soname(libsfdo-desktop-file.so.0(x86_64))",
+				"soname(libsfdo-desktop.so.0(x86_64))",
+				"soname(libsfdo-icon.so.0(x86_64))"
+			]
+		},
+		"libsfdo-devel": {
+			"depends": [
+				"libsfdo"
+			],
+			"files": [
+				"/usr/include/sfdo-basedir.h",
+				"/usr/include/sfdo-common.h",
+				"/usr/include/sfdo-desktop-file.h",
+				"/usr/include/sfdo-desktop.h",
+				"/usr/include/sfdo-icon.h",
+				"/usr/include/sfdo-version.h",
+				"/usr/lib/libsfdo-basedir.so",
+				"/usr/lib/libsfdo-desktop-file.so",
+				"/usr/lib/libsfdo-desktop.so",
+				"/usr/lib/libsfdo-icon.so",
+				"/usr/lib/pkgconfig/libsfdo-basedir.pc",
+				"/usr/lib/pkgconfig/libsfdo-desktop-file.pc",
+				"/usr/lib/pkgconfig/libsfdo-desktop.pc",
+				"/usr/lib/pkgconfig/libsfdo-icon.pc"
+			],
+			"name": "libsfdo-devel",
+			"provides": [
+				"pkgconfig(libsfdo-basedir)",
+				"pkgconfig(libsfdo-desktop)",
+				"pkgconfig(libsfdo-desktop-file)",
+				"pkgconfig(libsfdo-icon)"
+			]
+		}
+	},
+	"source-name": "libsfdo",
+	"source-release": "1",
+	"source-version": "0.1.4"
+}
