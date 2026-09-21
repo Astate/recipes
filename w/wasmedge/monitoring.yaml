@@ -1,0 +1,10 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+releases:
+  id: 392401
+  rss: https://github.com/WasmEdge/WasmEdge/releases.atom
+security:
+  cpe:
+  - vendor: linuxfoundation
+    product: wasmedge

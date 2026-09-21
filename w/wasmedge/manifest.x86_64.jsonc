@@ -1,0 +1,78 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"wasmedge": {
+			"build-depends": [
+				"binary(llvm-config-23)",
+				"cmake(LLVM)",
+				"lld-devel",
+				"pkgconfig(fmt)",
+				"pkgconfig(spdlog)"
+			],
+			"depends": [
+				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
+				"soname(libLLVM.so.23.1(x86_64))",
+				"soname(libc.so.6(x86_64))",
+				"soname(libfmt.so.12(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
+				"soname(liblldCommon.so.23.1(x86_64))",
+				"soname(liblldELF.so.23.1(x86_64))",
+				"soname(libm.so.6(x86_64))",
+				"soname(libspdlog.so.1.17(x86_64))",
+				"soname(libstdc++.so.6(x86_64))"
+			],
+			"files": [
+				"/usr/bin/wasmedge",
+				"/usr/bin/wasmedgec",
+				"/usr/lib/libwasmedge.so.0",
+				"/usr/lib/libwasmedge.so.0.1.1"
+			],
+			"name": "wasmedge",
+			"provides": [
+				"binary(wasmedge)",
+				"binary(wasmedgec)",
+				"soname(libwasmedge.so.0(x86_64))"
+			]
+		},
+		"wasmedge-devel": {
+			"build-depends": [
+				"binary(llvm-config-23)",
+				"cmake(LLVM)",
+				"lld-devel",
+				"pkgconfig(fmt)",
+				"pkgconfig(spdlog)"
+			],
+			"depends": [
+				"wasmedge"
+			],
+			"files": [
+				"/usr/include/wasmedge/enum.inc",
+				"/usr/include/wasmedge/enum_configure.h",
+				"/usr/include/wasmedge/enum_errcode.h",
+				"/usr/include/wasmedge/enum_types.h",
+				"/usr/include/wasmedge/int128.h",
+				"/usr/include/wasmedge/version.h",
+				"/usr/include/wasmedge/wasmedge.h",
+				"/usr/include/wasmedge/wasmedge_ast.h",
+				"/usr/include/wasmedge/wasmedge_basic.h",
+				"/usr/include/wasmedge/wasmedge_compiler.h",
+				"/usr/include/wasmedge/wasmedge_configure.h",
+				"/usr/include/wasmedge/wasmedge_context.h",
+				"/usr/include/wasmedge/wasmedge_deprecated.h",
+				"/usr/include/wasmedge/wasmedge_execution.h",
+				"/usr/include/wasmedge/wasmedge_experimental.h",
+				"/usr/include/wasmedge/wasmedge_instance.h",
+				"/usr/include/wasmedge/wasmedge_plugin.h",
+				"/usr/include/wasmedge/wasmedge_tools.h",
+				"/usr/include/wasmedge/wasmedge_value.h",
+				"/usr/include/wasmedge/wasmedge_vm.h",
+				"/usr/lib/libwasmedge.so"
+			],
+			"name": "wasmedge-devel"
+		}
+	},
+	"source-name": "wasmedge",
+	"source-release": "1",
+	"source-version": "0.17.1"
+}

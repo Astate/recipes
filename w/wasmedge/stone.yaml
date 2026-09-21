@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : wasmedge
+version     : "0.17.1"
+release     : 1
+upstreams   :
+    - https://github.com/WasmEdge/WasmEdge/releases/download/0.17.1/WasmEdge-0.17.1-src.tar.gz : c8881a8c43407fc424ccd8586594a79068305b31c76aad0025efea9339be18e0
+homepage    : https://wasmedge.org/
+license     : Apache-2.0 AND CC0-1.0
+summary     : High performance WebAssembly Virtual Machine
+description : |
+    High performance WebAssembly Virtual Machine
+builddeps   :
+    - binary(llvm-config-23)
+    - cmake(LLVM)
+    - pkgconfig(fmt)
+    - pkgconfig(spdlog)
+    - lld-devel
+setup       : |
+    %patch %(pkgdir)/ftbfs-clang-fmt.patch
+
+    %cmake
+build       : |
+    %cmake_build
+install     : |
+    %cmake_install
