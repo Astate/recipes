@@ -19,7 +19,8 @@
 				"pkgconfig(mirserver-internal)",
 				"pkgconfig(mirwayland)",
 				"pkgconfig(wayland-client)",
-				"pkgconfig(yaml-cpp)"
+				"pkgconfig(yaml-cpp)",
+				"wasmedge-devel"
 			],
 			"depends": [
 				"binary(Xwayland)",
@@ -44,6 +45,7 @@
 				"soname(libmirwayland.so.7(x86_64))",
 				"soname(libpcre2-8.so.0(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
+				"soname(libwasmedge.so.0(x86_64))",
 				"soname(libwayland-client.so.0(x86_64))",
 				"soname(libwayland-server.so.0(x86_64))",
 				"soname(libxkbcommon.so.0(x86_64))",
@@ -58,6 +60,7 @@
 				"/usr/bin/miraclemsg",
 				"/usr/lib/libmiracle-wm-c.so.0",
 				"/usr/lib/libmiracle-wm-c.so.0.11.0",
+				"/usr/lib/libmiracle-wm-plugins.so",
 				"/usr/lib/miracle-wm/miracle-wm-session-setup",
 				"/usr/lib/miracle-wm/miracle-wm-wait-sni-ready",
 				"/usr/lib/systemd/user/miracle-wm-session-shutdown.target",
@@ -75,7 +78,8 @@
 				"binary(miracle-wm-sensible-terminal)",
 				"binary(miracle-wm-session)",
 				"binary(miraclemsg)",
-				"soname(libmiracle-wm-c.so.0(x86_64))"
+				"soname(libmiracle-wm-c.so.0(x86_64))",
+				"soname(libmiracle-wm-plugins.so(x86_64))"
 			]
 		},
 		"miracle-wm-devel": {
@@ -95,7 +99,8 @@
 				"pkgconfig(mirserver-internal)",
 				"pkgconfig(mirwayland)",
 				"pkgconfig(wayland-client)",
-				"pkgconfig(yaml-cpp)"
+				"pkgconfig(yaml-cpp)",
+				"wasmedge-devel"
 			],
 			"depends": [
 				"miracle-wm",
@@ -128,6 +133,6 @@
 		}
 	},
 	"source-name": "miracle-wm",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "0.11.0"
 }
