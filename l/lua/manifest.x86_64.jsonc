@@ -4,13 +4,17 @@
 	"packages": {
 		"lua": {
 			"build-depends": [
+				"binary(grep)",
+				"binary(readelf)",
+				"pkgconfig(mimalloc)",
 				"pkgconfig(readline)"
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"lua-libs",
 				"soname(libc.so.6(x86_64))",
-				"soname(libm.so.6(x86_64))"
+				"soname(libm.so.6(x86_64))",
+				"soname(libmimalloc.so.3(x86_64))"
 			],
 			"files": [
 				"/usr/bin/lua",
@@ -28,6 +32,9 @@
 		},
 		"lua-devel": {
 			"build-depends": [
+				"binary(grep)",
+				"binary(readelf)",
+				"pkgconfig(mimalloc)",
 				"pkgconfig(readline)"
 			],
 			"depends": [
@@ -51,6 +58,9 @@
 		},
 		"lua-libs": {
 			"build-depends": [
+				"binary(grep)",
+				"binary(readelf)",
+				"pkgconfig(mimalloc)",
 				"pkgconfig(readline)"
 			],
 			"depends": [
@@ -68,6 +78,6 @@
 		}
 	},
 	"source-name": "lua",
-	"source-release": "10",
+	"source-release": "11",
 	"source-version": "5.5.1"
 }

@@ -3,7 +3,7 @@
 
 name        : lua
 version     : "5.5.1"
-release     : 10
+release     : 11
 homepage    : https://www.lua.org
 upstreams   :
     - https://www.lua.org/ftp/lua-5.5.1.tar.gz : 1c4b4068d67061f2a2231ad2b5422e77acea1487ea9890f6320af614f4373dce
@@ -14,19 +14,27 @@ description : |
     Lua combines simple procedural syntax with powerful data description constructs based on associative arrays and extensible semantics. Lua is dynamically typed, runs by interpreting bytecode with a register-based virtual machine, and has automatic memory management with incremental garbage collection, making it ideal for configuration, scripting, and rapid prototyping.
 license     : MIT
 builddeps   :
+    - pkgconfig(mimalloc)
     - pkgconfig(readline)
+checkdeps   :
+    - binary(grep)
+    - binary(readelf)
+tuning      :
+    - lto: full
+    - optimize: speed
 environment : |
     _ver="%(version)"
     _major_ver=${_ver%.*}
 setup       : |
     %patch %(pkgdir)/aeryn/soname.patch
 build       : |
-    %make linux \
+    %make linux-readline \
         CC="$CC" \
         CFLAGS="$CFLAGS -DLUA_USE_LINUX -fPIC" \
         LDFLAGS="$LDFLAGS" \
         AR="$AR rcu" \
-        RANLIB="$RANLIB"
+        RANLIB="$RANLIB" \
+        MYLIBS="-lmimalloc"
 install     : |
     _version_major_minor=$(echo %(version) | cut -d. -f1-2)
 
@@ -44,6 +52,9 @@ install     : |
     mv %(installroot)%(libdir)/liblua.so %(installroot)%(libdir)/liblua.so.%(version)
     ln -sf liblua.so.%(version) %(installroot)%(libdir)/liblua.so.$_major_ver
     ln -s liblua.so.%(version) %(installroot)%(libdir)/liblua.so
+check       : |
+    # Make sure that liblua doesn't end up getting linked against libmimalloc by mistake
+    readelf -d %(installroot)%(libdir)/liblua.so.%(version) | grep -q "libmimalloc" || exit 0
 packages    :
     - "%(name)-libs":
         summary: "Library files for %(name)"
