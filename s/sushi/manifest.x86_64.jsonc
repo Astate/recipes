@@ -4,6 +4,7 @@
 	"packages": {
 		"sushi": {
 			"build-depends": [
+				"binary(appstreamcli)",
 				"binary(blueprint-compiler)",
 				"binary(gjs)",
 				"binary(msgfmt)",
@@ -142,6 +143,6 @@
 		}
 	},
 	"source-name": "sushi",
-	"source-release": "3",
-	"source-version": "51.0"
+	"source-release": "4",
+	"source-version": "51.1"
 }

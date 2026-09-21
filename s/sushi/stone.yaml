@@ -2,16 +2,17 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : sushi
-version     : "51.0"
-release     : 3
+version     : "51.1"
+release     : 4
 homepage    : https://gitlab.gnome.org/GNOME/sushi
 upstreams   :
-    - https://gitlab.gnome.org/GNOME/sushi/-/archive/51.0/sushi-51.0.tar.gz : 521138ba0975a035ad9c2d7a7560b02cc97e6dbd13a23fc9c4fa086aec73a8ed
+    - https://gitlab.gnome.org/GNOME/sushi/-/archive/51.1/sushi-51.1.tar.gz : f369f04c98e11583cd39368b50b1441bac75b322812f42566f9ab70de0caa065
 summary     : A file previewer for the GNOME desktop environment
 description : |
     A file previewer for the GNOME desktop environment
 license     : GPL-2.0-or-later
 builddeps   :
+    - binary(appstreamcli)
     - binary(blueprint-compiler)
     - binary(gjs)
     - binary(msgfmt)
