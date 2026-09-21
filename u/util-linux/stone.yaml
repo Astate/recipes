@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : util-linux
-version     : "2.42.3"
-release     : 24
+version     : "2.42.4"
+release     : 25
 summary     : Random collection of Linux utilities
 license     :
     - BSD-3-Clause
@@ -17,7 +17,7 @@ homepage    : https://www.kernel.org/pub/linux/utils/util-linux
 description : |
     Random collection of Linux utilities
 upstreams   :
-    - https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.42/util-linux-2.42.3.tar.xz : 66ac7c0e725278eb2b039e3104f2c91119341d941b41bac7a285c695f940bd57
+    - https://mirrors.edge.kernel.org/pub/linux/utils/util-linux/v2.42/util-linux-2.42.4.tar.xz : fbd62a100ab7bb8746ba0661255c3c48185b1e9021507c624da01fbc696330ec
 builddeps   :
     - binary(asciidoctor)
     - binary(bison)
