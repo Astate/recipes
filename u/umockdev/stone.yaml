@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : umockdev
-version     : "0.19.8"
-release     : 2
+version     : "0.19.9"
+release     : 3
 upstreams   :
-    - https://github.com/martinpitt/umockdev/releases/download/0.19.8/umockdev-0.19.8.tar.xz : 9d57c917a32dc696877ab525eb510971a8109899d5b92d986e7bac32573125b0
+    - https://github.com/martinpitt/umockdev/releases/download/0.19.9/umockdev-0.19.9.tar.xz : 666e050f76eb61921e6d79e309c5833cef639de3ec1f9c35c74ebce1681f7c34
 homepage    : https://github.com/martinpitt/umockdev
 license     : LGPL-2.1-or-later
 summary     : Mock hardware devices
@@ -28,8 +28,6 @@ tuning      :
     - fortify: false
     - optimize: false
 setup       : |
-    %patch %(pkgdir)/285.patch
-
     %meson
 build       : |
     %meson_build
