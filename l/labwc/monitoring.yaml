@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+releases:
+  id: 176073
+  rss: https://github.com/labwc/labwc/releases.atom
+security:
+  # No known CPE, last checked 2025-07-11
+  cpe: ~
