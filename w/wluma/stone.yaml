@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : wluma
-version     : "5.0.0"
-release     : 5
+version     : "5.0.1"
+release     : 6
 upstreams   :
-    - https://github.com/max-baz/wluma/releases/download/5.0.0/wluma-5.0.0-vendored.tar.gz : 3cc30946fbc1a8b286de3a42ff5d75c0a759d3b6d7737b89140bd4910394ca28
+    - https://github.com/max-baz/wluma/releases/download/5.0.1/wluma-5.0.1-vendored.tar.gz : 642953fea05b0bd35945f2749351bb61d34fe1d5ffe96bb04d609bac9326c13e
 homepage    : https://github.com/maximbaz/wluma
 license     : ISC
 summary     : Automatic brightness adjustment
