@@ -1,0 +1,56 @@
+/** Human readable report. This is not consumed by boulder */
+{
+	"manifest-version": "0.2",
+	"packages": {
+		"miriway": {
+			"build-depends": [
+				"pkgconfig(miral)",
+				"pkgconfig(mirwayland)",
+				"pkgconfig(xkbcommon)"
+			],
+			"depends": [
+				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
+				"soname(libc.so.6(x86_64))",
+				"soname(libgcc_s.so.1(x86_64))",
+				"soname(libm.so.6(x86_64))",
+				"soname(libmiral.so.8(x86_64))",
+				"soname(libmircore.so.3(x86_64))",
+				"soname(libmirwayland.so.7(x86_64))",
+				"soname(libstdc++.so.6(x86_64))",
+				"soname(libwayland-server.so.0(x86_64))",
+				"soname(libxkbcommon.so.0(x86_64))"
+			],
+			"files": [
+				"/usr/bin/miriway",
+				"/usr/bin/miriway-background",
+				"/usr/bin/miriway-run",
+				"/usr/bin/miriway-run-shell",
+				"/usr/bin/miriway-session",
+				"/usr/bin/miriway-shell",
+				"/usr/bin/miriway-terminal",
+				"/usr/bin/miriway-unsnap",
+				"/usr/lib/miriway/miriway-session-shutdown",
+				"/usr/lib/miriway/miriway-session-startup",
+				"/usr/lib/systemd/user/miriway-session.target",
+				"/usr/share/backgrounds/miriway.png",
+				"/usr/share/sddm.conf.d/miriway.conf",
+				"/usr/share/wayland-sessions/miriway.desktop",
+				"/usr/share/xdg/xdg-miriway/miriway-shell.config"
+			],
+			"name": "miriway",
+			"provides": [
+				"binary(miriway)",
+				"binary(miriway-background)",
+				"binary(miriway-run)",
+				"binary(miriway-run-shell)",
+				"binary(miriway-session)",
+				"binary(miriway-shell)",
+				"binary(miriway-terminal)",
+				"binary(miriway-unsnap)"
+			]
+		}
+	},
+	"source-name": "miriway",
+	"source-release": "1",
+	"source-version": "26.08.1"
+}
