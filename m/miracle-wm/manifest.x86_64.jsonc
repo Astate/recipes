@@ -59,8 +59,8 @@
 				"/usr/bin/miracle-wm-session",
 				"/usr/bin/miraclemsg",
 				"/usr/lib/libmiracle-wm-c.so.0",
-				"/usr/lib/libmiracle-wm-c.so.0.11.0",
-				"/usr/lib/libmiracle-wm-plugins.so",
+				"/usr/lib/libmiracle-wm-c.so.0.11.1",
+				"/usr/lib/miracle-wm/libmiracle-wm-plugins.so",
 				"/usr/lib/miracle-wm/miracle-wm-session-setup",
 				"/usr/lib/miracle-wm/miracle-wm-wait-sni-ready",
 				"/usr/lib/systemd/user/miracle-wm-session-shutdown.target",
@@ -79,7 +79,7 @@
 				"binary(miracle-wm-session)",
 				"binary(miraclemsg)",
 				"soname(libmiracle-wm-c.so.0(x86_64))",
-				"soname(libmiracle-wm-plugins.so(x86_64))"
+				"soname(miracle-wm/libmiracle-wm-plugins.so(x86_64))"
 			]
 		},
 		"miracle-wm-devel": {
@@ -133,6 +133,6 @@
 		}
 	},
 	"source-name": "miracle-wm",
-	"source-release": "2",
-	"source-version": "0.11.0"
+	"source-release": "3",
+	"source-version": "0.11.1"
 }
