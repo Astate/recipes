@@ -3,7 +3,7 @@
 
 name        : openexr
 version     : "3.4.15"
-release     : 22
+release     : 23
 homepage    : https://www.openexr.com/
 upstreams   :
     - https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.15/openexr-3.4.15.tar.gz : ab893d8003773ccd9a5556b2caf38da591ae37e20b06ee9d589a08984c5191f2
