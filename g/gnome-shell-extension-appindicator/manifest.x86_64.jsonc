@@ -24,6 +24,7 @@
 				"/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces-xml/StatusNotifierWatcher.xml",
 				"/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/interfaces.js",
 				"/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/logger.js",
+				"/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/menuUtils.js",
 				"/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/metadata.json",
 				"/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/pixmapsUtils.js",
 				"/usr/share/gnome-shell/extensions/appindicatorsupport@rgcjonas.gmail.com/preferences/customIconPage.js",
@@ -63,6 +64,6 @@
 		}
 	},
 	"source-name": "gnome-shell-extension-appindicator",
-	"source-release": "9",
-	"source-version": "65"
+	"source-release": "10",
+	"source-version": "66"
 }
