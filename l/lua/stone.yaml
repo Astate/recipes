@@ -3,10 +3,11 @@
 
 name        : lua
 version     : "5.5.1"
-release     : 11
+release     : 12
 homepage    : https://www.lua.org
 upstreams   :
     - https://www.lua.org/ftp/lua-5.5.1.tar.gz : 1c4b4068d67061f2a2231ad2b5422e77acea1487ea9890f6320af614f4373dce
+    - https://www.lua.org/tests/lua-5.5.1-tests.tar.gz : da07b543872dc0bb2ff12aabd0c248578d78df3eb6b67efdc537a46d455c7f31
 summary     : Lightweight and embeddable language
 description : |
     Lua is a powerful, efficient, lightweight, embeddable scripting language. It supports procedural programming, object-oriented programming, functional programming, data-driven programming, and data description.
@@ -25,7 +26,12 @@ tuning      :
 environment : |
     _ver="%(version)"
     _major_ver=${_ver%.*}
+
+    export CFLAGS="${CFLAGS} -mllvm -vp-counters-per-site=20"
 setup       : |
+    mkdir src/tests
+    bsdtar-static -xf %(sourcedir)/lua-%(version)-tests.tar.gz -C %(workdir)/src/tests --strip-components=1
+
     %patch %(pkgdir)/aeryn/soname.patch
 build       : |
     %make linux-readline \
@@ -55,6 +61,19 @@ install     : |
 check       : |
     # Make sure that liblua doesn't end up getting linked against libmimalloc by mistake
     readelf -d %(installroot)%(libdir)/liblua.so.%(version) | grep -q "libmimalloc" || exit 0
+workload    : |
+    # avoid OOM running heavy.lua test
+    ulimit -v $((1024 * 1024 * 8))
+
+    cd src/tests/libs
+    %make
+    cd ..
+    # all.lua doesn't keep going on failure, we want to maximize profile coverage
+    for f in *.lua; do
+        echo "===== $f ====="
+        ../lua "$f" || echo "FAIL: $f"
+    done
+cspgo       : true
 packages    :
     - "%(name)-libs":
         summary: "Library files for %(name)"
