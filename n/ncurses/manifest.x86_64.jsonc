@@ -2278,6 +2278,7 @@
 				"/usr/share/terminfo/t/teleray",
 				"/usr/share/terminfo/t/teletec",
 				"/usr/share/terminfo/t/teraterm",
+				"/usr/share/terminfo/t/teraterm+keypad",
 				"/usr/share/terminfo/t/teraterm-256color",
 				"/usr/share/terminfo/t/teraterm2.3",
 				"/usr/share/terminfo/t/teraterm4.59",
@@ -3648,6 +3649,7 @@
 				"/usr/share/man/man3/menu_userptr.3x",
 				"/usr/share/man/man3/menu_win.3x",
 				"/usr/share/man/man3/meta.3x",
+				"/usr/share/man/man3/meta_sp.3x",
 				"/usr/share/man/man3/mitem_current.3x",
 				"/usr/share/man/man3/mitem_name.3x",
 				"/usr/share/man/man3/mitem_new.3x",
@@ -4180,6 +4182,6 @@
 		}
 	},
 	"source-name": "ncurses",
-	"source-release": "28",
-	"source-version": "6.6-20260829"
+	"source-release": "29",
+	"source-version": "6.6-20260919"
 }
