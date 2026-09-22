@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
-  id: 390655
+  id: 8761
   rss: https://invent.kde.org/plasma/plasma-bigscreen/-/tags?format=atom
 security:
   # No known CPE, last checked 2026-06-17
