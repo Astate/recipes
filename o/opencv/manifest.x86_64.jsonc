@@ -857,7 +857,7 @@
 				"protobuf-staticlib"
 			],
 			"depends": [
-				"soname(libOpenEXR-3_4.so.33(x86_64))",
+				"soname(libOpenEXR-3_5.so.34(x86_64))",
 				"soname(libavif.so.16(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
@@ -1445,6 +1445,6 @@
 		}
 	},
 	"source-name": "opencv",
-	"source-release": "26",
+	"source-release": "27",
 	"source-version": "4.14.0"
 }
