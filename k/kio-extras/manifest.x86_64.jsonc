@@ -57,7 +57,7 @@
 				"soname(libKF6Solid.so.6(x86_64))",
 				"soname(libKF6SyntaxHighlighting.so.6(x86_64))",
 				"soname(libKF6WidgetsAddons.so.6(x86_64))",
-				"soname(libOpenEXR-3_4.so.33(x86_64))",
+				"soname(libOpenEXR-3_5.so.34(x86_64))",
 				"soname(libPlasmaActivities.so.7(x86_64))",
 				"soname(libPlasmaActivitiesStats.so.1(x86_64))",
 				"soname(libQt6Core.so.6(x86_64))",
@@ -1905,6 +1905,6 @@
 		}
 	},
 	"source-name": "kio-extras",
-	"source-release": "20",
+	"source-release": "21",
 	"source-version": "26.08.1"
 }

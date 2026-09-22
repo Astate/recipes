@@ -3,7 +3,7 @@
 
 name        : kio-extras
 version     : "26.08.1"
-release     : 20
+release     : 21
 upstreams   :
     - https://download.kde.org/stable/release-service/26.08.1/src/kio-extras-26.08.1.tar.xz : 8050c3dd33fed06a60dda8205f4e0134d3aac95f0647b1d9c05419845341397c
 homepage    : https://kde.org/
