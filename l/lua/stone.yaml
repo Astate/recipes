@@ -60,7 +60,7 @@ install     : |
     ln -s liblua.so.%(version) %(installroot)%(libdir)/liblua.so
 check       : |
     # Make sure that liblua doesn't end up getting linked against libmimalloc by mistake
-    readelf -d %(installroot)%(libdir)/liblua.so.%(version) | grep -q "libmimalloc" || exit 0
+    ! (readelf -d %(installroot)%(libdir)/liblua.so.%(version) | grep -q "libmimalloc") || exit 1
 workload    : |
     # avoid OOM running heavy.lua test
     ulimit -v $((1024 * 1024 * 8))
