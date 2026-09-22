@@ -2311,9 +2311,9 @@
 				"gstreamer",
 				"gstreamer-plugins-bad-libs",
 				"gstreamer-plugins-base",
-				"soname(libIex-3_4.so.33(x86_64))",
+				"soname(libIex-3_5.so.34(x86_64))",
 				"soname(libImath-3_2.so.30(x86_64))",
-				"soname(libOpenEXR-3_4.so.33(x86_64))",
+				"soname(libOpenEXR-3_5.so.34(x86_64))",
 				"soname(libZXing.so.4(x86_64))",
 				"soname(libaom.so.3(x86_64))",
 				"soname(libass.so.9(x86_64))",
@@ -4119,6 +4119,6 @@
 		}
 	},
 	"source-name": "gstreamer",
-	"source-release": "60",
+	"source-release": "61",
 	"source-version": "1.28.7"
 }

@@ -3,7 +3,7 @@
 
 name        : gstreamer
 version     : "1.28.7"
-release     : 60
+release     : 61
 homepage    : https://gstreamer.freedesktop.org/
 upstreams   :
     - https://gitlab.freedesktop.org/gstreamer/gstreamer/-/archive/1.28.7/gstreamer-1.28.7.tar.gz : 58dd845a6473355edd71f67227219ec04e039cee5c000265d3fbbd2e7920a3a8
