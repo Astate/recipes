@@ -149,8 +149,8 @@
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(libIex-3_4.so.33(x86_64))",
-				"soname(libOpenEXR-3_4.so.33(x86_64))",
+				"soname(libIex-3_5.so.34(x86_64))",
+				"soname(libOpenEXR-3_5.so.34(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgif.so.7(x86_64))",
@@ -181,6 +181,6 @@
 		}
 	},
 	"source-name": "jpegxl",
-	"source-release": "11",
+	"source-release": "12",
 	"source-version": "0.12.0"
 }
