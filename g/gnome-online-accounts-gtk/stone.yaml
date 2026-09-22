@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : gnome-online-accounts-gtk
-version     : "3.50.10"
-release     : 1
+version     : "3.50.11"
+release     : 2
 upstreams   :
-    - https://github.com/xapp-project/gnome-online-accounts-gtk/archive/refs/tags/3.50.10.tar.gz : 1335240713781c7f88d3d0a179cd275d309fd010cbd9d9048518560a75d774ac
+    - https://github.com/xapp-project/gnome-online-accounts-gtk/archive/refs/tags/3.50.11.tar.gz : c4c14a9d7b06d3323a32f7835dde7a75070b7d5e62609223ee46b26545cf03ac
 homepage    : https://github.com/xapp-project/gnome-online-accounts-gtk
 license     : GPL-3.0-or-later
 summary     : A GTK Frontend for GNOME Online Accounts
