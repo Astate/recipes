@@ -692,13 +692,13 @@
 			],
 			"depends": [
 				"soname(libICE.so.6(x86_64))",
-				"soname(libIex-3_4.so.33(x86_64))",
-				"soname(libIlmThread-3_4.so.33(x86_64))",
+				"soname(libIex-3_5.so.34(x86_64))",
+				"soname(libIlmThread-3_5.so.34(x86_64))",
 				"soname(libImath-3_2.so.30(x86_64))",
 				"soname(libOpenCL.so.1(x86_64))",
-				"soname(libOpenEXR-3_4.so.33(x86_64))",
-				"soname(libOpenEXRCore-3_4.so.33(x86_64))",
-				"soname(libOpenEXRUtil-3_4.so.33(x86_64))",
+				"soname(libOpenEXR-3_5.so.34(x86_64))",
+				"soname(libOpenEXRCore-3_5.so.34(x86_64))",
+				"soname(libOpenEXRUtil-3_5.so.34(x86_64))",
 				"soname(libSM.so.6(x86_64))",
 				"soname(libX11.so.6(x86_64))",
 				"soname(libXext.so.6(x86_64))",
@@ -1257,6 +1257,6 @@
 		}
 	},
 	"source-name": "imagemagick",
-	"source-release": "24",
+	"source-release": "25",
 	"source-version": "7.1.2-31"
 }

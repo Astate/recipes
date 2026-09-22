@@ -3,7 +3,7 @@
 
 name        : imagemagick
 version     : "7.1.2-31"
-release     : 24
+release     : 25
 homepage    : https://imagemagick.org/
 upstreams   :
     - https://github.com/ImageMagick/ImageMagick/archive/refs/tags/7.1.2-31.tar.gz : 34d9cc3acddc3e3c429d23af60eda5ceaac477a8b296ddb9469f773f44a80a5f
