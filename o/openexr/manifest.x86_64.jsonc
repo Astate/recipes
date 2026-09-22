@@ -7,15 +7,16 @@
 				"binary(python3)",
 				"cmake(Imath)",
 				"cmake(libdeflate)",
-				"cmake(openjph)"
+				"cmake(openjph)",
+				"pkgconfig(libzstd)"
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
-				"soname(libIex-3_4.so.33(x86_64))",
-				"soname(libIlmThread-3_4.so.33(x86_64))",
+				"soname(libIex-3_5.so.34(x86_64))",
+				"soname(libIlmThread-3_5.so.34(x86_64))",
 				"soname(libImath-3_2.so.30(x86_64))",
-				"soname(libOpenEXR-3_4.so.33(x86_64))",
-				"soname(libOpenEXRCore-3_4.so.33(x86_64))",
+				"soname(libOpenEXR-3_5.so.34(x86_64))",
+				"soname(libOpenEXRCore-3_5.so.34(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libm.so.6(x86_64))",
@@ -54,12 +55,14 @@
 				"binary(python3)",
 				"cmake(Imath)",
 				"cmake(libdeflate)",
-				"cmake(openjph)"
+				"cmake(openjph)",
+				"pkgconfig(libzstd)"
 			],
 			"depends": [
 				"openexr",
 				"pkgconfig(Imath)",
 				"pkgconfig(libdeflate)",
+				"pkgconfig(libzstd)",
 				"pkgconfig(openjph)"
 			],
 			"files": [
@@ -95,6 +98,7 @@
 				"/usr/include/OpenEXR/ImfCheckFile.h",
 				"/usr/include/OpenEXR/ImfChromaticities.h",
 				"/usr/include/OpenEXR/ImfChromaticitiesAttribute.h",
+				"/usr/include/OpenEXR/ImfColorMetadata.h",
 				"/usr/include/OpenEXR/ImfCompositeDeepScanLine.h",
 				"/usr/include/OpenEXR/ImfCompression.h",
 				"/usr/include/OpenEXR/ImfCompressionAttribute.h",
@@ -201,6 +205,7 @@
 				"/usr/include/OpenEXR/openexr_base.h",
 				"/usr/include/OpenEXR/openexr_chunkio.h",
 				"/usr/include/OpenEXR/openexr_coding.h",
+				"/usr/include/OpenEXR/openexr_color_metadata.h",
 				"/usr/include/OpenEXR/openexr_compression.h",
 				"/usr/include/OpenEXR/openexr_config.h",
 				"/usr/include/OpenEXR/openexr_context.h",
@@ -215,15 +220,15 @@
 				"/usr/lib/cmake/OpenEXR/OpenEXRConfigVersion.cmake",
 				"/usr/lib/cmake/OpenEXR/OpenEXRTargets-release.cmake",
 				"/usr/lib/cmake/OpenEXR/OpenEXRTargets.cmake",
-				"/usr/lib/libIex-3_4.so",
+				"/usr/lib/libIex-3_5.so",
 				"/usr/lib/libIex.so",
-				"/usr/lib/libIlmThread-3_4.so",
+				"/usr/lib/libIlmThread-3_5.so",
 				"/usr/lib/libIlmThread.so",
-				"/usr/lib/libOpenEXR-3_4.so",
+				"/usr/lib/libOpenEXR-3_5.so",
 				"/usr/lib/libOpenEXR.so",
-				"/usr/lib/libOpenEXRCore-3_4.so",
+				"/usr/lib/libOpenEXRCore-3_5.so",
 				"/usr/lib/libOpenEXRCore.so",
-				"/usr/lib/libOpenEXRUtil-3_4.so",
+				"/usr/lib/libOpenEXRUtil-3_5.so",
 				"/usr/lib/libOpenEXRUtil.so",
 				"/usr/lib/pkgconfig/OpenEXR.pc"
 			],
@@ -238,7 +243,8 @@
 				"binary(python3)",
 				"cmake(Imath)",
 				"cmake(libdeflate)",
-				"cmake(openjph)"
+				"cmake(openjph)",
+				"pkgconfig(libzstd)"
 			],
 			"files": [
 				"/usr/share/doc/OpenEXR/examples/deepExamples.cpp",
@@ -271,7 +277,8 @@
 				"binary(python3)",
 				"cmake(Imath)",
 				"cmake(libdeflate)",
-				"cmake(openjph)"
+				"cmake(openjph)",
+				"pkgconfig(libzstd)"
 			],
 			"depends": [
 				"soname(libImath-3_2.so.30(x86_64))",
@@ -280,31 +287,32 @@
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libopenjph.so.0.32(x86_64))",
-				"soname(libstdc++.so.6(x86_64))"
+				"soname(libstdc++.so.6(x86_64))",
+				"soname(libzstd.so.1(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libIex-3_4.so.33",
-				"/usr/lib/libIex-3_4.so.33.3.4.15",
-				"/usr/lib/libIlmThread-3_4.so.33",
-				"/usr/lib/libIlmThread-3_4.so.33.3.4.15",
-				"/usr/lib/libOpenEXR-3_4.so.33",
-				"/usr/lib/libOpenEXR-3_4.so.33.3.4.15",
-				"/usr/lib/libOpenEXRCore-3_4.so.33",
-				"/usr/lib/libOpenEXRCore-3_4.so.33.3.4.15",
-				"/usr/lib/libOpenEXRUtil-3_4.so.33",
-				"/usr/lib/libOpenEXRUtil-3_4.so.33.3.4.15"
+				"/usr/lib/libIex-3_5.so.34",
+				"/usr/lib/libIex-3_5.so.34.3.5.0",
+				"/usr/lib/libIlmThread-3_5.so.34",
+				"/usr/lib/libIlmThread-3_5.so.34.3.5.0",
+				"/usr/lib/libOpenEXR-3_5.so.34",
+				"/usr/lib/libOpenEXR-3_5.so.34.3.5.0",
+				"/usr/lib/libOpenEXRCore-3_5.so.34",
+				"/usr/lib/libOpenEXRCore-3_5.so.34.3.5.0",
+				"/usr/lib/libOpenEXRUtil-3_5.so.34",
+				"/usr/lib/libOpenEXRUtil-3_5.so.34.3.5.0"
 			],
 			"name": "openexr-libs",
 			"provides": [
-				"soname(libIex-3_4.so.33(x86_64))",
-				"soname(libIlmThread-3_4.so.33(x86_64))",
-				"soname(libOpenEXR-3_4.so.33(x86_64))",
-				"soname(libOpenEXRCore-3_4.so.33(x86_64))",
-				"soname(libOpenEXRUtil-3_4.so.33(x86_64))"
+				"soname(libIex-3_5.so.34(x86_64))",
+				"soname(libIlmThread-3_5.so.34(x86_64))",
+				"soname(libOpenEXR-3_5.so.34(x86_64))",
+				"soname(libOpenEXRCore-3_5.so.34(x86_64))",
+				"soname(libOpenEXRUtil-3_5.so.34(x86_64))"
 			]
 		}
 	},
 	"source-name": "openexr",
-	"source-release": "23",
-	"source-version": "3.4.15"
+	"source-release": "24",
+	"source-version": "3.5.0"
 }
