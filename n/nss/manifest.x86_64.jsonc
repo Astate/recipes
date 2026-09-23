@@ -177,6 +177,7 @@
 				"/usr/include/nss/p7local.h",
 				"/usr/include/nss/pk11func.h",
 				"/usr/include/nss/pk11hpke.h",
+				"/usr/include/nss/pk11hpkei.h",
 				"/usr/include/nss/pk11pqg.h",
 				"/usr/include/nss/pk11priv.h",
 				"/usr/include/nss/pk11pub.h",
@@ -342,6 +343,6 @@
 		}
 	},
 	"source-name": "nss",
-	"source-release": "52",
-	"source-version": "3.129"
+	"source-release": "53",
+	"source-version": "3.130"
 }
