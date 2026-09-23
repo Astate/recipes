@@ -1,0 +1,76 @@
+# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : epiphany
+version     : "51.0"
+release     : 1
+upstreams   :
+    - https://download.gnome.org/sources/epiphany/51/epiphany-51.0.tar.xz : abaf33576462030c65bb963a56300a7786e7d75834f1c90a9dffda873835c33d
+homepage    : https://apps.gnome.org/Epiphany
+license     : GPL-3.0-or-later
+summary     : Web browser for GNOME
+description : |
+    Epiphany is the web browser for the GNOME desktop. Its goal is to be
+    simple and easy to use. Epiphany ties together many GNOME components
+    in order to let you focus on the web content, instead of the browser
+    application.
+builddeps   :
+    - binary(appstreamcli)
+    - binary(blueprint-compiler)
+    - binary(itstool)
+    - binary(msgfmt)
+    - binary(rst2man)
+    - pkgconfig(cairo)
+    - pkgconfig(gck-2)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(gcr-4)
+    - pkgconfig(gio-2.0)
+    - pkgconfig(gio-unix-2.0)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(gmp)
+    - pkgconfig(gsettings-desktop-schemas)
+    - pkgconfig(gstreamer-1.0)
+    - pkgconfig(gtk4)
+    - pkgconfig(gtk4-unix-print)
+    - pkgconfig(hogweed)
+    - pkgconfig(json-glib-1.0)
+    - pkgconfig(iso-codes)
+    - pkgconfig(libadwaita-1)
+    - pkgconfig(libarchive)
+    - pkgconfig(libportal-gtk4)
+    - pkgconfig(libsecret-1)
+    - pkgconfig(libsoup-3.0)
+    - pkgconfig(libxml-2.0)
+    - pkgconfig(nettle)
+    - pkgconfig(pwquality)
+    - pkgconfig(sqlite3)
+    - pkgconfig(webkitgtk-6.0)
+    - pkgconfig(webkitgtk-web-process-extension-6.0)
+setup       : |
+    %meson
+build       : |
+    %meson_build
+install     : |
+    %meson_install
+packages    :
+    - "%(name)-runtime":
+        summary: Epiphany runtime suitable for web applications
+        description: |
+            This package provides a runtime for web applications without actually
+            installing the epiphany application itself.
+        rundeps:
+            - iso-codes
+        paths:
+            - /usr/bin/epiphany
+            - /usr/lib/epiphany/
+            - /usr/share/dbus-1/services/org.gnome.Epiphany.WebAppProvider.service
+            - /usr/share/epiphany/
+            - /usr/share/glib-2.0/schemas/
+            - /usr/share/icons/hicolor/*/apps/org.gnome.Epiphany*
+            - /usr/share/man/man1/epiphany.1*
+
+    - "%(name)":
+        rundeps:
+            - "%(name)-runtime"
+        paths:
+            - /usr/lib/epiphany/epiphany-search-provider
