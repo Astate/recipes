@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : ntfs-3g
-version     : "2026.7.7"
-release     : 4
+version     : "2026.9.18"
+release     : 5
 homepage    : https://github.com/tuxera/ntfs-3g
 upstreams   :
-    - https://download.tuxera.com/opensource/ntfs-3g_ntfsprogs-2026.7.7.tgz : d67b769025d32860549d35c2147e45024d172f81c540d750390ce3602c059dab
+    - https://download.tuxera.com/opensource/ntfs-3g_ntfsprogs-2026.9.18.tgz : bcf3cf301a79e42d330128ffb52d4cf615bd1d30c10a92d9d8d14f2bb4fcd9bf
 summary     : NTFS filesystem support
 description : |
     NTFS-3G is an open source cross-platform implementation of the Microsoft Windows NTFS file system with read-write support.
