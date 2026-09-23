@@ -57,6 +57,7 @@
 				"soname(libm.so.6(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libuwac0.so.0(x86_64))",
+				"soname(libwayland-client.so.0(x86_64))",
 				"soname(libwinpr-tools3.so.3(x86_64))",
 				"soname(libwinpr3.so.3(x86_64))"
 			],
@@ -76,7 +77,8 @@
 				"/usr/share/man/man1/winpr-hash.1",
 				"/usr/share/man/man1/winpr-makecert.1",
 				"/usr/share/man/man1/wlfreerdp.1",
-				"/usr/share/man/man1/xfreerdp.1"
+				"/usr/share/man/man1/xfreerdp.1",
+				"/usr/share/man/man7/freerdp.7"
 			],
 			"name": "freerdp",
 			"provides": [
@@ -167,6 +169,7 @@
 				"/usr/include/freerdp3/freerdp/channels/video.h",
 				"/usr/include/freerdp3/freerdp/channels/wtsvc.h",
 				"/usr/include/freerdp3/freerdp/client.h",
+				"/usr/include/freerdp3/freerdp/client/aad_helper.h",
 				"/usr/include/freerdp3/freerdp/client/ainput.h",
 				"/usr/include/freerdp3/freerdp/client/audin.h",
 				"/usr/include/freerdp3/freerdp/client/channels.h",
@@ -446,17 +449,17 @@
 				"/usr/lib/freerdp3/proxy/libproxy-demo-plugin.so",
 				"/usr/lib/freerdp3/proxy/libproxy-dyn-channel-dump-plugin.so",
 				"/usr/lib/libfreerdp-client3.so.3",
-				"/usr/lib/libfreerdp-client3.so.3.31.1",
+				"/usr/lib/libfreerdp-client3.so.3.32.0",
 				"/usr/lib/libfreerdp-server-proxy3.so.3",
-				"/usr/lib/libfreerdp-server-proxy3.so.3.31.1",
+				"/usr/lib/libfreerdp-server-proxy3.so.3.32.0",
 				"/usr/lib/libfreerdp-server3.so.3",
-				"/usr/lib/libfreerdp-server3.so.3.31.1",
+				"/usr/lib/libfreerdp-server3.so.3.32.0",
 				"/usr/lib/libfreerdp-shadow-subsystem3.so.3",
-				"/usr/lib/libfreerdp-shadow-subsystem3.so.3.31.1",
+				"/usr/lib/libfreerdp-shadow-subsystem3.so.3.32.0",
 				"/usr/lib/libfreerdp-shadow3.so.3",
-				"/usr/lib/libfreerdp-shadow3.so.3.31.1",
+				"/usr/lib/libfreerdp-shadow3.so.3.32.0",
 				"/usr/lib/libfreerdp3.so.3",
-				"/usr/lib/libfreerdp3.so.3.31.1",
+				"/usr/lib/libfreerdp3.so.3.32.0",
 				"/usr/lib/libuwac0.so.0",
 				"/usr/lib/libuwac0.so.0.2.0",
 				"/usr/share/FreeRDP/images/test_icon.bmp",
@@ -523,9 +526,9 @@
 			],
 			"files": [
 				"/usr/lib/libwinpr-tools3.so.3",
-				"/usr/lib/libwinpr-tools3.so.3.31.1",
+				"/usr/lib/libwinpr-tools3.so.3.32.0",
 				"/usr/lib/libwinpr3.so.3",
-				"/usr/lib/libwinpr3.so.3.31.1"
+				"/usr/lib/libwinpr3.so.3.32.0"
 			],
 			"name": "libwinpr",
 			"provides": [
@@ -666,6 +669,6 @@
 		}
 	},
 	"source-name": "freerdp",
-	"source-release": "37",
-	"source-version": "3.31.1"
+	"source-release": "38",
+	"source-version": "3.32.0"
 }
