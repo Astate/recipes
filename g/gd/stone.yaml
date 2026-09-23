@@ -3,7 +3,7 @@
 
 name        : gd
 version     : "2.3.3"
-release     : 1
+release     : 2
 homepage    : https://libgd.github.io/
 upstreams   :
     - https://github.com/libgd/libgd/releases/download/gd-2.3.3/libgd-2.3.3.tar.xz : 3fe822ece20796060af63b7c60acb151e5844204d289da0ce08f8fdf131e5a61
@@ -68,3 +68,17 @@ check       : |
 
     # our libs too new for these tests, try again in next release
     %cmake_test -E "test_fontconfig_basic|test_gdimagestringft_gdimagestringft_bbox"
+packages    :
+    - "%(name)-tools":
+        summary: Utility programs that use libgd
+        description: The gd-progs package includes utility programs supplied with gd, a graphics library for creating PNG and JPEG images.
+        paths:
+            - /usr/bin/
+
+    - "%(name)-devel":
+        paths:
+            - /usr/share/doc/gd-*/*.c
+            - /usr/share/doc/gd-*/*.png
+            - /usr/share/doc/gd-*/*.pic
+            - /usr/share/doc/gd-*/*.sga
+            - /usr/share/doc/gd-*/*.tga
