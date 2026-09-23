@@ -3,7 +3,7 @@
 
 name        : gnome-software
 version     : "51.0"
-release     : 30
+release     : 31
 homepage    : https://apps.gnome.org/Software/
 upstreams   :
     - https://download.gnome.org/sources/gnome-software/51/gnome-software-51.0.tar.xz : 834b6035e61e36dd72339eb3e15d299b472ae0b393467a5bb36bb0045e0ba123
@@ -38,6 +38,7 @@ builddeps   :
     - docbook
     - docbook-xsl
 rundeps     :
+    - epiphany-runtime
     - gnome-app-list
 environment : |
     %export_docbook_catalogs

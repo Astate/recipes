@@ -28,6 +28,7 @@
 				"pkgconfig(xmlb)"
 			],
 			"depends": [
+				"epiphany-runtime",
 				"gnome-app-list",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libadwaita-1.so.0(x86_64))",
@@ -719,6 +720,6 @@
 		}
 	},
 	"source-name": "gnome-software",
-	"source-release": "30",
+	"source-release": "31",
 	"source-version": "51.0"
 }
