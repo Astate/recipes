@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : php
-version     : "8.5.10"
-release     : 20
+version     : "8.5.11"
+release     : 21
 homepage    : https://www.php.net/
 upstreams   :
-    - https://www.php.net/distributions/php-8.5.10.tar.xz : 6a8bebaa4d5a979a38db29a9373e9851f60c6b11f72172c585947e78f3081957
+    - https://www.php.net/distributions/php-8.5.11.tar.xz : d9be75c08e8c316f4c8f4194d8fbe1750a15f6a6d9d4e3fe72082abeeb800360
 summary     : PHP is a popular general-purpose scripting language
 description : |
     PHP is a popular general-purpose scripting language that is especially suited to web development.
@@ -16,40 +16,38 @@ builddeps   :
     - binary(gawk)
     - pkgconfig(bzip2)
     - pkgconfig(enchant-2)
-    - pkgconfig(freetype2)
+    - pkgconfig(gdlib)
     - pkgconfig(gmp)
     - pkgconfig(icu-uc)
     - pkgconfig(ldap)
     - pkgconfig(libargon2)
-    - pkgconfig(libavif)
     - pkgconfig(libcurl)
     - pkgconfig(libexslt)
     - pkgconfig(libffi)
-    - pkgconfig(libjpeg)
     - pkgconfig(libmariadb)
     - pkgconfig(libpcre2-8)
+    - pkgconfig(libpq)
     - pkgconfig(libsasl2)
     - pkgconfig(libsodium)
     - pkgconfig(libssl)
-    - pkgconfig(libwebp)
     - pkgconfig(libxml-2.0)
     - pkgconfig(libzip)
+    - pkgconfig(lmdb)
+    - pkgconfig(odbc)
     - pkgconfig(oniguruma)
     - pkgconfig(readline)
     - pkgconfig(sqlite3)
     - pkgconfig(tidy)
     - pkgconfig(valgrind)
-    - pkgconfig(xpm)
     - pkgconfig(zlib)
     - gdbm-devel
-    # Todo build with system gd (remove freetype, webp, libavif option)
-    # postgres
 tuning      :
     - lto: false # Causes a clang segfault
     - optimize: speed
 environment : |
     export EXTENSION_DIR=%(libdir)/php/extensions
 setup       : |
+    # TODO: Setup users/integration for php-fpm
     %configure \
         --libdir=%(libdir)/php \
         --enable-bcmath=shared \
@@ -62,31 +60,32 @@ setup       : |
         --enable-pcntl \
         --enable-shmop=shared \
         --enable-sockets=shared \
-        --with-avif=shared \
         --with-bz2=shared \
         --with-curl=shared \
         --with-enchant=shared \
+        --with-external-gd \
         --with-external-pcre \
-        --with-freetype \
         --with-ffi=shared \
         --with-gdbm \
         --with-gettext=shared \
         --with-gmp=shared \
         --with-iconv=shared \
-        --with-jpeg \
         --with-ldap=shared \
         --with-ldap-sasl \
+        --with-lmdb \
         --with-mysql-sock=/var/lib/mysql/mysqld.sock \
         --with-openssl \
         --with-openssl-argon2 \
         --with-password-argon2 \
         --with-pdo-mysql=shared \
+        --with-pdo-odbc=shared,unixODBC \
+        --with-pdo-pgsql=shared \
         --with-pdo-sqlite=shared \
+        --with-pgsql=shared \
         --with-readline \
         --with-sodium=shared \
         --with-tidy=shared \
-        --with-webp \
-        --with-xpm=shared \
+        --with-unixODBC=shared \
         --with-xsl=shared \
         --with-zip=shared \
         --with-zlib
