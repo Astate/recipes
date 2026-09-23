@@ -3,7 +3,7 @@
 
 name        : qt6-base
 version     : "6.11.2"
-release     : 33
+release     : 34
 homepage    : https://www.qt.io
 upstreams   :
     - https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtbase-everywhere-src-6.11.2.tar.xz : 5b2e00eccaf5a4d8c14134ffa0ea8dfd0a35ae1ffc7f8d87fa4305a1ed23cf22
@@ -86,7 +86,7 @@ setup       : |
     %patch %(pkgdir)/upstream/QTBUG-110448.patch
     %patch %(pkgdir)/upstream/QTBUG-145390.patch
     %patch %(pkgdir)/upstream/QTBUG-123455.patch
-    # Technically not merged into upstream yet but it probably will be shortly
+    %patch %(pkgdir)/upstream/QTBUG-95817-2.patch
     %patch %(pkgdir)/upstream/upstream-750214.patch
     %patch %(pkgdir)/upstream/QTBUG-149431.patch
 
