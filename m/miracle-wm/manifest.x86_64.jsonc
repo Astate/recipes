@@ -41,7 +41,7 @@
 				"soname(libmircommon.so.13(x86_64))",
 				"soname(libmircore.so.3(x86_64))",
 				"soname(libmirplatform.so.35(x86_64))",
-				"soname(libmirserver.so.68(x86_64))",
+				"soname(libmirserver.so.69(x86_64))",
 				"soname(libmirwayland.so.7(x86_64))",
 				"soname(libpcre2-8.so.0(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
@@ -133,6 +133,6 @@
 		}
 	},
 	"source-name": "miracle-wm",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "0.11.1"
 }
