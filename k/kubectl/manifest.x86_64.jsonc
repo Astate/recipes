@@ -135,6 +135,6 @@
 		}
 	},
 	"source-name": "kubectl",
-	"source-release": "12",
-	"source-version": "1.37.0"
+	"source-release": "13",
+	"source-version": "1.37.1"
 }

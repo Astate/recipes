@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : kubectl
-version     : "1.37.0"
-release     : 12
+version     : "1.37.1"
+release     : 13
 homepage    : https://kubernetes.io/
 upstreams   :
-    - https://github.com/kubernetes/kubernetes/archive/refs/tags/v1.37.0.tar.gz : 956ddae3b12acc08a715aea0411a168a36d5989b3e7185deeb6bf46b7dac19cf
+    - https://github.com/kubernetes/kubernetes/archive/refs/tags/v1.37.1.tar.gz : 89295ac375eb0fdfe68a0696d81be615771d6b27c7ad9bb675dc6ffd0d2ce5f3
 summary     : Command line interface for running commands against Kubernetes clusters
 description : |
     kubectl is a command line interface for running commands against Kubernetes clusters
