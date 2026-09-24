@@ -643,7 +643,7 @@
 			],
 			"files": [
 				"/usr/lib/libhwloc.so.15",
-				"/usr/lib/libhwloc.so.15.10.3",
+				"/usr/lib/libhwloc.so.15.10.4",
 				"/usr/share/hwloc/hwloc-valgrind.supp",
 				"/usr/share/hwloc/hwloc.dtd",
 				"/usr/share/hwloc/hwloc2-diff.dtd",
@@ -694,6 +694,6 @@
 		}
 	},
 	"source-name": "hwloc",
-	"source-release": "8",
-	"source-version": "2.14.0"
+	"source-release": "9",
+	"source-version": "2.15.0"
 }
