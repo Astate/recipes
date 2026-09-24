@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : epiphany
-version     : "51.0"
-release     : 1
+version     : "51.1"
+release     : 3
 upstreams   :
-    - https://download.gnome.org/sources/epiphany/51/epiphany-51.0.tar.xz : abaf33576462030c65bb963a56300a7786e7d75834f1c90a9dffda873835c33d
+    - https://download.gnome.org/sources/epiphany/51/epiphany-51.1.tar.xz : beb93b3b86b763092a1175b6e505789b7613071c0dc1ad56cac1979fe879e9dd
 homepage    : https://apps.gnome.org/Epiphany
 license     : GPL-3.0-or-later
 summary     : Web browser for GNOME
