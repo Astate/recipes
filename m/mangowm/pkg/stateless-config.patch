@@ -1,17 +1,31 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Reilly Brogan <reilly@reillybrogan.com>
+Date: Thu, 24 Sep 2026 12:51:22 -0500
+Subject: [PATCH] stateless
+
+---
+ meson.build               |  2 +-
+ src/config/parse_config.c | 14 ++++++++++++++
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+
 diff --git a/meson.build b/meson.build
+index 9367c18d..bea3f2ef 100644
 --- a/meson.build
 +++ b/meson.build
-@@ -141,5 +141,5 @@ desktop_install_dir = join_paths(prefix, 'share/wayland-sessions')
+@@ -178,7 +178,7 @@ desktop_install_dir = join_paths(prefix, 'share/wayland-sessions')
  portal_install_dir = join_paths(prefix, 'share/xdg-desktop-portal')
  install_data('assets/mango.desktop', install_dir : desktop_install_dir)
  install_data('assets/mango-portals.conf', install_dir : portal_install_dir)
 -install_data('assets/config.conf', install_dir : join_paths(sysconfdir, 'mango'))
 +install_data('assets/config.conf', install_dir : join_paths('/usr/share/defaults', 'mango'))
- install_data('mmsg/mmsg.1', install_dir : join_paths(mandir, 'man1'))
-diff --git a/src/config/parse_config.h b/src/config/parse_config.h
---- a/src/config/parse_config.h
-+++ b/src/config/parse_config.h
-@@ -7,6 +7,10 @@
+ 
+ # Ship mango-session.target so that systemd user services declaring
+ # WantedBy=graphical-session.target (portals, panels, ...) are started together
+diff --git a/src/config/parse_config.c b/src/config/parse_config.c
+index 60050075..9b48fcb0 100644
+--- a/src/config/parse_config.c
++++ b/src/config/parse_config.c
+@@ -39,9 +39,19 @@
  #define SYSCONFDIR "/etc"
  #endif
  
@@ -19,11 +33,20 @@ diff --git a/src/config/parse_config.h b/src/config/parse_config.h
 +#define VENDORDIR "/usr/share/defaults"
 +#endif
 +
- // 整数版本 - 截断小数部分
- #define CLAMP_INT(x, min, max)                                                 \
- 	((int32_t)(x) < (int32_t)(min)                                             \
-@@ -3880,6 +3884,10 @@ bool parse_config(void) {
- 			// 如果文件不存在，则使用 /etc/mango/config.conf
+ /* Global config instance. */
+ Config config;
+ 
++// 整数版本 - 截断小数部分
++#define CLAMP_INT(x, min, max)                                                 \
++	((int32_t)(x) < (int32_t)(min)                                             \
++		 ? (int32_t)(min)                                                      \
++		 : ((int32_t)(x) > (int32_t)(max) ? (int32_t)(max) : (int32_t)(x)))
++
+ /* Default jump-label character sequence (used when jump_labels is not
+  * configured). */
+ const char default_jump_labels[] = "HJKLASDFGQWERTYUIOPZXCVBNM";
+@@ -4411,6 +4421,10 @@ bool parse_config(void) {
+ 			// Uses /etc/mango/config.conf when the file does not exist.
  			snprintf(filename, sizeof(filename), "%s/mango/config.conf",
  					 SYSCONFDIR);
 +			if (access(filename, F_OK) != 0) {
