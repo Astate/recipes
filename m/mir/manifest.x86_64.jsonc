@@ -50,7 +50,7 @@
 				"soname(libmiral.so.8(x86_64))",
 				"soname(libmircommon.so.13(x86_64))",
 				"soname(libmircore.so.3(x86_64))",
-				"soname(libmirserver.so.68(x86_64))",
+				"soname(libmirserver.so.69(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libwayland-client.so.0(x86_64))",
 				"soname(libwayland-egl.so.1(x86_64))",
@@ -168,7 +168,7 @@
 				"/usr/lib/libmircore.so.3",
 				"/usr/lib/libmiroil.so.10",
 				"/usr/lib/libmirplatform.so.35",
-				"/usr/lib/libmirserver.so.68",
+				"/usr/lib/libmirserver.so.69",
 				"/usr/lib/libmirwayland.so.7",
 				"/usr/lib/mir/server-platform/graphics-atomic-kms.so.24",
 				"/usr/lib/mir/server-platform/graphics-gbm-kms.so.24",
@@ -186,7 +186,7 @@
 				"soname(libmircore.so.3(x86_64))",
 				"soname(libmiroil.so.10(x86_64))",
 				"soname(libmirplatform.so.35(x86_64))",
-				"soname(libmirserver.so.68(x86_64))",
+				"soname(libmirserver.so.69(x86_64))",
 				"soname(libmirwayland.so.7(x86_64))",
 				"soname(mir/server-platform/graphics-atomic-kms.so.24(x86_64))",
 				"soname(mir/server-platform/graphics-gbm-kms.so.24(x86_64))",
@@ -443,7 +443,6 @@
 				"/usr/include/mirplatform/mir/graphics/buffer.h",
 				"/usr/include/mirplatform/mir/graphics/buffer_basic.h",
 				"/usr/include/mirplatform/mir/graphics/buffer_id.h",
-				"/usr/include/mirplatform/mir/graphics/buffer_properties.h",
 				"/usr/include/mirplatform/mir/graphics/cpu_addressable_fb.h",
 				"/usr/include/mirplatform/mir/graphics/cpu_copy_output_surface.h",
 				"/usr/include/mirplatform/mir/graphics/cursor.h",
@@ -646,6 +645,7 @@
 				"/usr/include/mirwayland/mir/wayland/resource.h",
 				"/usr/include/mirwayland/mir/wayland/wayland_base.h",
 				"/usr/include/mirwayland/mir/wayland/weak.h",
+				"/usr/include/mirwayland/mir/wayland/wl_array.h",
 				"/usr/lib/libmiral.so",
 				"/usr/lib/libmircommon.so",
 				"/usr/lib/libmircore.so",
@@ -677,6 +677,6 @@
 		}
 	},
 	"source-name": "mir",
-	"source-release": "1",
-	"source-version": "2.29.0"
+	"source-release": "2",
+	"source-version": "2.30.0"
 }
