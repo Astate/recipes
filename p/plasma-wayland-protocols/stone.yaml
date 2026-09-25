@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : plasma-wayland-protocols
-version     : "1.22.0"
-release     : 8
+version     : "1.23.0"
+release     : 9
 upstreams   :
-    - https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.22.0.tar.xz : f628585c4c2d5e3a9f447a6274e2f59d7811272da557e75341e36948aa3f9d43
+    - https://download.kde.org/stable/plasma-wayland-protocols/plasma-wayland-protocols-1.23.0.tar.xz : 16c5ad917bde2ed795942dacba76654819ddc6a1566842325ef34e0b553ef138
 homepage    : https://kde.org/plasma-desktop
 license     : LGPL-2.1-or-later
 summary     : Persistent platform-independent application settings.
