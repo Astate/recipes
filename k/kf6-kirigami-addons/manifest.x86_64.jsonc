@@ -37,11 +37,11 @@
 				"soname(libstdc++.so.6(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libKirigamiAddonsComponents.so.1.14.1",
+				"/usr/lib/libKirigamiAddonsComponents.so.1.14.2",
 				"/usr/lib/libKirigamiAddonsComponents.so.6",
-				"/usr/lib/libKirigamiAddonsStatefulApp.so.1.14.1",
+				"/usr/lib/libKirigamiAddonsStatefulApp.so.1.14.2",
 				"/usr/lib/libKirigamiAddonsStatefulApp.so.6",
-				"/usr/lib/libKirigamiApp.so.1.14.1",
+				"/usr/lib/libKirigamiApp.so.1.14.2",
 				"/usr/lib/libKirigamiApp.so.6",
 				"/usr/lib/qt6/qml/org/kde/kirigamiaddons/actions/ActionMenu.qml",
 				"/usr/lib/qt6/qml/org/kde/kirigamiaddons/actions/ActionMenuBar.qml",
@@ -133,6 +133,7 @@
 				"/usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/formcardplugin.qmltypes",
 				"/usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/kde-qmlmodule.version",
 				"/usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/libformcardplugin.so",
+				"/usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/private/ContentItemLoader.qml",
 				"/usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/private/FormCardBackground.qml",
 				"/usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/private/FormCardUnits.qml",
 				"/usr/lib/qt6/qml/org/kde/kirigamiaddons/formcard/private/FormChoiceDelegateLayout.qml",
@@ -346,6 +347,6 @@
 		}
 	},
 	"source-name": "kf6-kirigami-addons",
-	"source-release": "18",
-	"source-version": "1.14.1"
+	"source-release": "19",
+	"source-version": "1.14.2"
 }
