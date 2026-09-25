@@ -18,7 +18,7 @@
 			],
 			"files": [
 				"/usr/lib/libtorrent-rasterbar.so.2.1",
-				"/usr/lib/libtorrent-rasterbar.so.2.1.1"
+				"/usr/lib/libtorrent-rasterbar.so.2.1.2"
 			],
 			"name": "libtorrent-rasterbar",
 			"provides": [
@@ -116,6 +116,7 @@
 				"/usr/include/libtorrent/aux_/link.hpp",
 				"/usr/include/libtorrent/aux_/listen_socket_handle.hpp",
 				"/usr/include/libtorrent/aux_/lsd.hpp",
+				"/usr/include/libtorrent/aux_/merge_block_requests.hpp",
 				"/usr/include/libtorrent/aux_/merkle.hpp",
 				"/usr/include/libtorrent/aux_/merkle_tree.hpp",
 				"/usr/include/libtorrent/aux_/mmap.hpp",
@@ -374,6 +375,6 @@
 		}
 	},
 	"source-name": "libtorrent-rasterbar",
-	"source-release": "10",
-	"source-version": "2.1.1"
+	"source-release": "11",
+	"source-version": "2.1.2"
 }

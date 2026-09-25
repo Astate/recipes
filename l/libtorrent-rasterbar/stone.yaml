@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libtorrent-rasterbar
-version     : "2.1.1"
-release     : 10
+version     : "2.1.2"
+release     : 11
 homepage    : https://libtorrent.org/
 upstreams   :
-    - https://github.com/arvidn/libtorrent/releases/download/v2.1.1/libtorrent-rasterbar-2.1.1.tar.gz : 0f163516ecef2e3331500266751de3098835a3c3ae0c2290448046c632bc0e93
+    - https://github.com/arvidn/libtorrent/releases/download/v2.1.2/libtorrent-rasterbar-2.1.2.tar.gz : 3362546d9cd71b9e49ee6cac7d3f1f914ce9cdb217c86b63d5b22cbed0334dbc
 summary     : libtorrent is a C++ implementation of the BitTorrent protocol
 description : |
     libtorrent is a C++ implementation of the BitTorrent protocol.
