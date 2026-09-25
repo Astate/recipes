@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libdwarf
-version     : "2.3.2"
-release     : 2
+version     : "2.3.3"
+release     : 3
 upstreams   :
-    - https://github.com/davea42/libdwarf-code/releases/download/v2.3.2/libdwarf-2.3.2.tar.xz : 7992e7b9019ebfabdda5773e86243517c48cf89fafed3209e853692bc9573efd
+    - https://github.com/davea42/libdwarf-code/releases/download/v2.3.3/libdwarf-2.3.3.tar.xz : bde13d1c49be6f2467326a6e0b3919247471455d16eefc3c6be26c7d4baca36a
 homepage    : https://www.prevanders.net/dwarf.html
 license     : LGPL-2.1-only AND BSD-2-Clause-FreeBSD
 summary     : Library to access the DWARF Debugging file format
