@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : parted
-version     : "3.7"
-release     : 4
+version     : "3.8"
+release     : 5
 homepage    : https://www.gnu.org/software/parted/
 upstreams   :
-    - https://ftp.gnu.org/gnu/parted/parted-3.7.tar.xz : 008de57561a4f3c25a0648e66ed11e7b30be493889b64334a6d70f2c1951ef7b
+    - https://ftp.gnu.org/gnu/parted/parted-3.8.tar.xz : a2b7811f47b0ddb1f7b1d0aa456f7c1270da70708ce231c2fe054c7199eafa63
 summary     : GNU Parted manipulates partition tables
 description : |
     GNU Parted manipulates partition tables. This is useful for creating space for new operating systems, reorganizing disk usage, copying data on hard disks and disk imaging. The package contains a library, libparted, as well as a command-line frontend, parted, which can also be used in scripts.
