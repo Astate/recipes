@@ -59,7 +59,7 @@
 				"/usr/bin/miracle-wm-session",
 				"/usr/bin/miraclemsg",
 				"/usr/lib/libmiracle-wm-c.so.0",
-				"/usr/lib/libmiracle-wm-c.so.0.11.1",
+				"/usr/lib/libmiracle-wm-c.so.0.11.2",
 				"/usr/lib/miracle-wm/libmiracle-wm-plugins.so",
 				"/usr/lib/miracle-wm/miracle-wm-session-setup",
 				"/usr/lib/miracle-wm/miracle-wm-wait-sni-ready",
@@ -133,6 +133,6 @@
 		}
 	},
 	"source-name": "miracle-wm",
-	"source-release": "4",
-	"source-version": "0.11.1"
+	"source-release": "5",
+	"source-version": "0.11.2"
 }
