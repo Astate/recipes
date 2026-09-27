@@ -91,6 +91,8 @@
 				"/usr/share/help/hu/gtk-doc-manual/index.docbook",
 				"/usr/share/help/kk/gtk-doc-manual/fdl-appendix.xml",
 				"/usr/share/help/kk/gtk-doc-manual/index.docbook",
+				"/usr/share/help/nn/gtk-doc-manual/fdl-appendix.xml",
+				"/usr/share/help/nn/gtk-doc-manual/index.docbook",
 				"/usr/share/help/pt_BR/gtk-doc-manual/fdl-appendix.xml",
 				"/usr/share/help/pt_BR/gtk-doc-manual/index.docbook",
 				"/usr/share/help/sl/gtk-doc-manual/fdl-appendix.xml",
@@ -127,6 +129,6 @@
 		}
 	},
 	"source-name": "gtk-doc",
-	"source-release": "11",
-	"source-version": "1.36.1"
+	"source-release": "12",
+	"source-version": "1.37.0"
 }
