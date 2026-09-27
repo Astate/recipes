@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : dbus-glib
-version     : "0.114"
-release     : 2
+version     : "0.116"
+release     : 3
 homepage    : https://www.freedesktop.org/wiki/Software/dbus/
 upstreams   :
-    - https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.114.tar.gz: c09c5c085b2a0e391b8ee7d783a1d63fe444e96717cc1814d61b5e8fc2827a7c
+    - https://dbus.freedesktop.org/releases/dbus-glib/dbus-glib-0.116.tar.gz: e3f3d4487e2883800770ed5899ed111bdc4ba7056af34a255c4c46ad8a2486f3
 license     : LGPL-2.0-or-later
 summary     : D-Bus GLib Bindings
 description : |

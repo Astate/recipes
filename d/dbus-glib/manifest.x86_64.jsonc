@@ -20,10 +20,8 @@
 			],
 			"files": [
 				"/usr/bin/dbus-binding-tool",
-				"/usr/lib/dbus-glib/dbus-bash-completion-helper",
 				"/usr/lib/libdbus-glib-1.so.2",
-				"/usr/lib/libdbus-glib-1.so.2.3.6",
-				"/usr/share/bash-completion/completions/dbus-bash-completion.sh",
+				"/usr/lib/libdbus-glib-1.so.2.3.7",
 				"/usr/share/man/man1/dbus-binding-tool.1"
 			],
 			"name": "dbus-glib",
@@ -95,6 +93,6 @@
 		}
 	},
 	"source-name": "dbus-glib",
-	"source-release": "2",
-	"source-version": "0.114"
+	"source-release": "3",
+	"source-version": "0.116"
 }
