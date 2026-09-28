@@ -3,7 +3,7 @@
 
 name        : curl
 version     : "8.22.0"
-release     : 33
+release     : 34
 summary     : A utility for fetching files from remote servers
 license     : MIT
 homepage    : https://curl.se/
