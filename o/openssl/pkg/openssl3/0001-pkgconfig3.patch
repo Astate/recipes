@@ -26,13 +26,13 @@ index 4fb2cf5222..b6f58cb9b7 100644
 -GENERATE[openssl.pc]=exporters/pkg-config/openssl.pc.in
 -DEPEND[openssl.pc]=builddata.pm
 -DEPEND[openssl.pc]=libcrypto.pc libssl.pc
-+GENERATE[libcrypto3.pc]=exporters/pkg-config/libcrypto.pc.in
-+DEPEND[libcrypto3.pc]=builddata.pm
-+GENERATE[libssl3.pc]=exporters/pkg-config/libssl.pc.in
-+DEPEND[libssl3.pc]=builddata.pm
-+GENERATE[openssl3.pc]=exporters/pkg-config/openssl.pc.in
-+DEPEND[openssl3.pc]=builddata.pm
-+DEPEND[openssl3.pc]=libcrypto3.pc libssl3.pc
++GENERATE[libcrypto-3.pc]=exporters/pkg-config/libcrypto.pc.in
++DEPEND[libcrypto-3.pc]=builddata.pm
++GENERATE[libssl-3.pc]=exporters/pkg-config/libssl.pc.in
++DEPEND[libssl-3.pc]=builddata.pm
++GENERATE[openssl-3.pc]=exporters/pkg-config/openssl.pc.in
++DEPEND[openssl-3.pc]=builddata.pm
++DEPEND[openssl-3.pc]=libcrypto-3.pc libssl-3.pc
  
  GENERATE[builddata.pm]=util/mkinstallvars.pl \
      COMMENT="This file should be used when building against this OpenSSL build, and should never be installed" \
@@ -41,7 +41,7 @@ index 4fb2cf5222..b6f58cb9b7 100644
      "VERSION=$(VERSION)" "LDLIBS=$(LIB_EX_LIBS)"
  
 -DEPEND[""]=openssl.pc
-+DEPEND[""]=openssl3.pc
++DEPEND[""]=openssl-3.pc
 diff --git a/exporters/build.info b/exporters/build.info
 index 9241dc9b0a..8ae094182b 100644
 --- a/exporters/build.info
@@ -57,16 +57,16 @@ index 9241dc9b0a..8ae094182b 100644
 -GENERATE[openssl.pc]{exporter=pkg-config}=pkg-config/openssl.pc.in
 -DEPEND[openssl.pc]=../installdata.pm
 -DEPEND[openssl.pc]=libcrypto.pc libssl.pc
-+GENERATE[libcrypto3.pc]{exporter=pkg-config}=pkg-config/libcrypto.pc.in
-+DEPEND[libcrypto3.pc]=../installdata.pm
-+GENERATE[libssl3.pc]{exporter=pkg-config}=pkg-config/libssl.pc.in
-+DEPEND[libssl3.pc]=../installdata.pm
-+GENERATE[openssl3.pc]{exporter=pkg-config}=pkg-config/openssl.pc.in
-+DEPEND[openssl3.pc]=../installdata.pm
-+DEPEND[openssl3.pc]=libcrypto3.pc libssl3.pc
++GENERATE[libcrypto-3.pc]{exporter=pkg-config}=pkg-config/libcrypto.pc.in
++DEPEND[libcrypto-3.pc]=../installdata.pm
++GENERATE[libssl-3.pc]{exporter=pkg-config}=pkg-config/libssl.pc.in
++DEPEND[libssl-3.pc]=../installdata.pm
++GENERATE[openssl-3.pc]{exporter=pkg-config}=pkg-config/openssl.pc.in
++DEPEND[openssl-3.pc]=../installdata.pm
++DEPEND[openssl-3.pc]=libcrypto-3.pc libssl-3.pc
  
 -DEPEND[""]=openssl.pc
-+DEPEND[""]=openssl3.pc
++DEPEND[""]=openssl-3.pc
  
  GENERATE[../installdata.pm]=../util/mkinstallvars.pl \
      "PREFIX=$(INSTALLTOP)" BINDIR=bin "LIBDIR=$(LIBDIR)" "libdir=$(libdir)" \

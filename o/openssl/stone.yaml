@@ -2,8 +2,8 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : openssl
-version     : "3.6.4"
-release     : 38
+version     : "4.0.2"
+release     : 39
 summary     : OpenSSL cryptography library
 license     :
     - OpenSSL
@@ -12,9 +12,9 @@ homepage    : https://www.openssl.org
 description : |
     OpenSSL cryptography library.
 upstreams   :
-    # - https://www.openssl.org/source/openssl-4.0.2.tar.gz:
-    #     hash: 736b467530f916737b7031310ccb21d8218c6229e61e8e160cd1d3458cd543a8
-    #     unpackdir: current
+    - https://www.openssl.org/source/openssl-4.0.2.tar.gz:
+        hash: 736b467530f916737b7031310ccb21d8218c6229e61e8e160cd1d3458cd543a8
+        unpackdir: current
 
     - https://www.openssl.org/source/openssl-3.6.4.tar.gz:
         hash: 9bffaa1ad1e07b354c21bd3324ec02fa15579f45a7d0494b3e74bc449b7333ef
@@ -63,9 +63,6 @@ setup       : |
         popd
     fi
 
-    # Temporary, remove once we are ready for openssl 4
-    exit 0
-
     %patch %(pkgdir)/stateless/0001-Use-OS-provided-copy-of-openssl.cnf-as-fallback.patch
     %patch %(pkgdir)/config.patch
     %patch %(pkgdir)/0001-Fix-soname-dynamic-loading.patch
@@ -90,9 +87,6 @@ build       : |
         popd
     fi
 
-    # Temporary, remove once we are ready for openssl 4
-    exit 0
-
     %ccache_zero
     env CCACHE_BASEDIR="${PWD}" %make
     %ccache_stats
@@ -107,7 +101,7 @@ install     : |
                 mv %(installroot)%(includedir)/openssl %(installroot)%(includedir)/openssl-3
             fi
             for i in libcrypto libssl; do
-                mv %(installroot)%(libdir)/${i}.so %(installroot)%(libdir)/${i}-o3.so
+                mv %(installroot)%(libdir)/${i}.so %(installroot)%(libdir)/${i}-3.so
             done
 
             # Cleanup
@@ -122,8 +116,8 @@ install     : |
         popd
     fi
 
-    # %make_install MANSUFFIX=openssl
-    # rm -v %(installroot)%(libdir)/*.a
+    %make_install MANSUFFIX=openssl
+    rm -v %(installroot)%(libdir)/*.a
 
     if [[ %(target_triple) = i686* ]]; then
         rm -rfv %(installroot)%(includedir)/openssl*
@@ -132,10 +126,10 @@ install     : |
     # Temporary
     if [ ! -d ../current ]; then
         for i in libcrypto libssl; do
-            ln -srv %(installroot)%(libdir)/${i}-o3.so %(installroot)%(libdir)/${i}.so
+            ln -srv %(installroot)%(libdir)/${i}-3.so %(installroot)%(libdir)/${i}.so
         done
         for i in libcrypto libssl openssl; do
-            ln -srv %(installroot)%(libdir)/pkgconfig/${i}3.pc %(installroot)%(libdir)/pkgconfig/${i}.pc
+            ln -srv %(installroot)%(libdir)/pkgconfig/${i}-3.pc %(installroot)%(libdir)/pkgconfig/${i}.pc
         done
 
         ln -srv %(installroot)%(libdir)/ossl-modules-3 %(installroot)%(libdir)/ossl-modules
