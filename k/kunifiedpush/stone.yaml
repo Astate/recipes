@@ -3,7 +3,7 @@
 
 name        : kunifiedpush
 version     : "26.08.1"
-release     : 17
+release     : 18
 upstreams   :
     - https://download.kde.org/stable/release-service/26.08.1/src/kunifiedpush-26.08.1.tar.xz : 818476fbf87df903f92f875302ab9d76fc136d05f42530d35f58f3cc10f0a904
 homepage    : https://invent.kde.org/libraries/kunifiedpush
