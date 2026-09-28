@@ -2,17 +2,18 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : syncthingtray
-version     : "2.1.6"
-release     : 22
+version     : "2.1.7"
+release     : 23
 homepage    : https://martchus.github.io/syncthingtray/
 upstreams   :
-    - https://github.com/Martchus/syncthingtray/archive/refs/tags/v2.1.6.tar.gz : aab82815261a5ef9688b944d6d1d4f8b41e178d39a5b69da56d719e3ec5b70cc
+    - https://github.com/Martchus/syncthingtray/archive/refs/tags/v2.1.7.tar.gz : 9448768fb490a4a625d410c3b4b709256b60dc608c6180bd9b4fcbc57cd473ec
 summary     : Tray application for Syncthing
 description : |
     Syncthing Tray provides a tray icon and further platform integration for Syncthing.
 license     : GPL-2.0-or-later
 builddeps   :
     - binary(doxygen)
+    - binary(perl)
     - cmake(Boost)
     - cmake(ECM)
     - cmake(KF6Config)
@@ -33,11 +34,13 @@ setup       : |
     # TODO: Do we need to build with builtin Qt translations (needs qt6-translations I think).
     # BUILTIN_TRANSLATIONS_OF_QT : https://github.com/Martchus/qtutilities/blob/0e9b6450280b2e1e623d6d40cf2c5c3337e2b065/cmake/modules/QtConfig.cmake#L425
     %cmake \
+        -DBUILD_SHARED_LIBS:BOOL=ON \
+        -DBUILTIN_TRANSLATIONS:BOOL=ON \
         -DCONFIGURATION_PACKAGE_SUFFIX_QTUTILITIES:STRING="-qt6" \
         -DKF_PACKAGE_PREFIX:STRING='KF6' \
         -DQT_PACKAGE_PREFIX:STRING='Qt6' \
-        -DBUILD_SHARED_LIBS:BOOL=ON \
-        -DBUILTIN_TRANSLATIONS:BOOL=ON
+        -DQUICK_GUI:BOOL=ON \
+        -DQUICK_GUI_CONTROLS_STYLE:STRING=dynamic
 build       : |
     %cmake_build
 install     : |
