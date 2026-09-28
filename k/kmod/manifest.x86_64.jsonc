@@ -14,7 +14,7 @@
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"kmod-libs",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libzstd.so.1(x86_64))"
 			],
@@ -100,7 +100,7 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libzstd.so.1(x86_64))"
 			],
@@ -115,6 +115,6 @@
 		}
 	},
 	"source-name": "kmod",
-	"source-release": "11",
+	"source-release": "12",
 	"source-version": "34.2"
 }
