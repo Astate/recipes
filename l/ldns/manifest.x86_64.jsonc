@@ -12,10 +12,10 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libldns.so.3(x86_64))",
 				"soname(libpcap.so.1(x86_64))",
-				"soname(libssl.so.3(x86_64))"
+				"soname(libssl.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/bin/drill",
@@ -637,8 +637,8 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
-				"soname(libssl.so.3(x86_64))"
+				"soname(libcrypto.so.4(x86_64))",
+				"soname(libssl.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libldns.so.3",
@@ -651,6 +651,6 @@
 		}
 	},
 	"source-name": "ldns",
-	"source-release": "7",
+	"source-release": "8",
 	"source-version": "1.9.2"
 }
