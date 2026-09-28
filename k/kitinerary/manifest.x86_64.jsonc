@@ -36,7 +36,7 @@
 				"soname(libQt6Qml.so.6(x86_64))",
 				"soname(libZXing.so.4(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libphonenumber.so.9(x86_64))",
@@ -283,6 +283,6 @@
 		}
 	},
 	"source-name": "kitinerary",
-	"source-release": "33",
+	"source-release": "34",
 	"source-version": "26.08.1"
 }
