@@ -43,6 +43,6 @@
 		}
 	},
 	"source-name": "runc",
-	"source-release": "18",
-	"source-version": "1.5.1"
+	"source-release": "19",
+	"source-version": "1.5.2"
 }

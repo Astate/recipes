@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : runc
-version     : "1.5.1"
-release     : 18
+version     : "1.5.2"
+release     : 19
 homepage    : https://runc.io/
 upstreams   :
-    - https://github.com/opencontainers/runc/archive/refs/tags/v1.5.1.tar.gz : 32286f18899a644ec7c1589688a9600ba54cc65264f23f1f5877ba214ca76e75
+    - https://github.com/opencontainers/runc/archive/refs/tags/v1.5.2.tar.gz : b5af44864a830c7032cf4a72efa0c6d44f701873d9507b127be31ad4d1d42ff3
 summary     : CLI tool for managing OCI compliant containers
 description : |
     CLI tool for managing OCI compliant containers
