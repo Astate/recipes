@@ -3,7 +3,7 @@
 
 name        : labwc
 version     : "0.20.2"
-release     : 2
+release     : 3
 upstreams   :
     - https://github.com/labwc/labwc/archive/refs/tags/0.20.2.tar.gz : fae023b6fe022f7057556707a17cdb2d98e0138c5dffaedaa1dade975699f9e8
 homepage    : https://labwc.github.io/
@@ -38,22 +38,35 @@ builddeps   :
     - pkgconfig(xcb-icccm)
     - pkgconfig(xkbcommon)
     - pkgconfig(xwayland)
-rundeps     :
-    - binary(Xwayland)
-    - xdg-desktop-portal-wlr
 setup       : |
     %meson
 build       : |
     %meson_build
 install     : |
     %meson_install
+
+    %install_dir %(installroot)%(docdir)/%(name)-session/
+    echo "DEPRECATED" > %(installroot)%(docdir)/%(name)-session/README
 packages:
-    - "%(name)-session":
-        summary: Session files for %(name)
-        description: Session files for %(name)
-        rundeps:
-            - binary(labwc)
+    - "%(name)-core":
+        summary: Core files for %(name)
+        description: Core files for %(name)
         paths:
-            - /usr/share/icons
-            - /usr/share/wayland-sessions
-            - /usr/lib/systemd/user/labwc-session.target
+            - /usr/bin
+            - /usr/share/doc
+            - /usr/share/locale
+            - /usr/share/man
+            - /usr/share/xdg-desktop-portal
+        rundeps:
+            - binary(Xwayland)
+            - xdg-desktop-portal-wlr
+
+    - "%(name)":
+        rundeps:
+            - "%(name)-core"
+
+    - "%(name)-session":
+        rundeps:
+            - "%(name)"
+        paths:
+            - /usr/share/doc/labwc-session/
