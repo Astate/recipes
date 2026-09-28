@@ -103,14 +103,12 @@ install     : |
             rm -v %(installroot)%(libdir)/*.a
 
             # Co-installability
-            mv %(installroot)%(includedir)/openssl %(installroot)%(includedir)/openssl-3
+            if [[ ! %(target_triple) = i686* ]]; then
+                mv %(installroot)%(includedir)/openssl %(installroot)%(includedir)/openssl-3
+            fi
             for i in libcrypto libssl; do
                 mv %(installroot)%(libdir)/${i}.so %(installroot)%(libdir)/${i}-o3.so
             done
-
-            if [[ %(target_triple) = i686* ]]; then
-                rm -rfv %(installroot)%(includedir)/openssl-3
-            fi
 
             # Cleanup
             if [ -d ../current ]; then
@@ -126,6 +124,10 @@ install     : |
 
     # %make_install MANSUFFIX=openssl
     # rm -v %(installroot)%(libdir)/*.a
+
+    if [[ %(target_triple) = i686* ]]; then
+        rm -rfv %(installroot)%(includedir)/openssl*
+    fi
 
     # Temporary
     if [ ! -d ../current ]; then
