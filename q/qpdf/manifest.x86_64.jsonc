@@ -189,7 +189,7 @@
 			],
 			"files": [
 				"/usr/lib/libqpdf.so.30",
-				"/usr/lib/libqpdf.so.30.4.1"
+				"/usr/lib/libqpdf.so.30.4.2"
 			],
 			"name": "qpdf-libs",
 			"provides": [
@@ -198,6 +198,6 @@
 		}
 	},
 	"source-name": "qpdf",
-	"source-release": "9",
-	"source-version": "12.4.1"
+	"source-release": "10",
+	"source-version": "12.4.2"
 }
