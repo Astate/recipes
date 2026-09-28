@@ -3,7 +3,7 @@
 
 name        : kf6-karchive
 version     : "6.30.0"
-release     : 24
+release     : 25
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/karchive-6.30.0.tar.xz : 4cf89d91e429d2ece3110e78f7ef7011952b0412cb15011329516b46f21e98e2
 homepage    : https://community.kde.org/Frameworks
