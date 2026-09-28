@@ -3,7 +3,7 @@
 
 name        : atuin
 version     : "18.23.0"
-release     : 8
+release     : 9
 homepage    : https://atuin.sh/
 upstreams   :
     - https://github.com/atuinsh/atuin/archive/refs/tags/v18.23.0.tar.gz : c01c12bcd14b851176cadf50cf7cc07c28a11652f94febd229602a94615a7f7a
