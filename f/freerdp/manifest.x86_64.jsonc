@@ -424,14 +424,14 @@
 				"soname(libavcodec.so.63(x86_64))",
 				"soname(libavutil.so.61(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libcups.so.2(x86_64))",
 				"soname(libfdk-aac.so.2(x86_64))",
 				"soname(libfuse3.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libpulse.so.0(x86_64))",
-				"soname(libssl.so.3(x86_64))",
+				"soname(libssl.so.4(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libswresample.so.7(x86_64))",
 				"soname(libswscale.so.10(x86_64))",
@@ -516,13 +516,13 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libicuuc.so.78(x86_64))",
 				"soname(libjansson.so.4(x86_64))",
 				"soname(libk5crypto.so.3(x86_64))",
 				"soname(libkrb5.so.3(x86_64))",
-				"soname(libssl.so.3(x86_64))"
+				"soname(libssl.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libwinpr-tools3.so.3",
@@ -669,6 +669,6 @@
 		}
 	},
 	"source-name": "freerdp",
-	"source-release": "39",
+	"source-release": "40",
 	"source-version": "3.32.1"
 }
