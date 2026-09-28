@@ -196,7 +196,7 @@
 			"depends": [
 				"cyrus-sasl-libs",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))"
+				"soname(libcrypto.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/sasl2/libcrammd5.so",
@@ -223,7 +223,7 @@
 			"depends": [
 				"cyrus-sasl-libs",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))"
+				"soname(libcrypto.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/sasl2/libotp.so",
@@ -268,7 +268,7 @@
 			"depends": [
 				"cyrus-sasl-libs",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))"
+				"soname(libcrypto.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/sasl2/libscram.so",
@@ -282,6 +282,6 @@
 		}
 	},
 	"source-name": "cyrus-sasl",
-	"source-release": "6",
+	"source-release": "7",
 	"source-version": "2.1.28"
 }
