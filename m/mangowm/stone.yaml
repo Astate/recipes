@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : mangowm
-version     : "0.17.3"
-release     : 7
+version     : "0.17.4"
+release     : 8
 homepage    : https://github.com/mangowm/mango
 upstreams   :
-        - https://github.com/mangowm/mango/archive/refs/tags/0.17.3.tar.gz : 9d3d3e1298e1b2b56c740a0805e3f2e0a928cfc42c2ad1a21bf623ad070b4c74
+        - https://github.com/mangowm/mango/archive/refs/tags/0.17.4.tar.gz : 0891dc5650cf4b7daf0298ce9c188f7ff81792d872c1396febba022635d68c8e
 summary     : A Wayland compositor with smooth animation
 description : |
     A wayland compositor utilizing wlroots as a base and SceneFX for aesthetics
