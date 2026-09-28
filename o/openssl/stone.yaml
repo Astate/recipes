@@ -3,7 +3,7 @@
 
 name        : openssl
 version     : "3.6.4"
-release     : 37
+release     : 38
 summary     : OpenSSL cryptography library
 license     :
     - OpenSSL
@@ -12,27 +12,25 @@ homepage    : https://www.openssl.org
 description : |
     OpenSSL cryptography library.
 upstreams   :
-    - https://www.openssl.org/source/openssl-3.6.4.tar.gz: 9bffaa1ad1e07b354c21bd3324ec02fa15579f45a7d0494b3e74bc449b7333ef
+    # - https://www.openssl.org/source/openssl-4.0.2.tar.gz:
+    #     hash: 736b467530f916737b7031310ccb21d8218c6229e61e8e160cd1d3458cd543a8
+    #     unpackdir: current
+
+    - https://www.openssl.org/source/openssl-3.6.4.tar.gz:
+        hash: 9bffaa1ad1e07b354c21bd3324ec02fa15579f45a7d0494b3e74bc449b7333ef
+        unpackdir: compat
 builddeps   :
     - binary(perl)
+    - pkgconfig32(libbrotlidec)
     - pkgconfig32(libzstd)
     - pkgconfig32(zlib)
     - libatomic-32bit
 emul32      : true
-profiles    :
-    - emul32:
-        install: |
-            %make_install MANSUFFIX=openssl
-            rm -v %(installroot)%(libdir)/*.a
 environment : |
     # OpenSSL is rife with strict aliasing violations and we really need to build it with this flag to be safe
     # https://github.com/openssl/openssl/issues/12247
     export CFLAGS+=" -fno-strict-aliasing"
 setup       : |
-    %patch %(pkgdir)/stateless/0001-Use-OS-provided-copy-of-openssl.cnf-as-fallback.patch
-    %patch %(pkgdir)/config.patch
-    %patch %(pkgdir)/0001-Fix-soname-dynamic-loading.patch
-
     if [[ %(target_triple) = i686* ]]; then
         export OSSL_TARGET="linux-x86-clang"
         _extra_opts=""
@@ -41,11 +39,42 @@ setup       : |
         _extra_opts="enable-ec_nistp_64_gcc_128"
     fi
 
-    # We may want to add brotli support for compressed certificates, but as far as I know that's not common yet
+    if [ -d ../compat ]; then
+        pushd ../compat
+
+        %patch %(pkgdir)/openssl3/0001-Use-OS-provided-copy-of-openssl.cnf-as-fallback.patch
+        %patch %(pkgdir)/openssl3/0001-openssl3.cnf.patch
+        %patch %(pkgdir)/openssl3/ossl-modules3.patch
+        %patch %(pkgdir)/openssl3/0001-pkgconfig3.patch
+        %patch %(pkgdir)/config.patch
+        %patch %(pkgdir)/0001-Fix-soname-dynamic-loading.patch
+
+        ./Configure $OSSL_TARGET \
+            --prefix=/usr \
+            --libdir=lib%(libsuffix) \
+            --openssldir=/etc/ssl \
+            enable-brotli-dynamic \
+            enable-ktls \
+            enable-zstd-dynamic \
+            no-rc4 \
+            shared \
+            zlib-dynamic \
+            ${_extra_opts}
+        popd
+    fi
+
+    # Temporary, remove once we are ready for openssl 4
+    exit 0
+
+    %patch %(pkgdir)/stateless/0001-Use-OS-provided-copy-of-openssl.cnf-as-fallback.patch
+    %patch %(pkgdir)/config.patch
+    %patch %(pkgdir)/0001-Fix-soname-dynamic-loading.patch
+
     ./Configure $OSSL_TARGET \
         --prefix=/usr \
         --libdir=lib%(libsuffix) \
         --openssldir=/etc/ssl \
+        enable-brotli-dynamic \
         enable-ktls \
         enable-zstd-dynamic \
         no-rc4 \
@@ -53,10 +82,72 @@ setup       : |
         zlib-dynamic \
         ${_extra_opts}
 build       : |
-    %make
+    if [ -d ../compat ]; then
+        pushd ../compat
+            %ccache_zero
+            env CCACHE_BASEDIR="${PWD}" %make
+            %ccache_stats
+        popd
+    fi
+
+    # Temporary, remove once we are ready for openssl 4
+    exit 0
+
+    %ccache_zero
+    env CCACHE_BASEDIR="${PWD}" %make
+    %ccache_stats
 install     : |
-    %make_install MANSUFFIX=openssl
-    rm -v %(installroot)%(libdir)/*.a
+    if [ -d ../compat ]; then
+        pushd ../compat
+            %make_install MANSUFFIX=openssl
+            rm -v %(installroot)%(libdir)/*.a
+
+            # Co-installability
+            mv %(installroot)%(includedir)/openssl %(installroot)%(includedir)/openssl-3
+            for i in libcrypto libssl; do
+                mv %(installroot)%(libdir)/${i}.so %(installroot)%(libdir)/${i}-o3.so
+            done
+
+            if [[ %(target_triple) = i686* ]]; then
+                rm -rfv %(installroot)%(includedir)/openssl-3
+            fi
+
+            # Cleanup
+            if [ -d ../current ]; then
+                rm -rfv %(installroot)%(bindir) \
+                        %(installroot)/etc/ssl/ct* \
+                        %(installroot)/etc/ssl/misc/ \
+                        %(installroot)%(docdir) \
+                        %(installroot)%(mandir) \
+                        %(installroot)%(libdir)/cmake
+            fi
+        popd
+    fi
+
+    # %make_install MANSUFFIX=openssl
+    # rm -v %(installroot)%(libdir)/*.a
+
+    # Temporary
+    if [ ! -d ../current ]; then
+        for i in libcrypto libssl; do
+            ln -srv %(installroot)%(libdir)/${i}-o3.so %(installroot)%(libdir)/${i}.so
+        done
+        for i in libcrypto libssl openssl; do
+            ln -srv %(installroot)%(libdir)/pkgconfig/${i}3.pc %(installroot)%(libdir)/pkgconfig/${i}.pc
+        done
+
+        ln -srv %(installroot)%(libdir)/ossl-modules-3 %(installroot)%(libdir)/ossl-modules
+    fi
+
+    if [[ %(target_triple) = i686* ]]; then
+        exit 0
+    fi
+
+    # Temporary
+    if [ ! -d ../current ]; then
+        %install_dir %(installroot)%(includedir)/openssl
+        cp -rf %(installroot)%(includedir)/openssl-3/* %(installroot)%(includedir)/openssl/
+    fi
 
     # Stateless
     %install_dir %(installroot)/%(vendordir)
@@ -65,7 +156,11 @@ install     : |
     rmdir %(installroot)/%(vendordir)/ssl/certs
     rmdir %(installroot)/%(vendordir)/ssl/private
 
-    # TODO: Can we just delete c_rehash now that we manage certificates properly in ca-certificates?
+    # Temporary
+    if [ ! -d ../current ]; then
+        ln -srv %(installroot)%(vendordir)/ssl/openssl3.cnf %(installroot)%(vendordir)/ssl/openssl.cnf
+        ln -srv %(installroot)%(vendordir)/ssl/openssl3.cnf.dist %(installroot)%(vendordir)/ssl/openssl.cnf.dist
+    fi
 tuning      :
     - lto: false # https://github.com/openssl/openssl/issues/18663
 packages    :
@@ -81,7 +176,9 @@ packages    :
             - /usr/lib/libcrypto.so.*
             - /usr/lib/libssl.so.*
             - /usr/lib/engines-*
-            - /usr/lib/ossl-modules
+            - /usr/lib/ossl-modules*
+            - /usr/share/defaults/ssl/openssl*.cnf*
+            - /usr/share/defaults/ssl/ct_log_list.cnf*
 
     - "%(name)-32bit":
         rundeps:
