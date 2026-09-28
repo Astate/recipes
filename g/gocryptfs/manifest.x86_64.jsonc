@@ -12,7 +12,7 @@
 				"binary(fusermount3)",
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))"
+				"soname(libcrypto.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/bin/gocryptfs",
@@ -29,6 +29,6 @@
 		}
 	},
 	"source-name": "gocryptfs",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "2.6.1"
 }
