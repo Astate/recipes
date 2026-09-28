@@ -3,7 +3,7 @@
 
 name        : cryptsetup
 version     : "2.8.8"
-release     : 15
+release     : 16
 homepage    : https://gitlab.com/cryptsetup/cryptsetup
 upstreams   :
     - https://gitlab.com/cryptsetup/cryptsetup/-/archive/v2.8.8/cryptsetup-v2.8.8.tar.gz : 3aa3bb45472b5de8169b58260b2d59e55557c2c0e210f044fe9148da344db1e0
