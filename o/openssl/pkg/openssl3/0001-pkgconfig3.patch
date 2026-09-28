@@ -83,7 +83,7 @@ index eb6adffa91..87aec11b3b 100644
  Description: OpenSSL cryptography library
  Version: {- $OpenSSL::safe::installdata::VERSION -}
 -Libs: -L${libdir} -lcrypto
-+Libs: -L${libdir} -lcrypto-o3
++Libs: -L${libdir} -lcrypto-3
  Libs.private: {- join(' ', @OpenSSL::safe::installdata::LDLIBS) -}
  Cflags:{- $OUT = ' -I${includedir}';
            if (scalar @OpenSSL::safe::installdata::INCLUDEDIR_REL_PREFIX > 1) {
@@ -101,8 +101,8 @@ index 53228dde4a..d9e8e4299c 100644
  Version: {- $OpenSSL::safe::installdata::VERSION -}
 -Requires.private: libcrypto
 -Libs: -L${libdir} -lssl
-+Requires.private: libcrypto3
-+Libs: -L${libdir} -lssl-o3
++Requires.private: libcrypto-3
++Libs: -L${libdir} -lssl-3
  Cflags:{- $OUT = ' -I${includedir}';
            if (scalar @OpenSSL::safe::installdata::INCLUDEDIR_REL_PREFIX > 1) {
                $OUT = '';
@@ -119,4 +119,4 @@ index fd3bc9ac86..8806a43ad5 100644
  Description: Secure Sockets Layer and cryptography libraries and tools
  Version: {- $OpenSSL::safe::installdata::VERSION -}
 -Requires: libssl libcrypto
-+Requires: libssl3 libcrypto3
++Requires: libssl-3 libcrypto-3

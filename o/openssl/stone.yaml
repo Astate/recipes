@@ -3,7 +3,7 @@
 
 name        : openssl
 version     : "4.0.2"
-release     : 39
+release     : 40
 summary     : OpenSSL cryptography library
 license     :
     - OpenSSL

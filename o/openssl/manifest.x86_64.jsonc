@@ -587,9 +587,7 @@
 			],
 			"depends": [
 				"openssl-32bit",
-				"openssl-devel",
-				"pkgconfig(libcrypto3)",
-				"pkgconfig(libssl3)"
+				"openssl-devel"
 			],
 			"files": [
 				"/usr/lib32/cmake/OpenSSL/OpenSSLConfig.cmake",
@@ -625,9 +623,7 @@
 				"pkgconfig32(zlib)"
 			],
 			"depends": [
-				"openssl",
-				"pkgconfig(libcrypto3)",
-				"pkgconfig(libssl3)"
+				"openssl"
 			],
 			"files": [
 				"/usr/include/openssl-3/aes.h",
@@ -8054,6 +8050,6 @@
 		}
 	},
 	"source-name": "openssl",
-	"source-release": "39",
+	"source-release": "40",
 	"source-version": "4.0.2"
 }
