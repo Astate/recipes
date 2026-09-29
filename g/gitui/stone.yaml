@@ -1,11 +1,9 @@
-#
-# SPDX-FileCopyrightText: © 2026- AerynOS Developers
-#
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
-#
+
 name        : gitui
 version     : 0.28.1
-release     : 2
+release     : 3
 homepage    : https://github.com/gitui-org/gitui
 upstreams   :
     - https://github.com/gitui-org/gitui/archive/refs/tags/v0.28.1.tar.gz : 0400cbf59605490b5fb8779f9af41fa4d7a1bb748093ca0e13156a5dff31c7aa
@@ -15,16 +13,22 @@ description : |
 license     : MIT
 networking  : true
 builddeps   :
+    - pkgconfig(libgit2)
+    - pkgconfig(libssh2)
     - pkgconfig(openssl)
+    - pkgconfig(zlib)
 checkdeps   :
     - binary(python)
+environment : |
+    export LIBGIT2_NO_VENDOR=1
+    export LIBSSH2_SYS_USE_PKG_CONFIG=1
+    export OPENSSL_NO_VENDOR=true
 setup       : |
+    %patch %(pkgdir)/ftbfs-openssl-4.patch
     %cargo_fetch
 build       : |
-    export OPENSSL_NO_VENDOR=true
     %cargo_build
 install     : |
     %cargo_install
 check       : |
-    export OPENSSL_NO_VENDOR=true
     %cargo_test

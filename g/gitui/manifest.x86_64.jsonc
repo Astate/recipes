@@ -5,16 +5,20 @@
 		"gitui": {
 			"build-depends": [
 				"binary(python)",
-				"pkgconfig(openssl)"
+				"pkgconfig(libgit2)",
+				"pkgconfig(libssh2)",
+				"pkgconfig(openssl)",
+				"pkgconfig(zlib)"
 			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
+				"soname(libgit2.so.1.9(x86_64))",
 				"soname(libm.so.6(x86_64))",
-				"soname(libssl.so.3(x86_64))"
+				"soname(libssh2.so.1(x86_64))",
+				"soname(libssl.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/bin/gitui"
@@ -26,6 +30,6 @@
 		}
 	},
 	"source-name": "gitui",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "0.28.1"
 }
