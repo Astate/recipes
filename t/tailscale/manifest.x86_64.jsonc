@@ -30,6 +30,6 @@
 		}
 	},
 	"source-name": "tailscale",
-	"source-release": "19",
-	"source-version": "1.102.4"
+	"source-release": "20",
+	"source-version": "1.102.5"
 }
