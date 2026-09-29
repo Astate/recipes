@@ -180,7 +180,7 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgnutls.so.30(x86_64))",
 				"soname(libjpeg.so.8(x86_64))",
@@ -198,6 +198,6 @@
 		}
 	},
 	"source-name": "qpdf",
-	"source-release": "10",
+	"source-release": "11",
 	"source-version": "12.4.2"
 }
