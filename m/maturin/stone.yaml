@@ -3,7 +3,7 @@
 
 name        : maturin
 version     : "1.15.0"
-release     : 20
+release     : 21
 homepage    : https://www.maturin.rs
 upstreams   :
     - https://pypi.debian.net/maturin/maturin-1.15.0.tar.gz : 94b26cc8e8aba61a5f2099715fe640e18c5f678e9a500408b38761263954228a
