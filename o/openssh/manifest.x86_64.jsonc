@@ -18,7 +18,7 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libedit.so.0(x86_64))",
 				"soname(libfido2.so.1(x86_64))",
 				"soname(libgssapi_krb5.so.2(x86_64))",
@@ -82,7 +82,7 @@
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcrypt.so.2(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgssapi_krb5.so.2(x86_64))",
 				"soname(libkrb5.so.3(x86_64))",
 				"soname(libpam.so.0(x86_64))",
@@ -132,6 +132,6 @@
 		}
 	},
 	"source-name": "openssh",
-	"source-release": "24",
+	"source-release": "25",
 	"source-version": "10.5p1"
 }

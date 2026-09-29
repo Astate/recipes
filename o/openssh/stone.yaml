@@ -3,7 +3,7 @@
 
 name        : openssh
 version     : "10.5p1"
-release     : 24
+release     : 25
 summary     : OpenSSH (OpenBSD Secure Shell)
 license     :
     - BSD-2-Clause
@@ -40,7 +40,6 @@ setup       : |
         --with-ldns \
         --with-libedit \
         --with-pam \
-        --with-ssl-engine \
         --with-security-key-builtin \
         --disable-lastlog \
         --disable-strip
