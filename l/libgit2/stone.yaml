@@ -3,7 +3,7 @@
 
 name        : libgit2
 version     : "1.9.7"
-release     : 11
+release     : 12
 homepage    : https://libgit2.org
 upstreams   :
     - https://github.com/libgit2/libgit2/archive/refs/tags/v1.9.7.tar.gz : 1a4fbe7589e814777ae76b64734ad80f4ecad22cd33a22682a2aaea4ae5375e7
