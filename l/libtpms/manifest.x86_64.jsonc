@@ -8,7 +8,7 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))"
+				"soname(libcrypto.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libtpms.so.0",
@@ -71,6 +71,6 @@
 		}
 	},
 	"source-name": "libtpms",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "0.10.2"
 }
