@@ -1,0 +1,140 @@
+From 61a9c7d495624417ddce382a55fa3866845bc2c0 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Istv=C3=A1n=20V=C3=A1radi?= <ivaradi@varadiistvan.hu>
+Date: Mon, 14 Sep 2026 12:00:04 +0200
+Subject: [PATCH] fix(clntenc): Do not use ENGINE_get_default_RSA
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+ENGINE_get_default_RSA() has been deprecated since OpenSSL 3.0,
+and removed in OpenSSL 4.0. Its return value was used
+in two calls to EVP_PKEY_CTX_new() where it is optional.
+These usages are removed and replaced by nullptr.
+
+Assisted-by: OpenCode:deepseek-v4.1-flash
+Signed-off-by: István Váradi <ivaradi@varadiistvan.hu>
+---
+ src/libsync/clientsideencryption.cpp           | 16 ++++------------
+ src/libsync/clientsideencryption.h             |  2 --
+ src/libsync/clientsideencryptionprimitives.cpp |  8 ++++----
+ src/libsync/clientsideencryptionprimitives.h   |  4 ++--
+ 4 files changed, 10 insertions(+), 20 deletions(-)
+
+diff --git a/src/libsync/clientsideencryption.cpp b/src/libsync/clientsideencryption.cpp
+index 496d45d4dedd1..73a10d4eb2f53 100644
+--- a/src/libsync/clientsideencryption.cpp
++++ b/src/libsync/clientsideencryption.cpp
+@@ -45,7 +45,6 @@
+ #include <openssl/evp.h>
+ #include <openssl/pem.h>
+ #include <openssl/err.h>
+-#include <openssl/engine.h>
+ #include <openssl/rand.h>
+ #include <openssl/cms.h>
+ 
+@@ -744,15 +743,14 @@ QByteArray encryptStringSymmetric(const QByteArray& key, const QByteArray& data)
+ 
+ namespace internals {
+ 
+-OCC::Result<QByteArray, OCC::ClientSideEncryption::EncryptionErrorType> decryptStringAsymmetric(ClientSideEncryption &encryptionEngine,
++OCC::Result<QByteArray, OCC::ClientSideEncryption::EncryptionErrorType> decryptStringAsymmetric(ClientSideEncryption &,
+                                                                                                 EVP_PKEY *privateKey,
+                                                                                                 int pad_mode,
+                                                                                                 const QByteArray& binaryData)
+ {
+-    const auto sslEngine = encryptionEngine.sslEngine();
+     int err = -1;
+ 
+-    auto ctx = PKeyCtx::forKey(privateKey, sslEngine);
++    auto ctx = PKeyCtx::forKey(privateKey);
+     if (!ctx) {
+         qCInfo(lcCseDecryption()) << "Could not create the PKEY context." << handleErrors();
+         return {OCC::ClientSideEncryption::EncryptionErrorType::FatalError};
+@@ -806,10 +804,9 @@ OCC::Result<QByteArray, ClientSideEncryption::EncryptionErrorType> encryptString
+                                                                                            EVP_PKEY *publicKey,
+                                                                                            int pad_mode,
+                                                                                            const QByteArray& binaryData) {
+-    const auto sslEngine = encryptionEngine.sslEngine();
+-    auto ctx = PKeyCtx::forKey(publicKey, sslEngine);
++    auto ctx = PKeyCtx::forKey(publicKey);
+     if (!ctx) {
+-        qCInfo(lcCseEncryption()) << "Could not initialize the pkey context." << publicKey << sslEngine;
++        qCInfo(lcCseEncryption()) << "Could not initialize the pkey context." << publicKey;
+         return {OCC::ClientSideEncryption::EncryptionErrorType::FatalError};
+     }
+ 
+@@ -979,11 +976,6 @@ const QSslCertificate& ClientSideEncryption::getCertificate() const
+     return _encryptionCertificate.getCertificate();
+ }
+ 
+-ENGINE* ClientSideEncryption::sslEngine() const
+-{
+-    return ENGINE_get_default_RSA();
+-}
+-
+ ClientSideEncryptionTokenSelector *ClientSideEncryption::usbTokenInformation()
+ {
+     return &_usbTokenInformation;
+diff --git a/src/libsync/clientsideencryption.h b/src/libsync/clientsideencryption.h
+index 55680e844e9dd..191c105527916 100644
+--- a/src/libsync/clientsideencryption.h
++++ b/src/libsync/clientsideencryption.h
+@@ -275,8 +275,6 @@ class OWNCLOUDSYNC_EXPORT ClientSideEncryption : public QObject {
+ 
+     [[nodiscard]] const QSslCertificate& getCertificate() const;
+ 
+-    [[nodiscard]] ENGINE* sslEngine() const;
+-
+     [[nodiscard]] QByteArray generateSignatureCryptographicMessageSyntax(const QByteArray &data) const;
+ 
+     [[nodiscard]] bool verifySignatureCryptographicMessageSyntax(const QByteArray &cmsContent, const QByteArray &data, const QVector<QByteArray> &certificatePems) const;
+diff --git a/src/libsync/clientsideencryptionprimitives.cpp b/src/libsync/clientsideencryptionprimitives.cpp
+index eef23891a3fab..f7c28ebf630fc 100644
+--- a/src/libsync/clientsideencryptionprimitives.cpp
++++ b/src/libsync/clientsideencryptionprimitives.cpp
+@@ -24,8 +24,8 @@ Bio::operator BIO *()
+     return _bio;
+ }
+ 
+-PKeyCtx::PKeyCtx(int id, ENGINE *e)
+-    : _ctx(EVP_PKEY_CTX_new_id(id, e))
++PKeyCtx::PKeyCtx(int id)
++    : _ctx(EVP_PKEY_CTX_new_id(id, nullptr))
+ {
+ }
+ 
+@@ -39,10 +39,10 @@ PKeyCtx::~PKeyCtx()
+     EVP_PKEY_CTX_free(_ctx);
+ }
+ 
+-PKeyCtx PKeyCtx::forKey(EVP_PKEY *pkey, ENGINE *e)
++PKeyCtx PKeyCtx::forKey(EVP_PKEY *pkey)
+ {
+     PKeyCtx ctx;
+-    ctx._ctx = EVP_PKEY_CTX_new(pkey, e);
++    ctx._ctx = EVP_PKEY_CTX_new(pkey, nullptr);
+     Q_ASSERT(ctx._ctx);
+     return ctx;
+ }
+diff --git a/src/libsync/clientsideencryptionprimitives.h b/src/libsync/clientsideencryptionprimitives.h
+index b8cfb60af7909..81bdfd9a343b6 100644
+--- a/src/libsync/clientsideencryptionprimitives.h
++++ b/src/libsync/clientsideencryptionprimitives.h
+@@ -37,7 +37,7 @@ class Bio
+ class PKeyCtx
+ {
+ public:
+-    explicit PKeyCtx(int id, ENGINE *e = nullptr);
++    explicit PKeyCtx(int id);
+ 
+     ~PKeyCtx();
+ 
+@@ -48,7 +48,7 @@ class PKeyCtx
+     PKeyCtx(PKeyCtx &&other);
+     PKeyCtx &operator=(PKeyCtx &&other) = delete;
+ 
+-    static PKeyCtx forKey(EVP_PKEY *pkey, ENGINE *e = nullptr);
++    static PKeyCtx forKey(EVP_PKEY *pkey);
+ 
+     operator EVP_PKEY_CTX *();
+ 

@@ -1,0 +1,45 @@
+From f35888572a550d27f6f7dc569601ff55569ce160 Mon Sep 17 00:00:00 2001
+From: Ravi Kant Sharma <ravi.kant.sharma@canonical.com>
+Date: Mon, 22 Jun 2026 19:36:46 +0200
+Subject: [PATCH] fix: build error with OpenSSL 4.0
+
+X509_REQ_get_subject_name() now returns const X509_NAME * in OpenSSL 4.0.
+Per the OpenSSL migration guide, create a mutable X509_NAME, populate it,
+and set it on the request with X509_REQ_set_subject_name().
+
+Fixes https://bugs.launchpad.net/ubuntu/+source/nextcloud-desktop/+bug/2154940
+
+Signed-off-by: Ravi Kant Sharma <ravi.kant.sharma@canonical.com>
+---
+ src/libsync/clientsideencryption.cpp | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+diff --git a/src/libsync/clientsideencryption.cpp b/src/libsync/clientsideencryption.cpp
+index c5426ef2dff6f..6d3e7b9b1954c 100644
+--- a/src/libsync/clientsideencryption.cpp
++++ b/src/libsync/clientsideencryption.cpp
+@@ -2012,7 +2012,10 @@ std::pair<QByteArray, PKey> ClientSideEncryption::generateCSR(PKey keyPair,
+     }
+ 
+     // 3. set subject of x509 req
+-    auto x509_name = X509_REQ_get_subject_name(x509_req);
++    auto x509_name = X509_NAME_new();
++    auto release_on_exit_x509_name = qScopeGuard([&] {
++        X509_NAME_free(x509_name);
++    });
+ 
+     for(const auto& v : certParams) {
+         ret = X509_NAME_add_entry_by_txt(x509_name, v.first,  MBSTRING_ASC, (const unsigned char*) v.second, -1, -1, 0);
+@@ -2022,6 +2025,12 @@ std::pair<QByteArray, PKey> ClientSideEncryption::generateCSR(PKey keyPair,
+         }
+     }
+ 
++    ret = X509_REQ_set_subject_name(x509_req, x509_name);
++    if (ret != 1) {
++        qCWarning(lcCse()) << "Error setting the subject name on the certificate signing request";
++        return {result, std::move(keyPair)};
++    }
++
+     ret = X509_REQ_set_pubkey(x509_req, keyPair);
+     if (ret != 1){
+         qCWarning(lcCse()) << "Error setting the public key on the csr";
