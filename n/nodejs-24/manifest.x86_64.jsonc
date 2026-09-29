@@ -28,14 +28,14 @@
 				"soname(libbrotlienc.so.1(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcares.so.2(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libicui18n.so.78(x86_64))",
 				"soname(libicuuc.so.78(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libnghttp2.so.14(x86_64))",
 				"soname(libsqlite3.so.0(x86_64))",
-				"soname(libssl.so.3(x86_64))",
+				"soname(libssl.so.4(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libuv.so.1(x86_64))",
 				"soname(libz.so.1(x86_64))",
@@ -1628,6 +1628,6 @@
 		}
 	},
 	"source-name": "nodejs-24",
-	"source-release": "13",
+	"source-release": "14",
 	"source-version": "24.21.0"
 }

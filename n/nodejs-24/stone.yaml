@@ -3,7 +3,7 @@
 
 name        : nodejs-24
 version     : "24.21.0"
-release     : 13
+release     : 14
 homepage    : https://nodejs.org/
 upstreams   :
     - https://nodejs.org/dist/v24.21.0/node-v24.21.0.tar.gz : 622424efb5dc0c26c93fbb619ff10737ee289c605b837c88778e186925d82777
