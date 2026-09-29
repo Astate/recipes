@@ -202,7 +202,7 @@
 				"soname(libavahi-common.so.3(x86_64))",
 				"soname(libavahi-glib.so.1(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libcurl.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgio-2.0.so.0(x86_64))",
@@ -227,6 +227,6 @@
 		}
 	},
 	"source-name": "libostree",
-	"source-release": "19",
+	"source-release": "20",
 	"source-version": "2026.4"
 }
