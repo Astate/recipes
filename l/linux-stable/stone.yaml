@@ -3,7 +3,7 @@
 
 name        : linux-stable
 version     : "7.2.8"
-release     : 64
+release     : 65
 homepage    : https://kernel.org/
 upstreams   :
         - https://cdn.kernel.org/pub/linux/kernel/v7.x/linux-7.2.8.tar.xz : 12e8d5a973d1ad7c5a5c69882e4022b131ed715db7003fdcd760ddf8c3e51941
