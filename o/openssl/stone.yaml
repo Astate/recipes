@@ -3,7 +3,7 @@
 
 name        : openssl
 version     : "4.0.3"
-release     : 41
+release     : 42
 summary     : OpenSSL cryptography library
 license     :
     - OpenSSL
@@ -16,8 +16,8 @@ upstreams   :
         hash: 325b5c806167c13b40b1ffeadfe0248197c00eccc4cf123ec1e28d2d2fd216d9
         unpackdir: current
 
-    - https://www.openssl.org/source/openssl-3.6.5.tar.gz:
-        hash: a2157c2830efdec3788939b00c9b0638306d3f0bbb76dc4832ee503bb397df98
+    - https://www.openssl.org/source/openssl-3.5.9.tar.gz:
+        hash: 603f5602e2eef00d77fbd429d34dcd5822bb301757a1bc9cdb24c670f1eb859a
         unpackdir: compat
 builddeps   :
     - binary(perl)
@@ -49,17 +49,19 @@ setup       : |
         %patch %(pkgdir)/config.patch
         %patch %(pkgdir)/0001-Fix-soname-dynamic-loading.patch
 
-        ./Configure $OSSL_TARGET \
-            --prefix=/usr \
-            --libdir=lib%(libsuffix) \
-            --openssldir=/etc/ssl \
-            enable-brotli-dynamic \
-            enable-ktls \
-            enable-zstd-dynamic \
-            no-rc4 \
-            shared \
-            zlib-dynamic \
-            ${_extra_opts}
+        if [[ ! %(target_triple) = i686* ]]; then
+            ./Configure $OSSL_TARGET \
+                --prefix=/usr \
+                --libdir=lib%(libsuffix) \
+                --openssldir=/etc/ssl \
+                enable-brotli-dynamic \
+                enable-ktls \
+                enable-zstd-dynamic \
+                no-rc4 \
+                shared \
+                zlib-dynamic \
+                ${_extra_opts}
+        fi
         popd
     fi
 
@@ -81,9 +83,11 @@ setup       : |
 build       : |
     if [ -d ../compat ]; then
         pushd ../compat
+        if [[ ! %(target_triple) = i686* ]]; then
             %ccache_zero
             env CCACHE_BASEDIR="${PWD}" %make
             %ccache_stats
+        fi
         popd
     fi
 
@@ -93,25 +97,18 @@ build       : |
 install     : |
     if [ -d ../compat ]; then
         pushd ../compat
-            %make_install MANSUFFIX=openssl
-            rm -v %(installroot)%(libdir)/*.a
-
-            # Co-installability
             if [[ ! %(target_triple) = i686* ]]; then
-                mv %(installroot)%(includedir)/openssl %(installroot)%(includedir)/openssl-3
-            fi
-            for i in libcrypto libssl; do
-                mv %(installroot)%(libdir)/${i}.so %(installroot)%(libdir)/${i}-3.so
-            done
+                mkdir tmp
+                make install DESTDIR="${PWD}/tmp" MANSUFFIX=openssl
 
-            # Cleanup
-            if [ -d ../current ]; then
-                rm -rfv %(installroot)%(bindir) \
-                        %(installroot)/etc/ssl/ct* \
-                        %(installroot)/etc/ssl/misc/ \
-                        %(installroot)%(docdir) \
-                        %(installroot)%(mandir) \
-                        %(installroot)%(libdir)/cmake
+                # Only copy the libraries and config
+                %install_dir %(installroot)/%(libdir)/engines-3 \
+                             %(installroot)/%(libdir)/ossl-modules-3 \
+                             %(installroot)/%(vendordir)/ssl
+                mv tmp/%(libdir)/*.so.* %(installroot)/%(libdir)
+                mv tmp/%(libdir)/engines-3/*.so %(installroot)/%(libdir)/engines-3/
+                mv tmp/%(libdir)/ossl-modules-3/*.so %(installroot)/%(libdir)/ossl-modules-3/
+                mv tmp/%(sysconfdir)/ssl/openssl3* %(installroot)/%(vendordir)/ssl/
             fi
         popd
     fi
@@ -120,43 +117,15 @@ install     : |
     rm -v %(installroot)%(libdir)/*.a
 
     if [[ %(target_triple) = i686* ]]; then
-        rm -rfv %(installroot)%(includedir)/openssl*
-    fi
-
-    # Temporary
-    if [ ! -d ../current ]; then
-        for i in libcrypto libssl; do
-            ln -srv %(installroot)%(libdir)/${i}-3.so %(installroot)%(libdir)/${i}.so
-        done
-        for i in libcrypto libssl openssl; do
-            ln -srv %(installroot)%(libdir)/pkgconfig/${i}-3.pc %(installroot)%(libdir)/pkgconfig/${i}.pc
-        done
-
-        ln -srv %(installroot)%(libdir)/ossl-modules-3 %(installroot)%(libdir)/ossl-modules
-    fi
-
-    if [[ %(target_triple) = i686* ]]; then
         exit 0
     fi
 
-    # Temporary
-    if [ ! -d ../current ]; then
-        %install_dir %(installroot)%(includedir)/openssl
-        cp -rf %(installroot)%(includedir)/openssl-3/* %(installroot)%(includedir)/openssl/
-    fi
-
     # Stateless
-    %install_dir %(installroot)/%(vendordir)
-    mv %(installroot)/etc/ssl %(installroot)/%(vendordir)/
-    rmdir %(installroot)/etc
+    %install_dir %(installroot)/%(vendordir)/ssl/
+    mv --force --update=all %(installroot)/etc/ssl/* %(installroot)/%(vendordir)/ssl/
+    rmdir %(installroot)/etc/ssl %(installroot)/etc
     rmdir %(installroot)/%(vendordir)/ssl/certs
     rmdir %(installroot)/%(vendordir)/ssl/private
-
-    # Temporary
-    if [ ! -d ../current ]; then
-        ln -srv %(installroot)%(vendordir)/ssl/openssl3.cnf %(installroot)%(vendordir)/ssl/openssl.cnf
-        ln -srv %(installroot)%(vendordir)/ssl/openssl3.cnf.dist %(installroot)%(vendordir)/ssl/openssl.cnf.dist
-    fi
 tuning      :
     - lto: false # https://github.com/openssl/openssl/issues/18663
 packages    :
