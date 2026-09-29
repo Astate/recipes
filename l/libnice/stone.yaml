@@ -3,7 +3,7 @@
 
 name        : libnice
 version     : "0.1.24"
-release     : 4
+release     : 5
 upstreams   :
     - https://gitlab.freedesktop.org/libnice/libnice/-/archive/0.1.24/libnice-0.1.24.tar.gz : 1da5ac13ed5d4e175e0d2d46ad3748c6635244f8f3eb2b8e31578ef59aa2ddce
 homepage    : https://nice.freedesktop.org
