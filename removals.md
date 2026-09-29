@@ -283,3 +283,6 @@ NB: Each entry *must* contain all sub-packages created by the package!
 ### No longer built
 - gvfs-afp
 - gvfs-archive
+
+### Refactored so the session files are in labwc
+- labwc-session
