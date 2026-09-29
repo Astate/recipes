@@ -3,7 +3,7 @@
 
 name        : sccache
 version     : "0.18.0"
-release     : 14
+release     : 15
 homepage    : https://github.com/mozilla/sccache
 upstreams   :
     - https://github.com/mozilla/sccache/archive/refs/tags/v0.18.0.tar.gz : 14e37fc2cb4f21c188789d518e170181b7cd1ba523152880cdf8009269d79732
@@ -19,6 +19,7 @@ environment : |
     export ZSTD_SYS_USE_PKG_CONFIG=1
 setup       : |
     %patch %(pkgdir)/0001-Avoid-double-caching-on-Solus-and-AerynOS.patch
+    %patch %(pkgdir)/0001-ftbfs-openssl-4.patch
 
     %cargo_fetch
 build       : |
