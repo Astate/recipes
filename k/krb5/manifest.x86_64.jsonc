@@ -22,7 +22,7 @@
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcom_err.so.2(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgssapi_krb5.so.2(x86_64))",
 				"soname(libgssrpc.so.4(x86_64))",
 				"soname(libk5crypto.so.3(x86_64))",
@@ -275,11 +275,11 @@
 			"depends": [
 				"soname(libc.so.6(x86_64))",
 				"soname(libcom_err.so.2(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libkeyutils.so.1(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libresolv.so.2(x86_64))",
-				"soname(libssl.so.3(x86_64))"
+				"soname(libssl.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/krb5/plugins/preauth/spake.so",
@@ -326,6 +326,6 @@
 		}
 	},
 	"source-name": "krb5",
-	"source-release": "7",
+	"source-release": "8",
 	"source-version": "1.22.2"
 }
