@@ -16,12 +16,12 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libexpat.so.1(x86_64))",
 				"soname(libidn2.so.0(x86_64))",
 				"soname(libncursesw.so.6(x86_64))",
 				"soname(libreadline.so.8(x86_64))",
-				"soname(libssl.so.3(x86_64))",
+				"soname(libssl.so.4(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libz.so.1(x86_64))"
 			],
@@ -64,6 +64,6 @@
 		}
 	},
 	"source-name": "lftp",
-	"source-release": "3",
+	"source-release": "4",
 	"source-version": "4.9.3"
 }
