@@ -11,9 +11,9 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
-				"soname(libssl.so.3(x86_64))",
+				"soname(libssl.so.4(x86_64))",
 				"soname(libstdc++.so.6(x86_64))"
 			],
 			"files": [
@@ -355,7 +355,7 @@
 			"depends": [
 				"soname(libboost_python314.so.1.92.0(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
 				"soname(libtorrent-rasterbar.so.2.1(x86_64))"
@@ -375,6 +375,6 @@
 		}
 	},
 	"source-name": "libtorrent-rasterbar",
-	"source-release": "11",
+	"source-release": "12",
 	"source-version": "2.1.2"
 }
