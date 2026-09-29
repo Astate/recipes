@@ -10,7 +10,7 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))"
+				"soname(libcrypto.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libsrtp2.so.1"
@@ -44,6 +44,6 @@
 		}
 	},
 	"source-name": "libsrtp",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "2.8.1"
 }
