@@ -3,7 +3,7 @@
 
 name        : forgejo-cli
 version     : "0.6.0"
-release     : 1
+release     : 2
 homepage    : https://codeberg.org/forgejo-contrib/forgejo-cli
 upstreams   :
     - https://codeberg.org/forgejo-contrib/forgejo-cli/archive/v0.6.0.tar.gz : 8b91194cb1886f253261a4567ee6f83aa34b05a9637644793f88b40b7110322a

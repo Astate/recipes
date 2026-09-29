@@ -16,7 +16,7 @@
 				"soname(libgit2.so.1.9(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libssh2.so.1(x86_64))",
-				"soname(libssl.so.3(x86_64))"
+				"soname(libssl.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/bin/fj",
@@ -31,6 +31,6 @@
 		}
 	},
 	"source-name": "forgejo-cli",
-	"source-release": "1",
+	"source-release": "2",
 	"source-version": "0.6.0"
 }
