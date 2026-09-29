@@ -41,11 +41,11 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libcurl.so.4(x86_64))",
 				"soname(libgssapi_krb5.so.2(x86_64))",
 				"soname(libldap.so.2(x86_64))",
-				"soname(libssl.so.3(x86_64))"
+				"soname(libssl.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libpq-oauth-18.so",
@@ -215,7 +215,7 @@
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"postgresql-client",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libgssapi_krb5.so.2(x86_64))",
 				"soname(libicui18n.so.78(x86_64))",
@@ -226,7 +226,7 @@
 				"soname(libnuma.so.1(x86_64))",
 				"soname(libpam.so.0(x86_64))",
 				"soname(libpq.so.5(x86_64))",
-				"soname(libssl.so.3(x86_64))",
+				"soname(libssl.so.4(x86_64))",
 				"soname(libsystemd.so.0(x86_64))",
 				"soname(liburing.so.2(x86_64))",
 				"soname(libuuid.so.1(x86_64))",
@@ -1642,7 +1642,7 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(liblz4.so.1(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libpq.so.5(x86_64))",
@@ -3114,6 +3114,6 @@
 		}
 	},
 	"source-name": "postgresql",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "18.6"
 }
