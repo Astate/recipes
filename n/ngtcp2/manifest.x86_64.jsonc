@@ -10,8 +10,8 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
-				"soname(libssl.so.3(x86_64))"
+				"soname(libcrypto.so.4(x86_64))",
+				"soname(libssl.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/libngtcp2.so.16",
@@ -80,6 +80,6 @@
 		}
 	},
 	"source-name": "ngtcp2",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "1.25.0"
 }
