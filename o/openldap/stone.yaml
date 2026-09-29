@@ -3,7 +3,7 @@
 
 name        : openldap
 version     : "2.6.14"
-release     : 8
+release     : 9
 homepage    : https://www.openldap.org/
 upstreams   :
     - https://www.openldap.org/software/download/OpenLDAP/openldap-release/openldap-2.6.14.tgz : 806dcd21d366428187fba3278da773d5930f774852c9e92517f950d585f19107

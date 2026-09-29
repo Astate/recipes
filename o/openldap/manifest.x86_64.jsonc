@@ -15,9 +15,9 @@
 			],
 			"depends": [
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libsasl2.so.3(x86_64))",
-				"soname(libssl.so.3(x86_64))"
+				"soname(libssl.so.4(x86_64))"
 			],
 			"files": [
 				"/usr/lib/liblber.so.2",
@@ -422,6 +422,6 @@
 		}
 	},
 	"source-name": "openldap",
-	"source-release": "8",
+	"source-release": "9",
 	"source-version": "2.6.14"
 }
