@@ -3,7 +3,7 @@
 
 name        : eiipm
 version     : "1.0.0"
-release     : 2
+release     : 3
 homepage    : https://ewwii-sh.github.io/eiipm/
 upstreams   :
     - https://github.com/Ewwii-sh/eiipm/archive/refs/tags/v1.0.0.tar.gz : b3b14255d140995528ee5bdc67b5146f72d79837a7bdbca86256fe227345d04d
@@ -12,10 +12,15 @@ description : |
     Eiipm is the package manager of Ewwii
 license     : Apache-2.0
 builddeps   :
+    - pkgconfig(libssh2)
     - pkgconfig(openssl)
 networking  : true
+environment: |
+    export LIBSSH2_SYS_USE_PKG_CONFIG=1
 setup       : |
     %patch %(pkgdir)/Fix-Cargo.lock.patch
+    %patch %(pkgdir)/0001-ftbfs-openssl-4.patch
+
     %cargo_fetch
 build       : |
     %cargo_build

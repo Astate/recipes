@@ -1,0 +1,46 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Reilly Brogan <reilly@reillybrogan.com>
+Date: Mon, 28 Sep 2026 22:24:27 -0500
+Subject: [PATCH] ftbfs openssl 4
+
+---
+ Cargo.lock | 5 +++--
+ Cargo.toml | 1 +
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+diff --git a/Cargo.lock b/Cargo.lock
+index f6ecdbd..8b5a556 100644
+--- a/Cargo.lock
++++ b/Cargo.lock
+@@ -235,6 +235,7 @@ dependencies = [
+  "indexmap",
+  "indicatif",
+  "log",
++ "openssl-sys",
+  "serde",
+  "toml",
+  "ureq",
+@@ -678,9 +679,9 @@ checksum = "d05e27ee213611ffe7d6348b942e8f942b37114c00cc03cec254295a4a17852e"
+ 
+ [[package]]
+ name = "openssl-sys"
+-version = "0.9.109"
++version = "0.9.117"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+-checksum = "90096e2e47630d78b7d1c20952dc621f957103f8bc2c8359ec81290d75238571"
++checksum = "b47e7e6bb2c38cd930d25a23b40fa52e068c10e85f3e03a7f5ba5aaca5713695"
+ dependencies = [
+  "cc",
+  "libc",
+diff --git a/Cargo.toml b/Cargo.toml
+index 36c2f67..64736c0 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -16,6 +16,7 @@ git2 = { version = "0.20.2", features = ["vendored-libgit2"] }
+ indexmap = { version = "2.14.0", features = ["serde"] }
+ indicatif = "0.18.4"
+ log = "0.4.27"
++openssl-sys = "0.9.117"
+ serde = { version = "1.0.228", features = ["derive"] }
+ toml = "0.9.5"
+ ureq = "3.3.0"
