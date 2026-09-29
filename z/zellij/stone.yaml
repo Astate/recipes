@@ -1,25 +1,31 @@
-# SPDX-FileCopyrightText: 2024 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : zellij
 version     : "0.45.1"
-release     : 9
-license     : MIT
+release     : 10
 homepage    : https://zellij.dev/
 upstreams   :
     - https://github.com/zellij-org/zellij/archive/refs/tags/v0.45.1.tar.gz : 5cbe711437d2a61afd9287165f6aca0bcccb9ab1473633665a5b11ed55467852
 summary     : A terminal workspace with batteries included
 description : |
     Zellij is a terminal workspace. It has the base functionality of a terminal multiplexer (similar to tmux or screen) but includes many built-in features that would allow users to extend it and create their own personalized environment.
+license     : MIT
 networking  : true
 tuning      :
     - lto : thin
 builddeps   :
+    - pkgconfig(libcurl)
     - pkgconfig(openssl)
+    - pkgconfig(sqlite3)
+environment : |
+    export LIBSQLITE3_SYS_USE_PKG_CONFIG=1
+    export OPENSSL_NO_VENDOR=1
 setup       : |
+    %patch %(pkgdir)/ftbfs-openssl-4.patch
     %cargo_fetch
 build       : |
-    OPENSSL_NO_VENDOR=1 %cargo_build --no-default-features --features "plugins_from_target web_server_capability"
+    %cargo_build --no-default-features --features "plugins_from_target web_server_capability"
 
     %(cargo_target_dir)/zellij setup --generate-completion bash > zellij.bash
     %(cargo_target_dir)/zellij setup --generate-completion fish > zellij.fish
