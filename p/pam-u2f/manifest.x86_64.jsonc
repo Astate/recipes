@@ -11,7 +11,7 @@
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libfido2.so.1(x86_64))",
 				"soname(libpam.so.0(x86_64))"
 			],
@@ -29,6 +29,6 @@
 		}
 	},
 	"source-name": "pam-u2f",
-	"source-release": "2",
+	"source-release": "3",
 	"source-version": "1.4.0"
 }
