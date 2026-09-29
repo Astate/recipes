@@ -3,7 +3,7 @@
 
 name        : minizip-ng
 version     : "4.2.2"
-release     : 9
+release     : 10
 summary     : Fork of the zlib zip library
 license     : Zlib
 homepage    : https://github.com/zlib-ng/minizip-ng
