@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
-  id: 230542
+  id: 334922
   ignore:
     # Old tags that predate sdk-* versioning
   - ^1.*
