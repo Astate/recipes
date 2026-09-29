@@ -3,7 +3,7 @@
 
 name        : mariadb
 version     : "11.8.9"
-release     : 8
+release     : 9
 upstreams   :
     - https://archive.mariadb.org/mariadb-11.8.9/source/mariadb-11.8.9.tar.gz : 2e015b7e91004142eda8b3a20d3ceb875cf2ae55e72603e7222cd497d4e56fc6
 homepage    : https://mariadb.org/
