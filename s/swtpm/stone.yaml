@@ -3,7 +3,7 @@
 
 name        : swtpm
 version     : "0.10.2"
-release     : 3
+release     : 4
 upstreams   :
     - https://github.com/stefanberger/swtpm/archive/refs/tags/v0.10.2.tar.gz : f61cf6f1e9bbcb4cefb30b70cafaf1c4df54c6961e65cfa63830e8ad0e220134
 homepage    : https://github.com/stefanberger/swtpm
