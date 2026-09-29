@@ -3,7 +3,7 @@
 
 name        : ppp
 version     : "2.5.4"
-release     : 8
+release     : 9
 homepage    : https://ppp.samba.org/
 upstreams   :
     - https://download.samba.org/pub/ppp/ppp-2.5.4.tar.gz : 379a630a40d858a1347f6592d671791dde12101697a743ef9900012f3765be31
