@@ -3,7 +3,7 @@
 
 name        : qt5-base
 version     : "5.15.18+kde.bebdfd54"
-release     : 15
+release     : 16
 homepage    : https://www.qt.io
 upstreams   :
     - git|https://invent.kde.org/qt/qt/qtbase.git:
@@ -83,6 +83,9 @@ setup       : |
     %patch %(pkgdir)/fedora/0016-Fix-inactive-palette-in-gtk3-theme.patch
     %patch %(pkgdir)/fedora/0017-Fix-tooltip-palette-issue-in-gtk3-theme.patch
     %patch %(pkgdir)/fedora/0018-QGtk3Theme-define-light-midlight-mid-dark-and-shadow.patch
+
+    %patch %(pkgdir)/ftbfs-openssl-4.patch
+    %patch %(pkgdir)/ftbfs-openssl-4-2.patch
 
     _extra_args=-no-ccache
     if [[ " ${PATH[*]} " =~ "ccache" ]]; then
