@@ -3,7 +3,7 @@
 
 name        : ruby
 version     : "4.0.7"
-release     : 19
+release     : 20
 homepage    : https://www.ruby-lang.org/en/
 upstreams   :
     - https://cache.ruby-lang.org/pub/ruby/4.0/ruby-4.0.7.tar.gz : 911ace20f90d068ca0e4dda6d0e4f0f81e52e52f2dd4f4004c721e253412e82d
