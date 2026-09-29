@@ -3,7 +3,7 @@
 
 name        : pipewire
 version     : "1.6.9"
-release     : 39
+release     : 40
 homepage    : https://pipewire.org/
 upstreams   :
    - https://gitlab.freedesktop.org/pipewire/pipewire/-/archive/1.6.9/pipewire-1.6.9.tar.gz : dbc3624cf71215c26a22fc98f6f71f7b8599f5f6b415eab4a5c90ca96c170c7c
