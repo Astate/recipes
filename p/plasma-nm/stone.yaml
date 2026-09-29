@@ -3,7 +3,7 @@
 
 name        : plasma-nm
 version     : "6.7.5"
-release     : 33
+release     : 34
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/plasma-nm-6.7.5.tar.xz : 6469ff89e26d44565292c968df595b3a68f353707255ba48725c1bae2a67f3be
 homepage    : https://kde.org/plasma-desktop/
