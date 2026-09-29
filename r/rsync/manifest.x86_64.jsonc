@@ -18,7 +18,7 @@
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libacl.so.1(x86_64))",
 				"soname(libc.so.6(x86_64))",
-				"soname(libcrypto.so.3(x86_64))",
+				"soname(libcrypto.so.4(x86_64))",
 				"soname(libidn2.so.0(x86_64))",
 				"soname(liblz4.so.1(x86_64))",
 				"soname(libpopt.so.0(x86_64))",
@@ -41,6 +41,6 @@
 		}
 	},
 	"source-name": "rsync",
-	"source-release": "8",
+	"source-release": "9",
 	"source-version": "3.5.1"
 }
