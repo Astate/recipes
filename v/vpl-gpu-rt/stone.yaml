@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : vpl-gpu-rt
-version     : "26.2.4"
-release     : 6
+version     : "26.3.5"
+release     : 7
 homepage    : https://github.com/intel/vpl-gpu-rt/
 upstreams   :
-    - https://github.com/intel/vpl-gpu-rt/archive/refs/tags/intel-onevpl-26.2.4.tar.gz : c103d936d708a3910ef8572e9403aabf423197cfce6c8a6fcf870072b6564ada
+    - https://github.com/intel/vpl-gpu-rt/archive/refs/tags/intel-onevpl-26.3.5.tar.gz : 92867a0f8c09d81419102a61713e9f98dfd2af3fc9c91c6f4fb6d0c784c8e442
 summary     : Intel® Video Processing Library (Intel® VPL) GPU Runtime
 description : |
     Intel® Video Processing Library (Intel® VPL) GPU Runtime is a Runtime implementation of Intel® VPL API for Intel Gen GPUs. Runtime provides access to hardware-accelerated video decode, encode and filtering.
