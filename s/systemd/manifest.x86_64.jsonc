@@ -76,7 +76,7 @@
 				"soname(libpam.so.0(x86_64))",
 				"soname(libpcre2-8.so.0(x86_64))",
 				"soname(libpwquality.so.1(x86_64))",
-				"soname(libqrencode.so.3(x86_64))",
+				"soname(libqrencode.so.4(x86_64))",
 				"soname(libseccomp.so.2(x86_64))",
 				"soname(libtss2-esys.so.0(x86_64))",
 				"soname(libtss2-mu.so.0(x86_64))",
@@ -4175,6 +4175,6 @@
 		}
 	},
 	"source-name": "systemd",
-	"source-release": "99",
+	"source-release": "100",
 	"source-version": "261.3"
 }

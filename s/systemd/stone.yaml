@@ -3,7 +3,7 @@
 
 name        : systemd
 version     : "261.3"
-release     : 99
+release     : 100
 summary     : A System and Service Manager
 license     :
     - GPL-2.0-or-later
@@ -363,7 +363,7 @@ packages    :
             - soname(libpam.so.0(x86_64))
             - soname(libpcre2-8.so.0(x86_64))
             - soname(libpwquality.so.1(x86_64))
-            - soname(libqrencode.so.3(x86_64))
+            - soname(libqrencode.so.4(x86_64))
             - soname(libseccomp.so.2(x86_64))
             - soname(libzstd.so.1(x86_64))
             # Keyboard layout support
