@@ -3,7 +3,7 @@
 
 name        : systemd
 version     : "261.3"
-release     : 98
+release     : 99
 summary     : A System and Service Manager
 license     :
     - GPL-2.0-or-later
@@ -99,7 +99,7 @@ setup       : |
 
     # TODO:
     # - Figure out what to do about run0. Do we keep it? If so it should be tested and configured
-    # - Make sure that openssh works with the stateless paths that systemd installs
+    # - Change openssl dependencies to v4 after updating to 262+
     %meson \
         -Dacl=${_IS_64BIT_FEAT} \
         -Dadm-gid=16 \
@@ -353,7 +353,7 @@ packages    :
             - soname(libbpf.so.1(x86_64))
             - soname(libblkid.so.1(x86_64))
             - soname(libcrypt.so.2(x86_64))
-            - soname(libcrypto.so.4(x86_64))
+            - soname(libcrypto.so.3(x86_64))
             - soname(libdw.so.1(x86_64))
             - soname(libelf.so.1(x86_64))
             - soname(libfdisk.so.1(x86_64))
@@ -363,7 +363,7 @@ packages    :
             - soname(libpam.so.0(x86_64))
             - soname(libpcre2-8.so.0(x86_64))
             - soname(libpwquality.so.1(x86_64))
-            - soname(libqrencode.so.4(x86_64))
+            - soname(libqrencode.so.3(x86_64))
             - soname(libseccomp.so.2(x86_64))
             - soname(libzstd.so.1(x86_64))
             # Keyboard layout support
@@ -430,7 +430,7 @@ packages    :
         description: Simple UEFI boot manager
         rundeps:
             - "%(name)"
-            - soname(libcrypto.so.4(x86_64))
+            - soname(libcrypto.so.3(x86_64))
         paths:
             - /usr/bin/bootctl
             - /usr/lib/systemd/boot/efi/
@@ -555,7 +555,7 @@ packages    :
         description: Systemd container/nspawn tools
         rundeps:
             - "%(name)"
-            - soname(libcrypto.so.4(x86_64))
+            - soname(libcrypto.so.3(x86_64))
         paths:
             - /usr/bin/importctl
             - /usr/bin/machinectl
@@ -710,8 +710,8 @@ packages    :
         description: Systemd DNS resolver
         rundeps:
             - "%(name)"
-            - soname(libcrypto.so.4(x86_64))
-            - soname(libssl.so.4(x86_64))
+            - soname(libcrypto.so.3(x86_64))
+            - soname(libssl.so.3(x86_64))
         paths:
             - /usr/bin/resolvectl
             - /usr/lib/systemd/resolv.conf
