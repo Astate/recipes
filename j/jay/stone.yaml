@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : jay
-version     : "1.14.0"
-release     : 1
+version     : "1.15.0"
+release     : 2
 homepage    : https://github.com/mahkoh/jay
 upstreams   :
-    - https://github.com/mahkoh/jay/archive/refs/tags/v1.14.0.tar.gz : 5064d1ec0016b27953918dcf4a67baa8d9864e36086c06c9f65cc1353fa91bd8
+    - https://github.com/mahkoh/jay/archive/refs/tags/v1.15.0.tar.gz : 35f1fadd0d2cafc7bce33b419a077ad0e4ac688dc247bb2c8ce937a26d18add4
 summary     : A Wayland Compositor
 description : |
     Jay is a Wayland compositor for Linux with an i3-like tiling layout, Vulkan and OpenGL rendering, multi-GPU support, screen sharing, and more.
