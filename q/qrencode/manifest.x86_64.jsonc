@@ -3,12 +3,16 @@
 	"manifest-version": "0.2",
 	"packages": {
 		"qrencode": {
+			"build-depends": [
+				"binary(patchelf)"
+			],
 			"depends": [
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"soname(libc.so.6(x86_64))"
 			],
 			"files": [
 				"/usr/bin/qrencode",
+				"/usr/lib/libqrencode.so.3",
 				"/usr/lib/libqrencode.so.4",
 				"/usr/lib/libqrencode.so.4.1.1",
 				"/usr/share/man/man1/qrencode.1"
@@ -16,10 +20,14 @@
 			"name": "qrencode",
 			"provides": [
 				"binary(qrencode)",
+				"soname(libqrencode.so.3(x86_64))",
 				"soname(libqrencode.so.4(x86_64))"
 			]
 		},
 		"qrencode-devel": {
+			"build-depends": [
+				"binary(patchelf)"
+			],
 			"depends": [
 				"qrencode"
 			],
@@ -35,6 +43,6 @@
 		}
 	},
 	"source-name": "qrencode",
-	"source-release": "4",
+	"source-release": "5",
 	"source-version": "4.1.1"
 }
