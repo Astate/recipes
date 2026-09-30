@@ -200,6 +200,7 @@
 				"soname(libc.so.6(x86_64))",
 				"soname(libdevmapper-event.so.1.02(x86_64))",
 				"soname(libdevmapper.so.1.02(x86_64))",
+				"soname(libm.so.6(x86_64))",
 				"soname(libnvme.so.1(x86_64))",
 				"soname(libreadline.so.8(x86_64))",
 				"soname(libsystemd.so.0(x86_64))",
@@ -440,6 +441,7 @@
 				"soname(libc.so.6(x86_64))",
 				"soname(libdevmapper-event.so.1.02(x86_64))",
 				"soname(libdevmapper.so.1.02(x86_64))",
+				"soname(libm.so.6(x86_64))",
 				"soname(libnvme.so.1(x86_64))",
 				"soname(libsystemd.so.0(x86_64))",
 				"soname(libudev.so.1(x86_64))"
@@ -466,6 +468,6 @@
 		}
 	},
 	"source-name": "lvm2",
-	"source-release": "22",
-	"source-version": "2.03.42"
+	"source-release": "23",
+	"source-version": "2.03.43"
 }
