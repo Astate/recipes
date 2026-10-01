@@ -3,7 +3,7 @@
 
 name        : kf6-prison
 version     : "6.30.0"
-release     : 27
+release     : 28
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/prison-6.30.0.tar.xz : 2cdb0a2689ab45b907c76c9a01c1dc14855b8e5329ad0a9cf65c1ad64e5fed1b
 homepage    : https://community.kde.org/Frameworks

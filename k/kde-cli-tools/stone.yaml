@@ -3,7 +3,7 @@
 
 name        : kde-cli-tools
 version     : "6.7.5"
-release     : 29
+release     : 30
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/kde-cli-tools-6.7.5.tar.xz : 18f3c421b305003caf73f9e9fbec09fbf30f472dbe81fec328046cca7883a31d
 homepage    : https://kde.org/plasma-desktop/

@@ -3,7 +3,7 @@
 
 name        : systemsettings
 version     : "6.7.5"
-release     : 30
+release     : 31
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/systemsettings-6.7.5.tar.xz : 317a21165709d61796fba19f5454397577ffd8aa96655b29dd286a1df252cddb
 homepage    : https://kde.org/plasma-desktop/

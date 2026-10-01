@@ -3,7 +3,7 @@
 
 name        : kf6-kwindowsystem
 version     : "6.30.0"
-release     : 29
+release     : 30
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/kwindowsystem-6.30.0.tar.xz : 639a501b877446b19905399d27e2be2b6ebb0bb481abe3209dc4d535a12e12ca
 homepage    : https://community.kde.org/Frameworks

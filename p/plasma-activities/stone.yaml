@@ -3,7 +3,7 @@
 
 name        : plasma-activities
 version     : "6.7.5"
-release     : 31
+release     : 32
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/plasma-activities-6.7.5.tar.xz : d93f31b6f33733ad3803098f4f622e55e3ef52cb5cd97e621a7b803e6f0e3f7c
 homepage    : https://kde.org/plasma-desktop/

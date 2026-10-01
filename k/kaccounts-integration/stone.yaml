@@ -3,7 +3,7 @@
 
 name        : kaccounts-integration
 version     : "26.08.1"
-release     : 25
+release     : 26
 upstreams   :
     - https://download.kde.org/stable/release-service/26.08.1/src/kaccounts-integration-26.08.1.tar.xz : 7b12dc58c368690428ccaa71528f1dfe231eb99fc3a222cf2a8d6cf93dccbb6a
 homepage    : https://kde.org/

@@ -3,7 +3,7 @@
 
 name        : dolphin
 version     : "26.08.1"
-release     : 31
+release     : 32
 upstreams   :
     - https://download.kde.org/stable/release-service/26.08.1/src/dolphin-26.08.1.tar.xz : f5635feff84e7070d35342d6defb46e9b42ff1c44e3896635f4bd9f43da947c1
 homepage    : https://kde.org/applications/system/org.kde.dolphin

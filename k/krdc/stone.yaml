@@ -3,7 +3,7 @@
 
 name        : krdc
 version     : "26.08.1"
-release     : 20
+release     : 21
 upstreams   :
     - https://download.kde.org/stable/release-service/26.08.1/src/krdc-26.08.1.tar.xz : 291ce5f05fc4e67ed659eec9aa8c9f1f06bf1b13a5180375e68d2402341a0ed0
 homepage    : https://apps.kde.org/krdc/

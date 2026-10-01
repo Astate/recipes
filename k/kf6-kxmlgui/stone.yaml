@@ -3,7 +3,7 @@
 
 name        : kf6-kxmlgui
 version     : "6.30.0"
-release     : 29
+release     : 30
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/kxmlgui-6.30.0.tar.xz : 10fb8a0f7b874248ff60d9a8ee4e1f06a0efcf01b0d34d7635dfff86e848c352
 homepage    : https://community.kde.org/Frameworks

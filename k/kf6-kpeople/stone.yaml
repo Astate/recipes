@@ -3,7 +3,7 @@
 
 name        : kf6-kpeople
 version     : "6.30.0"
-release     : 22
+release     : 23
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/kpeople-6.30.0.tar.xz : 094868f11c8c46e57a077c2788a39c6ee0b0ebc2b64279c6f7c70a5152f518e7
 homepage    : https://community.kde.org/Frameworks

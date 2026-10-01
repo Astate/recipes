@@ -3,7 +3,7 @@
 
 name        : plasma-welcome
 version     : "6.7.5"
-release     : 31
+release     : 32
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/plasma-welcome-6.7.5.tar.xz : 894137f8653d3311fae50ba0c70bdc4c8036f8f15082a583d9b3bb4ef51b18ba
 homepage    : https://kde.org/plasma-desktop/

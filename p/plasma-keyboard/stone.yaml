@@ -3,7 +3,7 @@
 
 name        : plasma-keyboard
 version     : "6.7.5"
-release     : 28
+release     : 29
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/plasma-keyboard-6.7.5.tar.xz : 0dd91212308e6c6999db55b95b5b462cadc2766935272e9caf2f138b9a063788
 homepage    : https://kde.org/plasma-desktop/

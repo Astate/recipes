@@ -3,7 +3,7 @@
 
 name        : kidentitymanagement
 version     : "26.08.1"
-release     : 25
+release     : 26
 upstreams   :
     - https://download.kde.org/stable/release-service/26.08.1/src/kidentitymanagement-26.08.1.tar.xz : afd285bac8ce85e87b9f06672423311e299ce75ce1baf4720a59c65e4b4d235a
 homepage    : https://kde.org
