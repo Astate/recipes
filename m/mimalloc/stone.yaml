@@ -2,12 +2,12 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : mimalloc
-version     : "3.5.3"
-release     : 19
+version     : "3.5.4"
+release     : 20
 homepage    : https://github.com/microsoft/mimalloc
 upstreams   :
-    - https://github.com/microsoft/mimalloc/archive/refs/tags/v3.5.3.tar.gz:
-        hash: 3b4a15153a59905995f7070296ed604bb5ccc00cabb8b93446931aff77224d47
+    - https://github.com/microsoft/mimalloc/archive/refs/tags/v3.5.4.tar.gz:
+        hash: 36e9b5bf1bb703567a0347491721ce2098000db8284dc55cd53d211452723cdb
         unpackdir: current
 
     # - https://github.com/microsoft/mimalloc/archive/refs/tags/v2.5.1.tar.gz:
