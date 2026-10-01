@@ -3,7 +3,7 @@
 
 name        : kf6-sonnet
 version     : "6.30.0"
-release     : 29
+release     : 30
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/sonnet-6.30.0.tar.xz : 1574ef5c17f38e315de104b94580ccc1b7ec1db2650cb4bace2e14159bf61e10
 homepage    : https://community.kde.org/Frameworks
