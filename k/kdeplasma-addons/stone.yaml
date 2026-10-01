@@ -3,7 +3,7 @@
 
 name        : kdeplasma-addons
 version     : "6.7.5"
-release     : 31
+release     : 32
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/kdeplasma-addons-6.7.5.tar.xz : 1bc1c861487733f4944695d509c81f19b90a4d80c5825cc6df633b0313e3e8cc
 homepage    : https://kde.org/plasma-desktop/
