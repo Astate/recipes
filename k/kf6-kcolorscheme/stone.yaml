@@ -3,7 +3,7 @@
 
 name        : kf6-kcolorscheme
 version     : "6.30.0"
-release     : 31
+release     : 32
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/kcolorscheme-6.30.0.tar.xz : a4128e82e47cd474c777754c4dd8af28a00a57ecf388da1a62f8173d898890d0
 homepage    : https://community.kde.org/Frameworks
