@@ -3,7 +3,7 @@
 
 name        : kpipewire
 version     : "6.7.5"
-release     : 32
+release     : 33
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/kpipewire-6.7.5.tar.xz : 20af39d9450d495468c56a50930810d82137f7ccd3a710592e02b6f620758f55
 homepage    : https://kde.org/plasma-desktop/
