@@ -3,7 +3,7 @@
 
 name        : plasma-bigscreen
 version     : "6.7.5"
-release     : 6
+release     : 7
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/plasma-bigscreen-6.7.5.tar.xz : fd00b8ffd6a1c0fd7058acd06098110b00b5ca1dc720167058fad65d2ab50bdc
 homepage    : https://kde.org/plasma-desktop/
