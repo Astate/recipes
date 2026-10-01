@@ -3,7 +3,7 @@
 
 name        : kf6-kiconthemes
 version     : "6.30.0"
-release     : 30
+release     : 31
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/kiconthemes-6.30.0.tar.xz : c0c684823d0e087f35168cd79f1053fd358bb8fb47b27996a11c7d7ee3da6f4d
 homepage    : https://community.kde.org/Frameworks
