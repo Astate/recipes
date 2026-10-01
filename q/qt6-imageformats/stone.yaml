@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : qt6-imageformats
-version     : "6.11.2"
-release     : 10
+version     : "6.12.0"
+release     : 11
 homepage    : https://www.qt.io
 upstreams   :
-    - https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qtimageformats-everywhere-src-6.11.2.tar.xz : cecd8900f34b6550076309bc94f62f828008b633a4239e0a08c86788f41001f8
+    - https://download.qt.io/official_releases/qt/6.12/6.12.0/submodules/qtimageformats-everywhere-src-6.12.0.tar.xz : 0943132b5db8de6b6a7f1d162682173e8763c7ed94e80fd39113292845f67762
 summary     : Qt6 plugins for additional image formats
 description : |
     The core Qt Gui library by default supports reading and writing image files of the most common file formats and a few more. The Qt Image Formats add-on module provides optional support for other image file formats.
@@ -21,7 +21,8 @@ builddeps   :
     - pkgconfig(libwebp)
     # TODO: libmng
 setup       : |
-    %cmake_qt6
+    %cmake_qt6 \
+        -DQT_FEATURE_jasper=ON
 build       : |
     %cmake_build
 install     : |
