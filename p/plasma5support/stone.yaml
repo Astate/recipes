@@ -3,7 +3,7 @@
 
 name        : plasma5support
 version     : "6.7.5"
-release     : 30
+release     : 31
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/plasma5support-6.7.5.tar.xz : dcd58d280b9c3f9570b1790134f692374ecae633cd15c60b1ee76947d5543e80
 homepage    : https://kde.org/plasma-desktop/
