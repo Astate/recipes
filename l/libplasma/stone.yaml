@@ -3,7 +3,7 @@
 
 name        : libplasma
 version     : "6.7.5"
-release     : 34
+release     : 35
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/libplasma-6.7.5.tar.xz : 27b28823254aa489c094c40a314ce1575fd7906eeb521e636bb8fd2dc2981f2f
 homepage    : https://kde.org/plasma-desktop/
