@@ -3,7 +3,7 @@
 
 name        : akonadi
 version     : "26.08.1"
-release     : 30
+release     : 31
 upstreams   :
     - https://download.kde.org/stable/release-service/26.08.1/src/akonadi-26.08.1.tar.xz : 40b7eac471333eaa4ea0a010586660d2539def5ba61f9169d4129c2b569b4c34
 homepage    : https://kde.org
