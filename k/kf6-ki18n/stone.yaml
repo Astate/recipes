@@ -3,7 +3,7 @@
 
 name        : kf6-ki18n
 version     : "6.30.0"
-release     : 30
+release     : 31
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/ki18n-6.30.0.tar.xz : dfbfc8af89b3bc68810b094bf87746db87c3eeb35b75caeb1882681ebed563bd
 homepage    : https://community.kde.org/Frameworks
