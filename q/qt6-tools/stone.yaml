@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : qt6-tools
-version     : "6.11.2"
-release     : 18
+version     : "6.12.0"
+release     : 19
 homepage    : https://www.qt.io
 upstreams   :
-    - https://download.qt.io/official_releases/qt/6.11/6.11.2/submodules/qttools-everywhere-src-6.11.2.tar.xz : 9ea75af35c512f7e09e61c8c3af3997f13b4d43bb099cf43fcec470126b4041e
+    - https://download.qt.io/official_releases/qt/6.12/6.12.0/submodules/qttools-everywhere-src-6.12.0.tar.xz : 8dab8f3611496486a470ad5f115ceea584f36bc22a2b8b6f6ebdbafbb8160693
 summary     : Qt6 QtTools Module
 description : |
     Qt is a set of libraries for developing applications.  This package contains base tools, like string, xml, and network handling.
@@ -22,7 +22,6 @@ builddeps   :
     - clang-devel
 setup       : |
     %patch %(pkgdir)/ftbfs-zstd.patch
-    %patch %(pkgdir)/ftbfs-llvm-23.patch
 
     %cmake_qt6
 build       : |
