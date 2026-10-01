@@ -3,7 +3,7 @@
 
 name        : powerdevil
 version     : "6.7.5"
-release     : 33
+release     : 34
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/powerdevil-6.7.5.tar.xz : 6a738fccf01e4d1b10fea68ff8b404a406f95bc36fcb593bcc70fafb1c53258b
 homepage    : https://kde.org/plasma-desktop/
