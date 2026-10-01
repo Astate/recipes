@@ -3,7 +3,7 @@
 
 name        : kf6-kguiaddons
 version     : "6.30.0"
-release     : 32
+release     : 33
 upstreams   :
     - https://download.kde.org/stable/frameworks/6.30/kguiaddons-6.30.0.tar.xz : e98864228d1c5e23f3428025eb9928697374fdc3eddebb3a9dec570de028a62d
 homepage    : https://community.kde.org/Frameworks
