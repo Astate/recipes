@@ -3,7 +3,7 @@
 
 name        : layer-shell-qt
 version     : "6.7.5"
-release     : 30
+release     : 31
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/layer-shell-qt-6.7.5.tar.xz : ccdcfec7081ca956f7a52c9113a4df3a226575bfbe98b56a2a9a4d7d7e19e8f0
 homepage    : https://kde.org/plasma-desktop/
