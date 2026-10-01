@@ -3,7 +3,7 @@
 
 name        : plasma-integration
 version     : "6.7.5"
-release     : 30
+release     : 31
 upstreams   :
     - https://download.kde.org/stable/plasma/6.7.5/plasma-integration-6.7.5.tar.xz : 0786c49f2f357744e0f4cfda49f55284faa1a97da85a667ca6cf1d8ab07aff89
 homepage    : https://kde.org/plasma-desktop/
