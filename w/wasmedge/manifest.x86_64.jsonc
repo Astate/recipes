@@ -6,6 +6,7 @@
 			"build-depends": [
 				"binary(llvm-config-23)",
 				"cmake(LLVM)",
+				"cmake(blake3)",
 				"lld-devel",
 				"pkgconfig(fmt)",
 				"pkgconfig(spdlog)"
@@ -39,6 +40,7 @@
 			"build-depends": [
 				"binary(llvm-config-23)",
 				"cmake(LLVM)",
+				"cmake(blake3)",
 				"lld-devel",
 				"pkgconfig(fmt)",
 				"pkgconfig(spdlog)"
@@ -73,6 +75,6 @@
 		}
 	},
 	"source-name": "wasmedge",
-	"source-release": "1",
-	"source-version": "0.17.1"
+	"source-release": "2",
+	"source-version": "0.17.2"
 }

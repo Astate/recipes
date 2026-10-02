@@ -2,10 +2,10 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : wasmedge
-version     : "0.17.1"
-release     : 1
+version     : "0.17.2"
+release     : 2
 upstreams   :
-    - https://github.com/WasmEdge/WasmEdge/releases/download/0.17.1/WasmEdge-0.17.1-src.tar.gz : c8881a8c43407fc424ccd8586594a79068305b31c76aad0025efea9339be18e0
+    - https://github.com/WasmEdge/WasmEdge/releases/download/0.17.2/WasmEdge-0.17.2-src.tar.gz : 7f2ef28b45bc136ee1f13a3453caab91d0dd2ba141dce599008486b561a63eac
 homepage    : https://wasmedge.org/
 license     : Apache-2.0 AND CC0-1.0
 summary     : High performance WebAssembly Virtual Machine
@@ -14,13 +14,15 @@ description : |
 builddeps   :
     - binary(llvm-config-23)
     - cmake(LLVM)
+    - cmake(blake3)
     - pkgconfig(fmt)
     - pkgconfig(spdlog)
     - lld-devel
 setup       : |
     %patch %(pkgdir)/ftbfs-clang-fmt.patch
 
-    %cmake
+    %cmake \
+        -DCMAKE_DISABLE_FIND_PACKAGE_blake3=OFF
 build       : |
     %cmake_build
 install     : |
