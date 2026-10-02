@@ -5,7 +5,6 @@
 		"firefox": {
 			"build-depends": [
 				"binary(cbindgen)",
-				"binary(clang-22)",
 				"binary(dbus-run-session)",
 				"binary(m4)",
 				"binary(make)",
@@ -144,6 +143,6 @@
 		}
 	},
 	"source-name": "firefox",
-	"source-release": "87",
+	"source-release": "88",
 	"source-version": "157.0"
 }
