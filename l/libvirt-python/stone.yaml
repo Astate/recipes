@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libvirt-python
-version     : "12.7.0"
-release     : 10
+version     : "12.8.0"
+release     : 11
 homepage    : https://gitlab.com/libvirt/libvirt-python
 upstreams   :
-    - https://download.libvirt.org/python/libvirt_python-12.7.0.tar.gz : 03a6800a3cc7657267e2516f579ce95c93d6351182caf03f92a49556685bf8bf
+    - https://download.libvirt.org/python/libvirt_python-12.8.0.tar.gz : ab24a102ebf99b913ddc3459031aa71a48b0b1cdbb0f423b4ea278052791ac8a
 summary     : Python language binding for libvirt native C API
 description : |
     This package provides a module that permits applications
