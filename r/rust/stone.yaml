@@ -3,11 +3,11 @@
 
 name        : rust
 ### IMPORTANT NOTE: Rust does not have a stable ABI. This is particularly important for the kernel where the version of Rust used to build the kernel must exactly match the version used to build extramodules. In other words you MUST do a round of kernel rebuilds whenever Rust is upgraded.
-version     : "1.98.1"
-release     : 45
+version     : "1.99.0"
+release     : 46
 homepage    : https://www.rust-lang.org/
 upstreams   :
-    - https://static.rust-lang.org/dist/rustc-1.98.1-src.tar.xz : be1816e7f6c40abb90245ad6e024bed2a7e88d7dda4561e4d5470207df616b9f
+    - https://static.rust-lang.org/dist/rustc-1.99.0-src.tar.xz : cc41916a8c84f5d9ec4f55561b44e39f43b647b133f8a6f51be9ea13c83f7036
 summary     : Rust programming language compiler + tools
 description : |
     Rust programming language compiler + tools
@@ -27,9 +27,8 @@ license     :
 builddeps   :
     - binary(FileCheck)
     - binary(cargo)
-    - binary(clang-22)
     - binary(cmake)
-    - binary(llvm-config-22)
+    - binary(llvm-config-23)
     - binary(ln)
     - binary(ninja)
     - binary(python)
@@ -45,7 +44,6 @@ builddeps   :
     - pkgconfig(sqlite3)
     - pkgconfig(zlib)
     - clang-32bit
-    - compiler-rt-22-32bit
 environment : |
     # Don't set these here, all configuration should come from config.toml or the package.yml
     unset RUSTFLAGS
@@ -61,8 +59,8 @@ environment : |
 
     # This needs to match which llvm we're building against. This should generally be `/usr/bin/llvm-config` but if we're using a versioned
     # package that will need to point to the versioned llvm-config
-    LLVM_CONFIG=%(bindir)/llvm-config-22
-    LLVM_PROFDATA=%(bindir)/llvm-profdata-22
+    LLVM_CONFIG=%(bindir)/llvm-config-23
+    LLVM_PROFDATA=%(bindir)/llvm-profdata-23
 setup       : |
     # Ensure that we use the system sqlite3
     %patch %(pkgdir)/0001-unbundle-sqlite.patch -d src/tools/cargo
@@ -143,11 +141,9 @@ packages    :
             - /usr/lib/lib*.so
             - /usr/lib/rustlib/x86_64-unknown-linux-gnu
         rundeps:
-            # - binary(clang)
-            - binary(clang-22)
+            - binary(clang)
             - binary(lld)
-            # - compiler-rt
-            - compiler-rt-22
+            - compiler-rt
 
     - "%(name)-32bit":
         paths:
@@ -155,8 +151,7 @@ packages    :
         rundeps:
             - "%(name)"
             - clang-32bit
-            # - compiler-rt-32bit
-            - compiler-rt-22-32bit
+            - compiler-rt-32bit
 
     - "%(name)-bpf":
         paths:
