@@ -92,13 +92,13 @@
 				"/usr/lib/libnss_libvirt.so.2",
 				"/usr/lib/libnss_libvirt_guest.so.2",
 				"/usr/lib/libvirt-admin.so.0",
-				"/usr/lib/libvirt-admin.so.0.12007.0",
+				"/usr/lib/libvirt-admin.so.0.12008.0",
 				"/usr/lib/libvirt-lxc.so.0",
-				"/usr/lib/libvirt-lxc.so.0.12007.0",
+				"/usr/lib/libvirt-lxc.so.0.12008.0",
 				"/usr/lib/libvirt-qemu.so.0",
-				"/usr/lib/libvirt-qemu.so.0.12007.0",
+				"/usr/lib/libvirt-qemu.so.0.12008.0",
 				"/usr/lib/libvirt.so.0",
-				"/usr/lib/libvirt.so.0.12007.0",
+				"/usr/lib/libvirt.so.0.12008.0",
 				"/usr/lib/libvirt/connection-driver/libvirt_driver_ch.so",
 				"/usr/lib/libvirt/connection-driver/libvirt_driver_interface.so",
 				"/usr/lib/libvirt/connection-driver/libvirt_driver_lxc.so",
@@ -212,6 +212,7 @@
 				"/usr/share/augeas/lenses/libvirtd_ch.aug",
 				"/usr/share/augeas/lenses/libvirtd_lxc.aug",
 				"/usr/share/augeas/lenses/libvirtd_network.aug",
+				"/usr/share/augeas/lenses/libvirtd_nwfilter.aug",
 				"/usr/share/augeas/lenses/libvirtd_qemu.aug",
 				"/usr/share/augeas/lenses/tests/test_libvirt_lockd.aug",
 				"/usr/share/augeas/lenses/tests/test_libvirt_secrets.aug",
@@ -219,6 +220,7 @@
 				"/usr/share/augeas/lenses/tests/test_libvirtd_ch.aug",
 				"/usr/share/augeas/lenses/tests/test_libvirtd_lxc.aug",
 				"/usr/share/augeas/lenses/tests/test_libvirtd_network.aug",
+				"/usr/share/augeas/lenses/tests/test_libvirtd_nwfilter.aug",
 				"/usr/share/augeas/lenses/tests/test_libvirtd_qemu.aug",
 				"/usr/share/augeas/lenses/tests/test_virtchd.aug",
 				"/usr/share/augeas/lenses/tests/test_virtinterfaced.aug",
@@ -1043,6 +1045,6 @@
 		}
 	},
 	"source-name": "libvirt",
-	"source-release": "20",
-	"source-version": "12.7.0"
+	"source-release": "21",
+	"source-version": "12.8.0"
 }
