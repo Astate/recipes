@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : zk
+version     : "0.15.6"
+release     : 1
+homepage    : https://github.com/zk-org/zk
+upstreams   :
+    - https://github.com/zk-org/zk/archive/refs/tags/v0.15.6.tar.gz : ac4e1744655bc5c42caf132ca667e0d882dda2e05ba08762f9f49dd784bec115
+summary     : A plain text note-taking assistant
+description : |
+    zk is a command-line tool helping you maintain a plain text
+    Zettelkasten or personal wiki.
+license     : GPL-3.0-only
+networking  : true
+builddeps   :
+    - binary(go)
+setup       : |
+    %go_mod
+build       : |
+    export CGO_ENABLED=1
+    go build -trimpath -buildvcs=false -buildmode=pie \
+        -tags "fts5" \
+        -ldflags "-linkmode=external -X=main.Version=v%(version)" \
+        -o zk .
+install     : |
+    %install_bin zk
