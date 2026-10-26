@@ -1,10 +1,11 @@
-# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
   id: 1709
   rss: https://github.com/LibRaw/LibRaw/tags.atom
 security:
+  # Last checked 2026-10-26
   cpe:
-    - vendor: libraw
-      product: libraw
+  - vendor: libraw
+    product: libraw
