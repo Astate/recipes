@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2024 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : libostree
-version     : "2026.4"
-release     : 20
+version     : "2026.5"
+release     : 21
 homepage    : https://ostreedev.github.io/ostree/
 upstreams   :
-    - https://github.com/ostreedev/ostree/releases/download/v2026.4/libostree-2026.4.tar.xz : b26c9016eb03bb4ee52cc00c642d56e00fc79ae7faac6bf4aa317d7451339ef7
+    - https://github.com/ostreedev/ostree/releases/download/v2026.5/libostree-2026.5.tar.xz : 1829428ed2d982dc684211ff18525b57ea627056a68fa5b04f674f0ca6c9c19b
 summary     : Operating system and container binary deployment and upgrades
 description : |
     The core OSTree model is like git in that it checksums individual files and has a content-addressed-object store. It's unlike git in that it "checks out" the files via hardlinks, and they thus need to be immutable to prevent corruption. Therefore, another way to think of OSTree is that it's just a more polished version of Linux VServer hardlinks.
