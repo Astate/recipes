@@ -27,11 +27,11 @@
 				"soname(libvulkan.so.1(x86_64))"
 			],
 			"files": [
-				"/usr/lib/libplacebo.so.360"
+				"/usr/lib/libplacebo.so.387"
 			],
 			"name": "libplacebo",
 			"provides": [
-				"soname(libplacebo.so.360(x86_64))"
+				"soname(libplacebo.so.387(x86_64))"
 			]
 		},
 		"libplacebo-devel": {
@@ -57,6 +57,7 @@
 				"/usr/include/libplacebo/cache.h",
 				"/usr/include/libplacebo/colorspace.h",
 				"/usr/include/libplacebo/common.h",
+				"/usr/include/libplacebo/compositor.h",
 				"/usr/include/libplacebo/config.h",
 				"/usr/include/libplacebo/d3d11.h",
 				"/usr/include/libplacebo/dispatch.h",
@@ -98,6 +99,6 @@
 		}
 	},
 	"source-name": "libplacebo",
-	"source-release": "13",
-	"source-version": "7.360.1"
+	"source-release": "14",
+	"source-version": "7.387.0"
 }
