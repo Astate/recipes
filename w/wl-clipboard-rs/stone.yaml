@@ -1,12 +1,12 @@
-# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : wl-clipboard-rs
-version     : "0.9.4"
-release     : 5
+version     : "0.9.5"
+release     : 6
 homepage    : https://github.com/YaLTeR/wl-clipboard-rs
 upstreams   :
-    - https://github.com/YaLTeR/wl-clipboard-rs/archive/v0.9.4.tar.gz: ce408c2b696e66eb4ced95a049b7b20aeece9f117f203af4080b9e50cbbb837b
+    - https://github.com/YaLTeR/wl-clipboard-rs/archive/v0.9.5.tar.gz: ade1ad0be25fc453a654cada52c23f1a998f0b60b043669f33c05b811e0dced9
 summary     : Rust-based command-line copy/paste utilities for Wayland
 description : |
     A Rust reimplementation of wl-clipboard tools for Wayland compositors.
