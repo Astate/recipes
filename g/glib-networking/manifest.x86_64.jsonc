@@ -77,6 +77,7 @@
 				"/usr/share/locale/nb/LC_MESSAGES/glib-networking.mo",
 				"/usr/share/locale/ne/LC_MESSAGES/glib-networking.mo",
 				"/usr/share/locale/nl/LC_MESSAGES/glib-networking.mo",
+				"/usr/share/locale/nn/LC_MESSAGES/glib-networking.mo",
 				"/usr/share/locale/oc/LC_MESSAGES/glib-networking.mo",
 				"/usr/share/locale/or/LC_MESSAGES/glib-networking.mo",
 				"/usr/share/locale/pa/LC_MESSAGES/glib-networking.mo",
@@ -112,6 +113,6 @@
 		}
 	},
 	"source-name": "glib-networking",
-	"source-release": "10",
-	"source-version": "2.90.0"
+	"source-release": "11",
+	"source-version": "2.90.1"
 }
