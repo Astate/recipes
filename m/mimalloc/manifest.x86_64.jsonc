@@ -8,7 +8,7 @@
 			],
 			"files": [
 				"/usr/lib/libmimalloc.so.3",
-				"/usr/lib/libmimalloc.so.3.5"
+				"/usr/lib/libmimalloc.so.3.6"
 			],
 			"name": "mimalloc",
 			"provides": [
@@ -48,6 +48,6 @@
 		}
 	},
 	"source-name": "mimalloc",
-	"source-release": "20",
-	"source-version": "3.5.4"
+	"source-release": "21",
+	"source-version": "3.6.0"
 }

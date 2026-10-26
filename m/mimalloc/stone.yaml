@@ -1,13 +1,13 @@
-# SPDX-FileCopyrightText: 2024 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 name        : mimalloc
-version     : "3.5.4"
-release     : 20
+version     : "3.6.0"
+release     : 21
 homepage    : https://github.com/microsoft/mimalloc
 upstreams   :
-    - https://github.com/microsoft/mimalloc/archive/refs/tags/v3.5.4.tar.gz:
-        hash: 36e9b5bf1bb703567a0347491721ce2098000db8284dc55cd53d211452723cdb
+    - https://github.com/microsoft/mimalloc/archive/refs/tags/v3.6.0.tar.gz:
+        hash: c663101ba193b5b823c8541c1b719ab67e3ebf9976e425a02359a5cad5e52990
         unpackdir: current
 
     # - https://github.com/microsoft/mimalloc/archive/refs/tags/v2.5.1.tar.gz:
@@ -61,7 +61,8 @@ install     : |
 
     %cmake_install
 check       : |
-    %cmake_test
+    # Full LTO inlines the ten allocation call sites the pprof multi-site test needs distinct
+    %cmake_test -E test-pprof
 tuning      :
     - lto: full
     - optimize: speed
