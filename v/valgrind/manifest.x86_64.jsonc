@@ -169,6 +169,7 @@
 				"/usr/share/doc/valgrind/html/dist.html",
 				"/usr/share/doc/valgrind/html/dist.news.html",
 				"/usr/share/doc/valgrind/html/dist.news.old.html",
+				"/usr/share/doc/valgrind/html/dist.news.older.html",
 				"/usr/share/doc/valgrind/html/dist.readme-android.html",
 				"/usr/share/doc/valgrind/html/dist.readme-android_emulator.html",
 				"/usr/share/doc/valgrind/html/dist.readme-developers.html",
@@ -256,6 +257,7 @@
 				"/usr/include/valgrind/libvex_guest_amd64.h",
 				"/usr/include/valgrind/libvex_guest_arm.h",
 				"/usr/include/valgrind/libvex_guest_arm64.h",
+				"/usr/include/valgrind/libvex_guest_arm64_sysregs.h",
 				"/usr/include/valgrind/libvex_guest_mips32.h",
 				"/usr/include/valgrind/libvex_guest_mips64.h",
 				"/usr/include/valgrind/libvex_guest_offsets.h",
@@ -393,6 +395,6 @@
 		}
 	},
 	"source-name": "valgrind",
-	"source-release": "13",
-	"source-version": "3.27.1"
+	"source-release": "14",
+	"source-version": "3.28.0"
 }
