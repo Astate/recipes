@@ -1,10 +1,11 @@
-# SPDX-FileCopyrightText: 2025 AerynOS Developers
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
 # SPDX-License-Identifier: MPL-2.0
 
 releases:
   id: 64439
   rss: https://github.com/strukturag/libheif/releases.atom
 security:
+  # Last checked 2026-10-26
   cpe:
-    - vendor: struktur
-      product: libheif
+  - vendor: struktur
+    product: libheif
