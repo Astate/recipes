@@ -844,7 +844,7 @@
 				"soname(liblilv-0.so.0(x86_64))",
 				"soname(libm.so.6(x86_64))",
 				"soname(libmysofa.so.1(x86_64))",
-				"soname(libplacebo.so.360(x86_64))",
+				"soname(libplacebo.so.387(x86_64))",
 				"soname(libqrencode.so.4(x86_64))",
 				"soname(libswresample.so.7(x86_64))",
 				"soname(libswscale.so.10(x86_64))",
@@ -1929,6 +1929,6 @@
 		}
 	},
 	"source-name": "ffmpeg",
-	"source-release": "43",
+	"source-release": "44",
 	"source-version": "9.0.2"
 }
