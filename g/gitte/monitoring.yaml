@@ -1,5 +1,9 @@
+# SPDX-FileCopyrightText: 2026 aerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
 releases:
   id: 391487
   rss: https://codeberg.org/ckruse/Gitte/tags.rss
 security:
-  cpe: ~ # No CPE found, last checked (2026-07-30)
+  # No known CPE. Last checked 2026-10-26
+  cpe: ~
