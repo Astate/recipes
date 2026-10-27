@@ -2,11 +2,11 @@
 # SPDX-License-Identifier: MPL-2.0
 
 name        : ghostty
-version     : "1.3.1"
-release     : 10
+version     : "1.4.0"
+release     : 11
 homepage    : https://github.com/ghostty-org/ghostty
 upstreams   :
-    - https://github.com/ghostty-org/ghostty/archive/refs/tags/v1.3.1.tar.gz : 265837d3026b433f0e6b4e49d43153b915b0a19513f7edd8a8e693c559bd415b
+    - https://github.com/ghostty-org/ghostty/archive/refs/tags/v1.4.0.tar.gz : 2e2a2516f9bea89a4991ad7c9401b77682eed366387a5b1d7c629472b5d11a43
 summary     : Ghostty is a fast, feature-rich, and cross-platform terminal emulator that uses platform-native UI and GPU acceleration
 description : |
     Ghostty is a terminal emulator that differentiates itself by being fast, feature-rich, and native. While there are many excellent terminal emulators available, they all force you to choose between speed, features, or native UIs. Ghostty provides all three.
@@ -14,10 +14,11 @@ license     : MIT
 networking  : true
 builddeps   :
     - binary(gettext)
-    - binary(tic)
     - binary(pandoc)
-    - binary(zig-0.15)
+    - binary(tic)
+    - binary(zig-0.17)
     - pkgconfig(blueprint-compiler)
+    - pkgconfig(egl)
     - pkgconfig(freetype2)
     - pkgconfig(gtk4)
     - pkgconfig(gtk4-layer-shell-0)
@@ -30,17 +31,26 @@ builddeps   :
     - pkgconfig(zlib)
     - glslang-devel
 environment : |
-    export ZIG_GLOBAL_CACHE_DIR=%(builddir)/zig-cache
+    if [ -z "${ZIG_GLOBAL_CACHE_DIR:-}" ]; then
+        export ZIG_GLOBAL_CACHE_DIR="%(builddir)/zig-cache"
+    fi
     export DESTDIR=%(installroot)
 setup       : |
-    %patch %(pkgdir)/0001-Use-versioned-zig.patch
+    %patch %(pkgdir)/0001-Do-not-build-static-libghostty-vt.patch
 
-    ./nix/build-support/fetch-zig-cache.sh
+    # Fetch the full dependency tree (including lazy deps) into the global cache
+    zig-0.17 build --fetch=all
+
+    # zig 0.17 caches packages as tarballs but --system wants unpacked dirs
+    mkdir -p "offline"
+    for f in "$ZIG_GLOBAL_CACHE_DIR"/p/*.tar.gz; do
+        bsdtar-static -xf "$f" -C "offline"
+    done
 build       : |
-    zig-0.15 build \
+    zig-0.17 build \
       -j%(jobs) \
       --prefix %(prefix) \
-      --system "$ZIG_GLOBAL_CACHE_DIR/p" \
+      --system "offline" \
       --summary all \
       --verbose \
       -Doptimize=ReleaseFast \
