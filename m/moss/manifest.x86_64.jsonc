@@ -55,6 +55,7 @@
 				"/usr/share/man/man1/moss-state-verify.1",
 				"/usr/share/man/man1/moss-state.1",
 				"/usr/share/man/man1/moss-sync.1",
+				"/usr/share/man/man1/moss-tree.1",
 				"/usr/share/man/man1/moss.1",
 				"/usr/share/mime/packages/stone.xml",
 				"/usr/share/zsh/site-functions/_moss"
@@ -66,6 +67,6 @@
 		}
 	},
 	"source-name": "moss",
-	"source-release": "137",
-	"source-version": "0.26.10~git.e02080d"
+	"source-release": "138",
+	"source-version": "0.26.10~git.ddce327"
 }
