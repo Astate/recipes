@@ -3,7 +3,7 @@
 
 name        : thunderbird
 version     : "159.0"
-release     : 61
+release     : 62
 homepage    : https://www.thunderbird.net/
 upstreams   :
     - https://releases.mozilla.org/pub/thunderbird/releases/159.0/source/thunderbird-159.0.source.tar.xz : b4cbc4e010deaa66a51a5c647586c8dc41579c136155fe8baa8253f7c8b3927e
@@ -25,6 +25,8 @@ builddeps   :
     - binary(weston) # PGO
     - binary(wlheadless-run) # PGO
     - pkgconfig(alsa)
+    - pkgconfig(aom)
+    - pkgconfig(dav1d)
     - pkgconfig(gbm)
     - pkgconfig(gtk+-3.0)
     - pkgconfig(icu-uc)
@@ -59,7 +61,7 @@ environment : |
     export MOZ_BUILD_DATE="$(date -u${SOURCE_DATE_EPOCH:+d @$SOURCE_DATE_EPOCH} +%%Y%%m%%d%%H%%M%%S)"
 setup       : |
     %patch %(pkgdir)/patches/0001-Fix-Firefox-Thunderbird-envvar-conflicts.patch
-    %patch %(pkgdir)/patches/0001-Allow-installing-addons-from-user-scope.patch
+    %patch %(pkgdir)/patches/0002-Add-launchable-to-AppStream-metadata.patch
 
     cp %(pkgdir)/build/mozconfig .
     sed -e 's|@@JOBCOUNT@@|%(jobs)|' -e 's|@@LIBDIR@@|%(libdir)|' -i mozconfig
@@ -135,6 +137,7 @@ install     : |
 
     %install_file %(pkgdir)/install/thunderbird-symbolic.svg %(installroot)%(datadir)/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg
     %install_file %(pkgdir)/install/net.thunderbird.Thunderbird.desktop %(installroot)%(datadir)/applications/net.thunderbird.Thunderbird.desktop
+    %install_file comm/mail/branding/thunderbird/net.thunderbird.Thunderbird.appdata.xml %(installroot)%(datadir)/metainfo/net.thunderbird.Thunderbird.appdata.xml
 
     %install_file %(pkgdir)/install/distribution.ini %(installroot)%(libdir)/thunderbird/distribution/distribution.ini
     %install_file %(pkgdir)/install/prefs.js %(installroot)/%(libdir)/thunderbird/defaults/pref/prefs.js

@@ -17,6 +17,8 @@
 				"binary(weston)",
 				"binary(wlheadless-run)",
 				"pkgconfig(alsa)",
+				"pkgconfig(aom)",
+				"pkgconfig(dav1d)",
 				"pkgconfig(gbm)",
 				"pkgconfig(gtk+-3.0)",
 				"pkgconfig(icu-uc)",
@@ -38,11 +40,13 @@
 				"interpreter(/usr/lib/ld-linux-x86-64.so.2(x86_64))",
 				"rnp",
 				"soname(ld-linux-x86-64.so.2(x86_64))",
+				"soname(libaom.so.3(x86_64))",
 				"soname(libasound.so.2(x86_64))",
 				"soname(libatk-1.0.so.0(x86_64))",
 				"soname(libc.so.6(x86_64))",
 				"soname(libcairo-gobject.so.2(x86_64))",
 				"soname(libcairo.so.2(x86_64))",
+				"soname(libdav1d.so.7(x86_64))",
 				"soname(libdbus-1.so.3(x86_64))",
 				"soname(libdrm.so.2(x86_64))",
 				"soname(libevent-2.1.so.7(x86_64))",
@@ -135,7 +139,8 @@
 				"/usr/share/icons/hicolor/256x256/apps/net.thunderbird.Thunderbird.png",
 				"/usr/share/icons/hicolor/32x32/apps/net.thunderbird.Thunderbird.png",
 				"/usr/share/icons/hicolor/48x48/apps/net.thunderbird.Thunderbird.png",
-				"/usr/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg"
+				"/usr/share/icons/hicolor/symbolic/apps/thunderbird-symbolic.svg",
+				"/usr/share/metainfo/net.thunderbird.Thunderbird.appdata.xml"
 			],
 			"name": "thunderbird",
 			"provides": [
@@ -153,6 +158,6 @@
 		}
 	},
 	"source-name": "thunderbird",
-	"source-release": "61",
+	"source-release": "62",
 	"source-version": "159.0"
 }

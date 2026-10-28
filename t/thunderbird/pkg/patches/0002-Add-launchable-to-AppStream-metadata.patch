@@ -1,0 +1,28 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Reilly Brogan <reilly@reillybrogan.com>
+Date: Tue, 27 Oct 2026 00:00:00 -0500
+Subject: [PATCH] Add the missing launchable to the AppStream metadata
+
+AppStream requires a <launchable> element for desktop-application
+components; appstreamcli validate fails with desktop-app-launchable-missing
+without it.
+
+Origin: vendor
+Forwarded: not-needed
+Last-Update: 2026-10-27
+---
+ comm/mail/branding/thunderbird/net.thunderbird.Thunderbird.appdata.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/comm/mail/branding/thunderbird/net.thunderbird.Thunderbird.appdata.xml b/comm/mail/branding/thunderbird/net.thunderbird.Thunderbird.appdata.xml
+index 2ee313b..d734ed7 100644
+--- a/comm/mail/branding/thunderbird/net.thunderbird.Thunderbird.appdata.xml
++++ b/comm/mail/branding/thunderbird/net.thunderbird.Thunderbird.appdata.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <component type="desktop-application">
+   <id>net.thunderbird.Thunderbird</id>
++  <launchable type="desktop-id">net.thunderbird.Thunderbird.desktop</launchable>
+   <metadata_license>CC0-1.0</metadata_license>
+   <name>Thunderbird</name>
+   <summary>Thunderbird is a free and open source email, newsfeed, chat, and calendaring client</summary>
