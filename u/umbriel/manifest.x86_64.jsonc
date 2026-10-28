@@ -11,6 +11,7 @@
 				"pkgconfig(jemalloc)",
 				"pkgconfig(lcms2)",
 				"pkgconfig(libdrm)",
+				"pkgconfig(libeis-1.0)",
 				"pkgconfig(libglvnd)",
 				"pkgconfig(libinput)",
 				"pkgconfig(libudev)",
@@ -34,6 +35,7 @@
 				"soname(libcairo.so.2(x86_64))",
 				"soname(libdisplay-info.so.3(x86_64))",
 				"soname(libdrm.so.2(x86_64))",
+				"soname(libeis.so.1(x86_64))",
 				"soname(libgbm.so.1(x86_64))",
 				"soname(libgcc_s.so.1(x86_64))",
 				"soname(libglib-2.0.so.0(x86_64))",
@@ -46,11 +48,14 @@
 				"soname(libpangocairo-1.0.so.0(x86_64))",
 				"soname(libpixman-1.so.0(x86_64))",
 				"soname(libstdc++.so.6(x86_64))",
+				"soname(libsystemd.so.0(x86_64))",
 				"soname(libtomlplusplus.so.3(x86_64))",
 				"soname(libudev.so.1(x86_64))",
 				"soname(libwayland-server.so.0(x86_64))",
 				"soname(libwlroots-0.20.so(x86_64))",
 				"soname(libxcb-icccm.so.4(x86_64))",
+				"soname(libxcb-randr.so.0(x86_64))",
+				"soname(libxcb-shape.so.0(x86_64))",
 				"soname(libxcb.so.1(x86_64))",
 				"soname(libxkbcommon.so.0(x86_64))"
 			],
@@ -91,6 +96,6 @@
 		}
 	},
 	"source-name": "umbriel",
-	"source-release": "6",
-	"source-version": "0.1.0+git.5cea311"
+	"source-release": "7",
+	"source-version": "0.1.0+git.c028006"
 }
