@@ -1,0 +1,68 @@
+# SPDX-FileCopyrightText: 2026 AerynOS Developers
+# SPDX-License-Identifier: MPL-2.0
+
+name        : luciole
+version     : "0.1.0~git.6b2a61a"
+release     : 1
+homepage    : https://github.com/noctalia-dev/luciole
+upstreams   :
+    - git|https://github.com/noctalia-dev/luciole.git :
+        ref : 6b2a61a637f48098d205af72585e891692aa3cc0
+        clonedir : luciole
+summary     : Native Wayland file manager from the Noctalia project
+description : |
+    Luciole is a native Wayland file manager using Noctalia rendering and
+    controls. It offers grid, list and Miller column views, tabs, split view
+    and rich file previews, and also serves as the Open and Save file picker
+    for other applications through xdg-desktop-portal.
+license     : MIT
+builddeps   :
+    - pkgconfig(cairo)
+    - pkgconfig(cairo-ft)
+    - pkgconfig(egl)
+    - pkgconfig(fontconfig)
+    - pkgconfig(freetype2)
+    - pkgconfig(gdk-pixbuf-2.0)
+    - pkgconfig(gio-2.0)
+    - pkgconfig(gio-unix-2.0)
+    - pkgconfig(glesv2)
+    - pkgconfig(glib-2.0)
+    - pkgconfig(glycin-2)
+    - pkgconfig(harfbuzz)
+    - pkgconfig(libacl)
+    - pkgconfig(libarchive)
+    - pkgconfig(liblzma)
+    - pkgconfig(libpng)
+    - pkgconfig(librsvg-2.0)
+    - pkgconfig(nlohmann_json)
+    - pkgconfig(pango)
+    - pkgconfig(pangocairo)
+    - pkgconfig(pangoft2)
+    - pkgconfig(tomlplusplus)
+    - pkgconfig(wayland-client)
+    - pkgconfig(wayland-cursor)
+    - pkgconfig(wayland-egl)
+    - pkgconfig(wayland-protocols)
+    - pkgconfig(wayland-scanner)
+    - pkgconfig(xkbcommon)
+    - stb
+rundeps     :
+    - binary(7z) # Encrypted 7z archives
+    - binary(ffmpeg) # Media thumbnails
+    - binary(ffprobe) # Media metadata
+    - binary(pdfinfo) # PDF metadata
+    - binary(pdftoppm) # PDF thumbnails
+    - ffmpegthumbnailer # Video thumbnail filmstrips
+    - glib-networking # TLS for WebDAV
+    - gvfs # Trash and network locations
+    - gvfs-smb
+setup       : |
+    %meson \
+        -Db_ndebug=true \
+        -Dtests=disabled \
+        -Dnative_optimizations=false \
+        -Dbuild_revision=6b2a61a
+build       : |
+    %meson_build
+install     : |
+    %meson_install
